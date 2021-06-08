@@ -1,0 +1,346 @@
+prefixes:
+  aq: "http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#"
+  grel: http://users.ugent.be/~bjdmeest/function/grel.ttl#
+mappings:
+  # Particulate Matter
+
+  pm:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:pm__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:ParticulateMatter
+      - p: aq:particulateMatter10Concentration
+        o: $(PM10 (ug/m3\))
+      - p: aq:particulateMatter2_5Concentration
+        o: $(PM2.5 (ug/m3\))
+  apapm:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:pm_apa__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:AtmosphericParameter
+      - p: aq:measure
+        o: aq:pm__placenarela$(To Date)
+  obspm:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:pm_obs__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:Observation
+      - p: aq:atTime
+        o: $(To Date)
+      - p: aq:atPlace
+        o: _placenarela
+      - p: aq:hasParameter
+        o: pm_apa__placenarela$(To Date)
+
+  # Nitrogen oxides
+  oon:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:oon__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:OxideOfNitrogen
+      - p: aq:nitrogenDiOxideConcentration
+        o: $(NO2 (ug/m3\))
+      - p: aq:nitrogenMonoOxideConcentration
+        o: $(NO (ug/m3\))
+      - p: aq:nitrogentOxideConcentration
+        o: $(NOx (ppb\))
+  apaoon:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:oon_apa__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:AtmosphericParameter
+      - p: aq:measure
+        o: aq:oon__placenarela$(To Date)
+  ooon:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:oon_obs__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:Observation
+      - p: aq:atPlace
+        o: _placenarela
+      - p: aq:atTime
+        o: $(To Date)
+      - p: aq:hasParameter
+        o: aq:oon_apa__placenarela$(To Date)
+
+  # Oxides of carbon
+  ooc:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:ooc__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:OxideOfCarbon
+      - p: aq:carbonMonoOxideConcentration
+        o: $(CO (mg/m3\))
+  apaooc:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:ooc_apa__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:AtmosphericParameter
+      - p: aq:measure
+        o: aq:ooc__placenarela$(To Date)
+  oooc:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:ooc_obs__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:Observation
+      - p: aq:atPlace
+        o: _placenarela
+      - p: aq:atTime
+        o: $(To Date)
+      - p: aq:hasParameter
+        o: aq:ooc_apa__placenarela$(To Date)
+
+  # Oxides of Sulphur
+  oos:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:oos__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:OxideOfSulphur
+      - p: aq:sulphurDiOxideConcentration
+        o: $(SO2 (ug/m3\))
+  apaoos:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:oos_apa__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:AtmosphericParameter
+      - p: aq:measure
+        o: aq:oos__placenarela$(To Date)
+  ooos:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:ooc_obs__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:Observation
+      - p: aq:atPlace
+        o: _placenarela
+      - p: aq:atTime
+        o: $(To Date)
+      - p: aq:hasParameter
+        o: aq:oos_apa__placenarela$(To Date)
+
+  # Ammonia
+  gp:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:gp__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:GaseousPollutant
+      - p: aq:ammoniaConcentration
+        o: $(NH3 (ug/m3\))
+  apagp:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:gp_apa__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:AtmosphericParameter
+      - p: aq:measure
+        o: aq:gp__placenarela$(To Date)
+  ogp:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:ooc_obs__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:Observation
+      - p: aq:atPlace
+        o: _placenarela
+      - p: aq:atTime
+        o: $(To Date)
+      - p: aq:hasParameter
+        o: aq:gp_apa__placenarela$(To Date)
+
+  # Ozone
+  sp:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:sp__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:SecondaryPollutant
+      - p: aq:ozoneConcentration
+        o: $(Ozone (ug/m3\))
+  apasp:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:sp_apa__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:AtmosphericParameter
+      - p: aq:measure
+        o: aq:sp__placenarela$(To Date)
+  osp:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:ooc_obs__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:Observation
+      - p: aq:atPlace
+        o: _placenarela
+      - p: aq:atTime
+        o: $(To Date)
+      - p: aq:hasParameter
+        o: aq:sp_apa__placenarela$(To Date)
+
+  # Hydrocarbon
+  hc:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:hc__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:Hydrocarbon
+      - p: aq:benzeneConcentration
+        o: $(Benzene (ug/m3\))
+      - p: aq:tolueneConcentration
+        o: $(Toluene (ug/m3\))
+  apahc:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:hc_apa__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:AtmosphericParameter
+      - p: aq:measure
+        o: aq:hc__placenarela$(To Date)
+  ohc:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:ooc_obs__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:Observation
+      - p: aq:atPlace
+        o: _placenarela
+      - p: aq:atTime
+        o: $(To Date)
+      - p: aq:hasParameter
+        o: aq:hc_apa__placenarela$(To Date)
+
+  # Meterological Characteristics
+  mc:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:mc__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:MeteorologicalCharacterstic
+      - p: aq:ambientTemperature
+        o: $(Temp (degree C\))
+      - p: aq:bPressure
+        o: $(BP (mmHg\))
+      - p: aq:precipitation
+        o: $(BP (mmHg\))
+      - p: aq:relativeHumidity
+        o: $(RH (%\))
+      - p: aq:solarRadiation
+        o: $(SR (W/mt2\))
+  apamc:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:mc_apa__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:AtmosphericParameter
+      - p: aq:measure
+        o: aq:mc__placenarela$(To Date)
+  omc:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:ooc_obs__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:Observation
+      - p: aq:atPlace
+        o: _placenarela
+      - p: aq:atTime
+        o: $(To Date)
+      - p: aq:hasParameter
+        o: aq:mc_apa__placenarela$(To Date)
+
+  # Wind Characteristics
+  wc:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:wc__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:WindCharacterstic
+      - p: aq:windDirection
+        o: $(WD (degree\))
+      - p: aq:windSpeed
+        o: $(WS (m/s\))
+  apawc:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:wc_apa__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:AtmosphericParameter
+      - p: aq:measure
+        o: aq:wc__placenarela$(To Date)
+  owc:
+    sources:
+      - access: sources/Data/RawData/cpcb/narela_1620911195997.csv
+        referenceFormulation: csv
+    s: aq:ooc_obs__placenarela$(To Date)
+    po:
+      - p: a
+        o: aq:Observation
+      - p: aq:atPlace
+        o: _placenarela
+      - p: aq:atTime
+        o: $(To Date)
+      - p: aq:hasParameter
+        o: aq:wc_apa__placenarela$(To Date)
