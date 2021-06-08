@@ -1,0 +1,1128 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOnto"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AllPollutant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtmosphericParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BackTrajectoryParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BackTrajectoryPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BackTrajectorySegment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoalBasedPowerPlant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Demographic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DieselBasedPowerPlant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EndingBackTrajectoryPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FireProductParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasBasedPowerPlant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GaseousPollutant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hydrocarbon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HydrocarbonPrescribedRange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeteorologicalCharacterstic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OxideOfCarbon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OxideOfCarbonPrescribedRange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OxideOfNitrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OxideOfSulphur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OxidesOfNitrogenPrescribedRange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OxidesOfSulphurPrescribedRange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParticulateMatter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParticulateMatterPrescribedRange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PowerPlant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrescribedStandards"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryPollutant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondaryPollutant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StartingBackTrajectoryPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalPowerPlant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindCharacterstic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#atPlace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#endsAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#hasFix"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#hasSegment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#nextFix"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#startsFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#demographicAtPlace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDemographic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasObservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParameterProperties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nearby"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observedInRegion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ambientTemperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ammoniaConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#atHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#atTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bPressure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#benzeneConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#carbonMonoOxideConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#carbonMonoOxidePrescribedLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cityName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#confidence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fireProductCaptureTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#frp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#latitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nitrogenDiOxideConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nitrogenDiOxidePrescribedLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nitrogenMonoOxideConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nitrogenMonoOxidePrescribedLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nitrogenOxidePrescribedLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nitrogentOxideConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfFemales"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfLiterates"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfMales"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ozoneConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ozonePrescribedLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#particulateMatter10Concentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#particulateMatter10PrescribedLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#particulateMatter2_5Concentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#particulateMatter2_5PrescribedLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#placeName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#plantCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#precipitation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#relativeHumidity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#solarRadiation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sulphurDiOxideConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ti4Brightness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ti5Brightness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tolueneConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#totalPopulation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#trafficDensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#windDirection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#windSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#zipCode"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#EndingBackTrajectoryPoint"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BackTrajectoryPoint"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectInverseOf>
+                        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#startsFrom"/>
+                    </ObjectInverseOf>
+                    <Class IRI="#BackTrajectorySegment"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StartingBackTrajectoryPoint"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BackTrajectoryPoint"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectInverseOf>
+                        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#endsAt"/>
+                    </ObjectInverseOf>
+                    <Class IRI="#BackTrajectorySegment"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AtmosphericParameter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#measure"/>
+            <ObjectUnionOf>
+                <Class IRI="#AllPollutant"/>
+                <Class IRI="#MeteorologicalCharacterstic"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BackTrajectoryParameter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#hasFix"/>
+            <Class IRI="#BackTrajectoryPoint"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BackTrajectoryPoint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#atPlace"/>
+            <Class IRI="#Place"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BackTrajectoryPoint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#hasFix"/>
+            </ObjectInverseOf>
+            <Class IRI="#BackTrajectoryParameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BackTrajectoryPoint"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#nextFix"/>
+            <Class IRI="#BackTrajectoryPoint"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BackTrajectorySegment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#endsAt"/>
+            <Class IRI="#BackTrajectoryPoint"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BackTrajectorySegment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#startsFrom"/>
+            <Class IRI="#BackTrajectoryPoint"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BackTrajectorySegment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#hasSegment"/>
+            </ObjectInverseOf>
+            <Class IRI="#BackTrajectoryParameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BackTrajectorySegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#endsAt"/>
+            <Class IRI="#BackTrajectoryPoint"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BackTrajectorySegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#startsFrom"/>
+            <Class IRI="#BackTrajectoryPoint"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoalBasedPowerPlant"/>
+        <Class IRI="#ThermalPowerPlant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DieselBasedPowerPlant"/>
+        <Class IRI="#ThermalPowerPlant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EndingBackTrajectoryPoint"/>
+        <Class IRI="#BackTrajectoryPoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasBasedPowerPlant"/>
+        <Class IRI="#ThermalPowerPlant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GaseousPollutant"/>
+        <Class IRI="#PrimaryPollutant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hydrocarbon"/>
+        <Class IRI="#SecondaryPollutant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydrocarbonPrescribedRange"/>
+        <Class IRI="#PrescribedStandards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observation"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#atPlace"/>
+            <Class IRI="#Place"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OxideOfCarbon"/>
+        <Class IRI="#GaseousPollutant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OxideOfCarbonPrescribedRange"/>
+        <Class IRI="#PrescribedStandards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OxideOfNitrogen"/>
+        <Class IRI="#GaseousPollutant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OxideOfSulphur"/>
+        <Class IRI="#GaseousPollutant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OxidesOfNitrogenPrescribedRange"/>
+        <Class IRI="#PrescribedStandards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OxidesOfSulphurPrescribedRange"/>
+        <Class IRI="#PrescribedStandards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParticulateMatter"/>
+        <Class IRI="#PrimaryPollutant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParticulateMatterPrescribedRange"/>
+        <Class IRI="#PrescribedStandards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryPollutant"/>
+        <Class IRI="#AllPollutant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryPollutant"/>
+        <Class IRI="#AllPollutant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StartingBackTrajectoryPoint"/>
+        <Class IRI="#BackTrajectoryPoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalPowerPlant"/>
+        <Class IRI="#PowerPlant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindCharacterstic"/>
+        <Class IRI="#MeteorologicalCharacterstic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#hasFix"/>
+            <Class IRI="#BackTrajectoryPoint"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#BackTrajectoryParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#nextFix"/>
+            <Class IRI="#BackTrajectoryPoint"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#BackTrajectoryPoint"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AllPollutant"/>
+        <Class IRI="#AtmosphericParameter"/>
+        <Class IRI="#BackTrajectoryParameter"/>
+        <Class IRI="#BackTrajectoryPoint"/>
+        <Class IRI="#BackTrajectorySegment"/>
+        <Class IRI="#Demographic"/>
+        <Class IRI="#FireProductParameter"/>
+        <Class IRI="#MeteorologicalCharacterstic"/>
+        <Class IRI="#Observation"/>
+        <Class IRI="#Place"/>
+        <Class IRI="#PowerPlant"/>
+        <Class IRI="#PrescribedStandards"/>
+        <Class IRI="#Region"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CoalBasedPowerPlant"/>
+        <Class IRI="#DieselBasedPowerPlant"/>
+        <Class IRI="#GasBasedPowerPlant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GaseousPollutant"/>
+        <Class IRI="#ParticulateMatter"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HydrocarbonPrescribedRange"/>
+        <Class IRI="#OxideOfCarbonPrescribedRange"/>
+        <Class IRI="#OxidesOfNitrogenPrescribedRange"/>
+        <Class IRI="#OxidesOfSulphurPrescribedRange"/>
+        <Class IRI="#ParticulateMatterPrescribedRange"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OxideOfCarbon"/>
+        <Class IRI="#OxideOfNitrogen"/>
+        <Class IRI="#OxideOfSulphur"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PrimaryPollutant"/>
+        <Class IRI="#SecondaryPollutant"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#demographicAtPlace"/>
+        <ObjectProperty IRI="#hasDemographic"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#atPlace"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#endsAt"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#startsFrom"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasDemographic"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#nearby"/>
+    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasDemographic"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasParameter"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#inRegion"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#atPlace"/>
+        <ObjectUnionOf>
+            <Class IRI="#BackTrajectoryPoint"/>
+            <Class IRI="#Observation"/>
+            <Class IRI="#PowerPlant"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#demographicAtPlace"/>
+        <Class IRI="#Demographic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDemographic"/>
+        <ObjectUnionOf>
+            <Class IRI="#Place"/>
+            <Class IRI="#Region"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasObservation"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParameter"/>
+        <Class IRI="#Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inRegion"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measure"/>
+        <Class IRI="#AtmosphericParameter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nearby"/>
+        <ObjectUnionOf>
+            <Class IRI="#BackTrajectoryPoint"/>
+            <Class IRI="#Place"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#atPlace"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#demographicAtPlace"/>
+        <ObjectUnionOf>
+            <Class IRI="#Place"/>
+            <Class IRI="#Region"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDemographic"/>
+        <Class IRI="#Demographic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasObservation"/>
+        <Class IRI="#Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParameter"/>
+        <ObjectUnionOf>
+            <Class IRI="#AtmosphericParameter"/>
+            <Class IRI="#BackTrajectoryParameter"/>
+            <Class IRI="#FireProductParameter"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inRegion"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measure"/>
+        <ObjectUnionOf>
+            <Class IRI="#AllPollutant"/>
+            <Class IRI="#MeteorologicalCharacterstic"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#nearby"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://w3id.org/daselab/onto/trajectory#atPlace"/>
+            <ObjectProperty IRI="#inRegion"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#observedInRegion"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasParameter"/>
+            <ObjectProperty IRI="#measure"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#hasParameterProperties"/>
+    </SubObjectPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#carbonMonoOxideConcentration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#latitude"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#longitude"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nitrogentOxideConcentration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#particulateMatter10Concentration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#particulateMatter2_5Concentration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ambientTemperature"/>
+        <Class IRI="#MeteorologicalCharacterstic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ammoniaConcentration"/>
+        <Class IRI="#GaseousPollutant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#atHeight"/>
+        <Class IRI="#BackTrajectoryPoint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#atTime"/>
+        <ObjectUnionOf>
+            <Class IRI="#BackTrajectoryPoint"/>
+            <Class IRI="#Observation"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#bPressure"/>
+        <Class IRI="#MeteorologicalCharacterstic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#benzeneConcentration"/>
+        <Class IRI="#Hydrocarbon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#carbonMonoOxideConcentration"/>
+        <Class IRI="#OxideOfCarbon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#carbonMonoOxidePrescribedLimit"/>
+        <Class IRI="#OxideOfCarbonPrescribedRange"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cityName"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#confidence"/>
+        <Class IRI="#FireProductParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fireProductCaptureTime"/>
+        <Class IRI="#FireProductParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#frp"/>
+        <Class IRI="#FireProductParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#latitude"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#longitude"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nitrogenDiOxideConcentration"/>
+        <Class IRI="#OxideOfNitrogen"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nitrogenDiOxidePrescribedLimit"/>
+        <Class IRI="#OxidesOfNitrogenPrescribedRange"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nitrogenMonoOxideConcentration"/>
+        <Class IRI="#OxideOfNitrogen"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nitrogenMonoOxidePrescribedLimit"/>
+        <Class IRI="#OxidesOfNitrogenPrescribedRange"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nitrogenOxidePrescribedLimit"/>
+        <Class IRI="#OxidesOfNitrogenPrescribedRange"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nitrogentOxideConcentration"/>
+        <Class IRI="#OxideOfNitrogen"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberOfFemales"/>
+        <Class IRI="#Demographic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberOfLiterates"/>
+        <Class IRI="#Demographic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberOfMales"/>
+        <Class IRI="#Demographic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ozoneConcentration"/>
+        <Class IRI="#SecondaryPollutant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ozonePrescribedLimit"/>
+        <Class IRI="#PrescribedStandards"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#particulateMatter10Concentration"/>
+        <Class IRI="#ParticulateMatter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#particulateMatter10PrescribedLimit"/>
+        <Class IRI="#ParticulateMatterPrescribedRange"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#particulateMatter2_5Concentration"/>
+        <Class IRI="#ParticulateMatter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#particulateMatter2_5PrescribedLimit"/>
+        <Class IRI="#ParticulateMatterPrescribedRange"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#placeName"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#plantCapacity"/>
+        <Class IRI="#PowerPlant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#precipitation"/>
+        <Class IRI="#MeteorologicalCharacterstic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#relativeHumidity"/>
+        <Class IRI="#MeteorologicalCharacterstic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#solarRadiation"/>
+        <Class IRI="#MeteorologicalCharacterstic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sulphurDiOxideConcentration"/>
+        <Class IRI="#OxideOfSulphur"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ti4Brightness"/>
+        <Class IRI="#FireProductParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ti5Brightness"/>
+        <Class IRI="#FireProductParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tolueneConcentration"/>
+        <Class IRI="#Hydrocarbon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#totalPopulation"/>
+        <Class IRI="#Demographic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#windDirection"/>
+        <Class IRI="#WindCharacterstic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#windSpeed"/>
+        <Class IRI="#WindCharacterstic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#zipCode"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ambientTemperature"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ammoniaConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#atHeight"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#bPressure"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#benzeneConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#carbonMonoOxideConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#carbonMonoOxidePrescribedLimit"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cityName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#confidence"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fireProductCaptureTime"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#frp"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#latitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#longitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nitrogenDiOxideConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nitrogenDiOxidePrescribedLimit"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nitrogenMonoOxideConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nitrogenMonoOxidePrescribedLimit"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nitrogenOxidePrescribedLimit"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nitrogentOxideConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numberOfFemales"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numberOfLiterates"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numberOfMales"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ozoneConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ozonePrescribedLimit"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#particulateMatter10Concentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#particulateMatter10PrescribedLimit"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#particulateMatter2_5Concentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#particulateMatter2_5PrescribedLimit"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#placeName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#plantCapacity"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#precipitation"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#relativeHumidity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#solarRadiation"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sulphurDiOxideConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ti4Brightness"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ti5Brightness"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tolueneConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#totalPopulation"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#trafficDensity"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#windDirection"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#windSpeed"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#zipCode"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://w3id.org/daselab/onto/trajectory#atPlace</IRI>
+        <Literal>Connects anything (including fixes in this pattern) to Place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://w3id.org/daselab/onto/trajectory#atPlace</IRI>
+        <Literal>atPlace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://w3id.org/daselab/onto/trajectory#endsAt</IRI>
+        <Literal>Connects a segment to the fix it ends at.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://w3id.org/daselab/onto/trajectory#endsAt</IRI>
+        <Literal>endsAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://w3id.org/daselab/onto/trajectory#hasFix</IRI>
+        <Literal>Relating the trajectory to each of its fixes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://w3id.org/daselab/onto/trajectory#hasFix</IRI>
+        <Literal>hasFix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://w3id.org/daselab/onto/trajectory#hasSegment</IRI>
+        <Literal>Relating the trajectory to each of its segments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://w3id.org/daselab/onto/trajectory#hasSegment</IRI>
+        <Literal>hasSegment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://w3id.org/daselab/onto/trajectory#nextFix</IRI>
+        <Literal>Relates one fix to the immediately following fix in the sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://w3id.org/daselab/onto/trajectory#nextFix</IRI>
+        <Literal>nextFix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://w3id.org/daselab/onto/trajectory#startsFrom</IRI>
+        <Literal>Connects a segment to the fix it starts from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://w3id.org/daselab/onto/trajectory#startsFrom</IRI>
+        <Literal>startsFrom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BackTrajectoryParameter</IRI>
+        <Literal>Represents the notion of trajectory, this is the main class that can be hooked with other patterns that use the Trajectory pattern. Trajectory in this model is understood as a sequence of fixes connected by segments. There is exactly one starting fix and exactly one ending fix. Each fix has a temporal extent and a place (which is more general than just a location).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BackTrajectoryParameter</IRI>
+        <Literal>BackTrajectoryParameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BackTrajectoryPoint</IRI>
+        <Literal>Describes a fix, which is an adorned spatiotemporal point. A sequence of fixes form the trajectory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BackTrajectoryPoint</IRI>
+        <Literal>BackTrajectoryPoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BackTrajectorySegment</IRI>
+        <Literal>The Segment class captures the &quot;connection&quot; between two consecutive fixes. That is, a segment starts from a fix and ends at another fix. If the pattern is used to model the trajectory of some moving object, each segment is traversed by that moving object. Additional information about a segment can be attached as attributes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BackTrajectorySegment</IRI>
+        <Literal>BackTrajectorySegment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Place</IRI>
+        <Literal>This is the hook to other pattern/ontology that describes the notion of place, which is more general than just a location/geo-coordinate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Place</IRI>
+        <Literal>Place</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
