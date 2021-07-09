@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>An Ontology Design Pattern for Modelling Pollution</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew
+EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <style>
+        #pylode {
+            position: fixed;
+            top: 130px;
+            left: -60px;
+            font-size: small;
+            transform: rotate(-90deg);
+            color: grey;
+        }
+        #pylode a {
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #005A9C;
+        }
+        #pylode a:hover {
+            color: #333;
+        }
+
+        .cardinality {
+            font-style: italic;
+            color: #aa00aa;
+        }
+
+        dt {
+            font-weight: bold;
+            padding: 5px 0 5px 0;
+        }
+
+        ul.hlist {
+            list-style-type: none;
+            border: 1px solid navy;
+            padding:5px;
+            background-color: #F4FFFF;
+        }
+
+        ul.hierarchy {
+            border: 1px solid navy;
+            padding: 5px 25px 5px 25px;
+            background-color: #F4FFFF;
+        }
+
+
+        ul.hlist li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .entity {
+            border: 1px solid navy;
+            margin:5px 0 5px 0;
+            padding: 5px;
+        }
+
+        .entity th {
+            width: 150px;
+            vertical-align: top;
+        }
+
+        .entity th,
+        .entity td {
+            padding-bottom: 20px;
+        }
+
+        .entity table th {
+            text-align: left;
+        }
+
+        section#overview img {
+            max-width: 1000px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left
+        }
+        h1, h2, h3 {
+            color: #005A9C; background: white
+        }
+        h1 {
+            font: 170% sans-serif;
+            line-height: 110%;
+        }
+        h2 {
+            font: 140% sans-serif;
+            margin-top:40px;
+        }
+        h3 {
+            font: 120% sans-serif;
+            margin-top: 3px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid navy;
+        }
+        h4 { font: bold 100% sans-serif }
+        h5 { font: italic 100% sans-serif }
+        h6 { font: small-caps 100% sans-serif }
+
+
+        body {
+            padding: 2em 70px 2em 70px;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            background: white;
+            background-position: top left;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: justify;
+        }
+
+        section {
+            max-width: 1500px;
+        }
+
+        .figure {
+            margin-bottom: 20px;
+        }
+
+        :link { color: #00C; background: transparent }
+        :visited { color: #609; background: transparent }
+        a:active { color: #C00; background: transparent }
+
+        .sup-c,
+        .sup-op,
+        .sup-fp,
+        .sup-dp,
+        .sup-ap,
+        .sup-p,
+        .sup-ni,
+        .sup-con,
+        .sup-col {
+            cursor:help;
+            margin-left: 3px;
+        }
+
+        .sup-c {
+            color:orange;
+        }
+
+        .sup-op {
+            color:navy;
+        }
+
+        .sup-fp {
+            color:lightskyblue;
+        }
+
+        .sup-dp {
+            color:green;
+        }
+
+        .sup-ap {
+            color:darkred;
+        }
+
+        .sup-p {
+            color:black;
+        }
+
+        .sup-ni {
+            color:brown;
+        }
+
+        .sup-con {
+            color:orange;
+        }
+
+        .sup-col {
+            color:darkred;
+        }
+
+        code {
+            font-size: large;
+            color: darkred;
+        }
+
+        /* less prominent links for properties */
+        .proplink {
+            color: #336;
+            text-decoration: none;
+        }
+    </style>
+    
+    <script type="application/ld+json">
+      [
+  {
+    "@id": "https://kracr.iiitd.edu.in/ontology/PollutionODP",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "<p>This ontology is an attempt at a ODP designed to model Pollution. Pollution can be defined as \"Disequilibrium condition from equilibrium condition in any system\".</p>\n<p>Competency Questions</p>\n<ol>\n<li>What parameters are responsible for pollution? </li>\n<li>What is the time and place at which pollution was observed? </li>\n<li>What is the trajectory based contributor to the pollution? </li>\n<li>What  are  the  attributes  associated  with  a  trajectory?  </li>\n<li>What are the biological or chemical pollutants in the pollution?</li>\n</ol>"
+      }
+    ],
+    "https://schema.org/license": [
+      {
+        "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "An Ontology Design Pattern for Modelling Pollution"
+      }
+    ]
+  }
+]
+    </script>
+</head>
+<body>
+  <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
+    <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
+    <span style="font-size:smaller;">2.10.0</span>
+  </div>
+  <h1>An Ontology Design Pattern for Modelling Pollution</h1>
+<section id="metadata">
+    <h2 style="display:none;">Metadata</h2>
+    <dl>
+        <dt>URI</dt>
+        <dd><code>https://kracr.iiitd.edu.in/ontology/PollutionODP</code></dd>
+        <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/created">Created</a></dt>
+        <dd>2020-07-09</dd>
+        <dt>Version Information</dt>
+        <dd>1.0</dd>
+        <dt>License</dt>
+        <dd><a href="https://www.apache.org/licenses/LICENSE-2.0">https://www.apache.org/licenses/LICENSE-2.0</a></dd>
+        <dt>Ontology RDF</dt>
+        <dd><a href="PollutionODPRDF.owl">RDF (xml)</a></dd>
+    </dl>
+    <h2>Description</h2>
+    <div id="description">
+        <p>This ontology is an attempt at a ODP designed to model Pollution. Pollution can be defined as "Disequilibrium condition from equilibrium condition in any system".</p>
+<p>Competency Questions</p>
+<ol>
+<li>What parameters are responsible for pollution? </li>
+<li>What is the time and place at which pollution was observed? </li>
+<li>What is the trajectory based contributor to the pollution? </li>
+<li>What  are  the  attributes  associated  with  a  trajectory?  </li>
+<li>What are the biological or chemical pollutants in the pollution?</li>
+</ol>
+    </div>
+</section>
+<section id="toc">
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#objectproperties">Object Properties</a></li>
+        <li><a href="#annotationproperties">Annotation Properties</a></li>
+        <li><a href="#namespaces">Namespaces</a></li>
+        <li><a href="#legend">Legend</a></li>
+    </ol>
+</section>
+<section id="overview">
+    <h2>Overview</h2>
+    <div class="figure">
+        <div style="width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;">Pictures say 1,000 words</div>
+        <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
+    </div>
+</section>
+  <section id="classes">
+    <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+      <li><a href="#AirPollution">AirPollution</a></li>
+      <li><a href="#AirStreamCarrier">AirStreamCarrier</a></li>
+      <li><a href="#BioChemicalPollutant">BioChemicalPollutant</a></li>
+      <li><a href="#BiologicalOrganism">BiologicalOrganism</a></li>
+      <li><a href="#Carrier">Carrier</a></li>
+      <li><a href="#ChemicalPollutant">ChemicalPollutant</a></li>
+      <li><a href="#Contributor">Contributor</a></li>
+      <li><a href="#DirectContributor">DirectContributor</a></li>
+      <li><a href="#EndingPoint">EndingPoint</a></li>
+      <li><a href="#GeoChemicalPollutant">GeoChemicalPollutant</a></li>
+      <li><a href="#IndirectContributor">IndirectContributor</a></li>
+      <li><a href="#NaturalResourcePollution">NaturalResourcePollution</a></li>
+      <li><a href="#NonNaturalResourcePollution">NonNaturalResourcePollution</a></li>
+      <li><a href="#Observation">Observation</a></li>
+      <li><a href="#ObservationCollection">ObservationCollection</a></li>
+      <li><a href="#PhysicalPollutant">PhysicalPollutant</a></li>
+      <li><a href="#PlaceEntity">PlaceEntity</a></li>
+      <li><a href="#Pollutant">Pollutant</a></li>
+      <li><a href="#Pollution">Pollution</a></li>
+      <li><a href="#PrescribedStandardForPollutant">PrescribedStandardForPollutant</a></li>
+      <li><a href="#SocioEconomicFactor">SocioEconomicFactor</a></li>
+      <li><a href="#SoilPollution">SoilPollution</a></li>
+      <li><a href="#StartingPoint">StartingPoint</a></li>
+      <li><a href="#TimeEntity">TimeEntity</a></li>
+      <li><a href="#Trajectory">Trajectory</a></li>
+      <li><a href="#TrajectoryPoint">TrajectoryPoint</a></li>
+      <li><a href="#TrajectorySegment">TrajectorySegment</a></li>
+      <li><a href="#WaterPollution">WaterPollution</a></li>
+      <li><a href="#WaterStreamCarrier">WaterStreamCarrier</a></li>
+      <li><a href="#Weather">Weather</a></li>
+    </ul>
+    <div class="entity class" id="AirPollution">
+        <h3>
+          AirPollution<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#AirPollution" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#AirPollution</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#NaturalResourcePollution">NaturalResourcePollution</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#hasCarrier">hasCarrier</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#AirStreamCarrier">AirStreamCarrier</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="AirStreamCarrier">
+        <h3>
+          AirStreamCarrier<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#AirStreamCarrier" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#AirStreamCarrier</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Carrier">Carrier</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="BioChemicalPollutant">
+        <h3>
+          BioChemicalPollutant<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#BioChemicalPollutant" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#BioChemicalPollutant</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Biochemical wastes generated from industries</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#ChemicalPollutant">ChemicalPollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="BiologicalOrganism">
+        <h3>
+          BiologicalOrganism<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#BiologicalOrganism" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#BiologicalOrganism</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Examples include Viruses, pathogens, bacteria or other medium to small pollutant organism which can act as a pollutant above a certain threshold concentration</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Carrier">
+        <h3>
+          Carrier<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Carrier" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#Carrier</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Represents streams which carry pollutants to a particular place.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#IndirectContributor">IndirectContributor</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#WaterStreamCarrier">WaterStreamCarrier</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#AirStreamCarrier">AirStreamCarrier</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#hasTrajectory">hasTrajectory</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasCarrier">hasCarrier</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ChemicalPollutant">
+        <h3>
+          ChemicalPollutant<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ChemicalPollutant" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#ChemicalPollutant</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Examples include toxic metal, radionuclides, organophosphorus compounds, gases</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#BioChemicalPollutant">BioChemicalPollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GeoChemicalPollutant">GeoChemicalPollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Contributor">
+        <h3>
+          Contributor<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Contributor" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#Contributor</code></td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="Nc6811c66f047429cb698f4a41469e97d">Nc6811c66f047429cb698f4a41469e97d</a> <span class="cardinality">some</span> <a href="#Pollution">Pollution</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#IndirectContributor">IndirectContributor</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DirectContributor">DirectContributor</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasContributor">hasContributor</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="DirectContributor">
+        <h3>
+          DirectContributor<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DirectContributor" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#DirectContributor</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Represents concepts which directly represent pollution. For example the concentration of pollutants at a particular spatio-temporal point.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Contributor">Contributor</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasDirectContributor">hasDirectContributor</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="EndingPoint">
+        <h3>
+          EndingPoint<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EndingPoint" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#EndingPoint</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="GeoChemicalPollutant">
+        <h3>
+          GeoChemicalPollutant<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#GeoChemicalPollutant" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#GeoChemicalPollutant</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Examples include dust, sediment</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#ChemicalPollutant">ChemicalPollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="IndirectContributor">
+        <h3>
+          IndirectContributor<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#IndirectContributor" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#IndirectContributor</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Represents concepts which indirectly contribute to pollution of a place. These do not directly represent pollution but have properties which can affect the pollution, for example by changing the concentration of pollutants at a spatio-temporal point.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Contributor">Contributor</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#Carrier">Carrier</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Weather">Weather</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SocioEconomicFactor">SocioEconomicFactor</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasIndirectContributor">hasIndirectContributor</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="NaturalResourcePollution">
+        <h3>
+          NaturalResourcePollution<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#NaturalResourcePollution" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#NaturalResourcePollution</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Represents pollution on natural resources. Which means the pollution that affects natural resources like air, water, land, etc.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Pollution">Pollution</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#SoilPollution">SoilPollution</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#WaterPollution">WaterPollution</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#AirPollution">AirPollution</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="NonNaturalResourcePollution">
+        <h3>
+          NonNaturalResourcePollution<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#NonNaturalResourcePollution" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#NonNaturalResourcePollution</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Represents pollution which does not represent natural resource. Examples include, sound, light, space debris, radioactive pollution, thermal pollution.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Pollution">Pollution</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Observation">
+        <h3>
+          Observation<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Observation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#Observation</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Observation represents a spatio-temporal observation of pollutants for a particular pollution.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#atPlace">atPlace</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#PlaceEntity">PlaceEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#atPlace">atPlace</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#PlaceEntity">PlaceEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#atTime">atTime</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TimeEntity">TimeEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#measures">measures</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#measures">measures</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#atTime">atTime</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#TimeEntity">TimeEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#isMemberOf">isMemberOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#measures">measures</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasMember">hasMember</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasObservation">hasObservation</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ObservationCollection">
+        <h3>
+          ObservationCollection<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ObservationCollection" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#ObservationCollection</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Collection of observations representing a pollution</p>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#hasMember">hasMember</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasObservationCollection">hasObservationCollection</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isMemberOf">isMemberOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="PhysicalPollutant">
+        <h3>
+          PhysicalPollutant<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#PhysicalPollutant" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#PhysicalPollutant</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Can be Physical pollutants like Sound, Thermal energy, etc.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="PlaceEntity">
+        <h3>
+          PlaceEntity<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#PlaceEntity" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#PlaceEntity</code></td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#nearby">nearby</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#atPlace">atPlace</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Pollutant">
+        <h3>
+          Pollutant<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Pollutant" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollutant</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Represents various pollutants which contaminate the environment and directly represnt/contribute to pollution. Additionally a carrier's trajecectory point may pick up pollutants from a spatio-temporal point, in which case, it is represented by the sub-property carriesPollutant.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#DirectContributor">DirectContributor</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#BiologicalOrganism">BiologicalOrganism</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ChemicalPollutant">ChemicalPollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PhysicalPollutant">PhysicalPollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#hasPrescribedStandard">hasPrescribedStandard</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#measures">measures</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#carriesPollutant">carriesPollutant</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Pollution">
+        <h3>
+          Pollution<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Pollution" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollution</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Represnents the notion of Pollution which includes observation of pollutants at spatio-temporal points or the contributors to the pollution which may be spatio-temporal in nature.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#hasContributor">hasContributor</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#Contributor">Contributor</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasDirectContributor">hasDirectContributor</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#DirectContributor">DirectContributor</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasIndirectContributor">hasIndirectContributor</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#IndirectContributor">IndirectContributor</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasContributor">hasContributor</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#Contributor">Contributor</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasObservation">hasObservation</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#NonNaturalResourcePollution">NonNaturalResourcePollution</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NaturalResourcePollution">NaturalResourcePollution</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#hasObservation">hasObservation</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasContributor">hasContributor</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasObservationCollection">hasObservationCollection</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="PrescribedStandardForPollutant">
+        <h3>
+          PrescribedStandardForPollutant<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#PrescribedStandardForPollutant" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#PrescribedStandardForPollutant</code></td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="N0286cf17056a45809ef643894ad11ea3">N0286cf17056a45809ef643894ad11ea3</a> <span class="cardinality">only</span> <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasPrescribedStandard">hasPrescribedStandard</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="SocioEconomicFactor">
+        <h3>
+          SocioEconomicFactor<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SocioEconomicFactor" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#SocioEconomicFactor</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Represents demographics, policies, housing, crop production, etc.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#IndirectContributor">IndirectContributor</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#atTime">atTime</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TimeEntity">TimeEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#atPlace">atPlace</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#PlaceEntity">PlaceEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#atPlace">atPlace</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#PlaceEntity">PlaceEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="SoilPollution">
+        <h3>
+          SoilPollution<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SoilPollution" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#SoilPollution</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#NaturalResourcePollution">NaturalResourcePollution</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#hasCarrier">hasCarrier</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> (<a href="#AirStreamCarrier">AirStreamCarrier</a><sup class="sup-c" title="class">c</sup> or <a href="#WaterStreamCarrier">WaterStreamCarrier</a><sup class="sup-c" title="class">c</sup>)<br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="StartingPoint">
+        <h3>
+          StartingPoint<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#StartingPoint" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#StartingPoint</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TimeEntity">
+        <h3>
+          TimeEntity<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TimeEntity" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#TimeEntity</code></td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#atTime">atTime</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Trajectory">
+        <h3>
+          Trajectory<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Trajectory" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#Trajectory</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Represents a trajectory of points. Examples include drainage/sewage trajectory or air stream trajectory.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#hasPoint">hasPoint</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasSegment">hasSegment</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TrajectorySegment">TrajectorySegment</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#hasPoint">hasPoint</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasSegment">hasSegment</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasTrajectory">hasTrajectory</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TrajectoryPoint">
+        <h3>
+          TrajectoryPoint<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TrajectoryPoint" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A collection of spatio-temporal points represents a trajectory</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#carriesPollutant">carriesPollutant</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#atPlace">atPlace</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#PlaceEntity">PlaceEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="N47d4ee18b4f344549221db8ee6304e9a">N47d4ee18b4f344549221db8ee6304e9a</a> <span class="cardinality">some</span> <a href="#Trajectory">Trajectory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#atTime">atTime</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#TimeEntity">TimeEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#nextPoint">nextPoint</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#StartingPoint">StartingPoint</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#EndingPoint">EndingPoint</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#nextPoint">nextPoint</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasPoint">hasPoint</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#nextPoint">nextPoint</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#startsFrom">startsFrom</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#endsAt">endsAt</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TrajectorySegment">
+        <h3>
+          TrajectorySegment<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TrajectorySegment" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectorySegment</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A subset of spatio-temporal trajectory points represent a TrajectorySegment</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#startsFrom">startsFrom</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#endsAt">endsAt</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#endsAt">endsAt</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="N2032c641254c43ed95e31eecd8f72861">N2032c641254c43ed95e31eecd8f72861</a> <span class="cardinality">some</span> <a href="#Trajectory">Trajectory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#carriesPollutant">carriesPollutant</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#startsFrom">startsFrom</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#endsAt">endsAt</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#startsFrom">startsFrom</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasSegment">hasSegment</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="WaterPollution">
+        <h3>
+          WaterPollution<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#WaterPollution" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#WaterPollution</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#NaturalResourcePollution">NaturalResourcePollution</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#hasCarrier">hasCarrier</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#WaterStreamCarrier">WaterStreamCarrier</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="WaterStreamCarrier">
+        <h3>
+          WaterStreamCarrier<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#WaterStreamCarrier" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#WaterStreamCarrier</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Carrier">Carrier</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Weather">
+        <h3>
+          Weather<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Weather" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#Weather</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Represents environmental factors like temperature, Air pressure, water pressure, precipitation properties, etc.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#IndirectContributor">IndirectContributor</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#atTime">atTime</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TimeEntity">TimeEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#atPlace">atPlace</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#PlaceEntity">PlaceEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#atPlace">atPlace</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#PlaceEntity">PlaceEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="objectproperties">
+    <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#atPlace">atPlace</a></li>
+        <li><a href="#atTime">atTime</a></li>
+        <li><a href="#carriesPollutant">carriesPollutant</a></li>
+        <li><a href="#endsAt">endsAt</a></li>
+        <li><a href="#hasAttribute">hasAttribute</a></li>
+        <li><a href="#hasCarrier">hasCarrier</a></li>
+        <li><a href="#hasContributor">hasContributor</a></li>
+        <li><a href="#hasDirectContributor">hasDirectContributor</a></li>
+        <li><a href="#hasIndirectContributor">hasIndirectContributor</a></li>
+        <li><a href="#hasMember">hasMember</a></li>
+        <li><a href="#hasObservation">hasObservation</a></li>
+        <li><a href="#hasObservationCollection">hasObservationCollection</a></li>
+        <li><a href="#hasPoint">hasPoint</a></li>
+        <li><a href="#hasPrescribedStandard">hasPrescribedStandard</a></li>
+        <li><a href="#hasSegment">hasSegment</a></li>
+        <li><a href="#hasTrajectory">hasTrajectory</a></li>
+        <li><a href="#isMemberOf">isMemberOf</a></li>
+        <li><a href="#measures">measures</a></li>
+        <li><a href="#nearby">nearby</a></li>
+        <li><a href="#nextPoint">nextPoint</a></li>
+        <li><a href="#startsFrom">startsFrom</a></li>
+    </ul>
+    <div class="entity property" id="atPlace">
+        <h3>atPlace<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#atPlace" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#atPlace</code></td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#PlaceEntity">https://kracr.iiitd.edu.in/ontology/PollutionODP#PlaceEntity</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="atTime">
+        <h3>atTime<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#atTime" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#atTime</code></td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#TimeEntity">https://kracr.iiitd.edu.in/ontology/PollutionODP#TimeEntity</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="carriesPollutant">
+        <h3>carriesPollutant<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#carriesPollutant" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#carriesPollutant</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="#hasAttribute">hasAttribute</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    (<a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup> or <a href="#TrajectorySegment">TrajectorySegment</a><sup class="sup-c" title="class">c</sup>)
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollutant">https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollutant</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="endsAt">
+        <h3>endsAt<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#endsAt" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#endsAt</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#TrajectorySegment">TrajectorySegment</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint">https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasAttribute">
+        <h3>hasAttribute<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasAttribute" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#hasAttribute</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    (<a href="#Trajectory">Trajectory</a><sup class="sup-c" title="class">c</sup> or <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup> or <a href="#TrajectorySegment">TrajectorySegment</a><sup class="sup-c" title="class">c</sup>)
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasCarrier">
+        <h3>hasCarrier<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasCarrier" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#hasCarrier</code></td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#Carrier">https://kracr.iiitd.edu.in/ontology/PollutionODP#Carrier</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasContributor">
+        <h3>hasContributor<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasContributor" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#hasContributor</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Pollution">Pollution</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#Contributor">https://kracr.iiitd.edu.in/ontology/PollutionODP#Contributor</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasDirectContributor">
+        <h3>hasDirectContributor<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasDirectContributor" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#hasDirectContributor</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="#hasContributor">hasContributor</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#DirectContributor">https://kracr.iiitd.edu.in/ontology/PollutionODP#DirectContributor</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasIndirectContributor">
+        <h3>hasIndirectContributor<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasIndirectContributor" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#hasIndirectContributor</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="#hasContributor">hasContributor</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#IndirectContributor">https://kracr.iiitd.edu.in/ontology/PollutionODP#IndirectContributor</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasMember">
+        <h3>hasMember<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasMember" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#hasMember</code></td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#isMemberOf">isMemberOf</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#ObservationCollection">ObservationCollection</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#Observation">https://kracr.iiitd.edu.in/ontology/PollutionODP#Observation</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasObservation">
+        <h3>hasObservation<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasObservation" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#hasObservation</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Pollution">Pollution</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#Observation">https://kracr.iiitd.edu.in/ontology/PollutionODP#Observation</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasObservationCollection">
+        <h3>hasObservationCollection<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasObservationCollection" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#hasObservationCollection</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Pollution">Pollution</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#ObservationCollection">https://kracr.iiitd.edu.in/ontology/PollutionODP#ObservationCollection</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasPoint">
+        <h3>hasPoint<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasPoint" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#hasPoint</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Trajectory">Trajectory</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint">https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasPrescribedStandard">
+        <h3>hasPrescribedStandard<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasPrescribedStandard" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#hasPrescribedStandard</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#PrescribedStandardForPollutant">https://kracr.iiitd.edu.in/ontology/PollutionODP#PrescribedStandardForPollutant</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasSegment">
+        <h3>hasSegment<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasSegment" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#hasSegment</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Trajectory">Trajectory</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectorySegment">https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectorySegment</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasTrajectory">
+        <h3>hasTrajectory<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasTrajectory" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#hasTrajectory</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Carrier">Carrier</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#Trajectory">https://kracr.iiitd.edu.in/ontology/PollutionODP#Trajectory</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isMemberOf">
+        <h3>isMemberOf<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isMemberOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#isMemberOf</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#ObservationCollection">https://kracr.iiitd.edu.in/ontology/PollutionODP#ObservationCollection</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="measures">
+        <h3>measures<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#measures" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#measures</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollutant">https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollutant</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="nearby">
+        <h3>nearby<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#nearby" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#nearby</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#PlaceEntity">PlaceEntity</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="nextPoint">
+        <h3>nextPoint<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#nextPoint" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#nextPoint</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint">https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="startsFrom">
+        <h3>startsFrom<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#startsFrom" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://kracr.iiitd.edu.in/ontology/PollutionODP#startsFrom</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#TrajectorySegment">TrajectorySegment</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint">https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="annotationproperties">
+    <h2>Annotation Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#created">created</a></li>
+        <li><a href="#creator">creator</a></li>
+        <li><a href="#license">license</a></li>
+        <li><a href="#example">example</a></li>
+    </ul>
+    <div class="entity property" id="created">
+        <h3>created<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#created" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/dc/terms/created</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="creator">
+        <h3>creator<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#creator" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/dc/terms/creator</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="license">
+        <h3>license<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#license" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/dc/terms/license</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="example">
+        <h3>example<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#example" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.w3.org/2004/02/skos/core#example</code></td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+  
+  <section id="namespaces">
+    <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <dl>
+        <dt>default (:)</dt>
+        <dd><code>https://kracr.iiitd.edu.in/ontology/PollutionODP</code></dd>
+        <dt>owl</dt>
+        <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
+        <dt>prov</dt>
+        <dd><code>http://www.w3.org/ns/prov#</code></dd>
+        <dt>rdf</dt>
+        <dd><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></dd>
+        <dt>rdfs</dt>
+        <dd><code>http://www.w3.org/2000/01/rdf-schema#</code></dd>
+        <dt>sdo</dt>
+        <dd><code>https://schema.org/</code></dd>
+        <dt>skos</dt>
+        <dd><code>http://www.w3.org/2004/02/skos/core#</code></dd>
+        <dt>terms</dt>
+        <dd><code>http://purl.org/dc/terms/</code></dd>
+        <dt>xsd</dt>
+        <dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
+    </dl>
+</section>
+  <section id="legend">
+      <h2>Legend</h2>
+      <table class="entity">
+          <tr><td><sup class="sup-c" title="Classes">c</sup></td><td>Classes</td></tr>
+          <tr><td><sup class="sup-op" title="Object Properties">op</sup></td><td>Object Properties</td></tr>
+          <tr><td><sup class="sup-fp" title="Functional Properties">fp</sup></td><td>Functional Properties</td></tr>
+          <tr><td><sup class="sup-dp" title="Data Properties">dp</sup></td><td>Data Properties</td></tr>
+          <tr><td><sup class="sup-ap" title="Annotation Properties">dp</sup></td><td>Annotation Properties</td></tr>
+          <tr><td><sup class="sup-p" title="Properties">p</sup></td><td>Properties</td></tr>
+          <tr><td><sup class="sup-ni" title="Named Individuals">ni</sup></td><td>Named Individuals</td></tr>
+      </table>
+  </section>
+</body>
+</html>
