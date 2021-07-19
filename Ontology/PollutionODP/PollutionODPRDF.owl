@@ -7,9 +7,11 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:PollutionODP="https://kracr.iiitd.edu.in/ontology/PollutionODP#">
     <owl:Ontology rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP">
-        <terms:created>2020-07-09</terms:created>
+        <terms:contributor>Saad Ahmad, Sudhir Attri, Dr. Raghava Mutharaju</terms:contributor>
+        <terms:created>2021-07-13</terms:created>
         <terms:license>https://www.apache.org/licenses/LICENSE-2.0</terms:license>
         <rdfs:comment>This ontology is an attempt at a ODP designed to model Pollution. Pollution can be defined as &quot;Disequilibrium condition from equilibrium condition in any system&quot;.
 
@@ -38,6 +40,12 @@ Competency Questions
     
 
 
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
@@ -59,6 +67,12 @@ Competency Questions
     <!-- http://www.w3.org/2004/02/skos/core#example -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#Authors -->
+
+    <owl:AnnotationProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#Authors"/>
     
 
 
@@ -151,26 +165,6 @@ Competency Questions
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#hasDirectContributor -->
-
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasDirectContributor">
-        <rdfs:subPropertyOf rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasContributor"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#DirectContributor"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#hasIndirectContributor -->
-
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasIndirectContributor">
-        <rdfs:subPropertyOf rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasContributor"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#IndirectContributor"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#hasMember -->
 
     <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasMember">
@@ -193,6 +187,7 @@ Competency Questions
     <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#hasObservationCollection -->
 
     <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasObservationCollection">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollution"/>
         <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#ObservationCollection"/>
     </owl:ObjectProperty>
@@ -366,6 +361,10 @@ Competency Questions
                 <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollution"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#DirectContributor"/>
+            <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#IndirectContributor"/>
+        </owl:disjointUnionOf>
     </owl:Class>
     
 
@@ -533,18 +532,6 @@ Competency Questions
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasContributor"/>
                 <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Contributor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasDirectContributor"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#DirectContributor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasIndirectContributor"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#IndirectContributor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
