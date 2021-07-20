@@ -13,16 +13,16 @@
     <owl:Ontology rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP">
         <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
         <terms:contributor>Saad Ahmad, Sudhir Attri, Dr. Raghava Mutharaju; (https://kracr.iiitd.edu.in/)</terms:contributor>
-        <terms:created>2021-07-13</terms:created>
+        <terms:created>2021-07-15</terms:created>
         <terms:license>https://www.apache.org/licenses/LICENSE-2.0</terms:license>
-        <cpannotationschema:coversRequirements>1.  What are the contributors in pollution? 
-2.  What is the time and place at which pollutant concentration was observed? 
+        <cpannotationschema:coversRequirements>1.  What are the contributors responsible for pollution? 
+2.  What is the pollutant concentration at a particular time and place? 
 3.  What is the trajectory based contributor to the pollution? 
 4.  What  are the attributes associated with a trajectory?  
 5.  What are the biological or chemical pollutants in the pollution?</cpannotationschema:coversRequirements>
         <cpannotationschema:hasComponent>http://ontologydesignpatterns.org/wiki/Submissions:Observation
 http://ontologydesignpatterns.org/wiki/Submissions:Trajectory
-http://ontologydesignpatterns.org/wiki/Submissions:Collection</cpannotationschema:hasComponent>
+http://ontologydesignpatterns.org/wiki/Submissions:Stub_Metapattern</cpannotationschema:hasComponent>
         <cpannotationschema:hasConsequences>This ODP is a first for modelling pollution and is an improvement over some of the ontologies that focus on very specific aspects of pollution. It allows to model pollution sources as well as monitor the pollution at spatio-temporal points.</cpannotationschema:hasConsequences>
         <cpannotationschema:hasIntent>The Pollution ontology design pattern (ODP) intends to model the pollution, the pollutants and their observations at various spatio-temporal points. It also captures the information about the various direct and indirect sources of pollution. The Pollution ODP makes use of Trajectory, Observation and Collection ODPs.</cpannotationschema:hasIntent>
         <cpannotationschema:scenarios>Which pollutant sources contribute to a wind stream which flows into a place?
@@ -32,8 +32,8 @@ What locations have an AQI beyond a certain threshold in a certain region in a g
 
 Competency Questions
 
-1.  What are the contributors in pollution? 
-2.  What is the time and place at which pollutant concentration was observed? 
+1.  What are the contributors responsible for pollution? 
+2.  What is the pollutant concentration at a particular time and place? 
 3.  What is the trajectory based contributor to the pollution? 
 4.  What  are the attributes associated with a trajectory?  
 5.  What are the biological or chemical pollutants in the pollution?</rdfs:comment>
