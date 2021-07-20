@@ -159,6 +159,7 @@ Competency Questions
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
     </owl:ObjectProperty>
     
 
@@ -180,31 +181,12 @@ Competency Questions
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#hasMember -->
-
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasMember">
-        <owl:inverseOf rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#isMemberOf"/>
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#ObservationCollection"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Observation"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#hasObservation -->
 
     <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasObservation">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollution"/>
+        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollutant"/>
         <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Observation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#hasObservationCollection -->
-
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasObservationCollection">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollution"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#ObservationCollection"/>
+        <cpannotationschema:reengineeredFrom>Observation ODP - http://ontologydesignpatterns.org/wiki/Submissions:Observation</cpannotationschema:reengineeredFrom>
     </owl:ObjectProperty>
     
 
@@ -214,6 +196,7 @@ Competency Questions
     <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasPoint">
         <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Trajectory"/>
         <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint"/>
+        <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
     </owl:ObjectProperty>
     
 
@@ -233,6 +216,7 @@ Competency Questions
     <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasSegment">
         <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Trajectory"/>
         <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectorySegment"/>
+        <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
     </owl:ObjectProperty>
     
 
@@ -242,24 +226,7 @@ Competency Questions
     <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasTrajectory">
         <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Carrier"/>
         <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Trajectory"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#isMemberOf -->
-
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#isMemberOf">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Observation"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#ObservationCollection"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#measures -->
-
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#measures">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Observation"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollutant"/>
+        <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
     </owl:ObjectProperty>
     
 
@@ -278,6 +245,7 @@ Competency Questions
     <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#nextPoint">
         <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint"/>
         <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint"/>
+        <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
     </owl:ObjectProperty>
     
 
@@ -288,6 +256,7 @@ Competency Questions
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectorySegment"/>
         <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint"/>
+        <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
     </owl:ObjectProperty>
     
 
@@ -475,12 +444,6 @@ Competency Questions
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#measures"/>
-                <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollutant"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#atPlace"/>
                 <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#PlaceEntity"/>
             </owl:Restriction>
@@ -491,21 +454,8 @@ Competency Questions
                 <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#TimeEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#measures"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollutant"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Observation represents a spatio-temporal observation of pollutants for a particular pollution.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#ObservationCollection -->
-
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#ObservationCollection">
-        <rdfs:comment>Collection of observations representing a pollution</rdfs:comment>
+        <cpannotationschema:reengineeredFrom>Observation ODP - http://ontologydesignpatterns.org/wiki/Submissions:Observation</cpannotationschema:reengineeredFrom>
+        <rdfs:comment>Observation represents a spatio-temporal observation of pollutants under time and place parameters.</rdfs:comment>
     </owl:Class>
     
 
@@ -529,6 +479,12 @@ Competency Questions
 
     <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollutant">
         <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#DirectContributor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasObservation"/>
+                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Observation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Represents various pollutants which contaminate the environment and directly represnt/contribute to pollution. Additionally a carrier&apos;s trajecectory point may pick up pollutants from a spatio-temporal point, in which case, it is represented by the sub-property carriesPollutant.</rdfs:comment>
     </owl:Class>
     
@@ -549,12 +505,6 @@ Competency Questions
                 <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Contributor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasObservation"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Observation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Represnents the notion of Pollution which includes observation of pollutants at spatio-temporal points or the contributors to the pollution which may be spatio-temporal in nature.</rdfs:comment>
     </owl:Class>
     
@@ -573,6 +523,7 @@ Competency Questions
                 <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollutant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <cpannotationschema:reengineeredFrom>Stub Metapattern - http://ontologydesignpatterns.org/wiki/Submissions:Stub_Metapattern</cpannotationschema:reengineeredFrom>
     </owl:Class>
     
 
@@ -673,6 +624,7 @@ Competency Questions
                 <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectorySegment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
         <rdfs:comment>Represents a trajectory of points. Examples include drainage/sewage trajectory or air stream trajectory.</rdfs:comment>
     </owl:Class>
     
@@ -715,6 +667,7 @@ Competency Questions
                 <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
         <rdfs:comment>A collection of spatio-temporal points represents a trajectory</rdfs:comment>
     </owl:Class>
     
@@ -763,6 +716,7 @@ Competency Questions
                 <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
         <rdfs:comment>A subset of spatio-temporal trajectory points represent a TrajectorySegment</rdfs:comment>
     </owl:Class>
     
@@ -854,7 +808,6 @@ Competency Questions
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#Contributor"/>
             <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#Observation"/>
-            <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#ObservationCollection"/>
             <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#PlaceEntity"/>
             <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollution"/>
             <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#PrescribedStandardForPollutant"/>
