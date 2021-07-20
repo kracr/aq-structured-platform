@@ -123,7 +123,7 @@ Competency Questions
     <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#carriesPollutant -->
 
     <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#carriesPollutant">
-        <rdfs:subPropertyOf rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasAttribute"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -133,6 +133,7 @@ Competency Questions
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#Pollutant"/>
+        <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
     </owl:ObjectProperty>
     
 
@@ -143,23 +144,6 @@ Competency Questions
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectorySegment"/>
         <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://kracr.iiitd.edu.in/ontology/PollutionODP#hasAttribute -->
-
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#hasAttribute">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#Trajectory"/>
-                    <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectoryPoint"/>
-                    <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/PollutionODP#TrajectorySegment"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
     </owl:ObjectProperty>
     
 
