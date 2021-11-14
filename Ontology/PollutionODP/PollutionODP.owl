@@ -1,0 +1,776 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://kracr.iiitd.edu.in/ontology/PollutionODP"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://kracr.iiitd.edu.in/ontology/PollutionODP">
+    <Prefix name="" IRI="https://kracr.iiitd.edu.in/ontology/PollutionODP"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="PollutionODP" IRI="https://kracr.iiitd.edu.in/ontology/PollutionODP#"/>
+    <Prefix name="cpannotationschema" IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"/>
+    <Import>http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal>Saad Ahmad, Sudhir Attri, Raghava Mutharaju; (https://kracr.iiitd.edu.in/)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal>2021-07-15</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+        <Literal>https://www.apache.org/licenses/LICENSE-2.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:coversRequirements"/>
+        <Literal>1.  What are the contributors responsible for pollution?  2.  What is the pollutant concentration at a particular time and place?  3.  What are the carriers that contributed to the pollution?  4.  What  are the attributes associated with a trajectory?  5.  What are the biological or chemical pollutants in the pollution?</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Observation
+http://ontologydesignpatterns.org/wiki/Submissions:Trajectory
+http://ontologydesignpatterns.org/wiki/Submissions:Stub_Metapattern</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:hasConsequences"/>
+        <Literal>This ODP is a first for modelling pollution and is an improvement over some of the ontologies that focus on very specific aspects of pollution. It allows to model pollution sources as well as monitor the pollution at spatio-temporal points.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:hasIntent"/>
+        <Literal>The Pollution ontology design pattern (ODP) intends to model the pollution, the pollutants and their observations at various spatio-temporal points. It also captures the information about the various direct and indirect sources of pollution. The Pollution ODP makes use of Trajectory, Observation and Stub-Metapattern ODPs.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:scenarios"/>
+        <Literal>1. Which pollutant sources contribute to a wind stream which flows into a place? 2. What was the precipitation level on 23rd April at a particular location? 3. What locations have an AQI beyond a certain threshold in a certain region in a given month?</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This ontology is an attempt at a ODP designed to model Pollution. Pollution can be defined as &quot;Disequilibrium condition from equilibrium condition in any system&quot;.
+
+Competency Questions
+
+1.  What contributors are responsible for pollution?
+2.  What is the pollutant concentration at a particular time and place?
+3.  What are the carriers that contributed to the pollution?
+4.  What are the pollutants carried by a carrier?
+5.  What are the prescribed standards for a particular pollutant?</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>An Ontology Design Pattern for Modelling Pollution</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal>https://kracr.iiitd.edu.in/ontology/AirQualityOntology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#Authors"/>
+        <Literal>Saad Ahmad, Sudhir Attri, Raghava Mutharaju</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Carrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contributor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DirectContributor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EndingPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndirectContributor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalResourcePollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonNaturalResourcePollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pollutant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrescribedStandardForPollutant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StartingPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trajectory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrajectoryPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrajectorySegment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#atPlace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#atTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#carriesPollutant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endsAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContributor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasObservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrescribedStandard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSegment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTrajectory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nextPoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#startsFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrescribedStandard"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#Authors"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#EndingPoint"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TrajectoryPoint"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectInverseOf>
+                        <ObjectProperty IRI="#startsFrom"/>
+                    </ObjectInverseOf>
+                    <Class IRI="#TrajectorySegment"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StartingPoint"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TrajectoryPoint"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectInverseOf>
+                        <ObjectProperty IRI="#endsAt"/>
+                    </ObjectInverseOf>
+                    <Class IRI="#TrajectorySegment"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Carrier"/>
+        <Class IRI="#IndirectContributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carrier"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTrajectory"/>
+            <Class IRI="#Trajectory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carrier"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#carriesPollutant"/>
+            <Class IRI="#Pollutant"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contributor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasContributor"/>
+            </ObjectInverseOf>
+            <Class IRI="#Pollution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectContributor"/>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EndingPoint"/>
+        <Class IRI="#TrajectoryPoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndirectContributor"/>
+        <Class IRI="#Contributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalResourcePollution"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonNaturalResourcePollution"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#atPlace"/>
+            <Class IRI="#PlaceEntity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#atTime"/>
+            <Class IRI="#TimeEntity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#atPlace"/>
+            <Class IRI="#PlaceEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#atTime"/>
+            <Class IRI="#TimeEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pollutant"/>
+        <Class IRI="#DirectContributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pollutant"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasObservation"/>
+            <Class IRI="#Observation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pollutant"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPrescribedStandard"/>
+            <Class IRI="#PrescribedStandardForPollutant"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pollution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasContributor"/>
+            <Class IRI="#Contributor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pollution"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasContributor"/>
+            <Class IRI="#Contributor"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrescribedStandardForPollutant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasObservation"/>
+            <Class IRI="#Observation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrescribedStandardForPollutant"/>
+        <ObjectAllValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasPrescribedStandard"/>
+            </ObjectInverseOf>
+            <Class IRI="#Pollutant"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StartingPoint"/>
+        <Class IRI="#TrajectoryPoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trajectory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSegment"/>
+            <Class IRI="#TrajectorySegment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trajectory"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPoint"/>
+            <Class IRI="#TrajectoryPoint"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trajectory"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSegment"/>
+            <Class IRI="#TrajectorySegment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrajectoryPoint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#atPlace"/>
+            <Class IRI="#PlaceEntity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrajectoryPoint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#atTime"/>
+            <Class IRI="#TimeEntity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrajectoryPoint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasPoint"/>
+            </ObjectInverseOf>
+            <Class IRI="#Trajectory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrajectoryPoint"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#nextPoint"/>
+            <Class IRI="#TrajectoryPoint"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrajectorySegment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#endsAt"/>
+            <Class IRI="#TrajectoryPoint"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrajectorySegment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#startsFrom"/>
+            <Class IRI="#TrajectoryPoint"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrajectorySegment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasSegment"/>
+            </ObjectInverseOf>
+            <Class IRI="#Trajectory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrajectorySegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#endsAt"/>
+            <Class IRI="#TrajectoryPoint"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrajectorySegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#startsFrom"/>
+            <Class IRI="#TrajectoryPoint"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#endsAt"/>
+            <Class IRI="#TrajectoryPoint"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#TrajectorySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPoint"/>
+            <Class IRI="#TrajectoryPoint"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Trajectory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSegment"/>
+            <Class IRI="#TrajectorySegment"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Trajectory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#nextPoint"/>
+            <Class IRI="#TrajectoryPoint"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#TrajectoryPoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#startsFrom"/>
+            <Class IRI="#TrajectoryPoint"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#TrajectorySegment"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Contributor"/>
+        <Class IRI="#Observation"/>
+        <Class IRI="#PlaceEntity"/>
+        <Class IRI="#Pollution"/>
+        <Class IRI="#PrescribedStandardForPollutant"/>
+        <Class IRI="#TimeEntity"/>
+        <Class IRI="#Trajectory"/>
+        <Class IRI="#TrajectoryPoint"/>
+        <Class IRI="#TrajectorySegment"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EndingPoint"/>
+        <Class IRI="#StartingPoint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NaturalResourcePollution"/>
+        <Class IRI="#NonNaturalResourcePollution"/>
+    </DisjointClasses>
+    <DisjointUnion>
+        <Class IRI="#Contributor"/>
+        <Class IRI="#DirectContributor"/>
+        <Class IRI="#IndirectContributor"/>
+    </DisjointUnion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#carriesPollutant"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#atPlace"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#atTime"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#endsAt"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#startsFrom"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#carriesPollutant"/>
+        <Class IRI="#Carrier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#endsAt"/>
+        <Class IRI="#TrajectorySegment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasContributor"/>
+        <Class IRI="#Pollution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasObservation"/>
+        <ObjectUnionOf>
+            <Class IRI="#Pollutant"/>
+            <Class IRI="#PrescribedStandardForPollutant"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPoint"/>
+        <Class IRI="#Trajectory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrescribedStandard"/>
+        <Class IRI="#Pollutant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrescribedStandard"/>
+        <Class IRI="#PrescribedStandardForPollutant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSegment"/>
+        <Class IRI="#Trajectory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTrajectory"/>
+        <Class IRI="#Carrier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nextPoint"/>
+        <Class IRI="#TrajectoryPoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#startsFrom"/>
+        <Class IRI="#TrajectorySegment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#atPlace"/>
+        <Class IRI="#PlaceEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#atTime"/>
+        <Class IRI="#TimeEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#carriesPollutant"/>
+        <Class IRI="#Pollutant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#endsAt"/>
+        <Class IRI="#TrajectoryPoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasContributor"/>
+        <Class IRI="#Contributor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasObservation"/>
+        <Class IRI="#Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPoint"/>
+        <Class IRI="#TrajectoryPoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrescribedStandard"/>
+        <Class IRI="#PrescribedStandardForPollutant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSegment"/>
+        <Class IRI="#TrajectorySegment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTrajectory"/>
+        <Class IRI="#Trajectory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#nextPoint"/>
+        <Class IRI="#TrajectoryPoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#startsFrom"/>
+        <Class IRI="#TrajectoryPoint"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasSegment"/>
+            <ObjectProperty IRI="#endsAt"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#hasPoint"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasSegment"/>
+            <ObjectProperty IRI="#startsFrom"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#hasPoint"/>
+    </SubObjectPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrescribedStandard"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Carrier</IRI>
+        <Literal>Represents streams which carry pollutants to a particular place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DirectContributor</IRI>
+        <Literal>Represents concepts which directly represent pollution. For example the concentration of pollutants at a particular spatio-temporal point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IndirectContributor</IRI>
+        <Literal>Represents concepts which indirectly contribute to pollution of a place. These do not directly represent pollution but have properties which can affect the pollution, for example by changing the concentration of pollutants at a spatio-temporal point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NaturalResourcePollution</IRI>
+        <Literal>Represents pollution on natural resources. Which means the pollution that affects natural resources like air, water, land, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NonNaturalResourcePollution</IRI>
+        <Literal>Represents pollution which does not represent natural resource. Examples include, sound, light, space debris, radioactive pollution, thermal pollution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#Observation</IRI>
+        <Literal>Observation ODP - http://ontologydesignpatterns.org/wiki/Submissions:Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Observation</IRI>
+        <Literal>Observation represents a spatio-temporal observation of pollutants under time and place parameters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pollutant</IRI>
+        <Literal>Represents various pollutants which contaminate the environment and directly represnt/contribute to pollution. Additionally a carrier&apos;s trajecectory point may pick up pollutants from a spatio-temporal point, in which case, it is represented by the sub-property carriesPollutant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pollution</IRI>
+        <Literal>Represnents the notion of Pollution which includes observation of pollutants at spatio-temporal points or the contributors to the pollution which may be spatio-temporal in nature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#PrescribedStandardForPollutant</IRI>
+        <Literal>Stub Metapattern - http://ontologydesignpatterns.org/wiki/Submissions:Stub_Metapattern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#Trajectory</IRI>
+        <Literal>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Trajectory</IRI>
+        <Literal>Represents a trajectory of points. Examples include drainage/sewage trajectory or air stream trajectory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#TrajectoryPoint</IRI>
+        <Literal>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TrajectoryPoint</IRI>
+        <Literal>A collection of spatio-temporal points represents a trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#TrajectorySegment</IRI>
+        <Literal>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TrajectorySegment</IRI>
+        <Literal>A subset of spatio-temporal trajectory points represent a TrajectorySegment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#carriesPollutant</IRI>
+        <Literal>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#endsAt</IRI>
+        <Literal>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#endsAt</IRI>
+        <Literal>Connects a segment to the point it ends at.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#hasObservation</IRI>
+        <Literal>Observation ODP - http://ontologydesignpatterns.org/wiki/Submissions:Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#hasPoint</IRI>
+        <Literal>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPoint</IRI>
+        <Literal>Relating the trajectory to each of its points.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#hasSegment</IRI>
+        <Literal>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSegment</IRI>
+        <Literal>Relating the trajectory to each of its segments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#hasTrajectory</IRI>
+        <Literal>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTrajectory</IRI>
+        <Literal>Anything that has a trajectory can use this property to connect it to the trajectory instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#nextPoint</IRI>
+        <Literal>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#nextPoint</IRI>
+        <Literal>Relates one point to the immediately following point in the sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:reengineeredFrom"/>
+        <IRI>#startsFrom</IRI>
+        <Literal>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#startsFrom</IRI>
+        <Literal>Connects a segment to the point it starts from.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
