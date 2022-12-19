@@ -2,7 +2,13 @@
 
 ## SAQI: An Ontology based Knowledge GraphPlatform for Social Air Quality Index
 
-> Directory Structure of the repo
+# Links to the deployed version of ontology, docs and app.
+
+1. SAQI app - [kracr.iiitd.edu.in/saqi-app/](https://kracr.iiitd.edu.in/saqi-app/)
+2. Sparql endpoint for ontology populated with data collected during the project - [kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query](https://kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query)
+3. PyLODE documentation for the ontology - [kracr.iiitd.edu.in/ontology/saqi](https://kracr.iiitd.edu.in/ontology/saqi)
+
+> **Directory Structure of the repo**
 
     .
     ├── dataset                 # Local sensors, CPCB data and anonymized questionnaire responses
@@ -36,5 +42,47 @@
 
 - `./deploy.sh`
 
+## Routing changes to nginx
+At `/etc/nginx/sites-available/kracr.iiitd.edu.in`
 
+```
+    location /sparql/ {
+        proxy_pass         http://192.168.1.166:3030/;
+        proxy_redirect     off;
+        proxy_set_header   Host $host;
+        proxy_set_header   X-Real-IP $remote_addr;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Host $server_name;
+    }
+
+    location ~ /aq-store(.*) {
+        proxy_pass   http://192.168.1.166:3030/aq-store$1;
+        proxy_redirect     off;
+        proxy_set_header   Host $host;
+        proxy_set_header   X-Real-IP $remote_addr;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Host $server_name;
+    }
+
+    location ~ /ontology/saqi/?(.*)$ {
+        try_files $uri $uri/ /saqi.html;
+    }
+
+    location ~ /saqi-app/?(.*)$ {
+        include /etc/nginx/mime.types;
+        try_files $uri $uri/ /saqi-app/index.html;
+    }
+```
+At `/etc/nginx/nginx.conf`
+```
+http {
+    . . .
+    include /etc/nginx/mime.types;
+    client_max_body_size 100M;
+    . . .
+
+}
+```
+> After Editing, reload nginx config with - `sudo systemctl restart nginx`
 ### License information
+Apache 2.0 License

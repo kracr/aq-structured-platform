@@ -13,5 +13,3 @@ sudo cp /var/www/kracr.iiitd.edu.in/saqi-app/saqi.png /var/www/kracr.iiitd.edu.i
 echo "Starting RDF server"
 cd $cwd
 pm2 start rdf-store/apache-jena-fuseki-4.6.1/ecosystem.config.js
-
-echo "Updating pyLODE documentation"
