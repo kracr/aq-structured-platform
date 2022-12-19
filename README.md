@@ -1,8 +1,6 @@
-# aq-structured-platform
+# SAQI: An Ontology based Knowledge GraphPlatform for Social Air Quality Index
 
-## SAQI: An Ontology based Knowledge GraphPlatform for Social Air Quality Index
-
-# Links to the deployed version of ontology, docs and app.
+## Links to the deployed version of ontology, docs and app.
 
 1. SAQI app - [kracr.iiitd.edu.in/saqi-app/](https://kracr.iiitd.edu.in/saqi-app/)
 2. Sparql endpoint for ontology populated with data collected during the project - [kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query](https://kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query)
