@@ -1,0 +1,2439 @@
+@prefix : <http://mapping.example.com/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix saqi: <https://kracr.iiitd.edu.in/ontology/saqi#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+saqi:aq_Perception_1 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_10 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:workplaceUpdatesAboutPollution "Maybe" .
+
+saqi:aq_Perception_100 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_101 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_102 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_11 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "Yes, the issue was highlighted and people voted on it";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_12 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_13 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has improved";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_14 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air qaulity worsend";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_15 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air qaulity worsend";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_16 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air qaulity worsend";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_17 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air qaulity worsend";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_18 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air qaulity worsend";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_19 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air qaulity worsend";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_2 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_20 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air qaulity worsend";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "More polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_21 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_22 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_23 a saqi:AirPollutionPerception .
+
+saqi:aq_Perception_24 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Don’t know";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_25 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has improved";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_26 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_27 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has improved";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_28 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has improved";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_29 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_3 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_30 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_31 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has improved";
+  saqi:delhiGovtWorkPerception "There are adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Good";
+  saqi:peopleVotedOnAirPollutionIssues "Yes, the issue was highlighted and people voted on it";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_32 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_33 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_34 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_35 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_36 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has improved";
+  saqi:delhiGovtWorkPerception "There are adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Very Good";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_37 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has improved";
+  saqi:delhiGovtWorkPerception "There are adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Very Good";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_38 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Moderate Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_39 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Moderate Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_4 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Good";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_40 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Moderate Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_41 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_42 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_43 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_44 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_45 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_46 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No" .
+
+saqi:aq_Perception_47 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_48 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_49 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_5 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_50 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_51 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_52 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_53 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_54 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_55 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "Yes, the issue was highlighted and people voted on it";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_56 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "Yes, the issue was highlighted and people voted on it";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_57 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Good";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_58 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_59 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_6 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Maybe" .
+
+saqi:aq_Perception_60 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_61 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Don’t know";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_62 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No Pollution";
+  saqi:delhiGovtWorkPerception "Odd-Even Scheme, Red Light On, Gaadi Off, Transplantation policy, Anti-dust campaign, Smog towers, Electric Vehicle Policy";
+  saqi:howIsYourLocalityComparedToOtherAreas "No";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No, there was no such conversation around";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_63 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_64 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "Yes, the issue was highlighted and people voted on it";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_65 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "Yes, the issue was highlighted and people voted on it";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_66 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_67 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Good";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_68 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_69 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_7 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_70 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_71 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "I don't know ";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "I don't know";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_72 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_73 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "Don't know";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_74 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "Yes, the issue was highlighted and people voted on it";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_75 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_76 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Very Good";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_77 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Very Good";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_78 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Very Good";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_79 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Very Good";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_8 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_80 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "Interested, but more can be done";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Very Good";
+  saqi:peopleVotedOnAirPollutionIssues "Yes, the issue was highlighted and people didn't voted on it";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_81 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "No change";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Good";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_82 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_83 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "More Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_84 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_85 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No" .
+
+saqi:aq_Perception_86 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No" .
+
+saqi:aq_Perception_87 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_88 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No" .
+
+saqi:aq_Perception_89 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No" .
+
+saqi:aq_Perception_9 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has improved";
+  saqi:delhiGovtWorkPerception "There are adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Don't Know";
+  saqi:localAirQualityRating "Not Sure";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_90 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Very Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No" .
+
+saqi:aq_Perception_91 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_92 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_93 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "Yes, the issue was highlighted and people didn't voted on it";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "Yes";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_94 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_95 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "Yes" .
+
+saqi:aq_Perception_96 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_97 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Less Polluted";
+  saqi:localAirQualityRating "Bad";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_98 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aq_Perception_99 a saqi:AirPollutionPerception;
+  saqi:airQualityChangeIn3Years "Air quality has worsened";
+  saqi:delhiGovtWorkPerception "There are no adequate measures taken";
+  saqi:howIsYourLocalityComparedToOtherAreas "Equally Polluted";
+  saqi:localAirQualityRating "Fair";
+  saqi:peopleVotedOnAirPollutionIssues "No, there was no such conversation around";
+  saqi:shouldPollutionIssuesBeRaisedInMCDElections "No";
+  saqi:workplaceUpdatesAboutPollution "No" .
+
+saqi:aqi_literacy_1 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_10 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_100 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_101 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_102 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_11 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Daily";
+  saqi:hasAQIColorLiteracy "poor";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_12 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_13 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Daily";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_14 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rare";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_15 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rare";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_16 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rare";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_17 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rare";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_18 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rare";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_19 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rare";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "No";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_2 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Daily";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_20 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rare";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_21 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_22 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_23 a saqi:AirPollutionLiteracy .
+
+saqi:aqi_literacy_24 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_25 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_26 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_27 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Daily";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_28 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_29 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_3 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Weekly";
+  saqi:hasAQIColorLiteracy "poor";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_30 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_31 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics" .
+
+saqi:aqi_literacy_32 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_33 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_34 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_35 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_36 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_37 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_38 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_39 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_4 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_40 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_41 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_42 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_43 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_44 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_45 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQIColorLiteracy "Poor";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and  understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_46 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_47 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_48 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_49 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_5 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_50 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_51 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "poor";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and  understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_52 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and  understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_53 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Daily";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_54 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Weekly";
+  saqi:hasAQIColorLiteracy "poor";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_55 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_56 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Weekly";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_57 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQIColorLiteracy "poor";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_58 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_59 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Unhealthy ";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_6 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQIColorLiteracy "poor";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_60 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Daily";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_61 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Weekly";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_62 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Wear a mask";
+  saqi:hasAQIColorLiteracy "No";
+  saqi:hasAQILiteracy "Seen, and understand the graphics";
+  saqi:hasAirPollutionGraphicLiteracy "Yes" .
+
+saqi:aqi_literacy_63 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Daily";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_64 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_65 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_66 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQIColorLiteracy "poor";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_67 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_68 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQIColorLiteracy "poor";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_69 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Everyday";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_7 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_70 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_71 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_72 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_73 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_74 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_75 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_76 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Daily";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_77 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_78 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_79 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_8 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_80 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_81 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Weekly";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_82 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_83 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Daily";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_84 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_85 a saqi:AirPollutionLiteracy;
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_86 a saqi:AirPollutionLiteracy;
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_87 a saqi:AirPollutionLiteracy;
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_88 a saqi:AirPollutionLiteracy;
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_89 a saqi:AirPollutionLiteracy;
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_9 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_90 a saqi:AirPollutionLiteracy;
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_91 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_92 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Rarely";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_93 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_94 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_95 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Weekly";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, and understand the graphics";
+  saqi:hasParticulateMatterLiteracy "Yes" .
+
+saqi:aqi_literacy_96 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Often";
+  saqi:hasAQIColorLiteracy "Severe";
+  saqi:hasAQILiteracy "Yes";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_97 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQIColorLiteracy "poor";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Seen, but don't understand the graphics";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_98 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:aqi_literacy_99 a saqi:AirPollutionLiteracy;
+  saqi:frequencyToCheckAQI "Don’t check";
+  saqi:hasAQILiteracy "No";
+  saqi:hasAirPollutionGraphicLiteracy "Never seen any such boards";
+  saqi:hasParticulateMatterLiteracy "No" .
+
+saqi:person_1 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_1;
+  saqi:hasIndividualPerception saqi:aq_Perception_1;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:%20;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months, When there’s an awareness programme" .
+
+saqi:person_10 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_10;
+  saqi:hasIndividualPerception saqi:aq_Perception_10;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_100 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_100;
+  saqi:hasIndividualPerception saqi:aq_Perception_100;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_101 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_101;
+  saqi:hasIndividualPerception saqi:aq_Perception_101;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_102 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_102;
+  saqi:hasIndividualPerception saqi:aq_Perception_102;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_11 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_11;
+  saqi:hasIndividualPerception saqi:aq_Perception_11;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_12 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_12;
+  saqi:hasIndividualPerception saqi:aq_Perception_12;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Maybe" .
+
+saqi:person_13 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_13;
+  saqi:hasIndividualPerception saqi:aq_Perception_13;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_14 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accesssible - over phone";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_14;
+  saqi:hasIndividualPerception saqi:aq_Perception_14;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "Media coverage, awarness programms ,During peak winters months" .
+
+saqi:person_15 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accesssible - over phone";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_15;
+  saqi:hasIndividualPerception saqi:aq_Perception_15;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "Media coverage, awarness programms ,During peak winters months" .
+
+saqi:person_16 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accesssible - over phone";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_16;
+  saqi:hasIndividualPerception saqi:aq_Perception_16;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "Media coverage, awarness programms ,During peak winters months" .
+
+saqi:person_17 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accesssible - over phone, Newspaper";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_17;
+  saqi:hasIndividualPerception saqi:aq_Perception_17;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "Media coverage, awarness programms ,During peak winters months" .
+
+saqi:person_18 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accesssible - over phone";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_18;
+  saqi:hasIndividualPerception saqi:aq_Perception_18;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "Media coverage, awarness programms ,During peak winters months" .
+
+saqi:person_19 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accesssible - over phone";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_19;
+  saqi:hasIndividualPerception saqi:aq_Perception_19;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "Media coverage, awarness programms ,During peak winters months" .
+
+saqi:person_2 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_2;
+  saqi:hasIndividualPerception saqi:aq_Perception_2;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_20 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accesssible - over phone";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_20;
+  saqi:hasIndividualPerception saqi:aq_Perception_20;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "Media coverage, awarness programms ,During peak winters months" .
+
+saqi:person_21 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_21;
+  saqi:hasIndividualPerception saqi:aq_Perception_21;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_22 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_22;
+  saqi:hasIndividualPerception saqi:aq_Perception_22;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_23 a saqi:Person;
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_23;
+  saqi:hasIndividualPerception saqi:aq_Perception_23;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:SanjayColony .
+
+saqi:person_24 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_24;
+  saqi:hasIndividualPerception saqi:aq_Perception_24;
+  saqi:isPartOfSocialCohort "Social worker";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_25 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_25;
+  saqi:hasIndividualPerception saqi:aq_Perception_25;
+  saqi:isPartOfSocialCohort "Social worker";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage" .
+
+saqi:person_26 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_26;
+  saqi:hasIndividualPerception saqi:aq_Perception_26;
+  saqi:isPartOfSocialCohort "Social worker";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_27 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_27;
+  saqi:hasIndividualPerception saqi:aq_Perception_27;
+  saqi:isPartOfSocialCohort "Social worker";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months, When there’s an awareness programme" .
+
+saqi:person_28 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_28;
+  saqi:hasIndividualPerception saqi:aq_Perception_28;
+  saqi:isPartOfSocialCohort "Social worker";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage" .
+
+saqi:person_29 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_29;
+  saqi:hasIndividualPerception saqi:aq_Perception_29;
+  saqi:isPartOfSocialCohort "Social worker";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_3 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_3;
+  saqi:hasIndividualPerception saqi:aq_Perception_3;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_30 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_30;
+  saqi:hasIndividualPerception saqi:aq_Perception_30;
+  saqi:isPartOfSocialCohort "Social worker";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_31 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_31;
+  saqi:hasIndividualPerception saqi:aq_Perception_31;
+  saqi:isPartOfSocialCohort "Social worker";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_32 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_32;
+  saqi:hasIndividualPerception saqi:aq_Perception_32;
+  saqi:isPartOfSocialCohort "Social worker";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_33 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_33;
+  saqi:hasIndividualPerception saqi:aq_Perception_33;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_34 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_34;
+  saqi:hasIndividualPerception saqi:aq_Perception_34;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_35 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_35;
+  saqi:hasIndividualPerception saqi:aq_Perception_35;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_36 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_36;
+  saqi:hasIndividualPerception saqi:aq_Perception_36;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "No" .
+
+saqi:person_37 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_37;
+  saqi:hasIndividualPerception saqi:aq_Perception_37;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "No" .
+
+saqi:person_38 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_38;
+  saqi:hasIndividualPerception saqi:aq_Perception_38;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_39 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_39;
+  saqi:hasIndividualPerception saqi:aq_Perception_39;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_4 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_4;
+  saqi:hasIndividualPerception saqi:aq_Perception_4;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "No" .
+
+saqi:person_40 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_40;
+  saqi:hasIndividualPerception saqi:aq_Perception_40;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_41 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_41;
+  saqi:hasIndividualPerception saqi:aq_Perception_41;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_42 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_42;
+  saqi:hasIndividualPerception saqi:aq_Perception_42;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:SanjayColony;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_43 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_43;
+  saqi:hasIndividualPerception saqi:aq_Perception_43;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, When we feel,During the peak winter months" .
+
+saqi:person_44 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_44;
+  saqi:hasIndividualPerception saqi:aq_Perception_44;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, When we feel,During the peak winter months" .
+
+saqi:person_45 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_45;
+  saqi:hasIndividualPerception saqi:aq_Perception_45;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, When we feel,During the peak winter months" .
+
+saqi:person_46 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_46;
+  saqi:hasIndividualPerception saqi:aq_Perception_46;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "No";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, When we feel,During the peak winter months" .
+
+saqi:person_47 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_47;
+  saqi:hasIndividualPerception saqi:aq_Perception_47;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "No";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, When we feel,During the peak winter months" .
+
+saqi:person_48 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_48;
+  saqi:hasIndividualPerception saqi:aq_Perception_48;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "No";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, When we feel,During the peak winter months" .
+
+saqi:person_49 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_49;
+  saqi:hasIndividualPerception saqi:aq_Perception_49;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, When we feel,During the peak winter months" .
+
+saqi:person_5 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_5;
+  saqi:hasIndividualPerception saqi:aq_Perception_5;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_50 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_50;
+  saqi:hasIndividualPerception saqi:aq_Perception_50;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, When we feel,During the peak winter months" .
+
+saqi:person_51 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_51;
+  saqi:hasIndividualPerception saqi:aq_Perception_51;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, When we feel,During the peak winter months" .
+
+saqi:person_52 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_52;
+  saqi:hasIndividualPerception saqi:aq_Perception_52;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:Tekhand;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, When we feel,During the peak winter months" .
+
+saqi:person_53 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_53;
+  saqi:hasIndividualPerception saqi:aq_Perception_53;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_54 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_54;
+  saqi:hasIndividualPerception saqi:aq_Perception_54;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:JharodhaKalan;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_55 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_55;
+  saqi:hasIndividualPerception saqi:aq_Perception_55;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_56 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_56;
+  saqi:hasIndividualPerception saqi:aq_Perception_56;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:JharodhaKalan;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_57 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_57;
+  saqi:hasIndividualPerception saqi:aq_Perception_57;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:JharodhaKalan;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_58 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_58;
+  saqi:hasIndividualPerception saqi:aq_Perception_58;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_59 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_59;
+  saqi:hasIndividualPerception saqi:aq_Perception_59;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_6 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_6;
+  saqi:hasIndividualPerception saqi:aq_Perception_6;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Maybe";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, When there’s an awareness programme" .
+
+saqi:person_60 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_60;
+  saqi:hasIndividualPerception saqi:aq_Perception_60;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage" .
+
+saqi:person_61 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_61;
+  saqi:hasIndividualPerception saqi:aq_Perception_61;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:JharodhaKalan .
+
+saqi:person_62 a saqi:Person;
+  saqi:accessibilityOfAQData "Often";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_62;
+  saqi:hasIndividualPerception saqi:aq_Perception_62;
+  saqi:isPartOfSocialCohort "Teacher";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Oct dec";
+  saqi:whenDoYouTalkAboutAirQuality "Yes" .
+
+saqi:person_63 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_63;
+  saqi:hasIndividualPerception saqi:aq_Perception_63;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, On regular basis, During the peak winter months, When there’s an awareness programme" .
+
+saqi:person_64 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_64;
+  saqi:hasIndividualPerception saqi:aq_Perception_64;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage" .
+
+saqi:person_65 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_65;
+  saqi:hasIndividualPerception saqi:aq_Perception_65;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:JharodhaKalan;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months, When there’s an awareness programme" .
+
+saqi:person_66 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_66;
+  saqi:hasIndividualPerception saqi:aq_Perception_66;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:JharodhaKalan;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage" .
+
+saqi:person_67 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_67;
+  saqi:hasIndividualPerception saqi:aq_Perception_67;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:talkAboutAirQualityWithOtherPeople "No" .
+
+saqi:person_68 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_68;
+  saqi:hasIndividualPerception saqi:aq_Perception_68;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:JharodhaKalan;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_69 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_69;
+  saqi:hasIndividualPerception saqi:aq_Perception_69;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:JharodhaKalan;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_7 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_7;
+  saqi:hasIndividualPerception saqi:aq_Perception_7;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "When there’s an awareness programme" .
+
+saqi:person_70 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_70;
+  saqi:hasIndividualPerception saqi:aq_Perception_70;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_71 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_71;
+  saqi:hasIndividualPerception saqi:aq_Perception_71;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_72 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_72;
+  saqi:hasIndividualPerception saqi:aq_Perception_72;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_73 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_73;
+  saqi:hasIndividualPerception saqi:aq_Perception_73;
+  saqi:isPartOfSocialCohort "Academy";
+  saqi:livesIn saqi:JharodhaKalan;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_74 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_74;
+  saqi:hasIndividualPerception saqi:aq_Perception_74;
+  saqi:isPartOfSocialCohort "Academy";
+  saqi:livesIn saqi:JharodhaKalan;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months, When there’s an awareness programme" .
+
+saqi:person_75 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_75;
+  saqi:hasIndividualPerception saqi:aq_Perception_75;
+  saqi:isPartOfSocialCohort "Academy";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months, When there’s an awareness programme" .
+
+saqi:person_76 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_76;
+  saqi:hasIndividualPerception saqi:aq_Perception_76;
+  saqi:isPartOfSocialCohort "Academy";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_77 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_77;
+  saqi:hasIndividualPerception saqi:aq_Perception_77;
+  saqi:isPartOfSocialCohort "Academy";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_78 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_78;
+  saqi:hasIndividualPerception saqi:aq_Perception_78;
+  saqi:isPartOfSocialCohort "Academy";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_79 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_79;
+  saqi:hasIndividualPerception saqi:aq_Perception_79;
+  saqi:isPartOfSocialCohort "Academy";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_8 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_8;
+  saqi:hasIndividualPerception saqi:aq_Perception_8;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_80 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_80;
+  saqi:hasIndividualPerception saqi:aq_Perception_80;
+  saqi:isPartOfSocialCohort "Academy";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_81 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_81;
+  saqi:hasIndividualPerception saqi:aq_Perception_81;
+  saqi:isPartOfSocialCohort "Academy";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage" .
+
+saqi:person_82 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_82;
+  saqi:hasIndividualPerception saqi:aq_Perception_82;
+  saqi:isPartOfSocialCohort "Academy";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_83 a saqi:Person;
+  saqi:accessibilityOfAQData "Very accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_83;
+  saqi:hasIndividualPerception saqi:aq_Perception_83;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage" .
+
+saqi:person_84 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_84;
+  saqi:hasIndividualPerception saqi:aq_Perception_84;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_85 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_85;
+  saqi:hasIndividualPerception saqi:aq_Perception_85;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_86 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_86;
+  saqi:hasIndividualPerception saqi:aq_Perception_86;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_87 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_87;
+  saqi:hasIndividualPerception saqi:aq_Perception_87;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_88 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_88;
+  saqi:hasIndividualPerception saqi:aq_Perception_88;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_89 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_89;
+  saqi:hasIndividualPerception saqi:aq_Perception_89;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_9 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_9;
+  saqi:hasIndividualPerception saqi:aq_Perception_9;
+  saqi:isPartOfSocialCohort "Student";
+  saqi:livesIn saqi:ShaheenBagh;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_90 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_90;
+  saqi:hasIndividualPerception saqi:aq_Perception_90;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_91 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_91;
+  saqi:hasIndividualPerception saqi:aq_Perception_91;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_92 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_92;
+  saqi:hasIndividualPerception saqi:aq_Perception_92;
+  saqi:isPartOfSocialCohort "Mother of Young Kids";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "On regular basis" .
+
+saqi:person_93 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_93;
+  saqi:hasIndividualPerception saqi:aq_Perception_93;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months, When there’s an awareness programme" .
+
+saqi:person_94 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_94;
+  saqi:hasIndividualPerception saqi:aq_Perception_94;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months, When there’s an awareness programme" .
+
+saqi:person_95 a saqi:Person;
+  saqi:accessibilityOfAQData "Slightly accessible";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_95;
+  saqi:hasIndividualPerception saqi:aq_Perception_95;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, During the peak winter months" .
+
+saqi:person_96 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_96;
+  saqi:hasIndividualPerception saqi:aq_Perception_96;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:JharodhaKalan;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "There is intense media coverage, When there’s an awareness programme" .
+
+saqi:person_97 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_97;
+  saqi:hasIndividualPerception saqi:aq_Perception_97;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:DTCBusTerminal;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_98 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_98;
+  saqi:hasIndividualPerception saqi:aq_Perception_98;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .
+
+saqi:person_99 a saqi:Person;
+  saqi:accessibilityOfAQData "Not accessible at all";
+  saqi:hasAirPollutionLiteracy saqi:aqi_literacy_99;
+  saqi:hasIndividualPerception saqi:aq_Perception_99;
+  saqi:isPartOfSocialCohort "Market Association";
+  saqi:livesIn saqi:NangliDairy;
+  saqi:talkAboutAirQualityWithOtherPeople "Yes";
+  saqi:whenDoYouTalkAboutAirQuality "During the peak winter months" .

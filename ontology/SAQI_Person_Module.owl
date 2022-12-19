@@ -1,0 +1,728 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://kracr.iiitd.edu.in/ontology/saqi#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://kracr.iiitd.edu.in/ontology/saqi#">
+    <Prefix name="" IRI="https://kracr.iiitd.edu.in/ontology/saqi#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="cpannotationschema" IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"/>
+    <Import>http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal>Saad Ahmad, Sudhir Attri, Raghava Mutharaju; (https://kracr.iiitd.edu.in/)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+        <Literal>https://www.apache.org/licenses/LICENSE-2.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Ontology to model Social Air Quality</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal>https://kracr.iiitd.edu.in/ontology/AirQualityOntology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#Authors"/>
+        <Literal>Saad Ahmad, Sudhir Attri, Raghava Mutharaju</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirPollutionLiteracy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CentralGovernment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Demographic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Election"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Government"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Institution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InstitutionAgainstAirPollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LocalGovernment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MunicipalGovernment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/Place"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#actsFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#actsThrough"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#atPlace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#givesInformationTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAirPollutionLiteracy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDemographic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasElection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGovernment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInstitutionAgainstAirPollution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPerception"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDemographic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#livesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#responsibleForPollution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airPollutionIssuesRaised"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airQualityImproved"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#atHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#atTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bPressure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#benzeneConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#carbonMonoOxideConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#comparisionOfLocalPollution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#confidence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#followsGuidelines"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#frequencyToCheckAQI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#getsNoticeAndContinues"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAQIColorLiteracy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAQILiteracy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAirPollutionGraphicLiteracy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasParticulateMatterLiteracy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrescribedStandard"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isRegularized"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#latitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nitrogenDiOxideConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nitrogenMonoOxideConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nitrogenOxideConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#noNoticeOrIntervention"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ozoneConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#particulateMatter10Concentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#particulateMatter2_5Concentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#peopleVotedOnAirPollutionIssues"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#plantCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#precipitation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ratingForLocalAirQuality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#relativeHumidity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#satisfiedWithPerformance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#solarRadiation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sourceName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sulphurDioxideConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tolueneConcentration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#totalPopulation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#usesAirPurifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wearsMask"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#windDirection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#windSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#worksFromHome"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#zipCode"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#Authors"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#livesIn"/>
+            <Class IRI="https://schema.org/Place"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirPollutionLiteracy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasAirPollutionLiteracy"/>
+            </ObjectInverseOf>
+            <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CentralGovernment"/>
+        <Class IRI="#Government"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Election"/>
+        <Class IRI="https://schema.org/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Government"/>
+        <Class IRI="https://schema.org/Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Institution"/>
+        <Class IRI="https://schema.org/Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InstitutionAgainstAirPollution"/>
+        <Class IRI="#Institution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LocalGovernment"/>
+        <Class IRI="#Government"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MunicipalGovernment"/>
+        <Class IRI="#Government"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perception"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasPerception"/>
+            </ObjectInverseOf>
+            <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointUnion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+        <Class IRI="#AirPollutionLiteracy"/>
+        <Class IRI="#Demographic"/>
+        <Class IRI="#Perception"/>
+        <Class IRI="https://schema.org/Event"/>
+        <Class IRI="https://schema.org/Organization"/>
+        <Class IRI="https://schema.org/Place"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class IRI="#AirPollutionLiteracy"/>
+        <Class IRI="#AirPollutionLiteracy"/>
+        <Class IRI="#Demographic"/>
+        <Class IRI="#Perception"/>
+        <Class IRI="https://schema.org/Event"/>
+        <Class IRI="https://schema.org/Organization"/>
+        <Class IRI="https://schema.org/Place"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class IRI="#Demographic"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+        <Class IRI="#AirPollutionLiteracy"/>
+        <Class IRI="#Demographic"/>
+        <Class IRI="#Perception"/>
+        <Class IRI="https://schema.org/Organization"/>
+        <Class IRI="https://schema.org/Place"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class IRI="#Perception"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+        <Class IRI="#AirPollutionLiteracy"/>
+        <Class IRI="#Demographic"/>
+        <Class IRI="https://schema.org/Event"/>
+        <Class IRI="https://schema.org/Organization"/>
+        <Class IRI="https://schema.org/Place"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class IRI="https://schema.org/Organization"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+        <Class IRI="#AirPollutionLiteracy"/>
+        <Class IRI="#Demographic"/>
+        <Class IRI="#Perception"/>
+        <Class IRI="https://schema.org/Event"/>
+        <Class IRI="https://schema.org/Place"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class IRI="https://schema.org/Place"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+        <Class IRI="#AirPollutionLiteracy"/>
+        <Class IRI="#Demographic"/>
+        <Class IRI="#Perception"/>
+        <Class IRI="https://schema.org/Event"/>
+        <Class IRI="https://schema.org/Organization"/>
+    </DisjointUnion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#atPlace"/>
+        <ObjectProperty IRI="#livesIn"/>
+    </EquivalentObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#atPlace"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#actsFor"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#actsThrough"/>
+        <Class IRI="#Institution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#atPlace"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#givesInformationTo"/>
+        <ObjectUnionOf>
+            <Class IRI="#Government"/>
+            <Class IRI="#Institution"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAirPollutionLiteracy"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDemographic"/>
+        <Class IRI="https://schema.org/Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasElection"/>
+        <Class IRI="https://schema.org/Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGovernment"/>
+        <Class IRI="https://schema.org/Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInstitutionAgainstAirPollution"/>
+        <Class IRI="https://schema.org/Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPerception"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDemographic"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#livesIn"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#responsibleForPollution"/>
+        <Class IRI="#Perception"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#actsFor"/>
+        <Class IRI="#Institution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#actsThrough"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#atPlace"/>
+        <Class IRI="https://schema.org/Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#givesInformationTo"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAirPollutionLiteracy"/>
+        <Class IRI="#AirPollutionLiteracy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDemographic"/>
+        <Class IRI="#Demographic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasElection"/>
+        <Class IRI="#Election"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGovernment"/>
+        <Class IRI="#Government"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInstitutionAgainstAirPollution"/>
+        <Class IRI="#InstitutionAgainstAirPollution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPerception"/>
+        <Class IRI="#Perception"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDemographic"/>
+        <Class IRI="#Demographic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#livesIn"/>
+        <Class IRI="https://schema.org/Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#responsibleForPollution"/>
+        <Class IRI="#Government"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAQIColorLiteracy"/>
+        <DataProperty IRI="#hasAQILiteracy"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#atTime"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airPollutionIssuesRaised"/>
+        <Class IRI="#Election"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airQualityImproved"/>
+        <Class IRI="#Perception"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#comparisionOfLocalPollution"/>
+        <Class IRI="#Perception"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#frequencyToCheckAQI"/>
+        <Class IRI="#AirPollutionLiteracy"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAQILiteracy"/>
+        <Class IRI="#AirPollutionLiteracy"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAirPollutionGraphicLiteracy"/>
+        <Class IRI="#AirPollutionLiteracy"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasParticulateMatterLiteracy"/>
+        <Class IRI="#AirPollutionLiteracy"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#peopleVotedOnAirPollutionIssues"/>
+        <Class IRI="#Perception"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ratingForLocalAirQuality"/>
+        <Class IRI="#Perception"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#satisfiedWithPerformance"/>
+        <Class IRI="#Perception"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#totalPopulation"/>
+        <Class IRI="#Demographic"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#atHeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#atTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#bPressure"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#benzeneConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#carbonMonoOxideConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#confidence"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrescribedStandard"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#latitude"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#longitude"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nitrogenDiOxideConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nitrogenMonoOxideConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nitrogenOxideConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ozoneConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#particulateMatter10Concentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#particulateMatter2_5Concentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#plantCapacity"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#precipitation"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#relativeHumidity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#solarRadiation"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sulphurDioxideConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tolueneConcentration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#totalPopulation"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#windDirection"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#windSpeed"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#zipCode"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal>A person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal>Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Demographic</IRI>
+        <Literal>Can also include things like awareness about air quality, most common mode of transportation, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Demographic</IRI>
+        <Literal>Will capture things like education level, majority types of jobs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/Event</IRI>
+        <Literal>An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the [[offers]] property. Repeated events may be structured as separate Event objects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/Event</IRI>
+        <Literal>Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/Organization</IRI>
+        <Literal>An organization such as a school, NGO, corporation, club, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/Organization</IRI>
+        <Literal>Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/Place</IRI>
+        <Literal>Entities that have a somewhat fixed, physical extension.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/Place</IRI>
+        <Literal>Place</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
