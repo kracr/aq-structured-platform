@@ -13,3 +13,7 @@ sudo cp /var/www/kracr.iiitd.edu.in/saqi-app/saqi.png /var/www/kracr.iiitd.edu.i
 echo "Starting RDF server"
 cd $cwd
 pm2 start rdf-store/apache-jena-fuseki-4.6.1/ecosystem.config.js
+
+echo "Copy PyLode documentation for ontolgy"
+cd $cwd
+sudo cp -r ./documentation/SAQI_Ontology_docs.html /var/www/kracr.iiitd.edu.in/saqi.html

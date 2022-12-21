@@ -1,0 +1,36 @@
+
+          # The query returns average pollutants in specific time bands
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+  PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+  
+  SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?timesofday WHERE {
+    ?pm a saqi:ParticulateMatter;	
+    saqi:particulateMatter10Concentration ?pm10Instance ;
+    saqi:particulateMatter2_5Concentration ?pm25Instance .
+  
+    ?pm saqi:hasObservation ?obs .
+    ?obs saqi:atTime ?time ;
+    saqi:atPlace ?place ;
+    saqi:dataSource ?source .
+    ?place saqi:hasName ?placeName .
+  
+    BIND (hours(?time) AS ?hour)
+  
+    OPTIONAL { FILTER (?hour <= 8)
+      BIND("Morning" AS ?timesofday)
+    }
+    OPTIONAL { FILTER (?hour > 8 && ?hour <= 16)
+      BIND("Afternoon" AS ?timesofday)
+    }
+    OPTIONAL { FILTER (?hour > 16 && ?hour <= 20)
+      BIND("Evening" AS ?timesofday)
+    }
+    OPTIONAL { FILTER (?hour > 20)
+      BIND("Night" AS ?timesofday)
+    }
+  } 
+  GROUP BY ?timesofday
+  LIMIT 10000

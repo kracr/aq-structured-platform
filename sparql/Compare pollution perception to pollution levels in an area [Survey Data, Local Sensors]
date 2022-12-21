@@ -1,0 +1,50 @@
+# The query returns average pollutants concentration in a time interval grouped by source
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+  PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+  SELECT  ?pm_10 ?pm_25 ?placeName ?rating ?ratingPercentage{
+    {
+      SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?placeName ?source WHERE {
+        ?pm a saqi:ParticulateMatter;	
+        saqi:particulateMatter10Concentration ?pm10Instance ;
+        saqi:particulateMatter2_5Concentration ?pm25Instance .
+        
+        ?pm saqi:hasObservation ?obs .
+        ?obs saqi:atTime ?time ;
+        saqi:atPlace ?place ;
+        saqi:dataSource ?source .
+        ?place saqi:hasName ?placeName .
+      } 
+      GROUP BY ?source ?placeName
+      LIMIT 10000
+    }
+    {
+      SELECT ?rating ?placeName (xsd:integer(COUNT( ?rating) *100 / ?count2) as ?ratingPercentage) WHERE {
+        ?person rdf:type saqi:Person ;
+        saqi:hasIndividualPerception ?perception ;
+        saqi:isPartOfSocialCohort ?cohort ;
+        saqi:livesIn ?place ;
+        saqi:hasIndividualPerception ?perception .
+        ?perception saqi:localAirQualityRating ?rating .
+  
+        ?place saqi:hasName ?placeName .
+        {
+          SELECT (COUNT( ?placeName) as ?count2) ?placeName
+          WHERE {
+                  ?person rdf:type saqi:Person ;
+                  saqi:hasIndividualPerception ?perception ;
+                  saqi:isPartOfSocialCohort ?cohort ;
+                  saqi:livesIn ?place .
+                  ?perception saqi:localAirQualityRating ?rating .
+                  ?place saqi:hasName ?placeName .
+          }
+          GROUP BY ?placeName
+        }	
+      } 
+      GROUP BY ?rating ?placeName ?count2
+      ORDER BY ?rating ?ratingPercentage
+    }
+  }
+  ORDER BY ?pm_10 ?ratingPercentage

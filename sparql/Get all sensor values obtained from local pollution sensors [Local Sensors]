@@ -1,0 +1,34 @@
+# The query returns all sensor values obtained from local pollution sensors
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+  PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+  
+  SELECT ?pm10 ?pm25 ?humid ?temp ?placeName ?time WHERE {
+    ?pm a saqi:ParticulateMatter;	
+    saqi:particulateMatter10Concentration ?pm10 ;
+    saqi:particulateMatter2_5Concentration ?pm25 .
+  
+    ?pm saqi:hasObservation ?obs1 .
+    ?obs1 saqi:atTime ?time ;
+    saqi:atPlace ?place ;
+    saqi:dataSource ?source .
+    ?place saqi:hasName ?placeName .
+    
+    # 2 observations are joined together using common entity ?time and ?place
+    ?mc a saqi:MeteorologicalCharacterstic;
+            saqi:relativeHumidity ?humid ;
+            saqi:ambientTemperature ?temp .
+    ?mc saqi:hasObservation ?obs2 .
+    ?obs2 saqi:atTime ?time ;
+          saqi:atPlace ?place ;
+    
+    # Add location name or time interval filter
+    FILTER (
+      ?source="SAQI Local Sensors"^^rdfs:Literal &&
+      ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
+      ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime
+    )
+  } 
+  LIMIT 10000
