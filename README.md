@@ -40,6 +40,15 @@
 
 - `./deploy.sh`
 
+> If there is no npm installed, copy build files from local machine
+
+- `scp -r ./saqi-app/dist iiitd@192.168.1.166:`
+- Inside VM -
+- `sudo cp -r ./dist/ /var/www/kracr.iiitd.edu.in/saqi-app`
+- `sudo cp /var/www/kracr.iiitd.edu.in/saqi-app/vite.svg /var/www/kracr.iiitd.edu.in/saqi-app/assets/vite.svg`
+- `sudo cp /var/www/kracr.iiitd.edu.in/saqi-app/saqi.png /var/www/kracr.iiitd.edu.in/saqi-app/assets/saqi.png`
+
+
 ## Routing changes to nginx
 At `/etc/nginx/sites-available/kracr.iiitd.edu.in`
 
