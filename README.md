@@ -20,7 +20,10 @@
 
 # Steps to run rdf store and app on local setup
 
-### Pre-requisits - require jre-11 for fuseki server, python 3.x.x for running scripts to populate graph and npm/yarn to build and run svelte app
+## Prerequisites
+- jre-11 for fuseki server
+- python 3.6 or higher for running scripts to populate graph
+- npm to build and run svelte app
 
 > Run inside pm2 for better monitoring  - `npm install pm2 -g`
 - `pm2 start ./rdf-store/apache-jena-fuseki-4.6.1/ecosystem.config.js`
@@ -78,6 +81,9 @@ At `/etc/nginx/sites-available/kracr.iiitd.edu.in`
     location ~ /saqi-app/?(.*)$ {
         include /etc/nginx/mime.types;
         try_files $uri $uri/ /saqi-app/index.html;
+    }
+    location /ontology/webvowl/ {
+        alias /var/www/kracr.iiitd.edu.in/webvowl/;
     }
 ```
 At `/etc/nginx/nginx.conf`

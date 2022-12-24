@@ -1,0 +1,724 @@
+<h1 id="sec:intro">Introduction</h1>
+<p>Air pollution is a significant problem across the major cities of the
+  World and is also a part of the sustainable development goals. Tackling it, however, is a rather
+  complex task as the solution lies at the intersection of society,
+  politics, science and technology. Air pollution has substantial spatial
+  variance. Even within one city, air quality can vary a lot depending on
+  the locality, close proximity with industrial areas, population density
+  etc.</p>
+<p>In order to tackle air pollution, the government agencies frame
+  policies for mitigating the sources of pollution, increasing the civic
+  engagement and promoting the standardized air quality indices such as
+  the Air Quality Index (AQI). In this work, we delve into the latter two
+  aspects, i.e., improving the community engagement and studying AQI from
+  the perspective of different social cohorts. This lead to a socially
+  relevant AQI, which we named, Social AQI (SAQI).</p>
+<p>We conducted an ethnographic survey at six different locations in
+  Delhi, India, which is one of the most polluted cities in the World. At
+  these six locations, we have also deployed air quality sensors to record
+  the hyperlocal AQI. The details of the data collection and the survey
+  results are discussed in Section. In
+  order to model and integrate these disparate and heterogenous datasets,
+  we built a SAQI Ontology (SAQIO). This ontology<span class="citation" data-cites="Ont-NG-2009"></span> captures the
+  relationship between the
+  seemingly unrelated concepts in the datasets, which in turn are used to
+  construct a Knowledge Graph (KG) <span class="citation" data-cites="KG-ACMSurvey2021"></span> from these datasets. A
+  SAQI app is
+  built on top of the KG. This app takes into account the different social
+  cohorts and their understanding of the AQI. The following are our
+  contributions.</p>
+<ol>
+  <li>
+    <p>An ontology (SAQIO) that models the data from the air quality
+      sensors and the ethnographic survey data. SAQIO is built using our
+      Pollution ontology design pattern<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref">. SAQIO
+        is available at <a href="https://github.com/kracr/aq-structured-platform"
+          class="uri">https://github.com/kracr/aq-structured-platform</a> and the
+        documentation is at <a href="https://kracr.iiitd.edu.in/ontology/saqi"
+          class="uri">https://kracr.iiitd.edu.in/ontology/saqi</a>.</p>
+  </li>
+  <li>
+    <p>An SAQI KG that integrates the air pollution data from local and
+      central sensors with the data from the ethnographic survey. YARRML<a href="#fn3" class="footnote-ref" id="fnref3"
+        role="doc-noteref"> is used to convert the sensor and
+        survey data into a KG. These mappings, along with the SHACL<a href="#fn4" class="footnote-ref" id="fnref4"
+          role="doc-noteref"> constraints and SPARQL queries on
+          the KG, are available at <a href="https://dx.doi.org/10.5281/zenodo.7448007"
+            class="uri">https://dx.doi.org/10.5281/zenodo.7448007</a>. The SPARQL
+          endpoint over the KG is available at <a href="https://kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query"
+            class="uri">https://kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query</a>.</p>
+  </li>
+  <li>
+    <p>An SAQI App that is built using the KG to encourage community
+      engagement and response. This is available at <a href="https://kracr.iiitd.edu.in/saqi-app/"
+        class="uri">https://kracr.iiitd.edu.in/saqi-app/</a>.</p>
+  </li>
+  <li>
+    <p>The two datasets – ethnographic survey questionnaire and
+      responses and the hyperlocal air quality data from six different
+      locations in Delhi. This is available at <a href="https://dx.doi.org/10.5281/zenodo.7448007"
+        class="uri">https://dx.doi.org/10.5281/zenodo.7448007</a>. These
+      datasets will be helpful to social scientists, environmental scientists,
+      biophysicists and biochemists.</p>
+  </li>
+</ol>
+<h1 id="sec:rel-work">Related Work</h1>
+<p>There are a few existing ontologies related to air pollution and air
+  quality. Adeleke et al., <span class="citation" data-cites="adeleke"></span> built an ontology to model pollution as a
+  part of a web of IoT sensors. Their ontology is used in an indoor air
+  pollution monitoring and control application. Mihaela et al., <span class="citation"
+    data-cites="AIRPOLLUTIONONTO"></span>, developed an
+  ontology to model air pollution. They used human experts and heuristic
+  rules generated through machine learning techniques as knowledge
+  sources. They use the ontology to monitor and control air pollution in
+  urban regions. Riga et al., <span class="citation" data-cites="marina_riga_2018_1196023"></span> use ontologies to
+  make
+  efficient environmental decision support systems. Ontologies are used to
+  model the status of the environment and its impact on citizens’ health
+  and actions. Mertal et al., <span class="citation" data-cites="metral"></span> use CityGML and aim to connect 3D city
+  models with air pollution ontologies for sustainable urban
+  development.</p>
+<p>Some of the applications related to air pollution have focused on
+  categorizing AQI value into good, poor and severe to generate
+  recommendations on actions to be performed. Examples of such
+  applications are CPCBcrr<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> by CPCB,
+  AQICN<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> and
+  SAFAR<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>. The forecasting system
+  developed by
+  SAFAR predicts air quality and generates recommendations a few days
+  ahead. Urban Emissions <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> analyses
+  the contribution of
+  components such as traffic, dust and wind on the AQI at a particular
+  location. They make use of a chemical transport model system known as
+  WRF-CAMx for integrating the data. All the applications discussed here
+  do not generate spatiotemporally aware recommendations and do not take
+  into account the social makeup of a locality. Instead, they rely on
+  centrally located sensors that may not be able to capture the complete
+  dynamics of air pollution at a location.</p>
+<p>Air quality research generally involves analyzing pollution sources,
+  government policies, and their adverse effect on public health. For
+  example, Agarwala M. and Chandel A. explain the role of crop residue
+  burning on Delhi’s air quality <span class="citation" data-cites="AGARWALA-2020-ERL"></span> and Huang et al., studied
+  the
+  emission of pollutants from power generation plants <span class="citation" data-cites="HUANG-2017-RCR"></span>. We
+  focus on social
+  factors operating at the individual and institutional levels that affect
+  the public’s perception and awareness of pollution. We use an ontology
+  based approach to integrate the air quality data with the ethnographic
+  data of locations.</p>
+<h1 id="sec:req-analysis">Requirements Analysis</h1>
+<p>We conducted a workshop on AQI and its social implications. The
+  participants of this workshop include officials from the Central
+  Pollution Control Board (CPCB)<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>,
+  social scientists,
+  field workers and technologists. During the discussion, several issues
+  were raised, such as the coverage of the centrally deployed sensors, the
+  impact of air pollution on different social groups (students, daily wage
+  workers, athletes, shopkeepers, etc.), the awareness about air pollution
+  and AQI among the different social groups and the citizen participation
+  to tackle the problem of air pollution. In order to get answers to these
+  questions and to know the ground reality, two field workers were hired
+  and asked to run a survey in two different regions of Delhi. These two
+  regions were selected because they had variations in terms of demography
+  and consisted of educational institutes, industries, dairy farms, sports
+  academies and grocery stores. In each region, three different locations
+  were selected to get a representation of the region’s demography and
+  social groups.</p>
+<p>After identifying the six locations, a field survey was conducted in
+  these locations inquiring people about their awareness of the air
+  quality indexes, their perception of pollution, and their views on
+  government response towards pollution. The survey targeted six different
+  social groups - teachers, students, mothers of young kids, local
+  shopkeepers, sports academies, and social workers. At these six
+  locations, air quality sensors were also deployed to study the
+  hyperlocal AQI in the context of the social groups. Exposure to
+  hyperlocal data increases local participation, which can make local
+  institutions respond effectively to their local pollution problems. We
+  term this as socializing and localizing the AQI in the neighborhood. The
+  policies related to handling air pollution can be tuned by the local
+  government bodies for each social group to address their specific needs.
+  For example, the local school timings can be changed so that school
+  children can avoid the time when the pollution is high.</p>
+<p>The survey responses show that the AQI numbers and the data behind
+  them are not interpretable to most people, even in Delhi, which has been
+  one of the most polluted cities for consecutive years. Several survey
+  respondents correctly identified the contributors to the air quality,
+  which are crop burning, construction, and industries. However, except
+  for the teachers and student social groups, others either did not have
+  access to the AQI or were not able to draw any inferences from the AQI
+  numbers. The local government bodies were also untrained to tackle the
+  pollution locally and remained uninvolved.</p>
+<p>Given this context, we proposed building a mobile and Web friendly
+  application that is available in the local language. This application
+  can increase the awareness of AQI by explaining the relevant facts and
+  also recommend steps that can be taken locally to mitigate the problem
+  of air pollution within a particular locality. In order to build such an
+  application, the data from heterogeneous sources must be integrated and
+  structured. So an ontology that can satisfy all the requirements
+  discussed here will be appropriate for this application.</p>
+<h2 id="competency-questions">Competency Questions</h2>
+<p>From the workshop and the survey results, we collected the following
+  minimal set of questions, also referred to as <em>competency
+    questions</em>, that should be answered by the ontology.</p>
+<ol>
+  <li>
+    <p>What is the air pollution literacy of a particular social
+      group?</p>
+  </li>
+  <li>
+    <p>What is the major perception of people towards air quality in a
+      region?</p>
+  </li>
+  <li>
+    <p>What is the average AQI value at a place over a period of
+      time?</p>
+  </li>
+  <li>
+    <p>How do people expect the government to mitigate the effect of air
+      pollution in a region?</p>
+  </li>
+  <li>
+    <p>What is the perception of people living in different regions
+      towards air quality?</p>
+  </li>
+</ol>
+<p>As can be observed from the competency questions, multiple data
+  sources are required to answer them. They may have different structures
+  and formats. These datasets include the AQI data, social data and
+  meteorological data.</p>
+<h1 id="sec:methodology">Methodology</h1>
+<p>The methodology of building the SAQI ontology revolved around
+  continual iterative development. We developed the ontology in two phases
+  – building a barebones ontology consisting of classes and properties
+  that were minimally essential and, later on, iteratively extending it
+  based on the feedback and the requirements of the SAQI application. The
+  former has led to the development of the Pollution ontology design
+  pattern. In the latter phase,
+  feedback on the ontology is obtained from the social scientists and the
+  field workers in our team. An example of the importance of their
+  feedback is the presence of the <code>Person</code> class. Since most of
+  the survey responses are connected to the people living in a locality,
+  the feedback was that it would be an important concept in the SAQI
+  ontology.</p>
+<p>Since reusing existing ontologies and vocabularies is a good
+  practice, we reused three ontologies that are widely known. We reused
+  the foaf <span class="citation" data-cites="brickley-d-2004--b"></span>,
+  WeatherOntology<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> and schema.org
+  <a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>
+  ontologies as shown in Table <a href="#tab:ont-reused" data-reference-type="ref"
+    data-reference="tab:ont-reused">1</a>.
+</p>
+<div id="tab:ont-reused">
+  <table>
+    <caption>The ontologies and the concepts in those ontologies that were
+      reused in the SAQI ontology.</caption>
+    <tbody>
+      <tr class="odd">
+        <td style="text-align: center;"><strong>Ontology</strong></td>
+        <td style="text-align: center;"><strong>Concepts</strong></td>
+      </tr>
+      <tr class="even">
+        <td style="text-align: center;"><strong>reused</strong></td>
+        <td style="text-align: center;"><strong>reused</strong></td>
+      </tr>
+      <tr class="odd">
+        <td style="text-align: center;">WeatherOntology</td>
+        <td style="text-align: center;">AirPollution, Irridance,</td>
+      </tr>
+      <tr class="even">
+        <td style="text-align: center;"></td>
+        <td style="text-align: center;">Precipitation</td>
+      </tr>
+      <tr class="odd">
+        <td style="text-align: center;">foaf</td>
+        <td style="text-align: center;">Person</td>
+      </tr>
+      <tr class="even">
+        <td style="text-align: center;">schema.org</td>
+        <td style="text-align: center;">Organization, Place,</td>
+      </tr>
+      <tr class="odd">
+        <td style="text-align: center;"></td>
+        <td style="text-align: center;">Event</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h1 id="sec:ontology-desc">Ontology Description</h1>
+<p>The SAQI ontology is divided into three sub-ontologies, which we
+  refer to as modules – <em>Pollution</em> module, built using Pollution
+  ODP<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>, <em>Trajectory</em> module
+  built
+  from the Trajectory ODP <a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> and
+  <em>Ethnography</em> module for structural representation of field
+  survey responses.
+</p>
+<h2 id="pollution">Pollution</h2>
+<p>The Pollution ontology is extended from the Pollution ODP as shown in
+  Figure <a href="#fig:pollution-module" data-reference-type="ref" data-reference="fig:pollution-module">1</a>. The ODP
+  has been adapted to
+  the air pollution domain by extending some of the classes from the ODP.
+  For example, the <code>Pollutant</code> class is extended to
+  <code>PrimaryPollutant</code> and <code>SecondaryPollutant</code>.
+  <code>SecondaryPollutant</code> is further extended to
+  <code>GaseousPollutant</code> and <code>ParticulateMatter</code>. Some
+  of the important concepts and properties from the <em>Pollution</em>
+  module are as follows.
+</p>
+<figure>
+  <img src="figures/ODP_subset.png" id="fig:pollution-module" style="width:90.0%;height:6.5cm"
+    alt="Main concepts and properties of the Pollution module" />
+  <figcaption aria-hidden="true">Main concepts and properties of the
+    Pollution module</figcaption>
+</figure>
+<p><strong>AirPollution.</strong> <code>AirPollution</code> class is
+  extended from the <code>Pollution</code> class of the Pollution ODP. The
+  <code>Pollution</code> class represents the different types of
+  contaminants in the natural environment. <code>AirPollution</code> is
+  linked to <code>Pollutant</code> through the <code>hasContributor</code>
+  property (as shown in Axiom 1). The institutions working to mitigate the
+  pollution sources through policies and awareness campaigns are linked by
+  the object property <code>takesActionAgainst</code>. These properties
+  and their connection with the <code>AirPollution</code> class is shown
+  in Figure <a href="#fig:air_pollution_concepts" data-reference-type="ref"
+    data-reference="fig:air_pollution_concepts">2</a>.
+</p>
+<p><span class="math display"><code>Pollution</code> ⊑ ∃<code>hasContributor</code>.<code>Contributor</code></span></p>
+<figure>
+  <img src="figures/AirPollution.png" id="fig:air_pollution_concepts" style="height:4.5cm"
+    alt="AirPollution class and its connections" />
+  <figcaption aria-hidden="true">AirPollution class and its
+    connections</figcaption>
+</figure>
+<p><strong>hasContributor.</strong> This object property connects the
+  <code>AirPollution</code> class to its direct and indirect contributors
+  (pollutants).
+</p>
+<p><strong>takesActionAgainst.</strong> The institutions that are
+  working to mitigate the effects of air pollution are connected through
+  this object property. We considered two possible types of institutions –
+  government and non-government institutions such as NGOs.</p>
+<p><strong>Contributor.</strong> Contributor can either be a contaminant
+  particle, i.e., <code>Pollutant</code> or it could be a
+  <code>Carrier</code> that transports a <code>Pollutant</code>. The
+  <code>Contributor</code> class and other related classes are shown in
+  Figure <a href="#fig:contributor_concepts" data-reference-type="ref" data-reference="fig:contributor_concepts">3</a>.
+</p>
+<figure>
+  <img src="figures/Contributor.png" id="fig:contributor_concepts" style="width:80.0%;height:6cm"
+    alt="Contributor class and its connections" />
+  <figcaption aria-hidden="true">Contributor class and its
+    connections</figcaption>
+</figure>
+<p><strong>carriesPollutant.</strong> This object property is used with
+  an <code>IndirectContributor</code> that transports a
+  <code>Pollutant</code> from one spatial location to another, for
+  example, wind and water flow.
+</p>
+<p><strong>DirectContributor.</strong> The
+  <code>DirectContributor</code> class represents the contributors that
+  directly impact pollution. <code>Pollutant</code> is a subclass of
+  <code>DirectContributor</code>. Some examples of pollutants include
+  biological pollutants (viruses, pathogens, bacteria, etc.), chemical
+  pollutants (toxic metal, radionuclides, organophosphorus compounds,
+  gases, etc.) and physical pollutants (sound, thermal energy, space
+  debris, etc.) present in a particular environment.
+</p>
+<p><strong>IndirectContributor.</strong> The
+  <code>IndirectContributor</code> concept represents concepts that
+  indirectly contribute to pollution at a particular spatiotemporal point.
+  These include environmental factors like temperature, the air or water
+  streams flowing into or out of a particular place, the socio-economic
+  factors such as policies and demographics. We have modelled only the
+  <code>Carrier</code> concept as the subclass of
+  <code>IndirectContributor</code> since other indirect contributors are
+  specific to certain kinds of pollution.
+</p>
+<p><strong>Carrier.</strong> This concept is a subclass of the
+  <code>IndirectContributor</code> concept and represents the air, water,
+  and other kinds of streams flowing into or out of a particular place. It
+  is linked to the <code>Trajectory</code> concept through the
+  <code>hasTrajectory</code> property. Carriers are generally observed to
+  affect the concentration of pollutants at a particular place and are
+  important in modeling pollutants. To represent the pollutants that might
+  be carried through a trajectory, the <code>Carrier</code> concept is
+  linked to the <code>Pollutant</code> concept by the
+  <code>carriesPollutant</code> property.
+</p>
+<p><strong>Pollutant.</strong> <code>Pollutant</code> is a central
+  concept in the Pollution module. It is associated with the
+  <code>Observation</code> class to keep a record of pollutant
+  concentrations at any location and timestamp. Each pollutant has a
+  prescribed standard that is defined by the government authorities. The
+  <code>Pollutant</code> class and its connections are shown in Figure <a href="#fig:pollutant_concepts"
+    data-reference-type="ref" data-reference="fig:pollutant_concepts">4</a>.
+</p>
+<p><strong>hasPrescribedStandard.</strong> Links a pollutant with
+  standard limits based on concentration/amount of that pollutant in the
+  environment. For example, WHO prescribed standard for PM<span class="math inline"><sub>2.5</sub></span> is less than 5
+  <span class="math inline"><em>μ</em><em>g</em>/<em>m</em><sup>3</sup></span>
+  mean concentration in the air annually.
+</p>
+<p><strong>hasObservation.</strong> This is used to capture the
+  concentration of a particular pollutant at a given time and spatial
+  location.</p>
+<figure>
+  <img src="figures/Pollutants.png" id="fig:pollutant_concepts" style="width:80.0%;height:6cm"
+    alt="Pollutant class and its connections" />
+  <figcaption aria-hidden="true">Pollutant class and its
+    connections</figcaption>
+</figure>
+<p><strong>PrescribedStandardForPollutants.</strong> This is a stub
+  meta-pattern <span class="citation" data-cites="stub_MP"></span> that
+  can be used to describe the prescribed ranges for pollutants. For a
+  particular location, pollutants have a defined range of permissible
+  concentrations that are specified by various global authorities. A
+  standard for a pollutant may change with time and place. Hence the
+  <code>PrescribedStandardForPollutants</code> concept is linked to the
+  <code>Observation</code> concept by the <code>hasObservation</code>
+  property.
+</p>
+<p><strong>PollutantGenerator.</strong> Pollutant generators are events
+  that generate pollution, such as crop burning, power plants, waste
+  burning and dusty weather. It is related to the <code>Perception</code>
+  class in the <em>Ethnography</em> module, indicating the perception of
+  people on the severity of pollution concentration in a specific area.
+  The <code>PollutantGenerator</code> class and its connections are shown
+  in Figure <a href="#fig:pollutant_generator" data-reference-type="ref" data-reference="fig:pollutant_generator">5</a>.
+</p>
+<p><strong>nearby.</strong> This property links a pollution generator to
+  a carrier trajectory.</p>
+<p><strong>SourceResponsibleForLocalPollution.</strong> The perception
+  of pollution is directly linked to observable pollution generators in a
+  locality, resulting in the perception of pollution by the people in that
+  locality.</p>
+<figure>
+  <img src="figures/PollutantGenerator.png" id="fig:pollutant_generator" style="height:6cm"
+    alt="PollutantGenerator class and its connections" />
+  <figcaption aria-hidden="true">PollutantGenerator class and its
+    connections</figcaption>
+</figure>
+<h2 id="trajectory">Trajectory</h2>
+<p>Concepts in the <em>Trajectory</em> module uses the concepts from the
+  Pollution ODP (Figure <a href="#fig:trajectory_concepts" data-reference-type="ref"
+    data-reference="fig:trajectory_concepts">6</a>). It models the
+  trajectories of pollution carriers. For example, a wind current passing
+  through a crop burning site may carry carbon based pollutants to another
+  destination. This displacement of pollutants needs to be accounted for
+  in order to get a holistic understanding of air pollution. The
+  trajectory component has been adapted from the Trajectory ODP <span class="citation"
+    data-cites="10.1007/978-3-319-01790-7_24"></span>. A
+  brief description of the <em>Trajectory</em> module concepts is given
+  below.</p>
+<figure>
+  <img src="figures/ObservationTrajectory.png" id="fig:trajectory_concepts" style="width:90.0%;height:6.5cm"
+    alt="Trajectory class and its connections" />
+  <figcaption aria-hidden="true">Trajectory class and its
+    connections</figcaption>
+</figure>
+<p><strong>Trajectory.</strong> The <code>Trajectory</code> concept
+  represents a set of ordered spatiotemporal points.</p>
+<p><strong>TrajectoryPoint and TrajectorySegment.</strong> The
+  <code>Trajectory</code> concept is linked to the
+  <code>TrajectoryPoint</code> and <code>TrajectorySegment</code> through
+  the <code>hasPoint</code> and <code>hasSegment</code> properties. The
+  <code>nextPoint</code> property links trajectory points in the
+  appropriate order within a trajectory. The segments in the trajectory
+  are defined by a starting trajectory point {<span class="math inline"><em>x</em><sub><em>i</em></sub></span>, <span
+    class="math inline"><em>y</em><sub><em>i</em></sub></span>, <span
+    class="math inline"><em>t</em><sub><em>i</em></sub></span>} and an
+  ending trajectory point {<span class="math inline"><em>x</em><sub><em>j</em></sub></span>, <span
+    class="math inline"><em>y</em><sub><em>j</em></sub></span>, <span
+    class="math inline"><em>t</em><sub><em>j</em></sub></span>} where <span
+    class="math inline"><em>t</em><sub><em>i</em></sub></span>, <span
+    class="math inline"><em>t</em><sub><em>j</em></sub></span> denote time
+  points such that <span class="math inline"><em>t</em><sub><em>i</em></sub></span> <span
+    class="math inline">&lt;</span> <span class="math inline"><em>t</em><sub><em>j</em></sub></span> . The
+  <code>TrajectorySegment</code> concept represents this notion of a
+  segment which is connected to two fixes through <code>startsFrom</code>
+  and <code>endsAt</code> properties.
+</p>
+<h2 id="ethnography">Ethnography</h2>
+<p>This ontology module captures the ethnographic details of a location
+  we obtained from the field survey. This data and the ontology can help
+  in framing policies and making decisions to mitigate air pollution at
+  the hyperlocal level. The <em>Ethnography</em> module is shown in
+  Figure <a href="#fig:ethnographic_concepts" data-reference-type="ref"
+    data-reference="fig:ethnographic_concepts">7</a>.</p>
+<figure>
+  <img src="figures/Ethnography.png" id="fig:ethnographic_concepts" style="width:90.0%;height:6.5cm"
+    alt="Overview of the Ethnography module" />
+  <figcaption aria-hidden="true">Overview of the Ethnography
+    module</figcaption>
+</figure>
+<p><strong>Person.</strong> This is a core concept of this module since
+  the ethnographic data relies on the observations of a person. The data
+  we collect relates a person to their knowledge of air pollution and
+  accounts for the social makeup through the aggregation of person-level
+  data. This concept is connected to concepts such as
+  <code>AirPollutionLiteracy</code>, <code>Perception</code> and
+  <code>Region</code> through the <code>hasAirPollutionLiteracy</code>,
+  <code>hasPerception</code> and <code>livesIn</code> properties.
+</p>
+<p><strong>AirPollutionLiteracy.</strong> This concept describes the air
+  pollution literacy of the people in a locality. We assess this by asking
+  questions<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> to the people related
+  to their
+  awareness of AQI and air pollution in general. The
+  <code>AirPollutionLiteracy</code> concept has the data properties
+  <code>hasAQILiteracy</code>,
+  <code>hasAirPollutionGraphicLiteracy</code>,
+  <code>hasParticulateMatterLiteracy</code> and
+  <code>hasAQIColorLiteracy</code>.
+</p>
+<p><strong>Perception.</strong> This concept captures the perception of
+  an individual with regard to the level of air pollution in their local
+  neighbourhood and the city. It consists of data properties such as
+  <code>howIsYourLocalityComparedToOtherAreas</code> (the literals that
+  can be linked using this property are “equally polluted”, “less
+  polluted”, “more polluted”, “don’t know”),
+  <code>shouldPollutionIssuesBeRaisedInElections</code> and
+  <code>localAirQualityRating</code>. An aggregation of people’s
+  perceptions in a particular region is expected to give the perception of
+  that region.
+</p>
+<h1 id="sec:shacl">SHACL Shapes</h1>
+<p>SHACL<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> can be used to enforce
+  constraints
+  on the KG. The constraints are defined in shape graphs. KG need to
+  satisfy the condition specified in the shape graphs to be validated.
+  Shapes for the prominent classes, such as <code>Person</code> and
+  <code>AirPollution</code> were created and the triples that were
+  generated from the data using YARRRML mappings were validated using the
+  SHACL constraints. An example of a SHACL shape of the
+  <code>Person</code> class is as follows. The first few constraints
+  indicate that the subject (<code>Person</code> in this case) should have
+  one and exactly one value associated with a property (for example,
+  <code>SAQIOntology:livesIn</code>).
+</p>
+<pre><code>    SAQIOntology:PersonShape
+  rdf:type sh:NodeShape ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path SAQIOntology:hasAirPollutionLiteracy ;
+      sh:class SAQIOntology:Person ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name &quot;has air pollution literacy&quot; ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path SAQIOntology:hasPerception ;
+      sh:class SAQIOntology:Person ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name &quot;has individual perception&quot; ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path SAQIOntology:livesIn ;
+      sh:class SAQIOntology:Person ;
+      sh:description &quot;Person lives in a particual region&quot; ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name &quot;lives in&quot; ;
+      sh:node SAQIOntology:PersonShape ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path SAQIOntology:usesAirPurifier ;
+      sh:datatype xsd:boolean ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name &quot;uses air purifier&quot; ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path SAQIOntology:wearsMask ;
+      sh:datatype xsd:boolean ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name &quot;wears mask&quot; ;
+    ] ;
+  sh:targetClass SAQIOntology:Person ;
+  sh:targetSubjectsOf SAQIOntology:hasAirPollutionLiteracy ;
+  sh:targetSubjectsOf SAQIOntology:hasIndividualPerception ;
+  sh:targetSubjectsOf SAQIOntology:livesIn ;
+.
+SAQIOntology:actsThrough
+  rdf:type sh:PropertyShape ;
+.
+SAQIOntology:hasAirPollutionLiteracy
+  rdf:type rdf:Property ;
+.
+SAQIOntology:hasPerception
+  rdf:type rdf:Property ;
+.
+SAQIOntology:livesIn
+  rdf:type rdf:Property ;
+.
+</code></pre>
+<h1 id="sec:app">SAQI Application</h1>
+<p>We built a mobile and Web friendly SAQI application (Figure <a href="#fig:saqi_layout" data-reference-type="ref"
+    data-reference="fig:saqi_layout">[fig:saqi_layout]</a>)<a href="#fn16" class="footnote-ref" id="fnref16"
+    role="doc-noteref"><sup>16</sup></a>
+  that makes use of the KG to answer questions related to air quality. To
+  mitigate the knowledge barrier in the understanding of AQI, increase
+  awareness related to air pollution and improve citizen engagement, the
+  app is designed to address all the sections of the community, which
+  includes tech ill-literate people majorly. This is achieved using
+  features such as support for local language – Hindi/English, heavy/large
+  fonts, minimal inputs from the user, text-to-speech narration on every
+  page and colorful graphics for AQI readings. The app consists of
+  knowledge on air pollution and its effects which caters to specific
+  social and spatial cohorts and also acts as AQI monitoring app that
+  utilizes a KG built using SAQI ontology</p>
+<p>A SPARQL endpoint (Figure <a href="#fig:saqi_sparql" data-reference-type="ref"
+    data-reference="fig:saqi_sparql">[fig:saqi_sparql]</a>) is also embedded
+  in the application with eight queries on the pollution sensors data and
+  the ethnography data from surveys. The SPARQL endpoint can be accessed
+  from the app at <a href="https://kracr.iiitd.edu.in/saqi/app/#/sparql"
+    class="uri">https://kracr.iiitd.edu.in/saqi/app/#/sparql</a>.</p>
+<p>The ethnographic data, pollution data from local and central sensors
+  are mapped to triples using RDF Mapping Language (RML) helper tool
+  YARRML <a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> <span class="citation"
+    data-cites="YARRRML"></span> that provides a high level format to define
+  R2RML and RML rules. The generated triples are then uploaded to the
+  server running Apache Jena Fuseki<a href="#fn18" class="footnote-ref" id="fnref18"
+    role="doc-noteref"><sup>18</sup></a> as the triple store. A
+  cron job running on the server takes care of new triples that need to be
+  uploaded to the server periodically, taking care of preprocessing and
+  validation of data using SHACL constraints.</p>
+<h1 id="sec:sustainability">Sustainability and Maintenance of
+  Resources</h1>
+<p>Since the YARRRML mappings are used, it is easy to generate KG from
+  air quality sensor data and survey data. This is scalable, i.e., we can
+  expand to more regions and get more data. As long as the format of the
+  data does not change, the process of converting heterogeneous sensor and
+  survey data to KG is sustainable. Over time, the SAQI ontology and the
+  application may need changes. We will continue to work on SAQI platform
+  and make changes whenever required. We also hope that the community will
+  be interested and will take this up. Since all the resources are
+  publicly available, it will be possible to make changes and share them
+  with the community.</p>
+<h1 id="sec:conclusion">Conclusion and Future Work</h1>
+<p>We proposed Social Air Quality Index (SAQI), a new approach to
+  increase awareness about air pollution awareness, democratize AQI
+  knowledge at the neighbourhood level and improve community
+  participation. We have developed an ODP for pollution <a href="#fn19" class="footnote-ref" id="fnref19"
+    role="doc-noteref"><sup>19</sup></a>,
+  SAQI ontology to model the local and central air quality data, as well
+  as the ethnographic survey data from six localities in Delhi. The sensor
+  and survey data are integrated into a KG using YARRRML mappings and the
+  SAQI ontology. We designed a neighbourhood pollution dashboard (SAQI
+  app) that makes use of the KG to answer questions related to air
+  pollution and the steps that each social cohort (students, teachers,
+  mothers of young kids, athletes, etc.) can take to mitigate the effects
+  of air pollution. The app is available in the local language. All these
+  resources are publicly available under an Apache License 2.0 at <a
+    href="https://github.com/kracr/aq-structured-platform"
+    class="uri">https://github.com/kracr/aq-structured-platform</a> and <a
+    href="https://dx.doi.org/10.5281/zenodo.7448007" class="uri">https://dx.doi.org/10.5281/zenodo.7448007</a>.</p>
+<p>Going forward, we plan to incorporate more social characteristics
+  from the neighbourhood into the ontology and the SAQI app such as
+  addresses and contact for local government officials and the local
+  pollution generating sources. We also plan to introduce graphical
+  visualization in the app to explain the distribution and variation of
+  AQI with respect to the time of the day, the seasonal variations and its
+  correlation to activities in the neighbourhood.</p>
+<p><strong>Acknowledgement.</strong> This work has partially been
+  supported by the Infosys Centre for Artificial Intelligence (CAI),
+  IIIT-Delhi, India.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+  <hr />
+  <ol>
+    <li id="fn1">
+      <p><a href="https://www.un.org/sustainabledevelopment/health/"
+          class="uri">https://www.un.org/sustainabledevelopment/health/</a><a href="#fnref1" class="footnote-back"
+          role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn2">
+      <p><a href="http://ontologydesignpatterns.org/wiki/Submissions:Pollution"
+          class="uri">http://ontologydesignpatterns.org/wiki/Submissions:Pollution</a><a href="#fnref2"
+          class="footnote-back" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn3">
+      <p><a href="https://rml.io/yarrrml/spec/" class="uri">https://rml.io/yarrrml/spec/</a><a href="#fnref3"
+          class="footnote-back" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn4">
+      <p><a href="https://www.w3.org/TR/shacl/" class="uri">https://www.w3.org/TR/shacl/</a><a href="#fnref4"
+          class="footnote-back" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn5">
+      <p>CPCBcrr <a href="https://cpcbccr.com/" class="uri">https://cpcbccr.com/</a><a href="#fnref5"
+          class="footnote-back" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn6">
+      <p><a href="https://aqicn.org/" class="uri">https://aqicn.org/</a><a href="#fnref6" class="footnote-back"
+          role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn7">
+      <p><a href="http://safar.tropmet.res.in/" class="uri">http://safar.tropmet.res.in/</a><a href="#fnref7"
+          class="footnote-back" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn8">
+      <p><a href="https://urbanemissions.info/" class="uri">https://urbanemissions.info/</a><a href="#fnref8"
+          class="footnote-back" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn9">
+      <p><a href="https://cpcb.nic.in/" class="uri">https://cpcb.nic.in/</a><a href="#fnref9" class="footnote-back"
+          role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn10">
+      <p><a href="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl"
+          class="uri">https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl</a><a
+          href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn11">
+      <p><a href="https://schema.org/" class="uri">https://schema.org/</a><a href="#fnref11" class="footnote-back"
+          role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn12">
+      <p><a href="http://ontologydesignpatterns.org/wiki/Submissions:Pollution"
+          class="uri">http://ontologydesignpatterns.org/wiki/Submissions:Pollution</a><a href="#fnref12"
+          class="footnote-back" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn13">
+      <p><a href="http://ontologydesignpatterns.org/wiki/Submissions:Trajectory/Trajectory"
+          class="uri">http://ontologydesignpatterns.org/wiki/Submissions:Trajectory/Trajectory</a><a href="#fnref13"
+          class="footnote-back" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn14">
+      <p>The questionnaire for collecting ethnographic data has
+        been designed by social scientists in our team.<a href="#fnref14" class="footnote-back"
+          role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn15">
+      <p><a href="https://www.w3.org/TR/shacl/" class="uri">https://www.w3.org/TR/shacl/</a><a href="#fnref15"
+          class="footnote-back" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn16">
+      <p>Web version of the app can be accessed live at <a href="https://kracr.iiitd.edu.in/saqi-app/"
+          class="uri">https://kracr.iiitd.edu.in/saqi-app/</a>.<a href="#fnref16" class="footnote-back"
+          role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn17">
+      <p><a href="https://rml.io/yarrrml/" class="uri">https://rml.io/yarrrml/</a>.<a href="#fnref17"
+          class="footnote-back" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn18">
+      <p><a href="https://jena.apache.org/documentation/fuseki2/"
+          class="uri">https://jena.apache.org/documentation/fuseki2/</a>.<a href="#fnref18" class="footnote-back"
+          role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn19">
+      <p><a href="http://ontologydesignpatterns.org/wiki/Submissions:Pollution"
+          class="uri">http://ontologydesignpatterns.org/wiki/Submissions:Pollution</a><a href="#fnref19"
+          class="footnote-back" role="doc-backlink">↩︎</a></p>
+    </li>
+  </ol>
+</section>
