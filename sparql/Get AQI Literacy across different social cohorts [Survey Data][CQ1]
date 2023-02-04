@@ -1,0 +1,33 @@
+# The query returns percentage count of rating groups across different spatial locations
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0: <https://kracr.iiitd.edu.in/ontology/>
+SELECT ?PMLiteracy ?cohort (xsd:integer(COUNT( ?PMLiteracy) *100 / ?count2) as ?PMLiteracyPercentage)
+    WHERE {
+      ?person rdf:type saqi:Person ;
+      saqi:hasAirPollutionLiteracy ?literacy ;
+      saqi:isPartOfSocialCohort ?cohort ;
+      saqi:livesIn ?place .
+      ?literacy saqi:hasParticulateMatterLiteracy ?PMLiteracy .
+
+      ?place saqi:hasName ?placeName .
+      {
+        SELECT (COUNT( ?cohort) as ?count2) ?cohort
+        WHERE {
+                ?person rdf:type saqi:Person ;
+                saqi:hasAirPollutionLiteracy ?literacy ;
+                saqi:isPartOfSocialCohort ?cohort ;
+                saqi:livesIn ?place .
+                ?literacy saqi:hasParticulateMatterLiteracy ?PMLiteracy .
+                ?place saqi:hasName ?placeName .
+        }
+        GROUP BY ?cohort
+      }	
+    } 
+GROUP BY ?PMLiteracy ?cohort ?count2
+HAVING (?PMLiteracy='Yes')
+ORDER BY ?PMLiteracy ?PMLiteracyPercentage
