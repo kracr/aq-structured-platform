@@ -4,6 +4,118 @@ type sparql = {
 };
 export const queries: sparql[] = [
   {
+    title: "Get AQI Literacy across different social cohorts [Survey Data][CQ1]",
+    query: `#Get AQI Literacy across different social cohorts [Survey Data][CQ1]
+    # The query returns percentage count of rating groups across different spatial locations
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0: <https://kracr.iiitd.edu.in/ontology/>
+SELECT ?PMLiteracy ?cohort (xsd:integer(COUNT( ?PMLiteracy) *100 / ?count2) as ?PMLiteracyPercentage)
+    WHERE {
+      ?person rdf:type saqi:Person ;
+      saqi:hasAirPollutionLiteracy ?literacy ;
+      saqi:isPartOfSocialCohort ?cohort ;
+      saqi:livesIn ?place .
+      ?literacy saqi:hasParticulateMatterLiteracy ?PMLiteracy .
+
+      ?place saqi:hasName ?placeName .
+      {
+        SELECT (COUNT( ?cohort) as ?count2) ?cohort
+        WHERE {
+                ?person rdf:type saqi:Person ;
+                saqi:hasAirPollutionLiteracy ?literacy ;
+                saqi:isPartOfSocialCohort ?cohort ;
+                saqi:livesIn ?place .
+                ?literacy saqi:hasParticulateMatterLiteracy ?PMLiteracy .
+                ?place saqi:hasName ?placeName .
+        }
+        GROUP BY ?cohort
+      }	
+    } 
+GROUP BY ?PMLiteracy ?cohort ?count2
+HAVING (?PMLiteracy='Yes')
+ORDER BY ?PMLiteracy ?PMLiteracyPercentage
+    `
+  },
+  {
+    title: "Perception of people living in different regions toward steps taken by Delhi Govt [Survey Data][CQ4]",
+    query: `#Perception of people living in different regions toward steps taken by Delhi Govt [Survey Data][CQ4]
+    # The query returns percentage count of rating groups across different spatial locations
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX ns0: <https://kracr.iiitd.edu.in/ontology/>
+    SELECT ?percption_govt ?placeName (xsd:integer(COUNT( ?percption_govt) *100 / ?count2) as ?perceptionPercentage)
+        WHERE {
+          ?person rdf:type saqi:Person ;
+          saqi:hasIndividualPerception ?perception ;
+          saqi:isPartOfSocialCohort ?cohort ;
+          saqi:livesIn ?place .
+          ?perception saqi:delhiGovtWorkPerception ?percption_govt .
+          ?place saqi:hasName ?placeName .
+          {
+            SELECT (COUNT( ?placeName) as ?count2) ?placeName
+            WHERE {
+                    ?person rdf:type saqi:Person ;
+                    saqi:hasIndividualPerception ?perception ;
+                    saqi:isPartOfSocialCohort ?cohort ;
+                    saqi:livesIn ?place .
+                ?perception saqi:delhiGovtWorkPerception ?percption_govt .
+                    ?place saqi:hasName ?placeName .
+            }
+            GROUP BY ?placeName
+          }	
+    
+        } 
+    GROUP BY ?percption_govt ?placeName ?count2
+    ORDER BY ?placeName ?percption_govt ?perceptionPercentage
+    `
+  },
+  {
+    title: "Perception of people living in different regions towards air quality compared to their region [Survey Data][CQ5]",
+    query: `#Perception of people living in different regions towards air quality compared to their region [Survey Data][CQ5]
+    # The query returns percentage count of rating groups across different spatial locations
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX ns0: <https://kracr.iiitd.edu.in/ontology/>
+    SELECT ?perceptaion_compared_to_other_areas ?placeName (xsd:integer(COUNT( ?perceptaion_compared_to_other_areas) *100 / ?count2) as ?perceptionPercentage)
+        WHERE {
+          ?person rdf:type saqi:Person ;
+          saqi:hasIndividualPerception ?perception ;
+          saqi:isPartOfSocialCohort ?cohort ;
+          saqi:livesIn ?place .
+          ?perception saqi:howIsYourLocalityComparedToOtherAreas ?perceptaion_compared_to_other_areas .
+          ?place saqi:hasName ?placeName .
+          {
+            SELECT (COUNT( ?placeName) as ?count2) ?placeName
+            WHERE {
+                    ?person rdf:type saqi:Person ;
+                    saqi:hasIndividualPerception ?perception ;
+                    saqi:isPartOfSocialCohort ?cohort ;
+                    saqi:livesIn ?place .
+                ?perception saqi:howIsYourLocalityComparedToOtherAreas ?perceptaion_compared_to_other_areas .
+                    ?place saqi:hasName ?placeName .
+            }
+            GROUP BY ?placeName
+          }	
+    
+        } 
+    GROUP BY ?perceptaion_compared_to_other_areas ?placeName ?count2
+    ORDER BY ?perceptaion_compared_to_other_areas ?perceptionPercentage
+    `
+  },
+  {
     title: "Get all sensor values obtained from local pollution sensors [Local Sensors]",
     query: `# The query returns all sensor values obtained from local pollution sensors
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -41,7 +153,7 @@ SELECT ?pm10 ?pm25 ?humid ?temp ?placeName ?time WHERE {
 LIMIT 10000`
   },
   {
-    title: "Get all parameters obtained from CPCB sensors [CPCB]",
+    title: "Get all parameters obtained from CPCB sensors [CPCB][CQ3]",
     query: `# The query returns all parameters obtained from CPCB sensors
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -134,7 +246,7 @@ GROUP BY ?source
 LIMIT 10000`
   },
   {
-    title: "Get pollution perception across different spatial locations [Survey Data]",
+    title: "Get pollution perception across different spatial locations [Survey Data][CQ2]",
     query: `# The query returns percentage count of rating groups across different spatial locations
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
