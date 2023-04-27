@@ -29,7 +29,7 @@
 <div
     use:onload
     transition:scale={{ delay: 50, duration: 200, easing: cubicOut }}
-    class="flex h-screen w-screen "
+    class="flex h-screen w-screen bg-white"
 >
     <div class="flex w-screen flex-col justify-center items-center">
         <div

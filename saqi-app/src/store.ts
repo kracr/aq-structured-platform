@@ -1,11 +1,11 @@
 import { writable, derived } from 'svelte/store'
 
-export const GlobalLanguage = writable('Eng')
+export const GlobalLanguage = writable('Hin')
 export const SpatialLocation = writable('JarodhaKalan')
 export const SocialCohort = writable('Academy')
 export const IsMuted = writable(true)
 export const IsSparql = writable(true)
-export const SPARQL_ENDPOINT = "http://localhost:3030/aq-store/sparql"
+export const SPARQL_ENDPOINT = "https://kracr.iiitd.edu.in/sparql"
 
 const eng = {
     NextPage: "Go to next page",
@@ -124,7 +124,7 @@ const hin = {
     Satisfactory: "संतोषजनक: संवेदनशील लोगों को सांस लेने में थोड़ी तकलीफ हो सकती है।",
     Moderate: "संतुलित: फेफड़े, अस्थमा और हृदय रोग से पीड़ित लोगों को सांस लेने में तकलीफ हो सकती है।",
     Poor: "गंभीर: लंबे समय तक एक्सपोजर पर ज्यादातर लोगों को सांस लेने में तकलीफ हो सकती है।",
-    VeryPoor: "बहुत गंभीर : लंबे समय तक संपर्क में रहने पर सांस की बीमारी ठीक हो सकती है।",
+    VeryPoor: "बहुत गंभीर : लंबे समय तक संपर्क में रहने पर सांस की बीमारी हो सकती है।",
     Severe: "बहुत गंभीर : इतना प्रदूषण स्वस्थ लोगों को प्रभावित कर सकता है और मौजूदा बीमारियों वाले लोगों को गंभीर रूप से प्रभावित कर सकता है",
 
     Inference: "निष्कर्ष",
@@ -142,7 +142,7 @@ const hin = {
 export const Constants = derived(
     GlobalLanguage,
     ($GlobalLanguage) => {
-        return $GlobalLanguage == "Eng" ? eng : hin
+        return $GlobalLanguage === "Eng" ? eng : hin
     }
 )
 

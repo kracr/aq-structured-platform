@@ -5,10 +5,11 @@
     import { Constants, GlobalLanguage } from "../store";
     import { get } from "svelte/store";
     // import { DatePicker } from "attractions";
-    import { SpeakText, getAQIIndex, runSPARQL, sleep } from "../utils";
+    import { SpeakText, SpeakTextDirectMessage, getAQIIndex, runSPARQL, sleep } from "../utils";
     import { aqi_sparql_day } from "../data/sparql";
     import { Datepicker } from "svelte-calendar";
     import { Loading } from "attractions";
+    import { onMount } from "svelte";
 
     let nextLink = "/prompt";
     let homeLink = "/";
@@ -133,7 +134,8 @@
                     break;
             }
         }
-        console.log(aqi_data);
+        console.log(aqi_data,max_min_timeofday);
+        // SpeakTextDirectMessage()
         // aqi_data.pm10 = Math.round(
         //     data["results"]["bindings"][1]["pm_10"]["value"]
         // );
@@ -147,14 +149,14 @@
 
 <div
     transition:scale={{ delay: 50, duration: 200, easing: cubicOut }}
-    class="flex h-screen w-screen "
+    class="flex h-screen w-screen bg-white"
 >
     <div class="w-3/4 m-auto flex flex-col mt-16 mb-32 space-y-4">
         <!-- svelte-ignore a11y-missing-attribute -->
         <a
             use:link={homeLink}
             class="decoration-black no-underline hover:text-black"
-            ><h2 class="text-4xl mb-4">SAQI</h2></a
+            ><h2 class="text-4xl mb-4 text-black">SAQI</h2></a
         >
         <div
             class="flex-1 text-center bg-slate-100 rounded-lg border border-slate-400 shadow-lg sm:p-8 dark:bg-gray-800 dark:border-gray-700"

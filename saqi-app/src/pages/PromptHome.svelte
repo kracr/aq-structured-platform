@@ -49,15 +49,15 @@
 
 <div
     transition:scale={{ delay: 50, duration: 200, easing: cubicOut }}
-    class="flex h-screen w-screen "
+    class="flex h-screen w-screen bg-white"
 >
-    <SparqlEndpointButton />
-    <div class="w-3/4 m-auto flex flex-col mt-32 mb-32 ">
+    <!-- <SparqlEndpointButton /> -->
+    <div class="w-3/4 m-auto flex flex-col mt-32 mb-32">
         <!-- svelte-ignore a11y-missing-attribute -->
         <a
             use:link={homeLink}
             class="decoration-black no-underline hover:text-black"
-            ><h2 class="text-4xl mb-8">SAQI</h2></a
+            ><h2 class="text-4xl mb-8 text-black">SAQI</h2></a
         >
         <div class="flex-1 flow-root">
             <!-- <h2 class="text-2xl mb-8">{$Constants["nextPromptTitle"]}</h2> -->
@@ -80,14 +80,10 @@
                         >
                             <div class="flex items-center space-x-4">
                                 <div class="min-w-0">
-                                    <p
-                                        class="text-xl text-gray-900 truncate dark:text-white"
-                                    >
+                                    <p class="text-lg text-black truncate">
                                         {title[$GlobalLanguage]}
                                     </p>
-                                    <p
-                                        class="text-xl text-gray-500 truncate dark:text-gray-400"
-                                    >
+                                    <p class="text-base text-gray-700 truncate">
                                         {stripHtml(
                                             description[$GlobalLanguage]
                                         )}

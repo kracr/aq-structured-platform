@@ -4,31 +4,40 @@
     import { IsMuted } from "../store";
     import { Button } from "attractions";
     import { fade } from "svelte/transition";
+
+    function loadVoices(){
+        var msg = new SpeechSynthesisUtterance(' ');
+        var msg = new SpeechSynthesisUtterance();
+        var voices = window.speechSynthesis.getVoices();
+        console.log(voices)
+    }
 </script>
 
 <div class="flex justify-center  bg-gray-50 mute-selector">
     {#if !$IsMuted}
         <button
-            class="mute-button"
+            class="mute-button text-white"
             on:click={() => {
                 IsMuted.update((current) => !current);
+                loadVoices();
                 console.log("Is muted", $IsMuted);
             }}
         >
-            <Icon src={SpeakerWave} theme="outline" class="icon-small" />
+            <Icon src={SpeakerWave} theme="outline" class="icon-small text-black" />
         </button>
     {:else}
         <button
-            class="mute-button"
+            class="mute-button text-black"
             on:click={() => {
                 IsMuted.update((current) => !current);
                 console.log("Is muted", $IsMuted);
+                loadVoices();
             }}
         >
             <Icon
                 src={SpeakerXMark}
                 theme="outline"
-                class="icon-small text-sky-900"
+                class="icon-small text-black"
             />
         </button>
     {/if}
