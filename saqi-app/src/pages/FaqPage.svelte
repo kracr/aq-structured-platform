@@ -1,16 +1,25 @@
 <script lang="ts">
     import { scale } from "svelte/transition";
     import { cubicOut } from "svelte/easing";
+
     import { link } from "svelte-spa-router";
     import { Constants, GlobalLanguage } from "../store";
     import { onMount } from "svelte";
-    import { SpeakText,SpeakTextDirectMessage } from "../utils";
+    import { SpeakText, SpeakTextDirectMessage } from "../utils";
     let nextLink = "/prompt";
     let homeLink = "/";
     export let params;
-    import { faq_prompt_data } from "../data/prompts";
+    import { faq_prompt_data, cohorts_prompt_data } from "../data/prompts";
+
     let currentPrompt = faq_prompt_data.find((o) => o.id == params.id);
+    if (typeof currentPrompt === "undefined") {
+        //@ts-ignore
+        currentPrompt = Object.values(cohorts_prompt_data).find(
+            (o: any) => o.id == params.id
+        );
+    }
     console.log(currentPrompt, params);
+
     onMount(async () => {
         console.log("Loaded Language Selection");
         SpeakTextDirectMessage(currentPrompt.description[$GlobalLanguage]);

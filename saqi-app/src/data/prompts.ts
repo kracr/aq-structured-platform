@@ -347,136 +347,251 @@ export type Prompt = {
     title: biString;
     description: biString;
     url: string;
+    cohort: string
 };
 
 export const faq_prompt_data: Prompt[] = [
     {
-        id: "WhatAQI",
-        title: { Eng: "What is AQI?", Hin: "AQI क्या है?" },
+        id: 'WhatAQI',
+        title: { Eng: 'What is AQI?', Hin: 'AQI क्या है?' },
         description: {
             Eng: "The air quality index (AQI) is an index for reporting air quality on a daily basis. It is a measure of how air pollution affects one's health witHin a short time period. The purpose of the AQI is to help people know how the local air quality impacts their health. The higher the AQI value, the greater the level of air pollution and the greater the health concerns. The concept of AQI has been widely used in many developed countries for over the last three decades. AQI quickly disseminates air quality information in real-time.",
-            Hin: "वायु गुणवत्ता सूचकांक (AQI) दैनिक आधार पर वायु गुणवत्ता की रिपोर्ट करने के लिए एक सूचकांक है। यह इस बात का पैमाना है कि वायु प्रदूषण कम समय में किसी के स्वास्थ्य को कैसे प्रभावित करता है। AQI का उद्देश्य लोगों को यह जानने में मदद करना है कि स्थानीय वायु गुणवत्ता उनके स्वास्थ्य को कैसे प्रभावित करती है। एक्यूआई मान जितना अधिक होगा, वायु प्रदूषण का स्तर उतना ही अधिक होगा और स्वास्थ्य संबंधी चिंताएं भी उतनी ही अधिक होंगी। पिछले तीन दशकों में कई विकसित देशों में AQI की अवधारणा का व्यापक रूप से उपयोग किया गया है। AQI वास्तविक समय में वायु गुणवत्ता की जानकारी को तुरंत प्रसारित करता है।"
+            Hin: 'वायु गुणवत्ता सूचकांक (AQI) दैनिक आधार पर वायु गुणवत्ता की रिपोर्ट करने के लिए एक सूचकांक है। यह इस बात का पैमाना है कि वायु प्रदूषण कम समय में किसी के स्वास्थ्य को कैसे प्रभावित करता है। AQI का उद्देश्य लोगों को यह जानने में मदद करना है कि स्थानीय वायु गुणवत्ता उनके स्वास्थ्य को कैसे प्रभावित करती है। एक्यूआई मान जितना अधिक होगा, वायु प्रदूषण का स्तर उतना ही अधिक होगा और स्वास्थ्य संबंधी चिंताएं भी उतनी ही अधिक होंगी। पिछले तीन दशकों में कई विकसित देशों में AQI की अवधारणा का व्यापक रूप से उपयोग किया गया है। AQI वास्तविक समय में वायु गुणवत्ता की जानकारी को तुरंत प्रसारित करता है।'
         },
-        url: "/prompt/faq/WhatAQI"
+        url: '/prompt/faq/WhatAQI',
+        cohort: 'all'
     },
     {
-        id: "HowToUseApp",
-        title: { Eng: "Know how to use this app?", Hin: "जानिए  इस ऐप को कैसे इस्तेमाल करें?" },
-        description: {
-            Eng: "Click show me more to get discover new prompts and know more about the AQI in your area.",
-            Hin: "नए तथ्य खोजने के लिए \"और दिखाइए\" पर क्लिक करें"
+        id: 'HowToUseApp',
+        title: {
+            Eng: 'Know how to use this app?',
+            Hin: 'जानिए  इस ऐप को कैसे इस्तेमाल करें?'
         },
-        url: "/prompt/faq/HowToUseApp"
+        description: {
+            Eng: 'Click show me more to get discover new prompts and know more about the AQI in your area.',
+            Hin: 'नए तथ्य खोजने के लिए "और दिखाइए" पर क्लिक करें'
+        },
+        url: '/prompt/faq/HowToUseApp',
+        cohort: 'all'
     },
     {
-        id: "WhatAirPollution",
-        title: { Eng: "What is air pollution?", Hin: "वायु प्रदूषण क्या है?" },
+        id: 'WhatAirPollution',
+        title: { Eng: 'What is air pollution?', Hin: 'वायु प्रदूषण क्या है?' },
         description: {
-            Eng: "Air pollution is contamination of the indoor or outdoor environment by any chemical, physical or biological agent that modifies the natural characteristics of the atmosphere. Household combustion devices, motor vehicles, industrial facilities and forest fires are common sources of air pollution. Pollutants of major public health concern include particulate matter, carbon monoxide, ozone, nitrogen dioxide and sulfur dioxide. Outdoor and indoor air pollution cause respiratory and other diseases, which can be fatal.",
-            Hin: "वायु प्रदूषण किसी भी रासायनिक, भौतिक या जैविक एजेंट द्वारा इनडोर या बाहरी वातावरण का संदूषण (कंटैमिनेशन) है जो वातावरण की प्राकृतिक विशेषताओं को संशोधित करता है। घरेलू दहन उपकरण, मोटर वाहन, औद्योगिक सुविधाएं और जंगल की आग वायु प्रदूषण के सामान्य स्रोत हैं। प्रमुख सार्वजनिक स्वास्थ्य चिंता के प्रदूषकों में पार्टिकुलेट मैटर, कार्बन मोनोऑक्साइड, ओजोन, नाइट्रोजन डाइऑक्साइड और सल्फर डाइऑक्साइड शामिल हैं। बाहरी और इनडोर वायु प्रदूषण श्वसन और अन्य बीमारियों का कारण बनता है, जो घातक हो सकता है।"
+            Eng: 'Air pollution is contamination of the indoor or outdoor environment by any chemical, physical or biological agent that modifies the natural characteristics of the atmosphere. Household combustion devices, motor vehicles, industrial facilities and forest fires are common sources of air pollution. Pollutants of major public health concern include particulate matter, carbon monoxide, ozone, nitrogen dioxide and sulfur dioxide. Outdoor and indoor air pollution cause respiratory and other diseases, which can be fatal.',
+            Hin: 'वायु प्रदूषण किसी भी रासायनिक, भौतिक या जैविक एजेंट द्वारा इनडोर या बाहरी वातावरण का संदूषण (कंटैमिनेशन) है जो वातावरण की प्राकृतिक विशेषताओं को संशोधित करता है। घरेलू दहन उपकरण, मोटर वाहन, औद्योगिक सुविधाएं और जंगल की आग वायु प्रदूषण के सामान्य स्रोत हैं। प्रमुख सार्वजनिक स्वास्थ्य चिंता के प्रदूषकों में पार्टिकुलेट मैटर, कार्बन मोनोऑक्साइड, ओजोन, नाइट्रोजन डाइऑक्साइड और सल्फर डाइऑक्साइड शामिल हैं। बाहरी और इनडोर वायु प्रदूषण श्वसन और अन्य बीमारियों का कारण बनता है, जो घातक हो सकता है।'
         },
-        url: "/prompt/faq/WhatAirPollution"
+        url: '/prompt/faq/WhatAirPollution',
+        cohort: 'all'
     },
     {
-        id: "HowToReadAQI",
-        title: { Eng: "How to understand AQI measurement?", Hin: "एक्यूआई (AQI) माप को कैसे समझें?" },
-        description: {
-            Eng: "AQI is a number which is different for each place. <br/> The higher the AQI value, the greater the level of air pollution and the greater the health concern <br/> <ul> <li>0-50 : Good</li> <li>0-50 : Satisfactory</li> <li>100-200 : Moderate</li> <li>200-300 : Poor</li> <li>300-400 : Very Poor</li> <li>400-500 : Severe</li> </ul>",
-            Hin: "AQI एक संख्या है जो हर जगह के लिए अलग होती है। <br/> AQI मान जितना अधिक होगा, वायु प्रदूषण का स्तर उतना ही अधिक होगा और स्वास्थ्य पर नुकसान उतना ही अधिक होगी  <br/> <ul> <li>0-50 : अच्छा</li> <li>0-50 : संतोषजनक</li> <li>100-200 : मध्यम</li> <li>200-300 : घटिया</li> <li>300-400 : बहुत खराब</li> <li>400-500 : गंभीर</li> </ul>"
+        id: 'HowToReadAQI',
+        title: {
+            Eng: 'How to understand AQI measurement?',
+            Hin: 'एक्यूआई (AQI) माप को कैसे समझें?'
         },
-        url: "/prompt/faq/HowToReadAQI"
+        description: {
+            Eng: 'AQI is a number which is different for each place. <br/> The higher the AQI value, the greater the level of air pollution and the greater the health concern <br/> <ul> <li>0-50 : Good</li> <li>0-50 : Satisfactory</li> <li>100-200 : Moderate</li> <li>200-300 : Poor</li> <li>300-400 : Very Poor</li> <li>400-500 : Severe</li> </ul>',
+            Hin: 'AQI एक संख्या है जो हर जगह के लिए अलग होती है। <br/> AQI मान जितना अधिक होगा, वायु प्रदूषण का स्तर उतना ही अधिक होगा और स्वास्थ्य पर नुकसान उतना ही अधिक होगी  <br/> <ul> <li>0-50 : अच्छा</li> <li>0-50 : संतोषजनक</li> <li>100-200 : मध्यम</li> <li>200-300 : घटिया</li> <li>300-400 : बहुत खराब</li> <li>400-500 : गंभीर</li> </ul>'
+        },
+        url: '/prompt/faq/HowToReadAQI',
+        cohort: 'all'
     },
     {
-        id: "WhatSourcesGeneral",
-        title: { Eng: "What causes the pollution in general?", Hin: "सामान्य रूप से प्रदूषण का क्या कारण है?" },
-        description: {
-            Eng: "Household combustion devices, motor vehicles, industrial facilities, crop and waste burning and forest fires are common sources of air pollution.",
-            Hin: "घरेलू दहन उपकरण जैसे चुहला, मोटर वाहन, औद्योगिक फ़ैक्टरी, फसल और कूड़ा जलना और जंगल की आग वायु प्रदूषण के सामान्य स्रोत हैं।"
+        id: 'WhatSourcesGeneral',
+        title: {
+            Eng: 'What causes the pollution in general?',
+            Hin: 'सामान्य रूप से प्रदूषण का क्या कारण है?'
         },
-        url: "/prompt/faq/WhatSourcesGeneral"
+        description: {
+            Eng: 'Household combustion devices, motor vehicles, industrial facilities, crop and waste burning and forest fires are common sources of air pollution.',
+            Hin: 'घरेलू दहन उपकरण जैसे चुहला, मोटर वाहन, औद्योगिक फ़ैक्टरी, फसल और कूड़ा जलना और जंगल की आग वायु प्रदूषण के सामान्य स्रोत हैं।'
+        },
+        url: '/prompt/faq/WhatSourcesGeneral',
+        cohort: 'all'
     },
     {
-        id: "WhatArePolluters",
-        title: { Eng: "What are these particulate matter and polluting gases?", Hin: "ये पार्टिकुलेट मैटर और प्रदूषणकारी गैसें कौन सी हैं?" },
-        description: {
-            Eng: "Particulat matter consists of substances suspended in the air with a diameter of 10 microns or less, (≤ PM10) they can penetrate and lodge deep inside the lungs, the even more health-damaging particles are those with a diameter of 2.5 microns or less, (≤ PM2.5). PM2.5  can penetrate the lung barrier and enter the blood system. Chronic exposure to particles contributes to the risk of developing cardiovascular and respiratory diseases, as well as of lung cancer.",
-            Hin: "पार्टिकुलेट मैटर 10 (PM 10) हवा में 10 माइक्रोन या उससे कम व्यास वाले पदार्थ होते हैं, वे फेफड़ों के अंदर गहराई तक प्रवेश कर सकते हैं और इससे भी अधिक स्वास्थ्य-हानिकारक कण 2.5 माइक्रोन (PM 2.5) या उससे कम व्यास वाले होते हैं। PM2.5 फेफड़ों की बाधा में प्रवेश कर सकता है और रक्त प्रणाली में प्रवेश कर सकता है। इन कणों के लगातार संपर्क से हृदय और श्वसन संबंधी बीमारियों के साथ-साथ फेफड़ों के कैंसर के विकास के संभावना हो पैदा सकती है।"
+        id: 'WhatArePolluters',
+        title: {
+            Eng: 'What are these particulate matter and polluting gases?',
+            Hin: 'ये पार्टिकुलेट मैटर और प्रदूषणकारी गैसें कौन सी हैं?'
         },
-        url: "/prompt/faq/WhatArePolluters"
+        description: {
+            Eng: 'Particulat matter consists of substances suspended in the air with a diameter of 10 microns or less, (≤ PM10) they can penetrate and lodge deep inside the lungs, the even more health-damaging particles are those with a diameter of 2.5 microns or less, (≤ PM2.5). PM2.5  can penetrate the lung barrier and enter the blood system. Chronic exposure to particles contributes to the risk of developing cardiovascular and respiratory diseases, as well as of lung cancer.',
+            Hin: 'पार्टिकुलेट मैटर 10 (PM 10) हवा में 10 माइक्रोन या उससे कम व्यास वाले पदार्थ होते हैं, वे फेफड़ों के अंदर गहराई तक प्रवेश कर सकते हैं और इससे भी अधिक स्वास्थ्य-हानिकारक कण 2.5 माइक्रोन (PM 2.5) या उससे कम व्यास वाले होते हैं। PM2.5 फेफड़ों की बाधा में प्रवेश कर सकता है और रक्त प्रणाली में प्रवेश कर सकता है। इन कणों के लगातार संपर्क से हृदय और श्वसन संबंधी बीमारियों के साथ-साथ फेफड़ों के कैंसर के विकास के संभावना हो पैदा सकती है।'
+        },
+        url: '/prompt/faq/WhatArePolluters',
+        cohort: 'all'
     },
     {
-        id: "WhatArePollutingGases",
-        title: { Eng: "What are the different polluting gases in the air?", Hin: "वायु में विभिन्न प्रदूषणकारी गैसें कौन-सी हैं?" },
-        description: {
-            Eng: "Ozone (O3), Nitrogen Dioxide (NO2) and Sulphur Dioxide (SO2) are some of the primary pollutant gases in the air.",
-            Hin: "ओजोन (O3), नाइट्रोजन डाइऑक्साइड (NO2) और सल्फर डाइऑक्साइड (SO2) हवा में मौजूद कुछ प्राथमिक प्रदूषक गैसें हैं।"
+        id: 'WhatArePollutingGases',
+        title: {
+            Eng: 'What are the different polluting gases in the air?',
+            Hin: 'वायु में विभिन्न प्रदूषणकारी गैसें कौन-सी हैं?'
         },
-        url: "/prompt/faq/WhatArePollutingGases"
+        description: {
+            Eng: 'Ozone (O3), Nitrogen Dioxide (NO2) and Sulphur Dioxide (SO2) are some of the primary pollutant gases in the air.',
+            Hin: 'ओजोन (O3), नाइट्रोजन डाइऑक्साइड (NO2) और सल्फर डाइऑक्साइड (SO2) हवा में मौजूद कुछ प्राथमिक प्रदूषक गैसें हैं।'
+        },
+        url: '/prompt/faq/WhatArePollutingGases',
+        cohort: 'all'
     },
     {
-        id: "WhatOzone",
-        title: { Eng: "What is ozone?", Hin: "Ozone (O3) क्या है?" },
+        id: 'WhatOzone',
+        title: { Eng: 'What is ozone?', Hin: 'Ozone (O3) क्या है?' },
         description: {
-            Eng: "Ozone at ground level is one of the major constituents of photochemical smog. It is formed by the reaction with sunlight of pollutants such as nitrogen oxides from vehicle and industry emissions. As a result, the highest levels of ozone pollution occur during periods of sunny weather. Excessive ozone in the air can have a marked effect on human health. It can cause breathing problems, trigger asthma, reduce lung function and cause lung diseases.",
-            Hin: "ओजोन फोटोकैमिकल स्मॉग के प्रमुख घटकों में से एक है। यह वाहन और उद्योग के उत्सर्जन से नाइट्रोजन ऑक्साइड जैसे प्रदूषकों की सूर्य के प्रकाश के साथ प्रतिक्रिया से बनता है। नतीजतन, ओजोन प्रदूषण का उच्चतम स्तर धूप वाले मौसम की अवधि के दौरान होता है। हवा में अत्यधिक ओजोन का मानव स्वास्थ्य पर गहरा प्रभाव पड़ सकता है। यह सांस लेने की समस्या पैदा कर सकता है, अस्थमा को ट्रिगर कर सकता है, फेफड़ों के कार्य को कम कर सकता है और फेफड़ों के रोग पैदा कर सकता है।"
+            Eng: 'Ozone at ground level is one of the major constituents of photochemical smog. It is formed by the reaction with sunlight of pollutants such as nitrogen oxides from vehicle and industry emissions. As a result, the highest levels of ozone pollution occur during periods of sunny weather. Excessive ozone in the air can have a marked effect on human health. It can cause breathing problems, trigger asthma, reduce lung function and cause lung diseases.',
+            Hin: 'ओजोन फोटोकैमिकल स्मॉग के प्रमुख घटकों में से एक है। यह वाहन और उद्योग के उत्सर्जन से नाइट्रोजन ऑक्साइड जैसे प्रदूषकों की सूर्य के प्रकाश के साथ प्रतिक्रिया से बनता है। नतीजतन, ओजोन प्रदूषण का उच्चतम स्तर धूप वाले मौसम की अवधि के दौरान होता है। हवा में अत्यधिक ओजोन का मानव स्वास्थ्य पर गहरा प्रभाव पड़ सकता है। यह सांस लेने की समस्या पैदा कर सकता है, अस्थमा को ट्रिगर कर सकता है, फेफड़ों के कार्य को कम कर सकता है और फेफड़ों के रोग पैदा कर सकता है।'
         },
-        url: "/prompt/faq/WhatOzone"
+        url: '/prompt/faq/WhatOzone',
+        cohort: 'all'
     },
     {
-        id: "WhatNO2",
-        title: { Eng: "What is Nitrogen Dioxide (NO2)", Hin: "नाइट्रोजन डाइऑक्साइड (NO2) क्या है?" },
-        description: {
-            Eng: "NO2 contributes to generation of nitrate aerosol which results in Particulate Matter and it combines with sunlight to form ozone. NO2 is are emitted from combustion process in vehicle engines and heating devices. Exposure to NO2 causes symptoms of bronchitis in asthmatic children and reduced lung function growth.",
-            Hin: "NO2 नाइट्रेट एरोसोल के उत्पादन में योगदान देता है जिसके परिणामस्वरूप पार्टिकुलेट मैटर उत्त्पन्न होता है और यह सूर्य के प्रकाश के साथ मिलकर ओजोन भी बनाता है। NO2 वाहन के इंजन और हीटिंग उपकरणों में दहन प्रक्रिया से उत्सर्जित होता है। NO2 के संपर्क में आने से दमा के रोगी (ashtma) बच्चों में ब्रोंकाइटिस के लक्षण पैदा होते हैं और फेफड़ों की कार्यक्षमता कम हो जाती है।"
+        id: 'WhatNO2',
+        title: {
+            Eng: 'What is Nitrogen Dioxide (NO2)',
+            Hin: 'नाइट्रोजन डाइऑक्साइड (NO2) क्या है?'
         },
-        url: "/prompt/faq/WhatNO2"
+        description: {
+            Eng: 'NO2 contributes to generation of nitrate aerosol which results in Particulate Matter and it combines with sunlight to form ozone. NO2 is are emitted from combustion process in vehicle engines and heating devices. Exposure to NO2 causes symptoms of bronchitis in asthmatic children and reduced lung function growth.',
+            Hin: 'NO2 नाइट्रेट एरोसोल के उत्पादन में योगदान देता है जिसके परिणामस्वरूप पार्टिकुलेट मैटर उत्त्पन्न होता है और यह सूर्य के प्रकाश के साथ मिलकर ओजोन भी बनाता है। NO2 वाहन के इंजन और हीटिंग उपकरणों में दहन प्रक्रिया से उत्सर्जित होता है। NO2 के संपर्क में आने से दमा के रोगी (ashtma) बच्चों में ब्रोंकाइटिस के लक्षण पैदा होते हैं और फेफड़ों की कार्यक्षमता कम हो जाती है।'
+        },
+        url: '/prompt/faq/WhatNO2',
+        cohort: 'all'
     },
     {
-        id: "WhatSO2",
-        title: { Eng: "What is Sulphur Dioxide (SO2)", Hin: "सल्फर डाइऑक्साइड (SO2) क्या है?" },
-        description: {
-            Eng: "SO2 is a colourless gas with a sharp odour. It is produced from the burning of sulfur-containing fossil fuels for domestic heating, power generation and motor vehicles. SO2 can affect the respiratory system and the functions of the lungs, and causes irritation of the eyes. Inflammation of the respiratory tract causes coughing, mucus secretion, aggravation of asthma and chronic bronchitis and makes people more prone to infections of the respiratory tract.",
-            Hin: "SO2 एक तीखी गंध वाली रंगहीन गैस है। यह घरेलू हीटिंग, बिजली उत्पादन और मोटर वाहनों से उत्पन्न होता है। SO2 श्वसन प्रणाली (respiratory system) और फेफड़ों के कार्यों को प्रभावित कर सकता है और आंखों में जलन पैदा कर सकता है। श्वसन पथ की सूजन के कारण खांसी, बलगम स्राव, अस्थमा और क्रोनिक ब्रोन्काइटिस की वृद्धि होती है और लोगों को श्वसन पथ के संक्रमण का खतरा अधिक होता है।"
+        id: 'WhatSO2',
+        title: {
+            Eng: 'What is Sulphur Dioxide (SO2)',
+            Hin: 'सल्फर डाइऑक्साइड (SO2) क्या है?'
         },
-        url: "/prompt/faq/WhatSO2"
+        description: {
+            Eng: 'SO2 is a colourless gas with a sharp odour. It is produced from the burning of sulfur-containing fossil fuels for domestic heating, power generation and motor vehicles. SO2 can affect the respiratory system and the functions of the lungs, and causes irritation of the eyes. Inflammation of the respiratory tract causes coughing, mucus secretion, aggravation of asthma and chronic bronchitis and makes people more prone to infections of the respiratory tract.',
+            Hin: 'SO2 एक तीखी गंध वाली रंगहीन गैस है। यह घरेलू हीटिंग, बिजली उत्पादन और मोटर वाहनों से उत्पन्न होता है। SO2 श्वसन प्रणाली (respiratory system) और फेफड़ों के कार्यों को प्रभावित कर सकता है और आंखों में जलन पैदा कर सकता है। श्वसन पथ की सूजन के कारण खांसी, बलगम स्राव, अस्थमा और क्रोनिक ब्रोन्काइटिस की वृद्धि होती है और लोगों को श्वसन पथ के संक्रमण का खतरा अधिक होता है।'
+        },
+        url: '/prompt/faq/WhatSO2',
+        cohort: 'all'
     },
     {
-        id: "IsPollutionIndoors",
-        title: { Eng: "Does being indoor prevent exposure to air pollution?", Hin: "क्या घर के अंदर रहने से वायु प्रदूषण से बचा जा सकता है?" },
-        description: {
-            Eng: "Indoor pollution increases with outdoor pollution because of outdoor pollution infiltrating indoors through doors and windows, however spending time indoors generally reduces exposure to ambient air pollutants. Indoor pollution may also come from indoor source, in that case it is advised to have proper ventillation to disperse the pollutants.",
-            Hin: "घर के अंदर का प्रदूषण बाहरी प्रदूषण के साथ बढ़ता है क्योंकि बाहरी प्रदूषण दरवाजे और खिड़कियों के माध्यम से घर के अंदर घुस जाता है, हालांकि घर के अंदर समय बिताने से आम तौर पर परिवेशी वायु प्रदूषकों के संपर्क में कमी आती है। इनडोर प्रदूषण भी इनडोर स्रोत से आ सकता है, उस स्थिति में प्रदूषकों को फैलाने के लिए उचित वेंटिलेशन की सलाह दी जाती है।"
+        id: 'IsPollutionIndoors',
+        title: {
+            Eng: 'Does being indoor prevent exposure to air pollution?',
+            Hin: 'क्या घर के अंदर रहने से वायु प्रदूषण से बचा जा सकता है?'
         },
-        url: "/prompt/faq/IsPollutionIndoors"
+        description: {
+            Eng: 'Indoor pollution increases with outdoor pollution because of outdoor pollution infiltrating indoors through doors and windows, however spending time indoors generally reduces exposure to ambient air pollutants. Indoor pollution may also come from indoor source, in that case it is advised to have proper ventillation to disperse the pollutants.',
+            Hin: 'घर के अंदर का प्रदूषण बाहरी प्रदूषण के साथ बढ़ता है क्योंकि बाहरी प्रदूषण दरवाजे और खिड़कियों के माध्यम से घर के अंदर घुस जाता है, हालांकि घर के अंदर समय बिताने से आम तौर पर परिवेशी वायु प्रदूषकों के संपर्क में कमी आती है। इनडोर प्रदूषण भी इनडोर स्रोत से आ सकता है, उस स्थिति में प्रदूषकों को फैलाने के लिए उचित वेंटिलेशन की सलाह दी जाती है।'
+        },
+        url: '/prompt/faq/IsPollutionIndoors',
+        cohort: 'all'
     },
     {
-        id: "WhatIndoorPollution",
-        title: { Eng: "What causes Indoor pollution?", Hin: "इनडोर प्रदूषण के कारण क्या हैं?" },
-        description: {
-            Eng: "Indoor pollution is primarily caused by using solid fuels such as wood, crop waste, charcoal, dung and kerosene in open fires. These fuels are inefficiently burnt, causing soot particles to enter the lungs. These particles are more dangerous than any outside sources and lead to lung diseases and deaths.",
-            Hin: "इनडोर प्रदूषण मुख्य रूप से लकड़ी, फसल के कचरे, लकड़ी का कोयला, गोबर और मिट्टी के तेल जैसे ठोस ईंधन का उपयोग खुली आग में करने के कारण होता है। ये ईंधन अक्षम रूप से जलाए जाते हैं, जिससे कालिख के कण फेफड़ों में प्रवेश कर जाते हैं। ये कण किसी भी बाहरी स्रोत से ज्यादा खतरनाक होते हैं और फेफड़ों की बीमारियों और मौतों का कारण बनते हैं।"
+        id: 'WhatIndoorPollution',
+        title: {
+            Eng: 'What causes Indoor pollution?',
+            Hin: 'इनडोर प्रदूषण के कारण क्या हैं?'
         },
-        url: "/prompt/faq/WhatIndoorPollution"
+        description: {
+            Eng: 'Indoor pollution is primarily caused by using solid fuels such as wood, crop waste, charcoal, dung and kerosene in open fires. These fuels are inefficiently burnt, causing soot particles to enter the lungs. These particles are more dangerous than any outside sources and lead to lung diseases and deaths.',
+            Hin: 'इनडोर प्रदूषण मुख्य रूप से लकड़ी, फसल के कचरे, लकड़ी का कोयला, गोबर और मिट्टी के तेल जैसे ठोस ईंधन का उपयोग खुली आग में करने के कारण होता है। ये ईंधन अक्षम रूप से जलाए जाते हैं, जिससे कालिख के कण फेफड़ों में प्रवेश कर जाते हैं। ये कण किसी भी बाहरी स्रोत से ज्यादा खतरनाक होते हैं और फेफड़ों की बीमारियों और मौतों का कारण बनते हैं।'
+        },
+        url: '/prompt/faq/WhatIndoorPollution',
+        cohort: 'all'
     },
     {
-        id: "WhenToGoOutside",
-        title: { Eng: "What is the best time to go outside for outdoor activities?", Hin: "बाहरी गतिविधियों के लिए बाहर जाने का सबसे अच्छा समय क्या है?" },
-        description: {
-            Eng: "Generally, pollution levels are high during the evenings and early mornings. Avoid going outside at early mornings near 5 to 8 AM for walk, rather, go after the sun has risen up at 11 AM to 2 PM, when pollution levels are nearly 50% lower compared to evenings and morning. Always check the AQI levels either through this app or the AQI india app before heading out.",
-            Hin: "आमतौर पर शाम और सुबह के समय प्रदूषण का स्तर अधिक होता है। सुबह 5 से 8 बजे के आसपास टहलने के लिए बाहर जाने से बचें, बल्कि सुबह 11 बजे से दोपहर 2 बजे तक सूरज उगने के बाद जाएं, जब शाम और सुबह की तुलना में प्रदूषण का स्तर लगभग 50% कम होता है। बाहर जाने से पहले हमेशा इस ऐप या AQI India ऐप के माध्यम से AQI स्तर देखें।"
+        id: 'WhenToGoOutside',
+        title: {
+            Eng: 'What is the best time to go outside for outdoor activities?',
+            Hin: 'बाहरी गतिविधियों के लिए बाहर जाने का सबसे अच्छा समय क्या है?'
         },
-        url: "/prompt/faq/WhenToGoOutside"
+        description: {
+            Eng: 'Generally, pollution levels are high during the evenings and early mornings. Avoid going outside at early mornings near 5 to 8 AM for walk, rather, go after the sun has risen up at 11 AM to 2 PM, when pollution levels are nearly 50% lower compared to evenings and morning. Always check the AQI levels either through this app or the AQI india app before heading out.',
+            Hin: 'आमतौर पर शाम और सुबह के समय प्रदूषण का स्तर अधिक होता है। सुबह 5 से 8 बजे के आसपास टहलने के लिए बाहर जाने से बचें, बल्कि सुबह 11 बजे से दोपहर 2 बजे तक सूरज उगने के बाद जाएं, जब शाम और सुबह की तुलना में प्रदूषण का स्तर लगभग 50% कम होता है। बाहर जाने से पहले हमेशा इस ऐप या AQI India ऐप के माध्यम से AQI स्तर देखें।'
+        },
+        url: '/prompt/faq/WhenToGoOutside',
+        cohort: 'all'
     },
     {
-        id: "HealthRisks",
-        title: { Eng: "What are the health risks of air pollution?", Hin: "वायु प्रदूषण के स्वास्थ्य जोखिम क्या हैं?" },
-        description: {
-            Eng: "According to research by Berkeley Earth, Exposure to 22 micrograms of PM 2.5 is equivalent to smoking 1 cigarette a day. During the worst days, delhi reaches 300-400 micrograms of PM 2.5 levels, which is same as smoking 13 to 18 cigarettes. Pollution damages our lungs and causes early deaths, especially in poor households using domestic fuels for cooking. These deaths are caused by penumonia, ischaemic heart diseases, lung cancer and pulmonary diseases.",
-            Hin: "बर्कले अर्थ (Berkeley Earth) के शोध के अनुसार, हवा में 22 माइक्रोग्राम PM 2.5 का होना एक दिन में 1 सिगरेट पीने के बराबर है। प्रदुषण के सबसे खराब दिनों में, दिल्ली 300-400 माइक्रोग्राम पीएम 2.5 के स्तर तक पहुंच जाती है, जो कि एक दिन में 13 से 18 सिगरेट पीने के बराबर है। प्रदूषण हमारे फेफड़ों को नुकसान पहुंचाता है और जल्दी मौत का कारण बनता है, खासकर गरीब घरों में खाना पकाने के लिए घरेलू ईंधन का उपयोग करते हुए। ये मौतें पेनुमोनिया, इस्केमिक हृदय रोग, फेफड़ों के कैंसर और फुफ्फुसीय रोगों के कारण होती हैं।"
+        id: 'HealthRisks',
+        title: {
+            Eng: 'What are the health risks of air pollution?',
+            Hin: 'वायु प्रदूषण के स्वास्थ्य जोखिम क्या हैं?'
         },
-        url: "/prompt/faq/HealthRisks"
-    },
+        description: {
+            Eng: 'According to research by Berkeley Earth, Exposure to 22 micrograms of PM 2.5 is equivalent to smoking 1 cigarette a day. During the worst days, delhi reaches 300-400 micrograms of PM 2.5 levels, which is same as smoking 13 to 18 cigarettes. Pollution damages our lungs and causes early deaths, especially in poor households using domestic fuels for cooking. These deaths are caused by penumonia, ischaemic heart diseases, lung cancer and pulmonary diseases.',
+            Hin: 'बर्कले अर्थ (Berkeley Earth) के शोध के अनुसार, हवा में 22 माइक्रोग्राम PM 2.5 का होना एक दिन में 1 सिगरेट पीने के बराबर है। प्रदुषण के सबसे खराब दिनों में, दिल्ली 300-400 माइक्रोग्राम पीएम 2.5 के स्तर तक पहुंच जाती है, जो कि एक दिन में 13 से 18 सिगरेट पीने के बराबर है। प्रदूषण हमारे फेफड़ों को नुकसान पहुंचाता है और जल्दी मौत का कारण बनता है, खासकर गरीब घरों में खाना पकाने के लिए घरेलू ईंधन का उपयोग करते हुए। ये मौतें पेनुमोनिया, इस्केमिक हृदय रोग, फेफड़ों के कैंसर और फुफ्फुसीय रोगों के कारण होती हैं।'
+        },
+        url: '/prompt/faq/HealthRisks',
+        cohort: 'all'
+    }
 ]
+export const cohorts_prompt_data: any = {
+    "Teacher": {
+        id: 'ReccomendationTeachers',
+        title: {
+            Eng: 'What should I do as a teacher?',
+            Hin: 'एक शिक्षक के रूप में मुझे क्या करना चाहिए?'
+        },
+        description: {
+            Eng: 'Playing time for school children should be decided based on pollution of the day. Morning assemblies could be postponed during peak pollution.',
+            Hin: 'स्कूली बच्चों के खेलने का समय दिन के प्रदूषण के आधार पर तय किया जाना चाहिए। अत्यधिक प्रदूषण के दौरान सुबह की सभाओं को स्थगित किया जा सकता है।'
+        },
+        url: '/prompt/faq/ReccomendationTeachers',
+        cohort: 'Teachers'
+    },
+    "MotherOfYoungKid": {
+        id: 'ReccomendationMotherOfYoungKid',
+        title: {
+            Eng: 'What should I do as a mother for my kids?',
+            Hin: 'एक माँ के रूप में मुझे अपने बच्चों के लिए क्या करना चाहिए?'
+        },
+        description: {
+            Eng: 'Always make sure children are wearing pollution masks when playing outside. Keep an eye on AQI levels, when it reaches danger levels, don\'t let your kids outside.',
+            Hin: 'बाहर खेलते समय हमेशा सुनिश्चित करें कि बच्चे प्रदूषण मास्क पहने हुए हैं। AQI के स्तर पर नज़र रखें, जब यह खतरे के स्तर पर पहुँच जाए, तो अपने बच्चों को बाहर न जाने दें।'
+        },
+        url: '/prompt/faq/ReccomendationMotherOfYoungKid',
+        cohort: 'MotherOfYoungKid'
+    },
+    "Student": {
+        id: 'ReccomendationStudent',
+        title: {
+            Eng: 'What should I do as a student?',
+            Hin: 'एक विद्यार्थी के रूप में मुझे क्या करना चाहिए?'
+        },
+        description: {
+            Eng: 'A student\'s role is to spread awareness among people to care about air pollution. You should also wear pollution masks at all time and discuss the harmful effects of pollution with your parents, elders and neighbourhood.',
+            Hin: 'एक छात्र की भूमिका लोगों में वायु प्रदूषण की देखभाल के लिए जागरूकता फैलाना है। आपको हर समय प्रदूषण मास्क भी पहनना चाहिए और अपने माता-पिता, बड़ों और आस-पड़ोस के साथ प्रदूषण के हानिकारक प्रभावों पर चर्चा करनी चाहिए।'
+        },
+        url: '/prompt/faq/ReccomendationStudent',
+        cohort: 'Student'
+    },
+    "SocialWorker": {
+        id: 'ReccomendationSocialWorker',
+        title: {
+            Eng: 'What should I do as a social worker?',
+            Hin: 'एक सामाजिक कार्यकर्ता के रूप में मुझे क्या करना चाहिए?'
+        },
+        description: {
+            Eng: 'A social worker like you can create change in the perception of society, we have to take the issue of pollution to every household, maintain discussion of pollution in local politics and keep spreading awareness to all of our citizens.  ',
+            Hin: 'आप जैसा समाजसेवी समाज की धारणा में बदलाव ला सकता है, हमें प्रदूषण के मुद्दे को घर-घर तक पहुंचाना है, स्थानीय राजनीति में प्रदूषण की चर्चा को बनाए रखना है और अपने सभी नागरिकों को जागरूक करते रहना है।'
+        },
+        url: '/prompt/faq/ReccomendationSocialWorker',
+        cohort: 'SocialWorker'
+    },
+    "Shopkeeper": {
+        id: 'ReccomendationShopkeeper',
+        title: {
+            Eng: 'What should I do as a shopkeeper?',
+            Hin: 'एक दुकानदार के रूप में मुझे क्या करना चाहिए?'
+        },
+        description: {
+            Eng: 'Wear pollution masks when outside, raise awareness to others about pollution.',
+            Hin: 'बाहर जाने पर प्रदूषण मास्क पहनें, दूसरों को प्रदूषण के बारे में जागरूक करें।'
+        },
+        url: '/prompt/faq/ReccomendationShopkeeper',
+        cohort: 'Shopkeeper'
+    }
+}
 export const aqi_prompt_data: Prompt[] = [
     {
         id: "AQINearMe",
@@ -485,7 +600,8 @@ export const aqi_prompt_data: Prompt[] = [
             Eng: "Get pollution measure from your nighbourhood",
             Hin: "अपने आस-पड़ोस से प्रदूषण माप प्राप्त करें"
         },
-        url: "/prompt/aqi/avg"
+        url: "/prompt/aqi/avg",
+        cohort: "all"
     },
     {
         id: "AQINearMe",
@@ -494,7 +610,8 @@ export const aqi_prompt_data: Prompt[] = [
             Eng: "Get morning, afternoon and evening pollution levels in your neighborhood",
             Hin: "अपने आस-पड़ोस पर सुबह, दोपहर और शाम को प्रदूषण का स्तर प्राप्त करें"
         },
-        url: "/prompt/aqi/day"
+        url: "/prompt/aqi/day",
+        cohort: "all"
     }
 ]
 
@@ -506,7 +623,8 @@ export const sparql_prompt_data: Prompt[] = [
             Eng: "Learn about pollution sources from your nighbourhood",
             Hin: "अपने आस-पास के प्रदूषण स्रोतों के बारे में जानें"
         },
-        url: "/prompt/sparql/PollutionSourcesNearMe"
+        url: "/prompt/sparql/PollutionSourcesNearMe",
+        cohort: "all"
     }
 ]
 

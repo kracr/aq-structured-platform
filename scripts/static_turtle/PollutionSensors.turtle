@@ -1,0 +1,23 @@
+@prefix : <https://kracr.iiitd.edu.in/ontology/PollutionODP> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix PollutionODP: <https://kracr.iiitd.edu.in/ontology/PollutionODP#> .
+@prefix SAQIOntology: <https://kracr.iiitd.edu.in/ontology/SAQIOntology#> .
+@prefix AirQualityOntology: <https://kracr.iiitd.edu.in/ontology/AirQualityOntology#> .
+@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@prefix SAQIOntologyPollutionModule: <https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#> .
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#Tekhand
+saqi:Tekhand rdf:type owl:NamedIndividual , schema:Place .
+
+saqi:Tekhand geo:lat "28.5626"^^xsd:Literal
+saqi:Tekhand geo:long "77.2914"^^xsd:Literal
+
+saqi:NangliDairy geo:lat "28.6090"^^xsd:Literal
+saqi:NangliDairy geo:long "76.9855"^^xsd:Literal

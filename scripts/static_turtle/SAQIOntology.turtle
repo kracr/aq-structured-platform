@@ -1,31 +1,133 @@
-@prefix : <https://kracr.iiitd.edu.in/ontology/PollutionODP> .
+@prefix : <https://kracr.iiitd.edu.in/ontology/saqi> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix saqi: <https://kracr.iiitd.edu.in/ontology/saqi#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix schema: <https://schema.org/> .
-@prefix PollutionODP: <https://kracr.iiitd.edu.in/ontology/PollutionODP#> .
-@prefix SAQIOntology: <https://kracr.iiitd.edu.in/ontology/SAQIOntology#> .
-@prefix AirQualityOntology: <https://kracr.iiitd.edu.in/ontology/AirQualityOntology#> .
+@prefix schema1: <http://schema.org/> .
 @prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
-@prefix SAQIOntologyPollutionModule: <https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#> .
-@base <https://kracr.iiitd.edu.in/ontology/saqi> .
+@base <https://kracr.iiitd.edu.in/ontology/saqi#> .
 
-<https://kracr.iiitd.edu.in/ontology/saqi> rdf:type owl:Ontology ;
-                                            owl:imports <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl> ;
-                                            terms:contributor "Saad Ahmad, Sudhir Attri, Raghava Mutharaju; (https://kracr.iiitd.edu.in/)" ;
-                                            terms:license "https://www.apache.org/licenses/LICENSE-2.0" ;
-                                            rdfs:label "Ontology to model Social Air Quality" ;
-                                            rdfs:seeAlso "https://kracr.iiitd.edu.in/sparql" ;
-                                            owl:versionInfo 1.0 ;
-                                            :Authors "Saad Ahmad, Sudhir Attri, Raghava Mutharaju" .
+<https://kracr.iiitd.edu.in/ontology/saqi#> rdf:type owl:Ontology ;
+                                             owl:imports <file:/home/sudhir/saqi/wgs84_pos.rdf> ,
+                                                         <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl> ,
+                                                         <http://www.w3.org/ns/sosa/> ;
+                                             dc:description """A vocabulary for representing latitude, longitude and 
+ altitude information in the WGS84 geodetic reference datum. 
+ Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details.""" ;
+                                             dc:title "WGS84 Geo Positioning: an RDF vocabulary" ;
+                                             terms:contributor "Saad Ahmad, Sudhir Attri, Raghava Mutharaju; (https://kracr.iiitd.edu.in/)" ;
+                                             terms:license "https://www.apache.org/licenses/LICENSE-2.0" ;
+                                             rdfs:comment """
+Recent changes to this namespace:
+$Log: wgs84_pos.rdf,v $
+Revision 1.22  2009/04/20 15:00:30  timbl
+Remove the time bits which have been deal with elsewhere eg in iCal.
+
+Revision 1.21  2009/04/20 12:52:47  timbl
+try again
+
+Revision 1.20  2009/04/20 12:42:11  timbl
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)
+
+Revision 1.19  2009/04/20 12:36:31  timbl
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)
+
+Revision 1.18  2006/02/01 22:01:04  danbri
+Clarified that lat and long are decimal degrees, and that alt is decimal metres about local reference ellipsoid
+
+Revision 1.17  2004/02/06 17:38:12  danbri
+Fixed a bad commit screwup
+
+Revision 1.15  2003/04/19 11:24:08  danbri
+Fixed the typo even more.
+
+Revision 1.14  2003/04/19 11:16:56  danbri
+fixed a typo
+
+Revision 1.13  2003/02/19 22:27:27  connolly
+relaxed domain constraints on lat/long/alt from Point to SpatialThing
+
+Revision 1.12  2003/01/12 01:41:41  danbri
+Trying local copy of XSLT doc.
+
+Revision 1.11  2003/01/12 01:20:18  danbri
+added a link to morten's xslt rdfs viewer.
+
+Revision 1.10  2003/01/11 18:56:49  danbri
+Removed datatype range from lat and long properties, since they would
+have required each occurance of the property to mention the datatype.
+
+Revision 1.9  2003/01/11 11:41:31  danbri
+Another typo; repaired rdfs:Property to rdf:Property x4
+
+Revision 1.8  2003/01/11 11:05:02  danbri
+Added an rdfs:range for each lat/long/alt property,
+http://www.w3.org/2001/XMLSchema#float
+
+Revision 1.7  2003/01/10 20:25:16  danbri
+Longer rdfs:comment for Point, trying to be Earth-centric and neutral about
+coordinate system(s) at the same time. Feedback welcomed.
+
+Revision 1.6  2003/01/10 20:18:30  danbri
+Added CVS log comments into the RDF/XML as an rdfs:comment property of the
+vocabulary. Note that this is not common practice (but seems both harmless
+and potentially useful).
+
+
+revision 1.5
+date: 2003/01/10 20:14:31;  author: danbri;  state: Exp;  lines: +16 -5
+Updated schema:
+Added a dc:date, added url for more info. Changed the rdfs:label of the
+namespace from gp to geo. Added a class Point, set as the rdfs:domain of
+each property. Added XML comment on the lat_long property suggesting that
+we might not need it (based on #rdfig commentary from implementors).
+
+revision 1.4
+date: 2003/01/10 20:01:07;  author: danbri;  state: Exp;  lines: +6 -5
+Fixed typo; several rdfs:about attributes are now rdf:about. Thanks to MortenF in
+#rdfig for catching this error.
+
+revision 1.3
+date: 2003/01/10 11:59:03;  author: danbri;  state: Exp;  lines: +4 -3
+fixed buglet in vocab, added more wgs links
+
+revision 1.2
+date: 2003/01/10 11:01:11;  author: danbri;  state: Exp;  lines: +4 -4
+Removed alt from the as-a-flat-string property, and switched from
+space separated to comma separated.
+
+revision 1.1
+date: 2003/01/10 10:53:23;  author: danbri;  state: Exp;
+basic geo vocab
+
+""" ;
+                                             rdfs:label "Ontology to model Social Air Quality" ,
+                                                        "geo" ;
+                                             rdfs:seeAlso "https://kracr.iiitd.edu.in/ontology/saqi" ;
+                                             owl:versionInfo 1.1 ;
+                                             saqi:Authors "Saad Ahmad, Sudhir Attri, Raghava Mutharaju" .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/contributor
 terms:contributor rdf:type owl:AnnotationProperty .
@@ -47,12 +149,36 @@ terms:license rdf:type owl:AnnotationProperty .
 rdf:type rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2003/01/geo/wgs84_pos#alt
+geo:alt rdf:type owl:AnnotationProperty ;
+        rdfs:comment """The WGS84 altitude of a SpatialThing (decimal meters 
+above the local reference ellipsoid).""" ;
+        rdfs:label "altitude" ;
+        rdfs:domain geo:SpatialThing .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+geo:lat rdf:type owl:AnnotationProperty ;
+        rdfs:domain geo:SpatialThing .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#location
+geo:location rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf foaf:based_near ;
+             rdfs:range geo:SpatialThing .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+geo:long rdf:type owl:AnnotationProperty ;
+         rdfs:domain geo:SpatialThing .
+
+
 ###  http://www.w3.org/2004/02/skos/core#example
 skos:example rdf:type owl:AnnotationProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#Authors
-:Authors rdf:type owl:AnnotationProperty .
+saqi:Authors rdf:type owl:AnnotationProperty .
 
 
 ###  https://schema.org/about
@@ -981,634 +1107,739 @@ schema:yield rdf:type owl:AnnotationProperty ;
 #    Object Properties
 #################################################################
 
+###  http://www.w3.org/2003/01/geo/wgs84_pos#location
+geo:location rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/sosa/hasFeatureOfInterest
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> rdfs:domain saqi:benzeneConcentration ,
+                                                             saqi:carbonMonoOxideConcentration ,
+                                                             saqi:nitrogenDiOxideConcentration ,
+                                                             saqi:nitrogenMonoOxideConcentration ,
+                                                             saqi:nitrogenOxideConcentration ,
+                                                             saqi:ozoneConcentration ,
+                                                             saqi:particulateMatter10Concentration ,
+                                                             saqi:particulateMatter2_5Concentration ,
+                                                             saqi:plantCapacity ,
+                                                             saqi:sulphurDioxideConcentration ,
+                                                             saqi:tolueneConcentration ;
+                                                 rdfs:range saqi:Hydrocarbon ,
+                                                            saqi:MeteorologicalCharacterstic ,
+                                                            saqi:OxideOfCarbon ,
+                                                            saqi:OxideOfNitrogen ,
+                                                            saqi:OxideOfSulphur ,
+                                                            saqi:ParticulateMatter ,
+                                                            saqi:PowerPlant ,
+                                                            saqi:ambientTemperature ,
+                                                            saqi:bPressure ,
+                                                            saqi:precipitation ,
+                                                            saqi:relativeHumidity ,
+                                                            saqi:solarRadiation .
+
+
+###  http://www.w3.org/ns/sosa/hasResult
+<http://www.w3.org/ns/sosa/hasResult> rdfs:domain saqi:ambientTemperature ,
+                                                  saqi:bPressure ,
+                                                  saqi:benzeneConcentration ,
+                                                  saqi:carbonMonoOxideConcentration ,
+                                                  saqi:nitrogenDiOxideConcentration ,
+                                                  saqi:nitrogenMonoOxideConcentration ,
+                                                  saqi:nitrogenOxideConcentration ,
+                                                  saqi:ozoneConcentration ,
+                                                  saqi:particulateMatter10Concentration ,
+                                                  saqi:particulateMatter2_5Concentration ,
+                                                  saqi:plantCapacity ,
+                                                  saqi:precipitation ,
+                                                  saqi:relativeHumidity ,
+                                                  saqi:solarRadiation ,
+                                                  saqi:sulphurDioxideConcentration ,
+                                                  saqi:tolueneConcentration ;
+                                      rdfs:range <http://www.w3.org/ns/sosa/Result> .
+
+
+###  http://www.w3.org/ns/sosa/madeBySensor
+<http://www.w3.org/ns/sosa/madeBySensor> rdfs:domain <http://www.w3.org/ns/sosa/Observation> ,
+                                                     saqi:Observation ;
+                                         rdfs:range <http://www.w3.org/ns/sosa/Sensor> .
+
+
 ###  https://kracr.iiitd.edu.in/ontology/saqi#atPlace
-:atPlace rdf:type owl:ObjectProperty ,
-                  owl:FunctionalProperty ;
-         rdfs:domain <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution> ;
-         rdfs:range schema:Place .
+saqi:atPlace rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain <http://www.w3.org/ns/sosa/Observation> ,
+                         saqi:Observation ,
+                         saqi:PollutionSensor ,
+                         <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution> ;
+             rdfs:range schema:Place .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#carriesPollutant
-:carriesPollutant rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf owl:topObjectProperty ;
-                  rdfs:domain :Carrier ;
-                  rdfs:range :Pollutant ;
-                  cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" .
+saqi:carriesPollutant rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain saqi:Carrier ;
+                      rdfs:range saqi:Pollutant ;
+                      cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#endsAt
-:endsAt rdf:type owl:ObjectProperty ,
-                 owl:FunctionalProperty ;
-        rdfs:domain :TrajectorySegment ;
-        rdfs:range :TrajectoryPoint ;
-        cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
-        rdfs:comment "Connects a segment to the point it ends at." .
+saqi:endsAt rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain saqi:TrajectorySegment ;
+            rdfs:range saqi:TrajectoryPoint ;
+            cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
+            rdfs:comment "Connects a segment to the point it ends at." .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#hasContributor
-:hasContributor rdf:type owl:ObjectProperty ;
-                rdfs:domain <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution> ;
-                rdfs:range :Contributor .
+saqi:hasContributor rdf:type owl:ObjectProperty ;
+                    rdfs:domain <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution> ;
+                    rdfs:range saqi:Contributor .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#hasName
+saqi:hasName rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#hasObservation
-:hasObservation rdf:type owl:ObjectProperty ;
-                rdfs:domain [ rdf:type owl:Class ;
-                              owl:unionOf ( :Pollutant
-                                            :PrescribedStandardForPollutant
-                                          )
-                            ] ;
-                rdfs:range :Observation ;
-                cpannotationschema:reengineeredFrom "Observation ODP - http://ontologydesignpatterns.org/wiki/Submissions:Observation" .
+saqi:hasObservation rdf:type owl:ObjectProperty ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( saqi:Pollutant
+                                                saqi:PrescribedStandardForPollutant
+                                              )
+                                ] ;
+                    rdfs:range saqi:Observation ;
+                    cpannotationschema:reengineeredFrom "Observation ODP - http://ontologydesignpatterns.org/wiki/Submissions:Observation" .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#hasPoint
-:hasPoint rdf:type owl:ObjectProperty ;
-          rdfs:domain :Trajectory ;
-          rdfs:range :TrajectoryPoint ;
-          owl:propertyChainAxiom ( :hasSegment
-                                   :endsAt
-                                 ) ,
-                                 ( :hasSegment
-                                   :startsFrom
-                                 ) ;
-          cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
-          rdfs:comment "Relating the trajectory to each of its points." .
+saqi:hasPoint rdf:type owl:ObjectProperty ;
+              rdfs:domain saqi:Trajectory ;
+              rdfs:range saqi:TrajectoryPoint ;
+              owl:propertyChainAxiom ( saqi:hasSegment
+                                       saqi:endsAt
+                                     ) ,
+                                     ( saqi:hasSegment
+                                       saqi:startsFrom
+                                     ) ;
+              cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
+              rdfs:comment "Relating the trajectory to each of its points." .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#hasPrescribedStandard
-:hasPrescribedStandard rdf:type owl:ObjectProperty ;
-                       rdfs:domain :Pollutant ,
-                                   :PrescribedStandardForPollutant ;
-                       rdfs:range :PrescribedStandardForPollutant .
+saqi:hasPrescribedStandard rdf:type owl:ObjectProperty ;
+                           rdfs:domain saqi:Pollutant ,
+                                       saqi:PrescribedStandardForPollutant ;
+                           rdfs:range saqi:PrescribedStandardForPollutant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#hasSegment
-:hasSegment rdf:type owl:ObjectProperty ;
-            rdfs:domain :Trajectory ;
-            rdfs:range :TrajectorySegment ;
-            cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
-            rdfs:comment "Relating the trajectory to each of its segments." .
+saqi:hasSegment rdf:type owl:ObjectProperty ;
+                rdfs:domain saqi:Trajectory ;
+                rdfs:range saqi:TrajectorySegment ;
+                cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
+                rdfs:comment "Relating the trajectory to each of its segments." .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#hasTrajectory
-:hasTrajectory rdf:type owl:ObjectProperty ;
-               rdfs:domain :Carrier ;
-               rdfs:range :Trajectory ;
-               cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
-               rdfs:comment "Anything that has a trajectory can use this property to connect it to the trajectory instance" .
+saqi:hasTrajectory rdf:type owl:ObjectProperty ;
+                   rdfs:domain saqi:Carrier ;
+                   rdfs:range saqi:Trajectory ;
+                   cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
+                   rdfs:comment "Anything that has a trajectory can use this property to connect it to the trajectory instance" .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#nearby
-:nearby rdf:type owl:ObjectProperty ,
-                 owl:SymmetricProperty ;
-        rdfs:domain [ rdf:type owl:Class ;
-                      owl:unionOf ( :TrajectoryPoint
-                                    :TrajectorySegment
-                                  )
-                    ] ;
-        rdfs:range :PollutantGenerator .
+saqi:nearby rdf:type owl:ObjectProperty ,
+                     owl:SymmetricProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( saqi:TrajectoryPoint
+                                        saqi:TrajectorySegment
+                                      )
+                        ] ;
+            rdfs:range saqi:PollutantGenerator .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#nextPoint
-:nextPoint rdf:type owl:ObjectProperty ;
-           rdfs:domain :TrajectoryPoint ;
-           rdfs:range :TrajectoryPoint ;
-           cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
-           rdfs:comment "Relates one point to the immediately following point in the sequence." .
+saqi:nextPoint rdf:type owl:ObjectProperty ;
+               rdfs:domain saqi:TrajectoryPoint ;
+               rdfs:range saqi:TrajectoryPoint ;
+               cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
+               rdfs:comment "Relates one point to the immediately following point in the sequence." .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#sourceResponsibleForLocalPollution
-:sourceResponsibleForLocalPollution rdf:type owl:ObjectProperty ;
-                                    rdfs:range :PollutantGenerator .
+saqi:sourceResponsibleForLocalPollution rdf:type owl:ObjectProperty ;
+                                        rdfs:range saqi:PollutantGenerator .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#startsFrom
-:startsFrom rdf:type owl:ObjectProperty ,
-                     owl:FunctionalProperty ;
-            rdfs:domain :TrajectorySegment ;
-            rdfs:range :TrajectoryPoint ;
-            cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
-            rdfs:comment "Connects a segment to the point it starts from." .
+saqi:startsFrom rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain saqi:TrajectorySegment ;
+                rdfs:range saqi:TrajectoryPoint ;
+                cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
+                rdfs:comment "Connects a segment to the point it starts from." .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+geo:lat rdf:type owl:DatatypeProperty ;
+        rdfs:domain geo:Point ;
+        rdfs:range rdfs:Literal .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+geo:long rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain geo:Point ;
+         rdfs:range rdfs:Literal .
+
+
 ###  https://kracr.iiitd.edu.in/ontology/saqi#airPollutionIssuesRaised
-:airPollutionIssuesRaised rdf:type owl:DatatypeProperty .
+saqi:airPollutionIssuesRaised rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#airQualityImproved
-:airQualityImproved rdf:type owl:DatatypeProperty .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#ambientTemperature
-:ambientTemperature rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :MeteorologicalCharacterstic ;
-                    rdfs:range rdfs:Literal .
+saqi:airQualityImproved rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#ammoniaConcentration
-:ammoniaConcentration rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :GaseousPollutant ;
-                      rdfs:range xsd:float .
+saqi:ammoniaConcentration rdf:type owl:DatatypeProperty ;
+                          rdfs:domain saqi:GaseousPollutant ;
+                          rdfs:range xsd:float .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#atHeight
-:atHeight rdf:type owl:DatatypeProperty ;
-          rdfs:domain :TrajectoryPoint ;
-          rdfs:range xsd:float .
+saqi:atHeight rdf:type owl:DatatypeProperty ;
+              rdfs:domain saqi:TrajectoryPoint ;
+              rdfs:range xsd:float .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#atTime
-:atTime rdf:type owl:DatatypeProperty ,
-                 owl:FunctionalProperty ;
-        rdfs:range xsd:dateTime .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#bPressure
-:bPressure rdf:type owl:DatatypeProperty ;
-           rdfs:domain :MeteorologicalCharacterstic ;
-           rdfs:range xsd:float .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#benzeneConcentration
-:benzeneConcentration rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Hydrocarbon ;
-                      rdfs:range xsd:float .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#carbonMonoOxideConcentration
-:carbonMonoOxideConcentration rdf:type owl:DatatypeProperty ;
-                              rdfs:domain :OxideOfCarbon ;
-                              rdfs:range xsd:float .
+saqi:atTime rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:range xsd:dateTime .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#comparisionOfLocalPollution
-:comparisionOfLocalPollution rdf:type owl:DatatypeProperty .
+saqi:comparisionOfLocalPollution rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#confidence
-:confidence rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Combustion ;
-            rdfs:range rdfs:Literal .
+saqi:confidence rdf:type owl:DatatypeProperty ;
+                rdfs:domain saqi:Combustion ;
+                rdfs:range rdfs:Literal .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#followsGuidelines
-:followsGuidelines rdf:type owl:DatatypeProperty .
+saqi:followsGuidelines rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#frequencyToCheckAQI
-:frequencyToCheckAQI rdf:type owl:DatatypeProperty .
+saqi:frequencyToCheckAQI rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#getsNoticeAndContinues
-:getsNoticeAndContinues rdf:type owl:DatatypeProperty .
+saqi:getsNoticeAndContinues rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#hasAQIColorLiteracy
-:hasAQIColorLiteracy rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf :hasAQILiteracy .
+saqi:hasAQIColorLiteracy rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf saqi:hasAQILiteracy .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#hasAQILiteracy
-:hasAQILiteracy rdf:type owl:DatatypeProperty .
+saqi:hasAQILiteracy rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#hasAirPollutionGraphicLiteracy
-:hasAirPollutionGraphicLiteracy rdf:type owl:DatatypeProperty .
+saqi:hasAirPollutionGraphicLiteracy rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#hasName
-:hasName rdf:type owl:DatatypeProperty ;
-         rdfs:range rdfs:Literal .
+saqi:hasName rdf:type owl:DatatypeProperty ;
+             rdfs:domain schema:Place ;
+             rdfs:range rdfs:Literal .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#hasParticulateMatterLiteracy
-:hasParticulateMatterLiteracy rdf:type owl:DatatypeProperty .
+saqi:hasParticulateMatterLiteracy rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#hasPrescribedStandard
-:hasPrescribedStandard rdf:type owl:DatatypeProperty ;
-                       rdfs:range rdfs:Literal .
+saqi:hasPrescribedStandard rdf:type owl:DatatypeProperty ;
+                           rdfs:range rdfs:Literal .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#isRegularized
-:isRegularized rdf:type owl:DatatypeProperty .
+saqi:isRegularized rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#latitude
-:latitude rdf:type owl:DatatypeProperty ;
-          rdfs:range xsd:decimal .
+saqi:latitude rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:decimal .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#longitude
-:longitude rdf:type owl:DatatypeProperty ;
-           rdfs:range xsd:decimal .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#nitrogenDiOxideConcentration
-:nitrogenDiOxideConcentration rdf:type owl:DatatypeProperty ;
-                              rdfs:domain :OxideOfNitrogen ;
-                              rdfs:range xsd:float .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#nitrogenMonoOxideConcentration
-:nitrogenMonoOxideConcentration rdf:type owl:DatatypeProperty ;
-                                rdfs:domain :OxideOfNitrogen ;
-                                rdfs:range xsd:float .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#nitrogenOxideConcentration
-:nitrogenOxideConcentration rdf:type owl:DatatypeProperty ;
-                            rdfs:domain :OxideOfNitrogen ;
-                            rdfs:range xsd:float .
+saqi:longitude rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:decimal .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#noNoticeOrIntervention
-:noNoticeOrIntervention rdf:type owl:DatatypeProperty .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#ozoneConcentration
-:ozoneConcentration rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :SecondaryPollutant ;
-                    rdfs:range xsd:float .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#particulateMatter10Concentration
-:particulateMatter10Concentration rdf:type owl:DatatypeProperty ;
-                                  rdfs:domain :ParticulateMatter ;
-                                  rdfs:range xsd:float .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#particulateMatter2_5Concentration
-:particulateMatter2_5Concentration rdf:type owl:DatatypeProperty ;
-                                   rdfs:domain :ParticulateMatter ;
-                                   rdfs:range xsd:float .
+saqi:noNoticeOrIntervention rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#peopleVotedOnAirPollutionIssues
-:peopleVotedOnAirPollutionIssues rdf:type owl:DatatypeProperty .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#plantCapacity
-:plantCapacity rdf:type owl:DatatypeProperty ;
-               rdfs:domain :PowerPlant ;
-               rdfs:range rdfs:Literal .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#precipitation
-:precipitation rdf:type owl:DatatypeProperty ;
-               rdfs:domain :MeteorologicalCharacterstic ;
-               rdfs:range xsd:float .
+saqi:peopleVotedOnAirPollutionIssues rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#ratingForLocalAirQuality
-:ratingForLocalAirQuality rdf:type owl:DatatypeProperty .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#relativeHumidity
-:relativeHumidity rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :MeteorologicalCharacterstic ;
-                  rdfs:range xsd:float .
+saqi:ratingForLocalAirQuality rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#satisfiedWithPerformance
-:satisfiedWithPerformance rdf:type owl:DatatypeProperty .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#solarRadiation
-:solarRadiation rdf:type owl:DatatypeProperty ;
-                rdfs:domain :MeteorologicalCharacterstic ;
-                rdfs:range xsd:float .
+saqi:satisfiedWithPerformance rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#sourceName
-:sourceName rdf:type owl:DatatypeProperty .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#sulphurDioxideConcentration
-:sulphurDioxideConcentration rdf:type owl:DatatypeProperty ;
-                             rdfs:domain :OxideOfSulphur ;
-                             rdfs:range xsd:float .
-
-
-###  https://kracr.iiitd.edu.in/ontology/saqi#tolueneConcentration
-:tolueneConcentration rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Hydrocarbon ;
-                      rdfs:range xsd:float .
+saqi:sourceName rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#totalPopulation
-:totalPopulation rdf:type owl:DatatypeProperty ;
-                 rdfs:range xsd:nonNegativeInteger .
+saqi:totalPopulation rdf:type owl:DatatypeProperty ;
+                     rdfs:range xsd:nonNegativeInteger .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#usesAirPurifier
-:usesAirPurifier rdf:type owl:DatatypeProperty .
+saqi:usesAirPurifier rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#wearsMask
-:wearsMask rdf:type owl:DatatypeProperty .
+saqi:wearsMask rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#windDirection
-:windDirection rdf:type owl:DatatypeProperty ;
-               rdfs:domain :WindCharacterstic ;
-               rdfs:range rdfs:Literal .
+saqi:windDirection rdf:type owl:DatatypeProperty ;
+                   rdfs:domain saqi:WindCharacterstic ;
+                   rdfs:range rdfs:Literal .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#windSpeed
-:windSpeed rdf:type owl:DatatypeProperty ;
-           rdfs:domain :WindCharacterstic ;
-           rdfs:range rdfs:Literal .
+saqi:windSpeed rdf:type owl:DatatypeProperty ;
+               rdfs:domain saqi:WindCharacterstic ;
+               rdfs:range rdfs:Literal .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#worksFromHome
-:worksFromHome rdf:type owl:DatatypeProperty .
+saqi:worksFromHome rdf:type owl:DatatypeProperty .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#zipCode
-:zipCode rdf:type owl:DatatypeProperty ;
-         rdfs:range rdfs:Literal .
+saqi:zipCode rdf:type owl:DatatypeProperty ;
+             rdfs:range rdfs:Literal .
 
 
 ###  https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue
-<https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue> rdf:type owl:DatatypeProperty .
+<https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue> rdf:type owl:DatatypeProperty ;
+                                                                                          rdfs:domain <http://www.w3.org/ns/sosa/Result> ;
+                                                                                          rdfs:range rdfs:Literal .
 
 
 #################################################################
 #    Classes
 #################################################################
 
+###  http://www.w3.org/2003/01/geo/wgs84_pos#Point
+geo:Point rdf:type owl:Class ;
+          rdfs:subClassOf geo:SpatialThing ;
+          rdfs:comment """ 
+Uniquely identified by lat/long/alt. i.e.
+
+spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
+  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).
+
+sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).
+  """ ,
+                       """A point, typically described using a coordinate system relative to Earth, such as WGS84.
+  """ ;
+          rdfs:label "point" .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+geo:SpatialThing rdf:type owl:Class ;
+                 rdfs:comment """Anything with spatial extent, i.e. size, shape, or position.
+ e.g. people, places, bowling balls, as well as abstract areas like cubes.
+""" ;
+                 rdfs:label "SpatialThing" .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#CPCBSensor
+saqi:CPCBSensor rdf:type owl:Class ;
+                rdfs:subClassOf saqi:PollutionSensor .
+
+
 ###  https://kracr.iiitd.edu.in/ontology/saqi#Carrier
-:Carrier rdf:type owl:Class ;
-         rdfs:subClassOf :IndirectContributor ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasTrajectory ;
-                           owl:someValuesFrom :Trajectory
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :carriesPollutant ;
-                           owl:allValuesFrom :Pollutant
-                         ] ;
-         rdfs:comment "Represents streams which carry pollutants to a particular place." .
+saqi:Carrier rdf:type owl:Class ;
+             rdfs:subClassOf saqi:IndirectContributor ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty saqi:hasTrajectory ;
+                               owl:someValuesFrom saqi:Trajectory
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty saqi:carriesPollutant ;
+                               owl:allValuesFrom saqi:Pollutant
+                             ] ;
+             rdfs:comment "Represents streams which carry pollutants to a particular place." .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#CoalBasedPowerPlant
-:CoalBasedPowerPlant rdf:type owl:Class ;
-                     rdfs:subClassOf :ThermalPowerPlant .
+saqi:CoalBasedPowerPlant rdf:type owl:Class ;
+                         rdfs:subClassOf saqi:ThermalPowerPlant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#Combustion
-:Combustion rdf:type owl:Class ;
-            rdfs:subClassOf :PollutantGenerator ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasObservation ;
-                              owl:someValuesFrom :Observation
-                            ] .
+saqi:Combustion rdf:type owl:Class ;
+                rdfs:subClassOf saqi:PollutantGenerator ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty saqi:hasObservation ;
+                                  owl:someValuesFrom saqi:Observation
+                                ] .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#Contributor
-:Contributor rdf:type owl:Class ;
-             owl:disjointUnionOf ( :DirectContributor
-                                   :IndirectContributor
-                                 ) .
+saqi:Contributor rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/sosa/FeatureOfInterest> ;
+                 owl:disjointUnionOf ( saqi:DirectContributor
+                                       saqi:IndirectContributor
+                                     ) .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#CropBurning
-:CropBurning rdf:type owl:Class ;
-             rdfs:subClassOf :Combustion .
+saqi:CropBurning rdf:type owl:Class ;
+                 rdfs:subClassOf saqi:Combustion .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#DieselBasedPowerPlant
-:DieselBasedPowerPlant rdf:type owl:Class ;
-                       rdfs:subClassOf :ThermalPowerPlant .
+saqi:DieselBasedPowerPlant rdf:type owl:Class ;
+                           rdfs:subClassOf saqi:ThermalPowerPlant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#DirectContributor
-:DirectContributor rdf:type owl:Class ;
-                   rdfs:subClassOf :Contributor ;
-                   rdfs:comment "Represents concepts which directly represent pollution. For example the concentration of pollutants at a particular spatio-temporal point." .
+saqi:DirectContributor rdf:type owl:Class ;
+                       rdfs:subClassOf saqi:Contributor ;
+                       rdfs:comment "Represents concepts which directly represent pollution. For example the concentration of pollutants at a particular spatio-temporal point." .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#Dust
-:Dust rdf:type owl:Class ;
-      rdfs:subClassOf :PollutantGenerator .
+saqi:Dust rdf:type owl:Class ;
+          rdfs:subClassOf saqi:PollutantGenerator .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#EndingPoint
-:EndingPoint rdf:type owl:Class ;
-             owl:equivalentClass [ owl:intersectionOf ( :TrajectoryPoint
-                                                        [ rdf:type owl:Class ;
-                                                          owl:complementOf [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty [ owl:inverseOf :startsFrom
-                                                                                            ] ;
-                                                                             owl:someValuesFrom :TrajectorySegment
-                                                                           ]
-                                                        ]
-                                                      ) ;
-                                   rdf:type owl:Class
-                                 ] ;
-             rdfs:subClassOf :TrajectoryPoint ;
-             owl:disjointWith :StartingPoint .
+saqi:EndingPoint rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( saqi:TrajectoryPoint
+                                                            [ rdf:type owl:Class ;
+                                                              owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty [ owl:inverseOf saqi:startsFrom
+                                                                                                ] ;
+                                                                                 owl:someValuesFrom saqi:TrajectorySegment
+                                                                               ]
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf saqi:TrajectoryPoint ;
+                 owl:disjointWith saqi:StartingPoint .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#GasBasedPowerPlant
-:GasBasedPowerPlant rdf:type owl:Class ;
-                    rdfs:subClassOf :ThermalPowerPlant .
+saqi:GasBasedPowerPlant rdf:type owl:Class ;
+                        rdfs:subClassOf saqi:ThermalPowerPlant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#GaseousPollutant
-:GaseousPollutant rdf:type owl:Class ;
-                  rdfs:subClassOf :PrimaryPollutant .
+saqi:GaseousPollutant rdf:type owl:Class ;
+                      rdfs:subClassOf saqi:PrimaryPollutant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#Hydrocarbon
-:Hydrocarbon rdf:type owl:Class ;
-             rdfs:subClassOf :SecondaryPollutant .
+saqi:Hydrocarbon rdf:type owl:Class ;
+                 rdfs:subClassOf saqi:SecondaryPollutant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#IndirectContributor
-:IndirectContributor rdf:type owl:Class ;
-                     rdfs:subClassOf :Contributor ;
-                     rdfs:comment "Represents concepts which indirectly contribute to pollution of a place. These do not directly represent pollution but have properties which can affect the pollution, for example by changing the concentration of pollutants at a spatio-temporal point." .
+saqi:IndirectContributor rdf:type owl:Class ;
+                         rdfs:subClassOf saqi:Contributor ;
+                         rdfs:comment "Represents concepts which indirectly contribute to pollution of a place. These do not directly represent pollution but have properties which can affect the pollution, for example by changing the concentration of pollutants at a spatio-temporal point." .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#LocalSensor
+saqi:LocalSensor rdf:type owl:Class ;
+                 rdfs:subClassOf saqi:PollutionSensor .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#MeteorologicalCharacterstic
-:MeteorologicalCharacterstic rdf:type owl:Class ;
-                             rdfs:subClassOf :IndirectContributor .
+saqi:MeteorologicalCharacterstic rdf:type owl:Class ;
+                                 rdfs:subClassOf saqi:IndirectContributor .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#Observation
-:Observation rdf:type owl:Class ;
-             cpannotationschema:reengineeredFrom "Observation ODP - http://ontologydesignpatterns.org/wiki/Submissions:Observation" ;
-             rdfs:comment "Observation represents a spatio-temporal observation of pollutants under time and place parameters." .
+saqi:Observation rdf:type owl:Class ;
+                 cpannotationschema:reengineeredFrom "Observation ODP - http://ontologydesignpatterns.org/wiki/Submissions:Observation" ;
+                 rdfs:comment "Observation represents a spatio-temporal observation of pollutants under time and place parameters." .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#OxideOfCarbon
-:OxideOfCarbon rdf:type owl:Class ;
-               rdfs:subClassOf :GaseousPollutant .
+saqi:OxideOfCarbon rdf:type owl:Class ;
+                   rdfs:subClassOf saqi:GaseousPollutant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#OxideOfNitrogen
-:OxideOfNitrogen rdf:type owl:Class ;
-                 rdfs:subClassOf :GaseousPollutant .
+saqi:OxideOfNitrogen rdf:type owl:Class ;
+                     rdfs:subClassOf saqi:GaseousPollutant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#OxideOfSulphur
-:OxideOfSulphur rdf:type owl:Class ;
-                rdfs:subClassOf :GaseousPollutant .
+saqi:OxideOfSulphur rdf:type owl:Class ;
+                    rdfs:subClassOf saqi:GaseousPollutant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#ParticulateMatter
-:ParticulateMatter rdf:type owl:Class ;
-                   rdfs:subClassOf :PrimaryPollutant .
+saqi:ParticulateMatter rdf:type owl:Class ;
+                       rdfs:subClassOf saqi:PrimaryPollutant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#Pollutant
-:Pollutant rdf:type owl:Class ;
-           rdfs:subClassOf :DirectContributor ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :hasObservation ;
-                             owl:allValuesFrom :Observation
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :hasPrescribedStandard ;
-                             owl:allValuesFrom :PrescribedStandardForPollutant
-                           ] ;
-           rdfs:comment "Represents various pollutants which contaminate the environment and directly represnt/contribute to pollution. Additionally a carrier's trajecectory point may pick up pollutants from a spatio-temporal point, in which case, it is represented by the sub-property carriesPollutant." .
+saqi:Pollutant rdf:type owl:Class ;
+               rdfs:subClassOf saqi:DirectContributor ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty saqi:hasObservation ;
+                                 owl:allValuesFrom saqi:Observation
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty saqi:hasPrescribedStandard ;
+                                 owl:allValuesFrom saqi:PrescribedStandardForPollutant
+                               ] ;
+               rdfs:comment "Represents various pollutants which contaminate the environment and directly represnt/contribute to pollution. Additionally a carrier's trajecectory point may pick up pollutants from a spatio-temporal point, in which case, it is represented by the sub-property carriesPollutant." .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#PollutantGenerator
-:PollutantGenerator rdf:type owl:Class ;
-                    rdfs:subClassOf :DirectContributor .
+saqi:PollutantGenerator rdf:type owl:Class ;
+                        rdfs:subClassOf saqi:DirectContributor .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#PollutionSensor
+saqi:PollutionSensor rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#PowerPlant
-:PowerPlant rdf:type owl:Class ;
-            rdfs:subClassOf :PollutantGenerator .
+saqi:PowerPlant rdf:type owl:Class ;
+                rdfs:subClassOf saqi:PollutantGenerator .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#PrescribedStandardForPollutant
-:PrescribedStandardForPollutant rdf:type owl:Class ;
-                                rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                  owl:onProperty :hasObservation ;
-                                                  owl:someValuesFrom :Observation
-                                                ] ,
-                                                [ rdf:type owl:Restriction ;
-                                                  owl:onProperty [ owl:inverseOf :hasPrescribedStandard
-                                                                 ] ;
-                                                  owl:allValuesFrom :Pollutant
-                                                ] ;
-                                cpannotationschema:reengineeredFrom "Stub Metapattern - http://ontologydesignpatterns.org/wiki/Submissions:Stub_Metapattern" .
+saqi:PrescribedStandardForPollutant rdf:type owl:Class ;
+                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                      owl:onProperty saqi:hasObservation ;
+                                                      owl:someValuesFrom saqi:Observation
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty [ owl:inverseOf saqi:hasPrescribedStandard
+                                                                     ] ;
+                                                      owl:allValuesFrom saqi:Pollutant
+                                                    ] ;
+                                    cpannotationschema:reengineeredFrom "Stub Metapattern - http://ontologydesignpatterns.org/wiki/Submissions:Stub_Metapattern" .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#PrimaryPollutant
-:PrimaryPollutant rdf:type owl:Class ;
-                  rdfs:subClassOf :Pollutant .
+saqi:PrimaryPollutant rdf:type owl:Class ;
+                      rdfs:subClassOf saqi:Pollutant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#SecondaryPollutant
-:SecondaryPollutant rdf:type owl:Class ;
-                    rdfs:subClassOf :Pollutant .
+saqi:SecondaryPollutant rdf:type owl:Class ;
+                        rdfs:subClassOf saqi:Pollutant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#StartingPoint
-:StartingPoint rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( :TrajectoryPoint
-                                                          [ rdf:type owl:Class ;
-                                                            owl:complementOf [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty [ owl:inverseOf :endsAt
-                                                                                              ] ;
-                                                                               owl:someValuesFrom :TrajectorySegment
-                                                                             ]
-                                                          ]
-                                                        ) ;
-                                     rdf:type owl:Class
-                                   ] ;
-               rdfs:subClassOf :TrajectoryPoint .
+saqi:StartingPoint rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( saqi:TrajectoryPoint
+                                                              [ rdf:type owl:Class ;
+                                                                owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty [ owl:inverseOf saqi:endsAt
+                                                                                                  ] ;
+                                                                                   owl:someValuesFrom saqi:TrajectorySegment
+                                                                                 ]
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf saqi:TrajectoryPoint .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#ThermalPowerPlant
-:ThermalPowerPlant rdf:type owl:Class ;
-                   rdfs:subClassOf :PowerPlant .
+saqi:ThermalPowerPlant rdf:type owl:Class ;
+                       rdfs:subClassOf saqi:PowerPlant .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#Trajectory
-:Trajectory rdf:type owl:Class ;
-            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasSegment ;
-                              owl:someValuesFrom :TrajectorySegment
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasPoint ;
-                              owl:allValuesFrom :TrajectoryPoint
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasSegment ;
-                              owl:allValuesFrom :TrajectorySegment
-                            ] ;
-            cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
-            rdfs:comment "Represents a trajectory of points. Examples include drainage/sewage trajectory or air stream trajectory." .
+saqi:Trajectory rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty saqi:hasSegment ;
+                                  owl:someValuesFrom saqi:TrajectorySegment
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty saqi:hasPoint ;
+                                  owl:allValuesFrom saqi:TrajectoryPoint
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty saqi:hasSegment ;
+                                  owl:allValuesFrom saqi:TrajectorySegment
+                                ] ;
+                cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
+                rdfs:comment "Represents a trajectory of points. Examples include drainage/sewage trajectory or air stream trajectory." .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#TrajectoryPoint
-:TrajectoryPoint rdf:type owl:Class ;
-                 rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                   owl:onProperty [ owl:inverseOf :hasPoint
-                                                  ] ;
-                                   owl:someValuesFrom :Trajectory
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty :nextPoint ;
-                                   owl:allValuesFrom :TrajectoryPoint
-                                 ] ;
-                 cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
-                 rdfs:comment "A collection of spatio-temporal points represents a trajectory" .
+saqi:TrajectoryPoint rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty [ owl:inverseOf saqi:hasPoint
+                                                      ] ;
+                                       owl:someValuesFrom saqi:Trajectory
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty saqi:nextPoint ;
+                                       owl:allValuesFrom saqi:TrajectoryPoint
+                                     ] ;
+                     cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
+                     rdfs:comment "A collection of spatio-temporal points represents a trajectory" .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#TrajectorySegment
-:TrajectorySegment rdf:type owl:Class ;
-                   rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                     owl:onProperty :endsAt ;
-                                     owl:someValuesFrom :TrajectoryPoint
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :startsFrom ;
-                                     owl:someValuesFrom :TrajectoryPoint
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty [ owl:inverseOf :hasSegment
-                                                    ] ;
-                                     owl:someValuesFrom :Trajectory
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :endsAt ;
-                                     owl:allValuesFrom :TrajectoryPoint
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :startsFrom ;
-                                     owl:allValuesFrom :TrajectoryPoint
-                                   ] ;
-                   cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
-                   rdfs:comment "A subset of spatio-temporal trajectory points represent a TrajectorySegment" .
+saqi:TrajectorySegment rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty saqi:endsAt ;
+                                         owl:someValuesFrom saqi:TrajectoryPoint
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty saqi:startsFrom ;
+                                         owl:someValuesFrom saqi:TrajectoryPoint
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty [ owl:inverseOf saqi:hasSegment
+                                                        ] ;
+                                         owl:someValuesFrom saqi:Trajectory
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty saqi:endsAt ;
+                                         owl:allValuesFrom saqi:TrajectoryPoint
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty saqi:startsFrom ;
+                                         owl:allValuesFrom saqi:TrajectoryPoint
+                                       ] ;
+                       cpannotationschema:reengineeredFrom "Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory" ;
+                       rdfs:comment "A subset of spatio-temporal trajectory points represent a TrajectorySegment" .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#WasteBurning
-:WasteBurning rdf:type owl:Class ;
-              rdfs:subClassOf :Combustion .
+saqi:WasteBurning rdf:type owl:Class ;
+                  rdfs:subClassOf saqi:Combustion .
 
 
 ###  https://kracr.iiitd.edu.in/ontology/saqi#WindCharacterstic
-:WindCharacterstic rdf:type owl:Class ;
-                   rdfs:subClassOf :MeteorologicalCharacterstic .
+saqi:WindCharacterstic rdf:type owl:Class ;
+                       rdfs:subClassOf saqi:MeteorologicalCharacterstic .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#ambientTemperature
+saqi:ambientTemperature rdf:type owl:Class ;
+                        rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#bPressure
+saqi:bPressure rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#benzeneConcentration
+saqi:benzeneConcentration rdf:type owl:Class ;
+                          rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#carbonMonoOxideConcentration
+saqi:carbonMonoOxideConcentration rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#nitrogenDiOxideConcentration
+saqi:nitrogenDiOxideConcentration rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#nitrogenMonoOxideConcentration
+saqi:nitrogenMonoOxideConcentration rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#nitrogenOxideConcentration
+saqi:nitrogenOxideConcentration rdf:type owl:Class ;
+                                rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#ozoneConcentration
+saqi:ozoneConcentration rdf:type owl:Class ;
+                        rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#particulateMatter10Concentration
+saqi:particulateMatter10Concentration rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#particulateMatter2_5Concentration
+saqi:particulateMatter2_5Concentration rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#plantCapacity
+saqi:plantCapacity rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#precipitation
+saqi:precipitation rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#relativeHumidity
+saqi:relativeHumidity rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#solarRadiation
+saqi:solarRadiation rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#sulphurDioxideConcentration
+saqi:sulphurDioxideConcentration rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#tolueneConcentration
+saqi:tolueneConcentration rdf:type owl:Class ;
+                          rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
 
 
 ###  https://schema.org/Place
 schema:Place rdf:type owl:Class ;
+             rdfs:subClassOf geo:Point ;
              rdfs:comment "Entities that have a somewhat fixed, physical extension." ;
              rdfs:label "Place" .
 
@@ -1617,12 +1848,12 @@ schema:Place rdf:type owl:Class ;
 <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution> rdf:type owl:Class ;
                                                                                               rdfs:subClassOf <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon> ,
                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                owl:onProperty :hasContributor ;
-                                                                                                                owl:someValuesFrom :Contributor
+                                                                                                                owl:onProperty saqi:hasContributor ;
+                                                                                                                owl:someValuesFrom saqi:Contributor
                                                                                                               ] ,
                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                owl:onProperty :hasContributor ;
-                                                                                                                owl:allValuesFrom :Contributor
+                                                                                                                owl:onProperty saqi:hasContributor ;
+                                                                                                                owl:allValuesFrom saqi:Contributor
                                                                                                               ] ,
                                                                                                               [ rdf:type owl:Restriction ;
                                                                                                                 owl:onProperty <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue> ;
@@ -1633,17 +1864,17 @@ schema:Place rdf:type owl:Class ;
 
 ###  https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure
 <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure> rdf:type owl:Class ;
-                                                                                                     rdfs:subClassOf :IndirectContributor .
+                                                                                                     rdfs:subClassOf saqi:IndirectContributor .
 
 
 ###  https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover
 <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover> rdf:type owl:Class ;
-                                                                                            rdfs:subClassOf :IndirectContributor .
+                                                                                            rdfs:subClassOf saqi:IndirectContributor .
 
 
 ###  https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature
 <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature> rdf:type owl:Class ;
-                                                                                                     rdfs:subClassOf :IndirectContributor .
+                                                                                                     rdfs:subClassOf saqi:IndirectContributor .
 
 
 ###  https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighAirPollution
@@ -1653,7 +1884,7 @@ schema:Place rdf:type owl:Class ;
 
 ###  https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity
 <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity> rdf:type owl:Class ;
-                                                                                          rdfs:subClassOf :IndirectContributor .
+                                                                                          rdfs:subClassOf saqi:IndirectContributor .
 
 
 ###  https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MediumAirPollution
@@ -1663,17 +1894,17 @@ schema:Place rdf:type owl:Class ;
 
 ###  https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation
 <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation> rdf:type owl:Class ;
-                                                                                               rdfs:subClassOf :IndirectContributor .
+                                                                                               rdfs:subClassOf saqi:IndirectContributor .
 
 
 ###  https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance
 <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance> rdf:type owl:Class ;
-                                                                                                 rdfs:subClassOf :IndirectContributor .
+                                                                                                 rdfs:subClassOf saqi:IndirectContributor .
 
 
 ###  https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature
 <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature> rdf:type owl:Class ;
-                                                                                             rdfs:subClassOf :IndirectContributor .
+                                                                                             rdfs:subClassOf saqi:IndirectContributor .
 
 
 ###  https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryHighAirPollution
@@ -1702,7 +1933,7 @@ schema:Place rdf:type owl:Class ;
                                                                                                                                     <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Thunder>
                                                                                                                                   )
                                                                                                                       ] ;
-                                                                                                  rdfs:subClassOf :IndirectContributor ;
+                                                                                                  rdfs:subClassOf saqi:IndirectContributor ;
                                                                                                   rdfs:comment "One-word description of the observed weather condition"@en .
 
 
@@ -1712,7 +1943,7 @@ schema:Place rdf:type owl:Class ;
 
 ###  https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind
 <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind> rdf:type owl:Class ;
-                                                                                      rdfs:subClassOf :IndirectContributor .
+                                                                                      rdfs:subClassOf saqi:IndirectContributor .
 
 
 #################################################################
@@ -1811,6 +2042,46 @@ schema:Place rdf:type owl:Class ;
                                                                      rdfs:label "rNews" .
 
 
+###  https://kracr.iiitd.edu.in/ontology/saqi#DTCBusTerminal
+saqi:DTCBusTerminal rdf:type owl:NamedIndividual ,
+                             schema:Place .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#JharodhaKalan
+saqi:JharodhaKalan rdf:type owl:NamedIndividual ,
+                            schema:Place .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#NangliDairy
+saqi:NangliDairy rdf:type owl:NamedIndividual ,
+                          schema:Place .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#SanjayColony
+saqi:SanjayColony rdf:type owl:NamedIndividual ,
+                           schema:Place .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#ShaheenBagh
+saqi:ShaheenBagh rdf:type owl:NamedIndividual ,
+                          schema:Place .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#Tekhand
+saqi:Tekhand rdf:type owl:NamedIndividual ,
+                      schema:Place .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#najafgarh
+saqi:najafgarh rdf:type owl:NamedIndividual ,
+                        schema:Place .
+
+
+###  https://kracr.iiitd.edu.in/ontology/saqi#okhla
+saqi:okhla rdf:type owl:NamedIndividual ,
+                    schema:Place .
+
+
 ###  https://schema.org/Boolean
 schema:Boolean rdf:type owl:NamedIndividual .
 
@@ -1896,6 +2167,121 @@ schema:Time rdf:type owl:NamedIndividual .
 #    Annotations
 #################################################################
 
+geo: dc:date "$Date: 2009/04/20 15:00:30 $" ;
+     rdfs:label "geo" ;
+     dc:description """A vocabulary for representing latitude, longitude and 
+ altitude information in the WGS84 geodetic reference datum. 
+ Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details.""" ;
+     rdfs:comment """
+Recent changes to this namespace:
+$Log: wgs84_pos.rdf,v $
+Revision 1.22  2009/04/20 15:00:30  timbl
+Remove the time bits which have been deal with elsewhere eg in iCal.
+
+Revision 1.21  2009/04/20 12:52:47  timbl
+try again
+
+Revision 1.20  2009/04/20 12:42:11  timbl
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)
+
+Revision 1.19  2009/04/20 12:36:31  timbl
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)
+
+Revision 1.18  2006/02/01 22:01:04  danbri
+Clarified that lat and long are decimal degrees, and that alt is decimal metres about local reference ellipsoid
+
+Revision 1.17  2004/02/06 17:38:12  danbri
+Fixed a bad commit screwup
+
+Revision 1.15  2003/04/19 11:24:08  danbri
+Fixed the typo even more.
+
+Revision 1.14  2003/04/19 11:16:56  danbri
+fixed a typo
+
+Revision 1.13  2003/02/19 22:27:27  connolly
+relaxed domain constraints on lat/long/alt from Point to SpatialThing
+
+Revision 1.12  2003/01/12 01:41:41  danbri
+Trying local copy of XSLT doc.
+
+Revision 1.11  2003/01/12 01:20:18  danbri
+added a link to morten's xslt rdfs viewer.
+
+Revision 1.10  2003/01/11 18:56:49  danbri
+Removed datatype range from lat and long properties, since they would
+have required each occurance of the property to mention the datatype.
+
+Revision 1.9  2003/01/11 11:41:31  danbri
+Another typo; repaired rdfs:Property to rdf:Property x4
+
+Revision 1.8  2003/01/11 11:05:02  danbri
+Added an rdfs:range for each lat/long/alt property,
+http://www.w3.org/2001/XMLSchema#float
+
+Revision 1.7  2003/01/10 20:25:16  danbri
+Longer rdfs:comment for Point, trying to be Earth-centric and neutral about
+coordinate system(s) at the same time. Feedback welcomed.
+
+Revision 1.6  2003/01/10 20:18:30  danbri
+Added CVS log comments into the RDF/XML as an rdfs:comment property of the
+vocabulary. Note that this is not common practice (but seems both harmless
+and potentially useful).
+
+
+revision 1.5
+date: 2003/01/10 20:14:31;  author: danbri;  state: Exp;  lines: +16 -5
+Updated schema:
+Added a dc:date, added url for more info. Changed the rdfs:label of the
+namespace from gp to geo. Added a class Point, set as the rdfs:domain of
+each property. Added XML comment on the lat_long property suggesting that
+we might not need it (based on #rdfig commentary from implementors).
+
+revision 1.4
+date: 2003/01/10 20:01:07;  author: danbri;  state: Exp;  lines: +6 -5
+Fixed typo; several rdfs:about attributes are now rdf:about. Thanks to MortenF in
+#rdfig for catching this error.
+
+revision 1.3
+date: 2003/01/10 11:59:03;  author: danbri;  state: Exp;  lines: +4 -3
+fixed buglet in vocab, added more wgs links
+
+revision 1.2
+date: 2003/01/10 11:01:11;  author: danbri;  state: Exp;  lines: +4 -4
+Removed alt from the as-a-flat-string property, and switched from
+space separated to comma separated.
+
+revision 1.1
+date: 2003/01/10 10:53:23;  author: danbri;  state: Exp;
+basic geo vocab
+
+""" ;
+     dc:title "WGS84 Geo Positioning: an RDF vocabulary" .
+
+
+geo:lat rdfs:comment "The WGS84 latitude of a SpatialThing (decimal degrees)." ;
+        rdfs:label "latitude" .
+
+
+geo:lat_long rdfs:comment "A comma-separated representation of a latitude, longitude coordinate." ;
+             rdfs:label "lat/long" .
+
+
+geo:location rdfs:label "location" ;
+             rdfs:comment """The relation between something and the point, 
+ or other geometrical thing in space, where it is.  For example, the realtionship between
+ a radio tower and a Point with a given lat and long.
+ Or a relationship between a park and its outline as a closed arc of points, or a road and
+ its location as a arc (a sequence of points).
+ Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
+ an accuracy appropriate for the size of the object and uses such as mapping .
+ """ .
+
+
+geo:long rdfs:label "longitude" ;
+         rdfs:comment "The WGS84 longitude of a SpatialThing (decimal degrees)." .
+
+
 schema:ActiveActionStatus rdfs:label "ActiveActionStatus" ;
                           rdfs:comment "An in-progress action (e.g., while watching the movie, or driving to a location)." .
 
@@ -1914,13 +2300,13 @@ schema:AudiobookFormat rdfs:comment "Book format: Audiobook. This is an enumerat
                        rdfs:label "AudiobookFormat" .
 
 
-schema:BackOrder rdfs:label "BackOrder" ;
-                 rdfs:comment "Indicates that the item is available on back order." .
+schema:BackOrder rdfs:comment "Indicates that the item is available on back order." ;
+                 rdfs:label "BackOrder" .
 
 
 schema:BroadcastRelease rdfs:comment "BroadcastRelease." ;
-                        schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ> ;
-                        rdfs:label "BroadcastRelease" .
+                        rdfs:label "BroadcastRelease" ;
+                        schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ> .
 
 
 schema:CDFormat schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ> ;
@@ -1956,8 +2342,8 @@ schema:DJMixAlbum rdfs:comment "DJMixAlbum." ;
 
 
 schema:DVDFormat schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ> ;
-                 rdfs:label "DVDFormat" ;
-                 rdfs:comment "DVDFormat." .
+                 rdfs:comment "DVDFormat." ;
+                 rdfs:label "DVDFormat" .
 
 
 schema:DamagedCondition rdfs:comment "Indicates that the item is damaged." ;
@@ -2268,8 +2654,8 @@ schema:ReadPermission rdfs:comment "Permission to read or view the document." ;
 
 
 schema:RearWheelDriveConfiguration rdfs:label "RearWheelDriveConfiguration" ;
-                                   rdfs:comment "Real-wheel drive is a transmission layout where the engine drives the rear wheels." ;
-                                   schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group> .
+                                   schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group> ;
+                                   rdfs:comment "Real-wheel drive is a transmission layout where the engine drives the rear wheels." .
 
 
 schema:RefurbishedCondition rdfs:label "RefurbishedCondition" ;
@@ -2342,8 +2728,8 @@ schema:SoundtrackAlbum rdfs:comment "SoundtrackAlbum." ;
 
 
 schema:SpokenWordAlbum rdfs:label "SpokenWordAlbum" ;
-                       rdfs:comment "SpokenWordAlbum." ;
-                       schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ> .
+                       schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ> ;
+                       rdfs:comment "SpokenWordAlbum." .
 
 
 schema:StudioAlbum rdfs:label "StudioAlbum" ;
@@ -2373,8 +2759,8 @@ schema:True rdfs:comment "The boolean value true." ;
             rdfs:label "True" .
 
 
-schema:Tuesday rdfs:comment "The day of the week between Monday and Wednesday." ;
-               rdfs:label "Tuesday" ;
+schema:Tuesday rdfs:label "Tuesday" ;
+               rdfs:comment "The day of the week between Monday and Wednesday." ;
                schema:sameAs <http://www.wikidata.org/entity/Q127> .
 
 
@@ -2540,8 +2926,8 @@ schema:agent rdfs:label "agent" ;
 
 
 schema:aggregateRating schema:domainIncludes schema:Place ;
-                       rdfs:label "aggregateRating" ;
-                       rdfs:comment "The overall rating, based on a collection of reviews or ratings, of the item." .
+                       rdfs:comment "The overall rating, based on a collection of reviews or ratings, of the item." ;
+                       rdfs:label "aggregateRating" .
 
 
 schema:aircraft rdfs:comment "The kind of aircraft (e.g., \"Boeing 747\")." ;
@@ -2615,8 +3001,8 @@ schema:answerCount rdfs:comment "The number of answers this question has receive
 
 
 schema:application rdfs:label "application" ;
-                   schema:supersededBy schema:actionApplication ;
-                   rdfs:comment "An application that can complete the request." .
+                   rdfs:comment "An application that can complete the request." ;
+                   schema:supersededBy schema:actionApplication .
 
 
 schema:applicationCategory rdfs:label "applicationCategory" ;
@@ -2689,8 +3075,8 @@ schema:articleSection rdfs:label "articleSection" ;
                       rdfs:comment "Articles may belong to one or more 'sections' in a magazine or newspaper, such as Sports, Lifestyle, etc." .
 
 
-schema:artworkSurface rdfs:comment "The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board, etc." ;
-                      rdfs:label "artworkSurface" .
+schema:artworkSurface rdfs:label "artworkSurface" ;
+                      rdfs:comment "The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board, etc." .
 
 
 schema:assembly schema:supersededBy schema:executableLibraryName ;
@@ -2718,8 +3104,8 @@ schema:attendee rdfs:label "attendee" ;
                 rdfs:comment "A person or organization attending the event." .
 
 
-schema:attendees schema:supersededBy schema:attendee ;
-                 rdfs:label "attendees" ;
+schema:attendees rdfs:label "attendees" ;
+                 schema:supersededBy schema:attendee ;
                  rdfs:comment "A person attending the event." .
 
 
@@ -2735,8 +3121,8 @@ schema:audio rdfs:comment "An embedded audio object." ;
              rdfs:label "audio" .
 
 
-schema:authenticator rdfs:comment "The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before playing media." ;
-                     schema:source <https://github.com/schemaorg/schemaorg/issues/1741> ;
+schema:authenticator schema:source <https://github.com/schemaorg/schemaorg/issues/1741> ;
+                     rdfs:comment "The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before playing media." ;
                      rdfs:label "authenticator" .
 
 
@@ -2801,8 +3187,8 @@ schema:bed rdfs:comment """The type of bed or beds included in the accommodation
            schema:source <https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology> .
 
 
-schema:beforeMedia rdfs:label "beforeMedia" ;
-                   rdfs:comment "A media object representing the circumstances before performing this direction." .
+schema:beforeMedia rdfs:comment "A media object representing the circumstances before performing this direction." ;
+                   rdfs:label "beforeMedia" .
 
 
 schema:benefits schema:supersededBy schema:jobBenefits ;
@@ -2877,9 +3263,9 @@ schema:box rdfs:label "box" ;
            rdfs:comment "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character." .
 
 
-schema:branchCode rdfs:label "branchCode" ;
-                  rdfs:comment """A short textual code (also called \"store code\") that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.\\n\\nFor example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code \"3047\" is a branchCode for a particular branch.
+schema:branchCode rdfs:comment """A short textual code (also called \"store code\") that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.\\n\\nFor example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code \"3047\" is a branchCode for a particular branch.
       """ ;
+                  rdfs:label "branchCode" ;
                   schema:domainIncludes schema:Place .
 
 
@@ -3072,8 +3458,8 @@ schema:colleague rdfs:label "colleague" ;
                  rdfs:comment "A colleague of the person." .
 
 
-schema:colleagues rdfs:label "colleagues" ;
-                  rdfs:comment "A colleague of the person." ;
+schema:colleagues rdfs:comment "A colleague of the person." ;
+                  rdfs:label "colleagues" ;
                   schema:supersededBy schema:colleague .
 
 
@@ -3098,8 +3484,8 @@ schema:commentTime rdfs:label "commentTime" ;
 
 
 schema:composer schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ> ;
-                rdfs:label "composer" ;
-                rdfs:comment "The person or organization who wrote a composition, or who is the composer of a work performed at some event." .
+                rdfs:comment "The person or organization who wrote a composition, or who is the composer of a work performed at some event." ;
+                rdfs:label "composer" .
 
 
 schema:contactOption rdfs:label "contactOption" ;
@@ -3119,8 +3505,8 @@ schema:contactType rdfs:label "contactType" ;
                    rdfs:comment "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point." .
 
 
-schema:containedIn schema:domainIncludes schema:Place ;
-                   schema:supersededBy schema:containedInPlace ;
+schema:containedIn schema:supersededBy schema:containedInPlace ;
+                   schema:domainIncludes schema:Place ;
                    schema:rangeIncludes schema:Place ;
                    rdfs:label "containedIn" ;
                    rdfs:comment "The basic containment relation between a place and one that contains it." .
@@ -3244,8 +3630,8 @@ schema:dataset rdfs:comment "A dataset contained in this catalog." ;
                schema:inverseOf schema:includedInDataCatalog .
 
 
-schema:datasetTimeInterval rdfs:comment "The range of temporal applicability of a dataset, e.g. for a 2011 census dataset, the year 2011 (in ISO 8601 time interval format)." ;
-                           rdfs:label "datasetTimeInterval" ;
+schema:datasetTimeInterval rdfs:label "datasetTimeInterval" ;
+                           rdfs:comment "The range of temporal applicability of a dataset, e.g. for a 2011 census dataset, the year 2011 (in ISO 8601 time interval format)." ;
                            schema:supersededBy schema:temporalCoverage .
 
 
@@ -3340,8 +3726,8 @@ schema:departureBusStop rdfs:label "departureBusStop" ;
                         rdfs:comment "The stop or station from which the bus departs." .
 
 
-schema:departureGate rdfs:label "departureGate" ;
-                     rdfs:comment "Identifier of the flight's departure gate." .
+schema:departureGate rdfs:comment "Identifier of the flight's departure gate." ;
+                     rdfs:label "departureGate" .
 
 
 schema:departurePlatform rdfs:comment "The platform from which the train departs." ;
@@ -3428,8 +3814,8 @@ schema:downvoteCount rdfs:comment "The number of downvotes this question, answer
 
 
 schema:driveWheelConfiguration schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group> ;
-                               rdfs:label "driveWheelConfiguration" ;
-                               rdfs:comment "The drive wheel configuration, i.e. which roadwheels will receive torque from the vehicle's engine via the drivetrain." .
+                               rdfs:comment "The drive wheel configuration, i.e. which roadwheels will receive torque from the vehicle's engine via the drivetrain." ;
+                               rdfs:label "driveWheelConfiguration" .
 
 
 schema:dropoffLocation rdfs:label "dropoffLocation" ;
@@ -3671,8 +4057,8 @@ schema:firstPerformance schema:source <http://www.w3.org/wiki/WebSchemas/SchemaD
                         rdfs:comment "The date and place the work was first performed." .
 
 
-schema:flightDistance rdfs:label "flightDistance" ;
-                      rdfs:comment "The distance of the flight." .
+schema:flightDistance rdfs:comment "The distance of the flight." ;
+                      rdfs:label "flightDistance" .
 
 
 schema:floorSize schema:source <https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology> ;
@@ -3831,12 +4217,12 @@ schema:hasMenuSection rdfs:label "hasMenuSection" ;
 
 
 schema:hasOccupation rdfs:label "hasOccupation" ;
-                     schema:source <https://github.com/schemaorg/schemaorg/issues/1698> ;
-                     rdfs:comment "The Person's occupation. For past professions, use Role for expressing dates." .
+                     rdfs:comment "The Person's occupation. For past professions, use Role for expressing dates." ;
+                     schema:source <https://github.com/schemaorg/schemaorg/issues/1698> .
 
 
-schema:hasOfferCatalog rdfs:comment "Indicates an OfferCatalog listing for this Organization, Person, or Service." ;
-                       rdfs:label "hasOfferCatalog" .
+schema:hasOfferCatalog rdfs:label "hasOfferCatalog" ;
+                       rdfs:comment "Indicates an OfferCatalog listing for this Organization, Person, or Service." .
 
 
 schema:hasPOS schema:rangeIncludes schema:Place ;
@@ -3986,8 +4372,8 @@ schema:inventoryLevel rdfs:comment "The current approximate inventory level for 
                       rdfs:label "inventoryLevel" .
 
 
-schema:isAccessibleForFree rdfs:comment "A flag to signal that the item, event, or place is accessible for free." ;
-                           rdfs:label "isAccessibleForFree" ;
+schema:isAccessibleForFree rdfs:label "isAccessibleForFree" ;
+                           rdfs:comment "A flag to signal that the item, event, or place is accessible for free." ;
                            schema:domainIncludes schema:Place .
 
 
@@ -4037,8 +4423,8 @@ schema:isicV4 rdfs:comment "The International Standard of Industrial Classificat
               rdfs:label "isicV4" .
 
 
-schema:isrcCode rdfs:label "isrcCode" ;
-                rdfs:comment "The International Standard Recording Code for the recording." ;
+schema:isrcCode rdfs:comment "The International Standard Recording Code for the recording." ;
+                rdfs:label "isrcCode" ;
                 schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ> .
 
 
@@ -4055,8 +4441,8 @@ schema:iswcCode rdfs:label "iswcCode" ;
                 rdfs:comment "The International Standard Musical Work Code for the composition." .
 
 
-schema:item rdfs:comment "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')." ;
-            rdfs:label "item" .
+schema:item rdfs:label "item" ;
+            rdfs:comment "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')." .
 
 
 schema:itemCondition schema:domainIncludes schema:MerchantReturnPolicy ;
@@ -4068,8 +4454,8 @@ schema:itemListElement rdfs:comment "For itemListElement values, you can use sim
                        rdfs:label "itemListElement" .
 
 
-schema:itemListOrder rdfs:comment "Type of ordering (e.g. Ascending, Descending, Unordered)." ;
-                     rdfs:label "itemListOrder" .
+schema:itemListOrder rdfs:label "itemListOrder" ;
+                     rdfs:comment "Type of ordering (e.g. Ascending, Descending, Unordered)." .
 
 
 schema:itemOffered rdfs:label "itemOffered" ;
@@ -4123,8 +4509,8 @@ schema:latitude rdfs:comment "The latitude of a location. For example ```37.4224
 
 
 schema:learningResourceType schema:rangeIncludes schema:DefinedTerm ;
-                            rdfs:comment "The predominant type or kind characterizing the learning resource. For example, 'presentation', 'handout'." ;
                             rdfs:label "learningResourceType" ;
+                            rdfs:comment "The predominant type or kind characterizing the learning resource. For example, 'presentation', 'handout'." ;
                             schema:domainIncludes schema:LearningResource .
 
 
@@ -4188,8 +4574,8 @@ schema:mainContentOfPage rdfs:label "mainContentOfPage" ;
                          rdfs:comment "Indicates if this web page element is the main subject of the page." .
 
 
-schema:mainEntityOfPage schema:inverseOf schema:mainEntity ;
-                        rdfs:label "mainEntityOfPage" ;
+schema:mainEntityOfPage rdfs:label "mainEntityOfPage" ;
+                        schema:inverseOf schema:mainEntity ;
                         rdfs:comment "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See [background notes](/docs/datamodel.html#mainEntityBackground) for details." .
 
 
@@ -4302,8 +4688,8 @@ schema:model rdfs:comment "The model of the product. Use with the URL of a Produ
              rdfs:label "model" .
 
 
-schema:modifiedTime rdfs:label "modifiedTime" ;
-                    rdfs:comment "The date and time the reservation was modified." .
+schema:modifiedTime rdfs:comment "The date and time the reservation was modified." ;
+                    rdfs:label "modifiedTime" .
 
 
 schema:mpn rdfs:label "mpn" ;
@@ -4348,8 +4734,8 @@ schema:naics rdfs:label "naics" ;
 
 
 schema:namedPosition rdfs:label "namedPosition" ;
-                     rdfs:comment "A position played, performed or filled by a person or organization, as part of an organization. For example, an athlete in a SportsTeam might play in the position named 'Quarterback'." ;
-                     schema:supersededBy schema:roleName .
+                     schema:supersededBy schema:roleName ;
+                     rdfs:comment "A position played, performed or filled by a person or organization, as part of an organization. For example, an athlete in a SportsTeam might play in the position named 'Quarterback'." .
 
 
 schema:nationality rdfs:comment "Nationality of the person." ;
@@ -4408,8 +4794,8 @@ schema:numberOfEpisodes rdfs:comment "The number of episodes in this season or s
                         rdfs:label "numberOfEpisodes" .
 
 
-schema:numberOfForwardGears rdfs:label "numberOfForwardGears" ;
-                            rdfs:comment "The total number of forward gears available for the transmission system of the vehicle.\\n\\nTypical unit code(s): C62" ;
+schema:numberOfForwardGears rdfs:comment "The total number of forward gears available for the transmission system of the vehicle.\\n\\nTypical unit code(s): C62" ;
+                            rdfs:label "numberOfForwardGears" ;
                             schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group> .
 
 
@@ -4431,17 +4817,17 @@ schema:numberOfPreviousOwners rdfs:label "numberOfPreviousOwners" ;
 
 
 schema:numberOfRooms schema:source <https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology> ;
+                     rdfs:label "numberOfRooms" ;
                      rdfs:comment """The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.
-Typical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.""" ;
-                     rdfs:label "numberOfRooms" .
+Typical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.""" .
 
 
 schema:numberOfSeasons rdfs:label "numberOfSeasons" ;
                        rdfs:comment "The number of seasons in this series." .
 
 
-schema:numberedPosition rdfs:label "numberedPosition" ;
-                        rdfs:comment "A number associated with a role in an organization, for example, the number on an athlete's jersey." .
+schema:numberedPosition rdfs:comment "A number associated with a role in an organization, for example, the number on an athlete's jersey." ;
+                        rdfs:label "numberedPosition" .
 
 
 schema:nutrition rdfs:label "nutrition" ;
@@ -4529,8 +4915,8 @@ schema:organizer rdfs:label "organizer" ;
                  rdfs:comment "An organizer of an Event." .
 
 
-schema:originAddress rdfs:label "originAddress" ;
-                     rdfs:comment "Shipper's address." .
+schema:originAddress rdfs:comment "Shipper's address." ;
+                     rdfs:label "originAddress" .
 
 
 schema:ownedFrom rdfs:comment "The date and time of obtaining the product." ;
@@ -4660,16 +5046,16 @@ schema:performerIn rdfs:label "performerIn" ;
 
 
 schema:performers schema:supersededBy schema:performer ;
-                  rdfs:label "performers" ;
-                  rdfs:comment "The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor." .
+                  rdfs:comment "The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor." ;
+                  rdfs:label "performers" .
 
 
 schema:permissionType rdfs:comment "The type of permission granted the person, organization, or audience." ;
                       rdfs:label "permissionType" .
 
 
-schema:permissions rdfs:label "permissions" ;
-                   rdfs:comment "Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi)." .
+schema:permissions rdfs:comment "Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi)." ;
+                   rdfs:label "permissions" .
 
 
 schema:permitAudience rdfs:comment "The target audience for this permit." ;
@@ -4948,8 +5334,8 @@ schema:recordedAt rdfs:label "recordedAt" ;
 
 
 schema:recordedIn rdfs:comment "The CreativeWork that captured all or part of this Event." ;
-                  rdfs:label "recordedIn" ;
-                  schema:inverseOf schema:recordedAt .
+                  schema:inverseOf schema:recordedAt ;
+                  rdfs:label "recordedIn" .
 
 
 schema:recordingOf schema:inverseOf schema:recordedAs ;
@@ -5021,8 +5407,8 @@ schema:representativeOfPage rdfs:label "representativeOfPage" ;
 
 
 schema:requiredCollateral rdfs:comment "Assets required to secure loan or credit repayments. It may take form of third party pledge, goods, financial instruments (cash, securities, etc.)" ;
-                          schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO> ;
-                          rdfs:label "requiredCollateral" .
+                          rdfs:label "requiredCollateral" ;
+                          schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO> .
 
 
 schema:requiredGender rdfs:label "requiredGender" ;
@@ -5033,8 +5419,8 @@ schema:requiredMaxAge rdfs:comment "Audiences defined by a person's maximum age.
                       rdfs:label "requiredMaxAge" .
 
 
-schema:requiredMinAge rdfs:comment "Audiences defined by a person's minimum age." ;
-                      rdfs:label "requiredMinAge" .
+schema:requiredMinAge rdfs:label "requiredMinAge" ;
+                      rdfs:comment "Audiences defined by a person's minimum age." .
 
 
 schema:requiredQuantity rdfs:comment "The required quantity of the item(s)." ;
@@ -5160,8 +5546,8 @@ schema:seasons rdfs:comment "A season in a media series." ;
                schema:supersededBy schema:season .
 
 
-schema:seatNumber rdfs:label "seatNumber" ;
-                  rdfs:comment "The location of the reserved seat (e.g., 27)." .
+schema:seatNumber rdfs:comment "The location of the reserved seat (e.g., 27)." ;
+                  rdfs:label "seatNumber" .
 
 
 schema:seatRow rdfs:comment "The row location of the reserved seat (e.g., B)." ;
@@ -5257,16 +5643,16 @@ schema:significantLink rdfs:comment "One of the more significant URLs on the pag
                        rdfs:label "significantLink" .
 
 
-schema:significantLinks schema:supersededBy schema:significantLink ;
-                        rdfs:label "significantLinks" ;
+schema:significantLinks rdfs:label "significantLinks" ;
+                        schema:supersededBy schema:significantLink ;
                         rdfs:comment "The most significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most." .
 
 
 schema:skills rdfs:comment "A statement of knowledge, skill, ability, task or any other assertion expressing a competency that is desired or required to fulfill this role or to work in this occupation." ;
               rdfs:label "skills" ;
-              schema:source <https://github.com/schemaorg/schemaorg/issues/1698> ;
-              schema:rangeIncludes schema:DefinedTerm ;
-              schema:source <https://github.com/schemaorg/schemaorg/issues/2322> .
+              schema:source <https://github.com/schemaorg/schemaorg/issues/1698> ,
+                            <https://github.com/schemaorg/schemaorg/issues/2322> ;
+              schema:rangeIncludes schema:DefinedTerm .
 
 
 schema:slogan rdfs:label "slogan" ;
@@ -5364,13 +5750,13 @@ schema:startTime rdfs:comment "The startTime of something. For a reserved event 
                  rdfs:label "startTime" .
 
 
-schema:steeringPosition schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group> ;
-                        rdfs:label "steeringPosition" ;
+schema:steeringPosition rdfs:label "steeringPosition" ;
+                        schema:source <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group> ;
                         rdfs:comment "The position of the steering wheel or similar device (mostly for cars)." .
 
 
-schema:stepValue rdfs:comment "The stepValue attribute indicates the granularity that is expected (and required) of the value in a PropertyValueSpecification." ;
-                 rdfs:label "stepValue" .
+schema:stepValue rdfs:label "stepValue" ;
+                 rdfs:comment "The stepValue attribute indicates the granularity that is expected (and required) of the value in a PropertyValueSpecification." .
 
 
 schema:steps rdfs:label "steps" ;
@@ -5391,8 +5777,8 @@ schema:subEvent rdfs:label "subEvent" ;
                 schema:inverseOf schema:superEvent .
 
 
-schema:subEvents rdfs:comment "Events that are a part of this event. For example, a conference event includes many presentations, each subEvents of the conference." ;
-                 schema:supersededBy schema:subEvent ;
+schema:subEvents schema:supersededBy schema:subEvent ;
+                 rdfs:comment "Events that are a part of this event. For example, a conference event includes many presentations, each subEvents of the conference." ;
                  rdfs:label "subEvents" .
 
 
@@ -5768,8 +6154,8 @@ schema:webCheckinTime rdfs:label "webCheckinTime" ;
                       rdfs:comment "The time when a passenger can check into the flight online." .
 
 
-schema:weight schema:domainIncludes schema:OfferShippingDetails ;
-              rdfs:comment "The weight of the product or person." ;
+schema:weight rdfs:comment "The weight of the product or person." ;
+              schema:domainIncludes schema:OfferShippingDetails ;
               rdfs:label "weight" .
 
 
@@ -5819,37 +6205,37 @@ schema:yearsInOperation rdfs:comment "The age of the business." ;
 #################################################################
 
 [ rdf:type owl:Restriction ;
-  owl:onProperty :endsAt ;
-  owl:someValuesFrom :TrajectoryPoint ;
-  rdfs:subClassOf :TrajectorySegment
+  owl:onProperty saqi:endsAt ;
+  owl:someValuesFrom saqi:TrajectoryPoint ;
+  rdfs:subClassOf saqi:TrajectorySegment
 ] .
 
 
 [ rdf:type owl:Restriction ;
-  owl:onProperty :hasPoint ;
-  owl:someValuesFrom :TrajectoryPoint ;
-  rdfs:subClassOf :Trajectory
+  owl:onProperty saqi:hasPoint ;
+  owl:someValuesFrom saqi:TrajectoryPoint ;
+  rdfs:subClassOf saqi:Trajectory
 ] .
 
 
 [ rdf:type owl:Restriction ;
-  owl:onProperty :hasSegment ;
-  owl:someValuesFrom :TrajectorySegment ;
-  rdfs:subClassOf :Trajectory
+  owl:onProperty saqi:hasSegment ;
+  owl:someValuesFrom saqi:TrajectorySegment ;
+  rdfs:subClassOf saqi:Trajectory
 ] .
 
 
 [ rdf:type owl:Restriction ;
-  owl:onProperty :nextPoint ;
-  owl:someValuesFrom :TrajectoryPoint ;
-  rdfs:subClassOf :TrajectoryPoint
+  owl:onProperty saqi:nextPoint ;
+  owl:someValuesFrom saqi:TrajectoryPoint ;
+  rdfs:subClassOf saqi:TrajectoryPoint
 ] .
 
 
 [ rdf:type owl:Restriction ;
-  owl:onProperty :startsFrom ;
-  owl:someValuesFrom :TrajectoryPoint ;
-  rdfs:subClassOf :TrajectorySegment
+  owl:onProperty saqi:startsFrom ;
+  owl:someValuesFrom saqi:TrajectoryPoint ;
+  rdfs:subClassOf saqi:TrajectorySegment
 ] .
 
 

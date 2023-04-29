@@ -13,30 +13,54 @@ mappings:
     po:
       - p: a
         o: saqi:Place
-      - p: saqi:hasName
+      - p: saqi:hasPlaceName
         o:
           value: _locname
-          datatype: rdfs:Literal
-  # Particulate Matter
-  pm:
+          datatype: xsd:string
+
+  # Sensor
+  sensor:
     sources:
       - access: _filename
         referenceFormulation: csv
-    s: saqi:pm__locname$(createdAt)
+    s: saqi:sensor_locname
     po:
       - p: a
-        o: saqi:ParticulateMatter
-      - p: saqi:particulateMatter10Concentration
+        o: saqi:LocalSensor
+      - p: saqi:hasName
         o:
-          value: $(pm10)
-          datatype: xsd:float
-        condition:
-          function: idlab-fn:notEqual
-          parameters:
-            - [grel:valueParameter, $(pm10)]
-            - [grel:valueParameter2, "null"]
+          value: SAQI Local Sensors _locname
+          datatype: rdfs:Literal
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
 
-      - p: saqi:particulateMatter2_5Concentration
+  obspm25:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:pm_obs__locname$(createdAt)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(localtime)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: saqi:observedProperty
+        o:
+          value: saqi:particulateMatter2_5Concentration
+          type: iri
+      - p: sosa:hasResult
         o:
           value: $(pm2_5)
           datatype: xsd:float
@@ -44,21 +68,18 @@ mappings:
           function: idlab-fn:notEqual
           parameters:
             - [grel:valueParameter, $(pm2_5)]
-            - [grel:valueParameter2, "null"]
-      - p: saqi:hasObservation
-        o:
-          value: saqi:pm_obs__locname$(createdAt)
-          type: iri
+            - [grel:valueParameter2, ""]
 
-  obspm:
+
+  obspm10:
     sources:
       - access: _filename
         referenceFormulation: csv
     s: saqi:pm_obs__locname$(createdAt)
     po:
       - p: a
-        o: saqi:Observation
-      - p: saqi:atTime
+        o: sosa:Observation
+      - p: sosa:resultTime
         o:
           value: $(localtime)
           datatype: xsd:dateTime
@@ -66,59 +87,126 @@ mappings:
         o:
           value: saqi:_locname
           type: iri
-      - p: saqi:dataSource
+      - p: saqi:madeBySensor
         o:
-          value: SAQI Local Sensors
-          datatype: rdfs:Literal
+          value: saqi:sensor_locname
+          type: iri
+      - p: saqi:observedProperty
+        o:
+          value: saqi:particulateMatter10Concentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(pm10)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(pm10)]
+            - [grel:valueParameter2, ""]
 
-  # Meterological Characteristics
-  mc:
-    sources:
-      - access: _filename
-        referenceFormulation: csv
-    s: saqi:mc__locname$(createdAt)
-    po:
-      - p: a
-        o: saqi:MeteorologicalCharacterstic
-      - p: saqi:ambientTemperature
-        o:
-          value: $(temp)
-          datatype: xsd:float
-        condition:
-          function: idlab-fn:notEqual
-          parameters:
-            - [grel:valueParameter, $(pm10)]
-            - [grel:valueParameter2, "null"]
-      - p: saqi:relativeHumidity
-        o:
-          value: $(humid)
-          datatype: xsd:float
-        condition:
-          function: idlab-fn:notEqual
-          parameters:
-            - [grel:valueParameter, $(pm10)]
-            - [grel:valueParameter2, "null"]
-      - p: saqi:hasObservation
-        o:
-          value: saqi:mc_obs__locname$(createdAt)
-          type: iri
-  omc:
-    sources:
-      - access: _filename
-        referenceFormulation: csv
-    s: saqi:mc_obs__locname$(createdAt)
-    po:
-      - p: a
-        o: saqi:Observation
-      - p: saqi:atPlace
-        o:
-          value: saqi:_locname
-          type: iri
-      - p: saqi:atTime
-        o:
-          value: $(localtime)
-          datatype: xsd:dateTime
-      - p: saqi:dataSource
-        o:
-          value: SAQI Local Sensors
-          datatype: rdfs:Literal
+  # # Particulate Matter
+  # pm:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:pm__locname$(createdAt)
+  #   po:
+  #     - p: a
+  #       o: saqi:ParticulateMatter
+  #     - p: saqi:particulateMatter10Concentration
+  #       o:
+  #         value: $(pm10)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, "null"]
+
+  #     - p: saqi:particulateMatter2_5Concentration
+  #       o:
+  #         value: $(pm2_5)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm2_5)]
+  #           - [grel:valueParameter2, "null"]
+  #     - p: saqi:hasObservation
+  #       o:
+  #         value: saqi:pm_obs__locname$(createdAt)
+  #         type: iri
+
+  # obspm:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:pm_obs__locname$(createdAt)
+  #   po:
+  #     - p: a
+  #       o: saqi:Observation
+  #     - p: saqi:atTime
+  #       o:
+  #         value: $(localtime)
+  #         datatype: xsd:dateTime
+  #     - p: saqi:atPlace
+  #       o:
+  #         value: saqi:_locname
+  #         type: iri
+  #     - p: saqi:dataSource
+  #       o:
+  #         value: SAQI Local Sensors
+  #         datatype: rdfs:Literal
+
+  # # Meterological Characteristics
+  # mc:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:mc__locname$(createdAt)
+  #   po:
+  #     - p: a
+  #       o: saqi:MeteorologicalCharacterstic
+  #     - p: saqi:ambientTemperature
+  #       o:
+  #         value: $(temp)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, "null"]
+  #     - p: saqi:relativeHumidity
+  #       o:
+  #         value: $(humid)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, "null"]
+  #     - p: saqi:hasObservation
+  #       o:
+  #         value: saqi:mc_obs__locname$(createdAt)
+  #         type: iri
+  # omc:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:mc_obs__locname$(createdAt)
+  #   po:
+  #     - p: a
+  #       o: saqi:Observation
+  #     - p: saqi:atPlace
+  #       o:
+  #         value: saqi:_locname
+  #         type: iri
+  #     - p: saqi:atTime
+  #       o:
+  #         value: $(localtime)
+  #         datatype: xsd:dateTime
+  #     - p: saqi:dataSource
+  #       o:
+  #         value: SAQI Local Sensors
+  #         datatype: rdfs:Literal
