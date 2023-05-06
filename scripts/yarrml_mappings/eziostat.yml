@@ -40,7 +40,7 @@ mappings:
     sources:
       - access: _filename
         referenceFormulation: csv
-    s: saqi:pm_obs__locname$(createdAt)
+    s: saqi:pm25_obs__locname$(createdAt)
     po:
       - p: a
         o: sosa:Observation
@@ -56,9 +56,9 @@ mappings:
         o:
           value: saqi:sensor_locname
           type: iri
-      - p: saqi:observedProperty
+      - p: sosa:observedProperty
         o:
-          value: saqi:particulateMatter2_5Concentration
+          value: saqi:ParticulateMatter2_5Concentration
           type: iri
       - p: sosa:hasResult
         o:
@@ -75,7 +75,7 @@ mappings:
     sources:
       - access: _filename
         referenceFormulation: csv
-    s: saqi:pm_obs__locname$(createdAt)
+    s: saqi:pm10_obs__locname$(createdAt)
     po:
       - p: a
         o: sosa:Observation
@@ -91,9 +91,9 @@ mappings:
         o:
           value: saqi:sensor_locname
           type: iri
-      - p: saqi:observedProperty
+      - p: sosa:observedProperty
         o:
-          value: saqi:particulateMatter10Concentration
+          value: saqi:ParticulateMatter10Concentration
           type: iri
       - p: sosa:hasResult
         o:
@@ -104,6 +104,74 @@ mappings:
           parameters:
             - [grel:valueParameter, $(pm10)]
             - [grel:valueParameter2, ""]
+
+  obstemp:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:temp_obs__locname$(createdAt)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(localtime)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:AmbientTemperature
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(temp)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(temp)]
+            - [grel:valueParameter2, "null"]
+
+  obsrh:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:rh_obs__locname$(createdAt)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(localtime)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:RelativeHumidity
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(humid)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(humid)]
+            - [grel:valueParameter2, "null"]
 
   # # Particulate Matter
   # pm:

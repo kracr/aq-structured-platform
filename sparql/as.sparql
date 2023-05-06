@@ -346,3 +346,82 @@ GROUP BY ?timesofday
 LIMIT 10000`
   }
 ]
+
+
+
+PREFIX so: <http://schema.org/>
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+  PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+  PREFIX sosa: <http://www.w3.org/ns/sosa/>
+  
+  SELECT ?obs ?place ?result ?prop WHERE {
+  	?obs a sosa:Observation .
+ 	?obs saqi:atPlace ?place .
+  	?obs sosa:hasResult ?result .
+  	?obs sosa:observedProperty ?prop .
+  	FILTER (
+      ?prop = saqi:particulateMatter2_5Concentration 
+    )
+  
+  } 
+  LIMIT 10000
+
+
+  # The query returns average pollutants concentration in a time interval grouped by source
+  # Can use filters for location and time range
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+  PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+  PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
+  SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?sensor WHERE {
+    ?pm10obs a sosa:Observation .	
+    ?pm10obs sosa:observedProperty saqi:ParticulateMatter10Concentration .
+    ?pm10obs sosa:hasResult ?pm10Instance .
+
+    ?pm25obs a sosa:Observation .	
+    ?pm25obs sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+    ?pm25obs sosa:hasResult ?pm25Instance .
+  
+    ?pm25obs saqi:atTime ?time ;
+    saqi:atPlace ?place ;
+    saqi:madeBySensor ?sensor .
+    ?place saqi:hasName ?placeName .
+    
+    # Add location name or time interval filter
+    FILTER (
+      ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
+      ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime 
+    )
+  } 
+  GROUP BY ?sensor
+  LIMIT 10000
+
+
+
+
+
+    SELECT (AVG(?pm25Instance) AS ?pm_25) ?sensor ?place WHERE {
+
+    ?pm25obs a sosa:Observation .	
+    ?pm25obs sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+    ?pm25obs sosa:hasResult ?pm25Instance .
+  
+    ?pm25obs sosa:resultTime ?time ;
+    saqi:atPlace ?place ;
+#    saqi:madeBySensor ?sensor .
+#    ?place saqi:hasName ?placeName .
+    
+    # Add location name or time interval filter
+#    FILTER (
+#      ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
+#      ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime 
+#    )
+  } 
+  GROUP BY ?sensor ?place
+  LIMIT 10000

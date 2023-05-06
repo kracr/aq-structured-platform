@@ -1,23 +1,62 @@
-@prefix : <https://kracr.iiitd.edu.in/ontology/PollutionODP> .
+@prefix : <https://kracr.iiitd.edu.in/ontology/saqi> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix saqi: <https://kracr.iiitd.edu.in/ontology/saqi#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix schema: <https://schema.org/> .
-@prefix PollutionODP: <https://kracr.iiitd.edu.in/ontology/PollutionODP#> .
-@prefix SAQIOntology: <https://kracr.iiitd.edu.in/ontology/SAQIOntology#> .
-@prefix AirQualityOntology: <https://kracr.iiitd.edu.in/ontology/AirQualityOntology#> .
+@prefix schema1: <http://schema.org/> .
 @prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
-@prefix SAQIOntologyPollutionModule: <https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#> .
+@base <https://kracr.iiitd.edu.in/ontology/saqi#> .
 
-###  https://kracr.iiitd.edu.in/ontology/saqi#Tekhand
+
+saqi:okhla rdf:type owl:NamedIndividual , schema:Place .
+saqi:okhla saqi:hasName "Okhla"^^xsd:Literal .
+saqi:okhla geo:lat "28.520702"^^xsd:Literal .
+saqi:okhla geo:long "77.287773"^^xsd:Literal .
+
 saqi:Tekhand rdf:type owl:NamedIndividual , schema:Place .
+saqi:Tekhand saqi:hasName "Tekhand, Okhla"^^xsd:Literal .
+saqi:Tekhand geo:lat "28.520702"^^xsd:Literal .
+saqi:Tekhand geo:long "77.287773"^^xsd:Literal .
 
-saqi:Tekhand geo:lat "28.5626"^^xsd:Literal
-saqi:Tekhand geo:long "77.2914"^^xsd:Literal
+saqi:ShaheenBagh rdf:type owl:NamedIndividual , schema:Place .
+saqi:ShaheenBagh saqi:hasName "Shaheen Bagh, Okhla"^^xsd:Literal .
+saqi:ShaheenBagh geo:lat "28.544370"^^xsd:Literal .
+saqi:ShaheenBagh geo:long "77.299975"^^xsd:Literal .
 
-saqi:NangliDairy geo:lat "28.6090"^^xsd:Literal
-saqi:NangliDairy geo:long "76.9855"^^xsd:Literal
+saqi:SanjayColony rdf:type owl:NamedIndividual , schema:Place .
+saqi:SanjayColony saqi:hasName "SanjayColony, Okhla"^^xsd:Literal .
+saqi:SanjayColony geo:lat "28.540949"^^xsd:Literal .
+saqi:SanjayColony geo:long "77.276241"^^xsd:Literal .
+
+
+
+saqi:najafgarh rdf:type owl:NamedIndividual , schema:Place .
+saqi:najafgarh saqi:hasName "Najafgarh"^^xsd:Literal .
+saqi:najafgarh geo:lat "28.614868"^^xsd:Literal .
+saqi:najafgarh geo:long "76.977083"^^xsd:Literal .
+
+saqi:NangliDairy rdf:type owl:NamedIndividual , schema:Place .
+saqi:NangliDairy saqi:hasName "NangliDairy, Najafgarh"^^xsd:Literal .
+saqi:NangliDairy geo:lat "28.621246"^^xsd:Literal .
+saqi:NangliDairy geo:long "77.015123"^^xsd:Literal .
+
+saqi:DTCBusTerminal rdf:type owl:NamedIndividual , schema:Place .
+saqi:DTCBusTerminal saqi:hasName "DTC bus terminal, Najafgarh"^^xsd:Literal .
+saqi:DTCBusTerminal geo:lat "28.614868"^^xsd:Literal .
+saqi:DTCBusTerminal geo:long "76.977083"^^xsd:Literal .
+
+saqi:JharodhaKalan rdf:type owl:NamedIndividual , schema:Place .
+saqi:JharodhaKalan saqi:hasName "Jharodha Kalan, Najafgarh"^^xsd:Literal .
+saqi:JharodhaKalan geo:lat "28.651706"^^xsd:Literal .
+saqi:JharodhaKalan geo:long "76.952387"^^xsd:Literal .
+

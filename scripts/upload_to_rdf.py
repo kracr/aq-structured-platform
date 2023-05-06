@@ -202,7 +202,7 @@ def upload_survey_data():
                 raise Exception("Zero triples uploaded to graph")
 
 create_temp_dir()
-# upload_static_rdf_data()
-# upload_saqi_sensors_data()
-# upload_cpcb_sensors_data() 
+upload_static_rdf_data()
+upload_saqi_sensors_data()
+upload_cpcb_sensors_data() 
 upload_survey_data()
