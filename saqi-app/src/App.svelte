@@ -22,7 +22,7 @@
 
   import { SpeechVoices, IsSparql } from "./store";
   import { sleep } from "./utils";
-    import { utils } from "attractions";
+  import { utils } from "attractions";
   const routes = {
     "/": GreetingsPage,
     "/options/lang": LanguageSelection,
@@ -39,13 +39,18 @@
 
   let isSpeechLoaded = false;
   let voices = undefined;
-  
+
   window.speechSynthesis.onvoiceschanged = async function () {
     console.log("Speech Loaded, Voices available");
     voices = window.speechSynthesis.getVoices();
-    console.log("VOICES",voices.filter((v)=>true).map((v)=>{
-      return v.voiceURI
-    }))
+    console.log(
+      "VOICES",
+      voices
+        .filter((v) => true)
+        .map((v) => {
+          return v.voiceURI;
+        })
+    );
     let hin_voice = voices.find((o) =>
       /हिन्दी|hindi|Kalpana|Hindi India|Hindi/gi.test(o.voiceURI)
     );

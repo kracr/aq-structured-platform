@@ -118,132 +118,173 @@ ORDER BY ?PMLiteracy ?PMLiteracyPercentage
   {
     title: "Get all sensor values obtained from local pollution sensors [Local Sensors]",
     query: `# The query returns all sensor values obtained from local pollution sensors
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-SELECT ?pm10 ?pm25 ?humid ?temp ?placeName ?time WHERE {
-  ?pm a saqi:ParticulateMatter;	
-  saqi:particulateMatter10Concentration ?pm10 ;
-  saqi:particulateMatter2_5Concentration ?pm25 .
-
-  ?pm saqi:hasObservation ?obs1 .
-  ?obs1 saqi:atTime ?time ;
-  saqi:atPlace ?place ;
-  saqi:dataSource ?source .
-  ?place saqi:hasName ?placeName .
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX sosa: <http://www.w3.org/ns/sosa/>
   
-  # 2 observations are joined together using common entity ?time and ?place
-  ?mc a saqi:MeteorologicalCharacterstic;
-          saqi:relativeHumidity ?humid ;
-          saqi:ambientTemperature ?temp .
-  ?mc saqi:hasObservation ?obs2 .
-  ?obs2 saqi:atTime ?time ;
-        saqi:atPlace ?place ;
+    SELECT ?pm10 ?pm25 ?temp ?humid ?placeName ?temp ?time WHERE {
+    
+      ?obs_pm_25 a sosa:Observation .
+      ?obs_pm_25 sosa:resultTime ?time .
+      ?obs_pm_25 saqi:atPlace ?place .
+      ?obs_pm_25 saqi:madeBySensor ?source .
   
-  # Add location name or time interval filter
-  FILTER (
-    ?source="SAQI Local Sensors"^^rdfs:Literal &&
-    ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
-    ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime
-  )
-} 
-LIMIT 10000`
+      ?obs_pm_10 a sosa:Observation .
+      ?obs_pm_10 sosa:resultTime ?time .
+      ?obs_pm_10 saqi:atPlace ?place .
+      ?obs_pm_10 saqi:madeBySensor ?source .
+      
+      ?obs_humid a sosa:Observation .
+      ?obs_humid sosa:resultTime ?time .
+      ?obs_humid saqi:atPlace ?place .
+      ?obs_humid saqi:madeBySensor ?source .
+    
+      ?obs_temp a sosa:Observation .
+      ?obs_temp sosa:resultTime ?time .
+      ?obs_temp saqi:atPlace ?place .
+      ?obs_temp saqi:madeBySensor ?source .
+    
+      ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+      ?obs_pm_25 sosa:hasResult ?pm25 .
+    
+      ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+      ?obs_pm_10 sosa:hasResult ?pm10 .
+    
+      ?obs_humid sosa:observedProperty saqi:RelativeHumidity .
+      ?obs_humid sosa:hasResult ?humid .
+    
+      ?obs_temp sosa:observedProperty saqi:AmbientTemperature .
+      ?obs_temp sosa:hasResult ?temp .
+    
+      ?place saqi:hasName ?placeName .
+    ?source rdf:type ?data_source_type .
+    
+      # Add location name or time interval filter
+      FILTER (
+        ?data_source_type = saqi:LocalSensor &&
+        ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
+        ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime
+      )
+    } 
+    LIMIT 10000`
   },
   {
     title: "Get all parameters obtained from CPCB sensors [CPCB][CQ3]",
     query: `# The query returns all parameters obtained from CPCB sensors
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-SELECT ?pm10 ?pm25 ?NO2 ?NO ?SO2 ?humid ?windSpeed ?placeName ?time WHERE {
-  ?pm a saqi:ParticulateMatter;	
-  saqi:particulateMatter10Concentration ?pm10 ;
-  saqi:particulateMatter2_5Concentration ?pm25 .
-
-  ?pm saqi:hasObservation ?obspm .
-  ?obspm saqi:atTime ?time ;
-  saqi:atPlace ?place ;
-  saqi:dataSource ?source .
-  ?place saqi:hasName ?placeName .
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX sosa: <http://www.w3.org/ns/sosa/>
   
-  # Join with oxides of Nitrogen
-  ?no a saqi:OxideOfNitrogen ;
-  saqi:nitrogenDiOxideConcentration ?NO2 ;
-  saqi:nitrogenMonoOxideConcentration ?NO .
-  ?no saqi:hasObservation ?obsno .
-  ?obsno saqi:atTime ?time ;
-  saqi:atPlace ?place ;
-  saqi:dataSource ?source .
+    SELECT ?pm10 ?pm25 ?NO2 ?NO ?SO2 ?humid ?placeName ?time WHERE {
+    
+      ?obs_pm_25 a sosa:Observation .
+      ?obs_pm_25 sosa:resultTime ?time .
+      ?obs_pm_25 saqi:atPlace ?place .
+      ?obs_pm_25 saqi:madeBySensor ?source .
   
-    # Join with Oxides of Sulphur
-  ?so a saqi:OxideOfSulphur ;
-  saqi:sulphurDiOxideConcentration ?SO2 .
-  ?so saqi:hasObservation ?obsso .
-  ?obsso saqi:atTime ?time ;
-  saqi:atPlace ?place ;
-  saqi:dataSource ?source .
+      ?obs_pm_10 a sosa:Observation .
+      ?obs_pm_10 sosa:resultTime ?time .
+      ?obs_pm_10 saqi:atPlace ?place .
+      ?obs_pm_10 saqi:madeBySensor ?source .
+    
+      ?obs_no2 a sosa:Observation .
+      ?obs_no2 sosa:resultTime ?time .
+      ?obs_no2 saqi:atPlace ?place .
+      ?obs_no2 saqi:madeBySensor ?source .
+    
+      ?obs_no a sosa:Observation .
+      ?obs_no sosa:resultTime ?time .
+      ?obs_no saqi:atPlace ?place .
+      ?obs_no saqi:madeBySensor ?source .
+    
+      ?obs_so2 a sosa:Observation .
+      ?obs_so2 sosa:resultTime ?time .
+      ?obs_so2 saqi:atPlace ?place .
+      ?obs_so2 saqi:madeBySensor ?source .
+    
+       ?obs_humid a sosa:Observation .
+      ?obs_humid sosa:resultTime ?time .
+      ?obs_humid saqi:atPlace ?place .
+      ?obs_humid saqi:madeBySensor ?source .
+    
+      ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+      ?obs_pm_25 sosa:hasResult ?pm25 .
+    
+      ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+      ?obs_pm_10 sosa:hasResult ?pm10 .
+    
+      ?obs_no2 sosa:observedProperty saqi:NitrogenDiOxideConcentration .
+      ?obs_no2 sosa:hasResult ?NO2 .
+    
+      ?obs_no sosa:observedProperty saqi:NitrogenMonoOxideConcentration .
+      ?obs_no sosa:hasResult ?NO .
+    
+      ?obs_so2 sosa:observedProperty saqi:SulphurDiOxideConcentration .
+      ?obs_so2 sosa:hasResult ?SO2 .
   
-    # Join with Wind Characterstic
-  ?wc a saqi:WindCharacterstic ;
-  saqi:windDirection ?windDir ;
-  saqi:windSpeed ?windSpeed .
-  ?wc saqi:hasObservation ?obswc .
-  ?obswc saqi:atTime ?time ;
-  saqi:atPlace ?place ;
-  saqi:dataSource ?source .
-  
-  # Join with metrological parameters observation
-  ?mc a saqi:MeteorologicalCharacterstic ;
-  saqi:relativeHumidity ?humid .
-  ?mc saqi:hasObservation ?obsmc .
-  ?obsmc saqi:atTime ?time ;
-  saqi:atPlace ?place ;
-  saqi:dataSource ?source .
-  
-  # Add location name or time interval filter
-  FILTER (
-    ?source="Central Pollution Control Board"^^rdfs:Literal &&
-    ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
-    ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime
-  )
-} 
-LIMIT 10000`
+    
+      ?obs_humid sosa:observedProperty saqi:RelativeHumidity .
+      ?obs_humid sosa:hasResult ?humid .
+    
+      ?place saqi:hasName ?placeName .
+    ?source rdf:type ?data_source_type .
+    
+      
+      # Add location name or time interval filter
+      FILTER (
+        ?data_source_type = saqi:CPCBSensor &&
+        ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
+        ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime
+      )
+    } 
+    LIMIT 10000`
   },
   {
-    title: "Compare Particualte matter concentrations by source CBCB vs Local sensors [CPCB,Local Sensors]",
-    query: `# The query returns average pollutants concentration in a time interval grouped by source
-# Can use filters for location and time range
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?source WHERE {
-  ?pm a saqi:ParticulateMatter;	
-  saqi:particulateMatter10Concentration ?pm10Instance ;
-  saqi:particulateMatter2_5Concentration ?pm25Instance .
+    title: "Compare Particulate matter concentrations by source CBCB vs Local sensors [CPCB,Local Sensors]",
+    query: `  # The query returns average pollutants concentration in a time interval grouped by source
+    # Can use filters for location and time range
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX sosa: <http://www.w3.org/ns/sosa/>
+    
+    SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?dataSource WHERE {
   
-  ?pm saqi:hasObservation ?obs .
-  ?obs saqi:atTime ?time ;
-  saqi:atPlace ?place ;
-  saqi:dataSource ?source .
-  ?place saqi:hasName ?placeName .
+      ?obs_pm_25 a sosa:Observation .
+      ?obs_pm_25 sosa:resultTime ?time .
+      ?obs_pm_25 saqi:atPlace ?place .
+      ?obs_pm_25 saqi:madeBySensor ?source .
   
-  # Add location name or time interval filter
-  FILTER (
-    ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
-    ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime
-  )
-} 
-GROUP BY ?source
-LIMIT 10000`
+      ?obs_pm_10 a sosa:Observation .
+      ?obs_pm_10 sosa:resultTime ?time .
+      ?obs_pm_10 saqi:atPlace ?place .
+      ?obs_pm_10 saqi:madeBySensor ?source .
+    
+      ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+      ?obs_pm_25 sosa:hasResult ?pm25Instance .
+      
+      ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+      ?obs_pm_10 sosa:hasResult ?pm10Instance .
+      
+      ?place saqi:hasName ?placeName .
+      ?source rdfs:label ?dataSource .
+   
+      # Add location name or time interval filter
+      FILTER (
+        ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
+        ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime
+      )
+    } 
+    GROUP BY ?dataSource
+    LIMIT 10000`
   },
   {
     title: "Get pollution perception across different spatial locations [Survey Data][CQ2]",
@@ -320,148 +361,182 @@ ORDER BY ?PMLiteracy ?PMLiteracyPercentage`
   {
     title: "Compare AQI literacy to pollution levels in an area [Survey Data, Local Sensors]",
     query: `# The query returns average pollutants concentration in a time interval grouped by source
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-SELECT  ?pm_10 ?pm_25 ?placeName ?PMLiteracyPercentage{
-  {
-    SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?placeName ?source WHERE {
-      ?pm a saqi:ParticulateMatter;	
-      saqi:particulateMatter10Concentration ?pm10Instance ;
-      saqi:particulateMatter2_5Concentration ?pm25Instance .
-      
-      ?pm saqi:hasObservation ?obs .
-      ?obs saqi:atTime ?time ;
-      saqi:atPlace ?place ;
-      saqi:dataSource ?source .
-      ?place saqi:hasName ?placeName .
-    } 
-    GROUP BY ?source ?placeName
-    LIMIT 10000
-  }
-  {
-    SELECT ?PMLiteracy ?placeName (xsd:integer(COUNT( ?PMLiteracy) *100 / ?count2) as ?PMLiteracyPercentage) WHERE {
-      ?person rdf:type saqi:Person ;
-      saqi:hasIndividualPerception ?perception ;
-      saqi:isPartOfSocialCohort ?cohort ;
-      saqi:livesIn ?place ;
-      saqi:hasAirPollutionLiteracy ?literacy .
-      ?perception saqi:localAirQualityRating ?rating .
-      ?literacy saqi:hasAQILiteracy ?PMLiteracy .
-
-      ?place saqi:hasName ?placeName .
-      {
-        SELECT (COUNT( ?placeName) as ?count2) ?placeName
-        WHERE {
-                ?person rdf:type saqi:Person ;
-                saqi:hasAirPollutionLiteracy ?literacy ;
-                saqi:isPartOfSocialCohort ?cohort ;
-                saqi:livesIn ?place .
-                ?literacy saqi:hasParticulateMatterLiteracy ?PMLiteracy .
-                ?place saqi:hasName ?placeName .
+    PREFIX sosa: <http://www.w3.org/ns/sosa/>
+    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    
+      SELECT  ?pm_10 ?pm_25 ?placeName ?PMLiteracyPercentage{
+        {
+          SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?placeName ?source WHERE {
+          
+            ?obs_pm_25 a sosa:Observation .
+            ?obs_pm_25 sosa:resultTime ?time .
+            ?obs_pm_25 saqi:atPlace ?place .
+            ?obs_pm_25 saqi:madeBySensor ?source .
+    
+            ?obs_pm_10 a sosa:Observation .
+            ?obs_pm_10 sosa:resultTime ?time .
+            ?obs_pm_10 saqi:atPlace ?place .
+            ?obs_pm_10 saqi:madeBySensor ?source .
+          
+            ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+            ?obs_pm_25 sosa:hasResult ?pm25Instance .
+            ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+            ?obs_pm_10 sosa:hasResult ?pm10Instance .
+            ?place saqi:hasName ?placeName .
+          
+          } 
+          GROUP BY ?source ?placeName
+          LIMIT 10000
         }
-        GROUP BY ?placeName
-      }	
-    } 
-    GROUP BY ?PMLiteracy ?placeName ?count2
-    HAVING (?PMLiteracy='Yes')
-    ORDER BY ?PMLiteracy ?PMLiteracyPercentage
-  }
-}
-ORDER BY ?pm_10 ?hasliteracy`
+        {
+          SELECT ?PMLiteracy ?placeName (xsd:integer(COUNT( ?PMLiteracy) *100 / ?count2) as ?PMLiteracyPercentage) WHERE {
+            ?person rdf:type saqi:Person ;
+            saqi:hasIndividualPerception ?perception ;
+            saqi:isPartOfSocialCohort ?cohort ;
+            saqi:livesIn ?place ;
+            saqi:hasAirPollutionLiteracy ?literacy .
+            ?perception saqi:localAirQualityRating ?rating .
+            ?literacy saqi:hasAQILiteracy ?PMLiteracy .
+      
+            ?place saqi:hasName ?placeName .
+            {
+              SELECT (COUNT( ?placeName) as ?count2) ?placeName
+              WHERE {
+                      ?person rdf:type saqi:Person ;
+                      saqi:hasAirPollutionLiteracy ?literacy ;
+                      saqi:isPartOfSocialCohort ?cohort ;
+                      saqi:livesIn ?place .
+                      ?literacy saqi:hasParticulateMatterLiteracy ?PMLiteracy .
+                      ?place saqi:hasName ?placeName .
+              }
+              GROUP BY ?placeName
+            }	
+          } 
+          GROUP BY ?PMLiteracy ?placeName ?count2
+          HAVING (?PMLiteracy='Yes')
+          ORDER BY ?PMLiteracy ?PMLiteracyPercentage
+        }
+      }
+      ORDER BY ?pm_10 ?hasliteracy`
   },
   {
     title: "Compare pollution perception to pollution levels in an area [Survey Data, Local Sensors]",
     query: `# The query returns average pollutants concentration in a time interval grouped by source
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-SELECT  ?pm_10 ?pm_25 ?placeName ?rating ?ratingPercentage{
-  {
-    SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?placeName ?source WHERE {
-      ?pm a saqi:ParticulateMatter;	
-      saqi:particulateMatter10Concentration ?pm10Instance ;
-      saqi:particulateMatter2_5Concentration ?pm25Instance .
-      
-      ?pm saqi:hasObservation ?obs .
-      ?obs saqi:atTime ?time ;
-      saqi:atPlace ?place ;
-      saqi:dataSource ?source .
-      ?place saqi:hasName ?placeName .
-    } 
-    GROUP BY ?source ?placeName
-    LIMIT 10000
-  }
-  {
-    SELECT ?rating ?placeName (xsd:integer(COUNT( ?rating) *100 / ?count2) as ?ratingPercentage) WHERE {
-      ?person rdf:type saqi:Person ;
-      saqi:hasIndividualPerception ?perception ;
-      saqi:isPartOfSocialCohort ?cohort ;
-      saqi:livesIn ?place ;
-      saqi:hasIndividualPerception ?perception .
-      ?perception saqi:localAirQualityRating ?rating .
-
-      ?place saqi:hasName ?placeName .
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX sosa: <http://www.w3.org/ns/sosa/>
+  
+    SELECT  ?pm_10 ?pm_25 ?placeName ?rating ?ratingPercentage{
       {
-        SELECT (COUNT( ?placeName) as ?count2) ?placeName
-        WHERE {
-                ?person rdf:type saqi:Person ;
-                saqi:hasIndividualPerception ?perception ;
-                saqi:isPartOfSocialCohort ?cohort ;
-                saqi:livesIn ?place .
-                ?perception saqi:localAirQualityRating ?rating .
-                ?place saqi:hasName ?placeName .
-        }
-        GROUP BY ?placeName
-      }	
-    } 
-    GROUP BY ?rating ?placeName ?count2
-    ORDER BY ?rating ?ratingPercentage
-  }
-}
-ORDER BY ?pm_10 ?ratingPercentage`
+        SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?placeName ?source WHERE {
+        ?obs_pm_25 a sosa:Observation .
+        ?obs_pm_25 sosa:resultTime ?time .
+        ?obs_pm_25 saqi:atPlace ?place .
+        ?obs_pm_25 saqi:madeBySensor ?source .
+  
+        ?obs_pm_10 a sosa:Observation .
+        ?obs_pm_10 sosa:resultTime ?time .
+        ?obs_pm_10 saqi:atPlace ?place .
+        ?obs_pm_10 saqi:madeBySensor ?source .
+      
+        ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+        ?obs_pm_25 sosa:hasResult ?pm25Instance .
+        ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+        ?obs_pm_10 sosa:hasResult ?pm10Instance .
+        
+        ?place saqi:hasName ?placeName .
+        ?source rdfs:label ?dataSource .
+        } 
+        GROUP BY ?source ?placeName
+        LIMIT 10000
+      }
+      {
+        SELECT ?rating ?placeName (xsd:integer(COUNT( ?rating) *100 / ?count2) as ?ratingPercentage) WHERE {
+          ?person rdf:type saqi:Person ;
+          saqi:hasIndividualPerception ?perception ;
+          saqi:isPartOfSocialCohort ?cohort ;
+          saqi:livesIn ?place ;
+          saqi:hasIndividualPerception ?perception .
+          ?perception saqi:localAirQualityRating ?rating .
+    
+          ?place saqi:hasName ?placeName .
+          {
+            SELECT (COUNT( ?placeName) as ?count2) ?placeName
+            WHERE {
+                    ?person rdf:type saqi:Person ;
+                    saqi:hasIndividualPerception ?perception ;
+                    saqi:isPartOfSocialCohort ?cohort ;
+                    saqi:livesIn ?place .
+                    ?perception saqi:localAirQualityRating ?rating .
+                    ?place saqi:hasName ?placeName .
+            }
+            GROUP BY ?placeName
+          }	
+        } 
+        GROUP BY ?rating ?placeName ?count2
+        ORDER BY ?rating ?ratingPercentage
+      }
+    }
+    ORDER BY ?pm_10 ?ratingPercentage`
   },
   {
     title: "Compare pollution levels against time of day [Local Sensors]",
     query: `
-        # The query returns average pollutants in specific time bands
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?timesofday WHERE {
-  ?pm a saqi:ParticulateMatter;	
-  saqi:particulateMatter10Concentration ?pm10Instance ;
-  saqi:particulateMatter2_5Concentration ?pm25Instance .
-
-  ?pm saqi:hasObservation ?obs .
-  ?obs saqi:atTime ?time ;
-  saqi:atPlace ?place ;
-  saqi:dataSource ?source .
-  ?place saqi:hasName ?placeName .
-
-  BIND (hours(?time) AS ?hour)
-
-  OPTIONAL { FILTER (?hour <= 8)
-    BIND("Morning" AS ?timesofday)
-  }
-  OPTIONAL { FILTER (?hour > 8 && ?hour <= 16)
-    BIND("Afternoon" AS ?timesofday)
-  }
-  OPTIONAL { FILTER (?hour > 16 && ?hour <= 20)
-    BIND("Evening" AS ?timesofday)
-  }
-  OPTIONAL { FILTER (?hour > 20)
-    BIND("Night" AS ?timesofday)
-  }
-} 
-GROUP BY ?timesofday
-LIMIT 10000`
+    # The query returns average pollutants in specific time bands
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+      PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+      PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+      PREFIX sosa: <http://www.w3.org/ns/sosa/>
+      
+      SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?timesofday WHERE {
+        ?obs_pm_25 a sosa:Observation .
+        ?obs_pm_25 sosa:resultTime ?time .
+        ?obs_pm_25 saqi:atPlace ?place .
+        ?obs_pm_25 saqi:madeBySensor ?source .
+    
+        ?obs_pm_10 a sosa:Observation .
+        ?obs_pm_10 sosa:resultTime ?time .
+        ?obs_pm_10 saqi:atPlace ?place .
+        ?obs_pm_10 saqi:madeBySensor ?source .
+        
+        # Add location name or time interval filter
+        FILTER (
+          ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
+          ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime
+        )
+      
+        ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+        ?obs_pm_25 sosa:hasResult ?pm25Instance .
+        ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+        ?obs_pm_10 sosa:hasResult ?pm10Instance .
+        
+        ?place saqi:hasName ?placeName .
+        ?source rdfs:label ?dataSource .
+      
+        BIND (hours(?time) AS ?hour)
+      
+        OPTIONAL { FILTER (?hour <= 8)
+          BIND("Morning" AS ?timesofday)
+        }
+        OPTIONAL { FILTER (?hour > 8 && ?hour <= 16)
+          BIND("Afternoon" AS ?timesofday)
+        }
+        OPTIONAL { FILTER (?hour > 16 && ?hour <= 20)
+          BIND("Evening" AS ?timesofday)
+        }
+        OPTIONAL { FILTER (?hour > 20)
+          BIND("Night" AS ?timesofday)
+        }
+      } 
+      GROUP BY ?timesofday
+      LIMIT 10000`
   }
 ]

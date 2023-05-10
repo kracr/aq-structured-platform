@@ -7,7 +7,7 @@ export function SpeakText(message_key: string) {
     console.log("speaking lang:", get(GlobalLanguage), "voice:", get(SpeechVoices)[get(GlobalLanguage)], "text:", get(Constants)[message_key]);
     let speech = new SpeechSynthesisUtterance();
     // speech.voice = get(SpeechVoices)["Hin"];
-    speech.lang="hi"
+    speech.lang = "hi"
     speech.text = get(Constants)[message_key]
     speech.volume = 1;
     speech.rate = 1;
@@ -20,7 +20,7 @@ export function SpeakTextDirectMessage(message: string) {
     console.log(get(SpeechVoices), get(GlobalLanguage))
     console.log("speaking lang:", get(GlobalLanguage), "voice:", get(SpeechVoices)[get(GlobalLanguage)]);
     let speech = new SpeechSynthesisUtterance();
-    speech.lang="hi"
+    speech.lang = "hi"
     // speech.voice = get(SpeechVoices)["Hin"];
     speech.text = message
     speech.volume = 1;
@@ -64,9 +64,9 @@ export async function runSPARQL(query: string) {
             },
             body: "query=" + encodeURIComponent(query)
         })
-    console.log("Response",response);
+    console.log("Response", response);
     let data = await response.json()
-    console.log("Data",data);
+    console.log("Data", data);
     return data
 }
 export function getAQIIndex(aqi_data: AQIData) {

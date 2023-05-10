@@ -4,55 +4,66 @@
   PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
   PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
   PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+  PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
+  SELECT ?pm10 ?pm25 ?NO2 ?NO ?SO2 ?humid ?placeName ?time WHERE {
   
-  SELECT ?pm10 ?pm25 ?NO2 ?NO ?SO2 ?humid ?windSpeed ?placeName ?time WHERE {
-    ?pm a saqi:ParticulateMatter;	
-    saqi:particulateMatter10Concentration ?pm10 ;
-    saqi:particulateMatter2_5Concentration ?pm25 .
+    ?obs_pm_25 a sosa:Observation .
+    ?obs_pm_25 sosa:resultTime ?time .
+    ?obs_pm_25 saqi:atPlace ?place .
+    ?obs_pm_25 saqi:madeBySensor ?source .
+
+    ?obs_pm_10 a sosa:Observation .
+    ?obs_pm_10 sosa:resultTime ?time .
+    ?obs_pm_10 saqi:atPlace ?place .
+    ?obs_pm_10 saqi:madeBySensor ?source .
   
-    ?pm saqi:hasObservation ?obspm .
-    ?obspm saqi:atTime ?time ;
-    saqi:atPlace ?place ;
-    saqi:dataSource ?source .
-    ?place saqi:hasName ?placeName .
-    
-    # Join with oxides of Nitrogen
-    ?no a saqi:OxideOfNitrogen ;
-    saqi:nitrogenDiOxideConcentration ?NO2 ;
-    saqi:nitrogenMonoOxideConcentration ?NO .
-    ?no saqi:hasObservation ?obsno .
-    ?obsno saqi:atTime ?time ;
-    saqi:atPlace ?place ;
-    saqi:dataSource ?source .
-    
-      # Join with Oxides of Sulphur
-    ?so a saqi:OxideOfSulphur ;
-    saqi:sulphurDiOxideConcentration ?SO2 .
-    ?so saqi:hasObservation ?obsso .
-    ?obsso saqi:atTime ?time ;
-    saqi:atPlace ?place ;
-    saqi:dataSource ?source .
-    
-      # Join with Wind Characterstic
-    ?wc a saqi:WindCharacterstic ;
-    saqi:windDirection ?windDir ;
-    saqi:windSpeed ?windSpeed .
-    ?wc saqi:hasObservation ?obswc .
-    ?obswc saqi:atTime ?time ;
-    saqi:atPlace ?place ;
-    saqi:dataSource ?source .
-    
-    # Join with metrological parameters observation
-    ?mc a saqi:MeteorologicalCharacterstic ;
-    saqi:relativeHumidity ?humid .
-    ?mc saqi:hasObservation ?obsmc .
-    ?obsmc saqi:atTime ?time ;
-    saqi:atPlace ?place ;
-    saqi:dataSource ?source .
+    ?obs_no2 a sosa:Observation .
+    ?obs_no2 sosa:resultTime ?time .
+    ?obs_no2 saqi:atPlace ?place .
+    ?obs_no2 saqi:madeBySensor ?source .
+  
+    ?obs_no a sosa:Observation .
+    ?obs_no sosa:resultTime ?time .
+    ?obs_no saqi:atPlace ?place .
+    ?obs_no saqi:madeBySensor ?source .
+  
+  	?obs_so2 a sosa:Observation .
+    ?obs_so2 sosa:resultTime ?time .
+    ?obs_so2 saqi:atPlace ?place .
+    ?obs_so2 saqi:madeBySensor ?source .
+  
+   	?obs_humid a sosa:Observation .
+    ?obs_humid sosa:resultTime ?time .
+    ?obs_humid saqi:atPlace ?place .
+    ?obs_humid saqi:madeBySensor ?source .
+  
+    ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+    ?obs_pm_25 sosa:hasResult ?pm25 .
+  
+    ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+    ?obs_pm_10 sosa:hasResult ?pm10 .
+  
+    ?obs_no2 sosa:observedProperty saqi:NitrogenDiOxideConcentration .
+    ?obs_no2 sosa:hasResult ?NO2 .
+  
+    ?obs_no sosa:observedProperty saqi:NitrogenMonoOxideConcentration .
+    ?obs_no sosa:hasResult ?NO .
+  
+  	?obs_so2 sosa:observedProperty saqi:SulphurDiOxideConcentration .
+    ?obs_so2 sosa:hasResult ?SO2 .
+
+  
+    ?obs_humid sosa:observedProperty saqi:RelativeHumidity .
+    ?obs_humid sosa:hasResult ?humid .
+  
+  	?place saqi:hasName ?placeName .
+	?source rdf:type ?data_source_type .
+  
     
     # Add location name or time interval filter
     FILTER (
-      ?source="Central Pollution Control Board"^^rdfs:Literal &&
+      ?data_source_type = saqi:CPCBSensor &&
       ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
       ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime
     )

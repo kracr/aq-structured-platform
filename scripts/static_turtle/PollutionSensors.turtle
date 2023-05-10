@@ -18,6 +18,33 @@
 @base <https://kracr.iiitd.edu.in/ontology/saqi#> .
 
 
+saqi:sensorNangliDairy rdf:type owl:NamedIndividual , saqi:LocalSensor .
+saqi:sensorNangliDairy rdfs:label "Local sensor, Nangli Dairy, Najafgarh".
+
+saqi:sensorDTCBusTerminal rdf:type owl:NamedIndividual , saqi:LocalSensor .
+saqi:sensorDTCBusTerminal rdfs:label "Local sensor, DTC Bus terminal, Najafgarh".
+
+saqi:sensorShaheenBagh rdf:type owl:NamedIndividual , saqi:LocalSensor .
+saqi:sensorShaheenBagh rdfs:label "Local sensor, Shaheen Bagh, Okhla".
+
+saqi:sensorSanjayColony rdf:type owl:NamedIndividual , saqi:LocalSensor .
+saqi:sensorSanjayColony rdfs:label "Local sensor, Sanjay Colony, Okhla".
+
+saqi:sensorTekhand rdf:type owl:NamedIndividual , saqi:LocalSensor .
+saqi:sensorTekhand rdfs:label "Local sensor, Tekhand, Okhla".
+
+saqi:sensorJharodhaKalan rdf:type owl:NamedIndividual , saqi:LocalSensor .
+saqi:sensorJharodhaKalan rdfs:label "Local sensor, Jharoda Kalan, Najafgarh".
+
+
+saqi:sensornajafgarh rdf:type owl:NamedIndividual , saqi:CPCBSensor .
+saqi:sensornajafgarh rdfs:label "CPCB Sensor, Najafgarh".
+
+saqi:sensorokhla rdf:type owl:NamedIndividual , saqi:CPCBSensor .
+saqi:sensorokhla rdfs:label "CPCB Sensor, Okhla".
+
+
+
 saqi:okhla rdf:type owl:NamedIndividual , schema:Place .
 saqi:okhla saqi:hasName "Okhla"^^xsd:Literal .
 saqi:okhla geo:lat "28.520702"^^xsd:Literal .
