@@ -1,0 +1,61 @@
+# The query returns average pollutants concentration in a time interval grouped by source
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+  SELECT  ?pm_10 ?pm_25 ?placeName ?PMLiteracyPercentage{
+    {
+      SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?placeName ?source WHERE {
+      
+      	?obs_pm_25 a sosa:Observation .
+      	?obs_pm_25 sosa:resultTime ?time .
+      	?obs_pm_25 saqi:atPlace ?place .
+      	?obs_pm_25 saqi:madeBySensor ?source .
+
+      	?obs_pm_10 a sosa:Observation .
+      	?obs_pm_10 sosa:resultTime ?time .
+      	?obs_pm_10 saqi:atPlace ?place .
+      	?obs_pm_10 saqi:madeBySensor ?source .
+      
+    	  ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+		    ?obs_pm_25 sosa:hasResult ?pm25Instance .
+		    ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+		    ?obs_pm_10 sosa:hasResult ?pm10Instance .
+      	?place saqi:hasName ?placeName .
+      
+      } 
+      GROUP BY ?source ?placeName
+      LIMIT 10000
+    }
+    {
+      SELECT ?PMLiteracy ?placeName (xsd:integer(COUNT( ?PMLiteracy) *100 / ?count2) as ?PMLiteracyPercentage) WHERE {
+        ?person rdf:type saqi:Person ;
+        saqi:hasIndividualPerception ?perception ;
+        saqi:isPartOfSocialCohort ?cohort ;
+        saqi:livesIn ?place ;
+        saqi:hasAirPollutionLiteracy ?literacy .
+        ?perception saqi:localAirQualityRating ?rating .
+        ?literacy saqi:hasAQILiteracy ?PMLiteracy .
+  
+        ?place saqi:hasName ?placeName .
+        {
+          SELECT (COUNT( ?placeName) as ?count2) ?placeName
+          WHERE {
+                  ?person rdf:type saqi:Person ;
+                  saqi:hasAirPollutionLiteracy ?literacy ;
+                  saqi:isPartOfSocialCohort ?cohort ;
+                  saqi:livesIn ?place .
+                  ?literacy saqi:hasParticulateMatterLiteracy ?PMLiteracy .
+                  ?place saqi:hasName ?placeName .
+          }
+          GROUP BY ?placeName
+        }	
+      } 
+      GROUP BY ?PMLiteracy ?placeName ?count2
+      HAVING (?PMLiteracy='Yes')
+      ORDER BY ?PMLiteracy ?PMLiteracyPercentage
+    }
+  }
+  ORDER BY ?pm_10 ?hasliteracy

@@ -1,0 +1,93 @@
+# baseURI: https://kracr.iiitd.edu.in/ontology/SAQIOntologyPersonModule
+# imports: http://datashapes.org/dash
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://topbraid.org/schema/schema-single-range
+# imports: http://www.w3.org/2003/01/geo/wgs84_pos
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: SAQIOntology
+
+@prefix SAQIOntology: <https://kracr.iiitd.edu.in/ontology/SAQIOntologyPersonModule#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kracr.iiitd.edu.in/ontology/SAQIOntologyPersonModule>
+  rdf:type owl:Ontology ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://purl.org/dc/elements/1.1/> ;
+  owl:imports <http://topbraid.org/schema/schema-single-range> ;
+  owl:imports <http://www.w3.org/2003/01/geo/wgs84_pos> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+
+SAQIOntology:Person
+  rdf:type rdfs:Class ;
+.
+SAQIOntology:PersonShape
+  rdf:type sh:NodeShape ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path SAQIOntology:hasAirPollutionLiteracy ;
+      sh:class SAQIOntology:Person ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "has air pollution literacy" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path SAQIOntology:hasPerception ;
+      sh:class SAQIOntology:Person ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "has individual perception" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path SAQIOntology:livesIn ;
+      sh:class SAQIOntology:Person ;
+      sh:description "Person lives in a particual region" ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "lives in" ;
+      sh:node SAQIOntology:PersonShape ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path SAQIOntology:usesAirPurifier ;
+      sh:datatype xsd:boolean ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "uses air purifier" ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path SAQIOntology:wearsMask ;
+      sh:datatype xsd:boolean ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "wears mask" ;
+    ] ;
+  sh:targetClass SAQIOntology:Person ;
+  sh:targetSubjectsOf SAQIOntology:hasAirPollutionLiteracy ;
+  sh:targetSubjectsOf SAQIOntology:hasPerception ;
+  sh:targetSubjectsOf SAQIOntology:livesIn ;
+.
+SAQIOntology:actsThrough
+  rdf:type sh:PropertyShape ;
+.
+SAQIOntology:hasAirPollutionLiteracy
+  rdf:type rdf:Property ;
+.
+SAQIOntology:hasPerception
+  rdf:type rdf:Property ;
+.
+SAQIOntology:livesIn
+  rdf:type rdf:Property ;
+.

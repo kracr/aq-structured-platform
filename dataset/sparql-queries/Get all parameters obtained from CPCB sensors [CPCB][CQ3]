@@ -1,0 +1,71 @@
+# The query returns all parameters obtained from CPCB sensors
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+  PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+  PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
+  SELECT ?pm10 ?pm25 ?NO2 ?NO ?SO2 ?humid ?placeName ?time WHERE {
+  
+    ?obs_pm_25 a sosa:Observation .
+    ?obs_pm_25 sosa:resultTime ?time .
+    ?obs_pm_25 saqi:atPlace ?place .
+    ?obs_pm_25 saqi:madeBySensor ?source .
+
+    ?obs_pm_10 a sosa:Observation .
+    ?obs_pm_10 sosa:resultTime ?time .
+    ?obs_pm_10 saqi:atPlace ?place .
+    ?obs_pm_10 saqi:madeBySensor ?source .
+  
+    ?obs_no2 a sosa:Observation .
+    ?obs_no2 sosa:resultTime ?time .
+    ?obs_no2 saqi:atPlace ?place .
+    ?obs_no2 saqi:madeBySensor ?source .
+  
+    ?obs_no a sosa:Observation .
+    ?obs_no sosa:resultTime ?time .
+    ?obs_no saqi:atPlace ?place .
+    ?obs_no saqi:madeBySensor ?source .
+  
+  	?obs_so2 a sosa:Observation .
+    ?obs_so2 sosa:resultTime ?time .
+    ?obs_so2 saqi:atPlace ?place .
+    ?obs_so2 saqi:madeBySensor ?source .
+  
+   	?obs_humid a sosa:Observation .
+    ?obs_humid sosa:resultTime ?time .
+    ?obs_humid saqi:atPlace ?place .
+    ?obs_humid saqi:madeBySensor ?source .
+  
+    ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+    ?obs_pm_25 sosa:hasResult ?pm25 .
+  
+    ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+    ?obs_pm_10 sosa:hasResult ?pm10 .
+  
+    ?obs_no2 sosa:observedProperty saqi:NitrogenDiOxideConcentration .
+    ?obs_no2 sosa:hasResult ?NO2 .
+  
+    ?obs_no sosa:observedProperty saqi:NitrogenMonoOxideConcentration .
+    ?obs_no sosa:hasResult ?NO .
+  
+  	?obs_so2 sosa:observedProperty saqi:SulphurDiOxideConcentration .
+    ?obs_so2 sosa:hasResult ?SO2 .
+
+  
+    ?obs_humid sosa:observedProperty saqi:RelativeHumidity .
+    ?obs_humid sosa:hasResult ?humid .
+  
+  	?place saqi:hasName ?placeName .
+	?source rdf:type ?data_source_type .
+  
+    
+    # Add location name or time interval filter
+    FILTER (
+      ?data_source_type = saqi:CPCBSensor &&
+      ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
+      ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime
+    )
+  } 
+  LIMIT 10000
