@@ -25,7 +25,7 @@ saqi:CarrierShape
   sh:property [
       rdf:type sh:PropertyShape ;
       sh:path saqi:carriesPollutant ;
-      sh:class saqi:Carrier ;
+      sh:class saqi:Pollutant ;
       sh:maxCount 1 ;
       sh:name "carries pollutant" ;
       sh:nodeKind sh:IRI ;
@@ -74,7 +74,7 @@ saqi:PollutantShape
   sh:property [
       rdf:type sh:PropertyShape ;
       sh:path saqi:hasPrescribedStandard ;
-      sh:class saqi:Pollutant ;
+      sh:class saqi:PrescribedStandardForPollutant ;
       sh:maxCount 1 ;
       sh:name "has prescribed standard" ;
       sh:nodeKind sh:IRI ;
@@ -137,7 +137,7 @@ saqi:TrajectoryShape
   sh:property [
       rdf:type sh:PropertyShape ;
       sh:path saqi:hasPoint ;
-      sh:class saqi:Trajectory ;
+      sh:class saqi:TrajectoryPoint ;
       sh:minCount 1 ;
       sh:name "has point" ;
       sh:nodeKind sh:IRI ;
@@ -181,7 +181,7 @@ saqi:PersonShape
   sh:property [
       rdf:type sh:PropertyShape ;
       sh:path saqi:hasAirPollutionLiteracy ;
-      sh:class saqi:Person ;
+      sh:class saqi:AirPollutionLiteracy ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
       sh:name "has air pollution literacy" ;
@@ -190,7 +190,7 @@ saqi:PersonShape
   sh:property [
       rdf:type sh:PropertyShape ;
       sh:path saqi:hasPerception ;
-      sh:class saqi:Person ;
+      sh:class saqi:Perception ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
       sh:name "has individual perception" ;
@@ -199,7 +199,7 @@ saqi:PersonShape
   sh:property [
       rdf:type sh:PropertyShape ;
       sh:path saqi:livesIn ;
-      sh:class saqi:Person ;
+      sh:class saqi:Place ;
       sh:description "Person lives in a particual region" ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
