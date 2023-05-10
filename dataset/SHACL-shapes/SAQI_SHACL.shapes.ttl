@@ -1,0 +1,242 @@
+# baseURI: https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule
+# imports: http://datashapes.org/dash
+# prefix: saqi
+
+@prefix saqi: <https://w3id.org/saqi#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix sosa: <http://www.w3.org/ns/sosa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/saqi#>
+  rdf:type owl:Ontology ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+
+
+saqi:Carrier
+  rdf:type rdfs:Class ;
+.
+saqi:CarrierShape
+  rdf:type sh:NodeShape ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:carriesPollutant ;
+      sh:class saqi:Carrier ;
+      sh:maxCount 1 ;
+      sh:name "carries pollutant" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:targetClass saqi:Carrier ;
+  sh:targetSubjectsOf saqi:carriesPollutant ;
+  sh:targetSubjectsOf saqi:hasTrajectory ;
+.
+
+sosa:Observation
+  rdf:type rdfs:Class ;
+.
+sosa:ObservationShape
+  rdf:type sh:NodeShape ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:atPlace ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:atTime ;
+      sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+    rdf:type sh:PropertyShape ;
+    sh:path saqi:hasFeatureOfInterest ;
+    sh:class saqi:Pollutant ;
+    sh:minCount 1 ;
+    sh:name "has Feature of Interest" ;
+    sh:node sosa:PollutantShape ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:targetClass sosa:Observation ;
+  sh:targetObjectsOf sosa:hasResult ;
+.
+saqi:Pollutant
+  rdf:type rdfs:Class ;
+.
+saqi:PollutantShape
+  rdf:type sh:NodeShape ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:hasPrescribedStandard ;
+      sh:class saqi:Pollutant ;
+      sh:maxCount 1 ;
+      sh:name "has prescribed standard" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:targetClass saqi:Pollutant ;
+  sh:targetObjectsOf saqi:carriesPollutant ;
+  sh:targetSubjectsOf saqi:hasObservation ;
+  sh:targetSubjectsOf saqi:hasPrescribedStandard ;
+.
+saqi:PrescribedStandardForPollutant
+  rdf:type rdfs:Class ;
+.
+saqi:PrescribedStandardForPollutantShape
+  rdf:type sh:NodeShape ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:hasObservation ;
+      sh:class sosa:Observation ;
+      sh:minCount 1 ;
+      sh:name "has observation" ;
+      sh:node sosa:ObservationShape ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:targetClass saqi:PrescribedStandardForPollutant ;
+  sh:targetObjectsOf saqi:hasPrescribedStandard ;
+.
+saqi:Trajectory
+  rdf:type rdfs:Class ;
+.
+saqi:TrajectorySegment
+  rdf:type rdfs:Class ;
+.
+saqi:TrajectorySegmentShape
+  rdf:type sh:NodeShape ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:endsAt ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "ends at" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:startsFrom ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "starts from" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:targetClass saqi:TrajectorySegment ;
+  sh:targetSubjectsOf saqi:endsAt ;
+  sh:targetSubjectsOf saqi:startsFrom ;
+.
+
+saqi:TrajectoryShape
+  rdf:type rdfs:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:hasPoint ;
+      sh:class saqi:Trajectory ;
+      sh:minCount 1 ;
+      sh:name "has point" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:hasSegment ;
+      sh:minCount 1 ;
+      sh:name "has segment" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:targetClass saqi:Trajectory ;
+  sh:targetObjectsOf saqi:hasTrajectory ;
+  sh:targetSubjectsOf saqi:hasPoint ;
+  sh:targetSubjectsOf saqi:hasSegment ;
+.
+saqi:carriesPollutant
+  rdf:type rdf:Property ;
+.
+saqi:hasObservation
+  rdf:type rdf:Property ;
+.
+saqi:hasPoint
+  rdf:type rdf:Property ;
+.
+saqi:hasPrescribedStandard
+  rdf:type rdf:Property ;
+.
+saqi:hasSegment
+  rdf:type rdf:Property ;
+.
+saqi:hasTrajectory
+  rdf:type rdf:Property ;
+.
+
+saqi:Person
+  rdf:type rdfs:Class ;
+.
+saqi:PersonShape
+  rdf:type sh:NodeShape ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:hasAirPollutionLiteracy ;
+      sh:class saqi:Person ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "has air pollution literacy" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:hasPerception ;
+      sh:class saqi:Person ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "has individual perception" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:livesIn ;
+      sh:class saqi:Person ;
+      sh:description "Person lives in a particual region" ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "lives in" ;
+      sh:node saqi:PersonShape ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:usesAirPurifier ;
+      sh:datatype xsd:boolean ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "uses air purifier" ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:wearsMask ;
+      sh:datatype xsd:boolean ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "wears mask" ;
+    ] ;
+  sh:targetClass saqi:Person ;
+  sh:targetSubjectsOf saqi:hasAirPollutionLiteracy ;
+  sh:targetSubjectsOf saqi:hasPerception ;
+  sh:targetSubjectsOf saqi:livesIn ;
+.
+saqi:actsThrough
+  rdf:type sh:PropertyShape ;
+.
+saqi:hasAirPollutionLiteracy
+  rdf:type rdf:Property ;
+.
+saqi:hasPerception
+  rdf:type rdf:Property ;
+.
+saqi:livesIn
+  rdf:type rdf:Property ;
+.
