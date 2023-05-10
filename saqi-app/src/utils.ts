@@ -2,11 +2,27 @@ export const voices = ['Google Deutsch', 'Google US English', 'Google UK English
 import { SpeechVoices, GlobalLanguage, Constants, IsMuted } from "./store";
 import { get } from 'svelte/store'
 export function SpeakText(message_key: string) {
+    window.speechSynthesis.cancel()
     console.log(get(SpeechVoices), get(GlobalLanguage))
     console.log("speaking lang:", get(GlobalLanguage), "voice:", get(SpeechVoices)[get(GlobalLanguage)], "text:", get(Constants)[message_key]);
     let speech = new SpeechSynthesisUtterance();
-    speech.voice = get(SpeechVoices)[get(GlobalLanguage)];
+    // speech.voice = get(SpeechVoices)["Hin"];
+    speech.lang = "hi"
     speech.text = get(Constants)[message_key]
+    speech.volume = 1;
+    speech.rate = 1;
+    speech.pitch = 1;
+    if (!get(IsMuted))
+        window.speechSynthesis.speak(speech);
+}
+export function SpeakTextDirectMessage(message: string) {
+    window.speechSynthesis.cancel()
+    console.log(get(SpeechVoices), get(GlobalLanguage))
+    console.log("speaking lang:", get(GlobalLanguage), "voice:", get(SpeechVoices)[get(GlobalLanguage)]);
+    let speech = new SpeechSynthesisUtterance();
+    speech.lang = "hi"
+    // speech.voice = get(SpeechVoices)["Hin"];
+    speech.text = message
     speech.volume = 1;
     speech.rate = 1;
     speech.pitch = 1;
@@ -37,10 +53,9 @@ type AQIData = {
     nh3: number;
 };
 export async function runSPARQL(query: string) {
-    console.log(query)
-    // let response = await fetch('http://localhost:3030/#/dataset/aq-store/query?query=' + encodeURIComponent(query))
+    // console.log(query)
 
-    let response = await fetch("http://localhost:3030/aq-store/query",
+    let response = await fetch("https://kracr.iiitd.edu.in/sparql/aq-store/query",
         {
             method: "POST",
             headers:
@@ -49,9 +64,9 @@ export async function runSPARQL(query: string) {
             },
             body: "query=" + encodeURIComponent(query)
         })
-    console.log(response);
+    console.log("Response", response);
     let data = await response.json()
-    console.log(data);
+    console.log("Data", data);
     return data
 }
 export function getAQIIndex(aqi_data: AQIData) {

@@ -22,7 +22,7 @@
 
   import { SpeechVoices, IsSparql } from "./store";
   import { sleep } from "./utils";
-
+  import { utils } from "attractions";
   const routes = {
     "/": GreetingsPage,
     "/options/lang": LanguageSelection,
@@ -38,12 +38,21 @@
   };
 
   let isSpeechLoaded = false;
+  let voices = undefined;
 
   window.speechSynthesis.onvoiceschanged = async function () {
     console.log("Speech Loaded, Voices available");
-    let voices = window.speechSynthesis.getVoices();
+    voices = window.speechSynthesis.getVoices();
+    console.log(
+      "VOICES",
+      voices
+        .filter((v) => true)
+        .map((v) => {
+          return v.voiceURI;
+        })
+    );
     let hin_voice = voices.find((o) =>
-      /हिन्दी|hindi|Kalpana/gi.test(o.voiceURI)
+      /हिन्दी|hindi|Kalpana|Hindi India|Hindi/gi.test(o.voiceURI)
     );
     let eng_voice = voices.find((o) =>
       /Google हिन्दी|Ravi|English\ \(India\)/gi.test(o.voiceURI)
@@ -53,7 +62,7 @@
     }
     console.log("Voices Selected", hin_voice, eng_voice);
     SpeechVoices.set({ Eng: eng_voice, Hin: hin_voice });
-    await sleep(1000);
+    // await sleep(10000);
     isSpeechLoaded = true;
   };
 
@@ -69,15 +78,18 @@
 </script>
 
 <main class="h-screen w-screen">
+  <!-- <div>
+    SPeeches : {voices?.filter((v)=>true)?.map((v)=>v.voiceURI)}
+  </div> -->
   {#if !$IsSparql}
     <LanguageSelector />
     <MuteSelector />
     <Particles />
   {/if}
   <Router {routes} on:routeLoaded={routeLoaded} />
-  {#if !isSpeechLoaded}
+  <!-- {#if !isSpeechLoaded}
     <FullScreenLoader />
-  {/if}
+  {/if} -->
 </main>
 
 <style global>

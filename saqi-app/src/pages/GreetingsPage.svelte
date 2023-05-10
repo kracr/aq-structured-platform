@@ -18,7 +18,7 @@
 <a class="" use:link={nextLink}>
     <div
         transition:scale={{ delay: 50, duration: 200, easing: cubicOut }}
-        class="flex justify-center h-screen w-screen mb-12 splash-bg"
+        class="flex justify-center h-screen w-screen mb-12 splash-bg bg-white"
     >
         <button class="text-xl click-anywhere"
             >{$Constants["SplashText"]}</button

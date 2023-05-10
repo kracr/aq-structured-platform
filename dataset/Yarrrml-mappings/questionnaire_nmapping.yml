@@ -1,0 +1,74 @@
+prefixes:
+  saqi: https://kracr.iiitd.edu.in/ontology/saqi#
+  grel: http://users.ugent.be/~bjdmeest/function/grel.ttl#
+  xsd: http://www.w3.org/2001/XMLSchema#
+mappings:
+  aqLiteracy:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:aqi_literacy_$(Id)
+    po:
+      - p: a
+        o: saqi:AirPollutionLiteracy
+      - p: saqi:hasAirPollutionGraphicLiteracy
+        o: $(Have you ever seen the screens displaying air quality as severe/poor/good in different colors in different parts of the city, do you understand the language?)
+      - p: saqi:frequencyToCheckAQI
+        o: $(How frequently do you check air quality?)
+      - p: saqi:hasParticulateMatterLiteracy
+        o: $(Have you ever heard the terms PM 2.5 and PM10?)
+      - p: saqi:hasAQIColorLiteracy
+        o: $(If yes, what does the red color in AQI mean?)
+      - p: saqi:hasAQILiteracy
+        o: $(Do you know about the Air Quality Index \(AQI\)?  )
+  aqPerception:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:aq_Perception_$(Id)
+    po:
+      - p: a
+        o: saqi:AirPollutionPerception
+      - p: saqi:peopleVotedOnAirPollutionIssues
+        o: $(Did the local representative talk about and benefitted from air related issues?)
+      - p: saqi:howIsYourLocalityComparedToOtherAreas
+        o: $(How polluted do you think is the area where you live in comparison to the rest of Delhi-NCR?)
+      - p: saqi:shouldPollutionIssuesBeRaisedInMCDElections
+        o: $(In the last municipal elections, were the issues around pollution politicized?)
+      - p: saqi:airQualityChangeIn3Years
+        o: $(What are your thoughts on the change in air quality in your city over the last 3-4 years?)
+      - p: saqi:workplaceUpdatesAboutPollution
+        o: $(Does your workplace give updates about air pollution?)
+      - p: saqi:delhiGovtWorkPerception
+        o: $(Do you think the Delhi Government is taking adequate steps to improve air quality in your city?)
+      - p: saqi:localAirQualityRating
+        o: $(How will you rate your local air quality?)
+
+  person:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:person_$(Id)
+    po:
+      - p: a
+        o: saqi:Person
+      - p: saqi:isPartOfSocialCohort
+        o: $(Group)
+      - p: saqi:whenDoYouTalkAboutAirQuality
+        o: $(If yes, when?)
+      - p: saqi:talkAboutAirQualityWithOtherPeople
+        o: $(Do you talk about air pollution at home/workplace/with friends?)
+      - p: saqi:accessibilityOfAQData
+        o: $(How accessible is the real-time air quality data of your area?)
+      - p: saqi:livesIn
+        o:
+          value: saqi:$(SpatialLocation)
+          type: iri
+      - p: saqi:hasAirPollutionLiteracy
+        o:
+          value: saqi:aqi_literacy_$(Id)
+          type: iri
+      - p: saqi:hasIndividualPerception
+        o:
+          value: saqi:aq_Perception_$(Id)
+          type: iri

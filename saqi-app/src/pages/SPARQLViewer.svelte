@@ -22,20 +22,20 @@
     let frame;
     const onload = (_) => {
         IsSparql.set(true);
-        console.log("Loaded sparql");
+        console.log("Loaded sparql", queries);
     };
 </script>
 
 <div
     use:onload
     transition:scale={{ delay: 50, duration: 200, easing: cubicOut }}
-    class="flex h-screen w-screen "
+    class="flex h-screen w-screen bg-white"
 >
     <div class="flex w-screen flex-col justify-center items-center">
         <div
             class="px-4 flex flex-auto w-screen flex-row gap-x-4 justify-evenly items-start content-center"
         >
-            <div class="flex-none self-center ">
+            <div class="flex-none self-center">
                 <h2 class="font-bold">Select Query</h2>
             </div>
 
@@ -49,7 +49,7 @@
                             //     frame.contentDocument.querySelector(
                             //         ".CodeMirror"
                             //     );
-                            console.log("Sending Data");
+                            console.log("Sending Data", selectedQuery);
                             frame.contentWindow.postMessage(
                                 selectedQuery,
                                 "https://kracr.iiitd.edu.in"
@@ -167,7 +167,7 @@
         </div>
         <iframe
             bind:this={frame}
-            src={"https://kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query"}
+            src={"https://kracr.iiitd.edu.in/ontology/saqi/sparql/#/dataset/aq-store/query"}
             frameborder="0"
             allowtransparency
             style="width:100%;height: calc(100vh + 15px);"

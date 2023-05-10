@@ -1,0 +1,1041 @@
+prefixes:
+  saqi: https://kracr.iiitd.edu.in/ontology/saqi#
+  grel: http://users.ugent.be/~bjdmeest/function/grel.ttl#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  idlab-fn: "http://example.com/idlab/function/"
+mappings:
+  # Place
+  place:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:_locname
+    po:
+      - p: a
+        o: saqi:Place
+      - p: saqi:hasPlaceName
+        o:
+          value: _locname
+          datatype: xsd:string
+
+  # Sensor
+  sensor:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:sensor_locname
+    po:
+      - p: a
+        o: saqi:CPCBSensor
+      - p: saqi:hasName
+        o:
+          value: Central Pollution Control Board _locname
+          datatype: rdfs:Literal
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+
+  obspm25:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:pm25_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:ParticulateMatter2_5Concentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(PM2.5)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(PM2.5)]
+            - [grel:valueParameter2, "null"]
+
+
+  obspm10:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:pm10_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:ParticulateMatter10Concentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(PM10)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(PM10)]
+            - [grel:valueParameter2, "null"]
+
+  obsno:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:no_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:NitrogenMonoOxideConcentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(NO)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(NO)]
+            - [grel:valueParameter2, "null"]
+
+  obsno2:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:no2_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:NitrogenDiOxideConcentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(NO2)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(NO2)]
+            - [grel:valueParameter2, "null"]
+
+  obsnox:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:nox_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:NitrogenOxideConcentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(NOx)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(NOx)]
+            - [grel:valueParameter2, "null"]
+
+  ooCO:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:co_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:CarbonMonoOxideConcentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(CO)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(CO)]
+            - [grel:valueParameter2, "null"]
+
+  ooSO2:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:so2_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:SulphurDiOxideConcentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(SO2)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(SO2)]
+            - [grel:valueParameter2, "null"]
+
+  ooSO2:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:so2_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:SulphurDiOxideConcentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(SO2)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(SO2)]
+            - [grel:valueParameter2, "null"]
+
+  ooNH3:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:nh3_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:AmmoniaConcentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(NH3)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(NH3)]
+            - [grel:valueParameter2, "null"]
+
+  ooOzone:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:ozone_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:OzoneConcentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(Ozone)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(Ozone)]
+            - [grel:valueParameter2, "null"]
+
+  ooBenzene:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:benzene_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:benzeneConcentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(Benzene)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(Benzene)]
+            - [grel:valueParameter2, "null"]
+
+  ooToluene:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:toluene_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:tolueneConcentration
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(Toluene)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(Toluene)]
+            - [grel:valueParameter2, "null"]
+
+  ooap:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:ap_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:AtmosphericPressure
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(BP)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(BP)]
+            - [grel:valueParameter2, "null"]
+
+  oorh:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:rh_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:RelativeHumidity
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(RH)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(RH)]
+            - [grel:valueParameter2, "null"]
+
+  oosr:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:sr_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:SolarRadiation
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(SR)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(SR)]
+            - [grel:valueParameter2, "null"]
+
+  oowd:
+    sources:
+      - access: _filename
+        referenceFormulation: csv
+    s: saqi:wd_obs__locname$(timestamp)
+    po:
+      - p: a
+        o: sosa:Observation
+      - p: sosa:resultTime
+        o:
+          value: $(To Date)
+          datatype: xsd:dateTime
+      - p: saqi:atPlace
+        o:
+          value: saqi:_locname
+          type: iri
+      - p: saqi:madeBySensor
+        o:
+          value: saqi:sensor_locname
+          type: iri
+      - p: sosa:observedProperty
+        o:
+          value: saqi:WindDirection
+          type: iri
+      - p: sosa:hasResult
+        o:
+          value: $(SR)
+          datatype: xsd:float
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(SR)]
+            - [grel:valueParameter2, "null"]
+
+  # # Particulate Matter
+  # pm:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:pm__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:ParticulateMatter
+  #     - p: saqi:particulateMatter10Concentration
+  #       o:
+  #         value: $(PM10)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:particulateMatter2_5Concentration
+  #       o:
+  #         value: $(PM2.5)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm25)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:hasObservation
+  #       o:
+  #         value: saqi:pm_obs__locname$(timestamp)
+  #         type: iri
+  # obspm:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:pm_obs__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:Observation
+  #     - p: saqi:atTime
+  #       o:
+  #         value: $(To Date)
+  #         datatype: xsd:dateTime
+  #     - p: saqi:atPlace
+  #       o:
+  #         value: saqi:_locname
+  #         type: iri
+  #     - p: saqi:dataSource
+  #       o:
+  #         value: Central Pollution Control Board
+  #         datatype: rdfs:Literal
+
+  # # Nitrogen oxides
+  # oon:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:oon__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:OxideOfNitrogen
+  #     - p: saqi:nitrogenDiOxideConcentration
+  #       o:
+  #         value: $(NO2)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:nitrogenMonoOxideConcentration
+  #       o:
+  #         value: $(NO)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:nitrogenOxideConcentration
+  #       o:
+  #         value: $(NOx)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:hasObservation
+  #       o:
+  #         value: saqi:oon_obs__locname$(timestamp)
+  #         type: iri
+  # ooon:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:oon_obs__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:Observation
+  #     - p: saqi:atPlace
+  #       o:
+  #         value: saqi:_locname
+  #         type: iri
+  #     - p: saqi:atTime
+  #       o:
+  #         value: $(To Date)
+  #         datatype: xsd:dateTime
+  #     - p: saqi:dataSource
+  #       o:
+  #         value: Central Pollution Control Board
+  #         datatype: rdfs:Literal
+
+  # # Oxides of carbon
+  # ooc:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:ooc__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:OxideOfCarbon
+  #     - p: saqi:carbonMonoOxideConcentration
+  #       o:
+  #         value: $(CO)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:hasObservation
+  #       o:
+  #         value: saqi:ooc_obs__locname$(timestamp)
+  #         type: iri
+  # oooc:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:ooc_obs__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:Observation
+  #     - p: saqi:atPlace
+  #       o:
+  #         value: saqi:_locname
+  #         type: iri
+  #     - p: saqi:atTime
+  #       o:
+  #         value: $(To Date)
+  #         datatype: xsd:dateTime
+  #     - p: saqi:dataSource
+  #       o:
+  #         value: Central Pollution Control Board
+  #         datatype: rdfs:Literal
+
+  # # Oxides of Sulphur
+  # oos:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:oos__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:OxideOfSulphur
+  #     - p: saqi:sulphurDiOxideConcentration
+  #       o:
+  #         value: $(SO2)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:hasObservation
+  #       o:
+  #         value: saqi:oos_obs__locname$(timestamp)
+  #         type: iri
+  # ooos:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:oos_obs__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:Observation
+  #     - p: saqi:atPlace
+  #       o:
+  #         value: saqi:_locname
+  #         type: iri
+  #     - p: saqi:atTime
+  #       o:
+  #         value: $(To Date)
+  #         datatype: xsd:dateTime
+  #     - p: saqi:dataSource
+  #       o:
+  #         value: Central Pollution Control Board
+  #         datatype: rdfs:Literal
+
+  # # Ammonia
+  # gp:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:gp__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:GaseousPollutant
+  #     - p: saqi:ammoniaConcentration
+  #       o:
+  #         value: $(NH3)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:hasObservation
+  #       o:
+  #         value: saqi:gp_obs__locname$(timestamp)
+  #         type: iri
+  # ogp:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:gp_obs__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:Observation
+  #     - p: saqi:atPlace
+  #       o:
+  #         value: saqi:_locname
+  #         type: iri
+  #     - p: saqi:atTime
+  #       o:
+  #         value: $(To Date)
+  #         datatype: xsd:dateTime
+  #     - p: saqi:dataSource
+  #       o:
+  #         value: Central Pollution Control Board
+  #         datatype: rdfs:Literal
+
+  # # Ozone
+  # sp:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:sp__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:SecondaryPollutant
+  #     - p: saqi:ozoneConcentration
+  #       o:
+  #         value: $(Ozone)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:hasObservation
+  #       o:
+  #         value: saqi:sp_obs__locname$(timestamp)
+  #         type: iri
+  # osp:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:sp_obs__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:Observation
+  #     - p: saqi:atPlace
+  #       o:
+  #         value: saqi:_locname
+  #         type: iri
+  #     - p: saqi:atTime
+  #       o:
+  #         value: $(To Date)
+  #         datatype: xsd:dateTime
+  #     - p: saqi:dataSource
+  #       o:
+  #         value: Central Pollution Control Board
+  #         datatype: rdfs:Literal
+
+  # # Hydrocarbon
+  # hc:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:hc__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:Hydrocarbon
+  #     - p: saqi:benzeneConcentration
+  #       o:
+  #         value: $(Benzene)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:tolueneConcentration
+  #       o:
+  #         value: $(Toluene)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:hasObservation
+  #       o:
+  #         value: saqi:hc_obs__locname$(timestamp)
+  #         type: iri
+  # ohc:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:hc_obs__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:Observation
+  #     - p: saqi:atPlace
+  #       o:
+  #         value: saqi:_locname
+  #         type: iri
+  #     - p: saqi:atTime
+  #       o:
+  #         value: $(To Date)
+  #         datatype: xsd:dateTime
+  #     - p: saqi:dataSource
+  #       o:
+  #         value: Central Pollution Control Board
+  #         datatype: rdfs:Literal
+
+  # # Meterological Characteristics
+  # mc:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:mc__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:MeteorologicalCharacterstic
+  #     - p: saqi:bPressure
+  #       o:
+  #         value: $(BP)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:precipitation
+  #       o:
+  #         value: $(BP)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:relativeHumidity
+  #       o:
+  #         value: $(RH)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:solarRadiation
+  #       o:
+  #         value: $(SR)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:hasObservation
+  #       o:
+  #         value: saqi:mc_obs__locname$(timestamp)
+  #         type: iri
+  # omc:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:mc_obs__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:Observation
+  #     - p: saqi:atPlace
+  #       o:
+  #         value: saqi:_locname
+  #         type: iri
+  #     - p: saqi:atTime
+  #       o:
+  #         value: $(To Date)
+  #         datatype: xsd:dateTime
+  #     - p: saqi:dataSource
+  #       o:
+  #         value: Central Pollution Control Board
+  #         datatype: rdfs:Literal
+
+  # # Wind Characteristics
+  # wc:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:wc__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:WindCharacterstic
+  #     - p: saqi:windDirection
+  #       o:
+  #         value: $(WD)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:windSpeed
+  #       o:
+  #         value: $(WS)
+  #         datatype: xsd:float
+  #       condition:
+  #         function: idlab-fn:notEqual
+  #         parameters:
+  #           - [grel:valueParameter, $(pm10)]
+  #           - [grel:valueParameter2, ""]
+  #     - p: saqi:hasObservation
+  #       o:
+  #         value: saqi:wc_obs__locname$(timestamp)
+  #         type: iri
+  # owc:
+  #   sources:
+  #     - access: _filename
+  #       referenceFormulation: csv
+  #   s: saqi:wc_obs__locname$(timestamp)
+  #   po:
+  #     - p: a
+  #       o: saqi:Observation
+  #     - p: saqi:atPlace
+  #       o:
+  #         value: saqi:_locname
+  #         type: iri
+  #     - p: saqi:atTime
+  #       o:
+  #         value: $(To Date)
+  #         datatype: xsd:dateTime
+  #     - p: saqi:dataSource
+  #       o:
+  #         value: Central Pollution Control Board
+  #         datatype: rdfs:Literal

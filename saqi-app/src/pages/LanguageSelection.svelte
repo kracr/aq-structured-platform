@@ -24,7 +24,7 @@
             name: "हिन्दी",
         },
     ];
-    let active = "Eng";
+    let active = "Hin";
 
     import { link } from "svelte-spa-router";
     let nextLink = "/options/location";
@@ -33,14 +33,14 @@
 
 <div
     transition:scale={{ delay: 50, duration: 200, easing: cubicOut }}
-    class="flex h-screen w-screen "
+    class="flex h-screen w-screen bg-white"
 >
     <div class="w-3/4 m-auto">
         <!-- svelte-ignore a11y-missing-attribute -->
         <a
             use:link={homeLink}
-            class="decoration-black no-underline hover:text-black"
-            ><h2 class="text-4xl">SAQI</h2></a
+            class="decoration-black no-underline text-black"
+            ><h2 class="text-4xl text-black">SAQI</h2></a
         >
         <RadioGroup
             value={active}

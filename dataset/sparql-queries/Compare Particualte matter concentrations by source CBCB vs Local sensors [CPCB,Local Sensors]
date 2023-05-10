@@ -1,0 +1,38 @@
+  # The query returns average pollutants concentration in a time interval grouped by source
+  # Can use filters for location and time range
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
+  PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+  PREFIX sosa: <http://www.w3.org/ns/sosa/>
+  
+  SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?dataSource WHERE {
+
+    ?obs_pm_25 a sosa:Observation .
+    ?obs_pm_25 sosa:resultTime ?time .
+    ?obs_pm_25 saqi:atPlace ?place .
+    ?obs_pm_25 saqi:madeBySensor ?source .
+
+    ?obs_pm_10 a sosa:Observation .
+    ?obs_pm_10 sosa:resultTime ?time .
+    ?obs_pm_10 saqi:atPlace ?place .
+    ?obs_pm_10 saqi:madeBySensor ?source .
+  
+    ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+    ?obs_pm_25 sosa:hasResult ?pm25Instance .
+    
+    ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+    ?obs_pm_10 sosa:hasResult ?pm10Instance .
+    
+  	?place saqi:hasName ?placeName .
+	  ?source rdfs:label ?dataSource .
+ 
+    # Add location name or time interval filter
+    FILTER (
+      ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
+      ?time < "2021-11-10T00:00:00+05:30"^^xsd:dateTime
+    )
+  } 
+  GROUP BY ?dataSource
+  LIMIT 10000

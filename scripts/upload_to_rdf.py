@@ -31,7 +31,7 @@ def create_temp_dir():
     return temp_dir
 
 def upload_static_rdf_data():
-    static_turtle_path = base_dir / "rdf_files"
+    static_turtle_path = base_dir / "static_turtle"
 
     turtle_files = [file for file in os.listdir(static_turtle_path)]
     for file in turtle_files:
@@ -44,6 +44,7 @@ def upload_static_rdf_data():
             }
             print("Sending turtle payload for file: ",file)
             response = requests.request("POST",f"{RDF_STORE_URL}aq-store/data?default",headers=headers, data=turtle_data.encode('utf-8'))
+            print("Response",response)
             response_json = json.loads(response.text)
             
             if(response_json is not None and response_json["count"]>0):
@@ -83,7 +84,7 @@ def upload_saqi_sensors_data():
         rdf_output_path = temp_dir/ f"map_{file}.turtle"
 
         print("Starting RML mapper for mapping :",copied_map_file,copied_file_path)
-        java_mapper_path = base_dir / "rmlmapper-6.0.0-r363-all.jar"
+        java_mapper_path = base_dir / "rmlmapper-6.1.3-r367-all.jar"
         cmd = subprocess.Popen(["java","-jar",java_mapper_path,"-s","turtle","-m",copied_map_file,"-o",rdf_output_path], stdout=subprocess.PIPE)
         print(cmd.communicate()[0])
 
@@ -132,7 +133,7 @@ def upload_cpcb_sensors_data():
         rdf_output_path = temp_dir/ f"map_{file}.turtle"
 
         print("Starting RML mapper for mapping :",copied_map_file,copied_file_path)
-        java_mapper_path = base_dir / "rmlmapper-6.0.0-r363-all.jar"
+        java_mapper_path = base_dir / "rmlmapper-6.1.3-r367-all.jar"
         cmd = subprocess.Popen(["java","-jar",java_mapper_path,"-s","turtle","-m",copied_map_file,"-o",rdf_output_path], stdout=subprocess.PIPE)
         print(cmd.communicate()[0])
 
@@ -145,7 +146,7 @@ def upload_cpcb_sensors_data():
             "Content-Type": "text/turtle;charset=utf-8"
             }
             print("Sending turtle payload")
-            response = requests.request("POST",f"{RDF_STORE_URL}aq-store/data?default",headers=headers, data=turtle_data)
+            response = requests.request("POST",f"{RDF_STORE_URL}aq-store/data?default",headers=headers, data=turtle_data,verify=False)
             response_json = json.loads(response.text)
             print("Response from RDF store",response.text)
             if(response_json is not None and response_json["count"]>0):
@@ -179,7 +180,7 @@ def upload_survey_data():
         rdf_output_path = temp_dir/ f"map_{file}.turtle"
 
         print("Starting RML mapper for mapping :",copied_map_file,copied_file_path)
-        java_mapper_path = base_dir / "rmlmapper-6.0.0-r363-all.jar"
+        java_mapper_path = base_dir / "rmlmapper-6.1.3-r367-all.jar"
         cmd = subprocess.Popen(["java","-jar",java_mapper_path,"-s","turtle","-m",copied_map_file,"-o",rdf_output_path], stdout=subprocess.PIPE)
         print(cmd.communicate()[0])
 
@@ -192,7 +193,7 @@ def upload_survey_data():
             "Content-Type": "text/turtle;charset=utf-8"
             }
             print("Sending turtle payload")
-            response = requests.request("POST",f"{RDF_STORE_URL}aq-store/data?default",headers=headers, data=turtle_data.encode('utf-8'))
+            response = requests.request("POST",f"{RDF_STORE_URL}aq-store/data?default",headers=headers, data=turtle_data.encode('utf-8'),verify=False)
             response_json = json.loads(response.text)
             print("Response from RDF store",response.text)
             if(response_json is not None and response_json["count"]>0):
@@ -200,8 +201,8 @@ def upload_survey_data():
             else:
                 raise Exception("Zero triples uploaded to graph")
 
-# create_temp_dir()
-# upload_static_rdf_data()
-# upload_saqi_sensors_data()
+create_temp_dir()
+upload_static_rdf_data()
+upload_saqi_sensors_data()
 upload_cpcb_sensors_data() 
 upload_survey_data()

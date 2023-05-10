@@ -4,18 +4,28 @@
   PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
   PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
   PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+  PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
   SELECT  ?pm_10 ?pm_25 ?placeName ?rating ?ratingPercentage{
     {
       SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?placeName ?source WHERE {
-        ?pm a saqi:ParticulateMatter;	
-        saqi:particulateMatter10Concentration ?pm10Instance ;
-        saqi:particulateMatter2_5Concentration ?pm25Instance .
-        
-        ?pm saqi:hasObservation ?obs .
-        ?obs saqi:atTime ?time ;
-        saqi:atPlace ?place ;
-        saqi:dataSource ?source .
-        ?place saqi:hasName ?placeName .
+      ?obs_pm_25 a sosa:Observation .
+      ?obs_pm_25 sosa:resultTime ?time .
+      ?obs_pm_25 saqi:atPlace ?place .
+      ?obs_pm_25 saqi:madeBySensor ?source .
+
+      ?obs_pm_10 a sosa:Observation .
+      ?obs_pm_10 sosa:resultTime ?time .
+      ?obs_pm_10 saqi:atPlace ?place .
+      ?obs_pm_10 saqi:madeBySensor ?source .
+    
+      ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+      ?obs_pm_25 sosa:hasResult ?pm25Instance .
+      ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+      ?obs_pm_10 sosa:hasResult ?pm10Instance .
+      
+      ?place saqi:hasName ?placeName .
+      ?source rdfs:label ?dataSource .
       } 
       GROUP BY ?source ?placeName
       LIMIT 10000

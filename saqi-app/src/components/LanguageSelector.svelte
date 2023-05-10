@@ -14,7 +14,7 @@
         return classes.filter(Boolean).join(" ");
     }
     let languageList = ["Eng", "Hin"];
-    let selectedLanguage = "Eng";
+    let selectedLanguage = "Hin";
 </script>
 
 <div class="flex justify-center  bg-gray-50 lang-selector">
@@ -39,7 +39,7 @@
                         <ListboxButton
                             class="relative w-full py-2 pl-3 pr-10 text-left transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md cursor-default focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
                         >
-                            <span class="block truncate text-lg"
+                            <span class="block truncate text-lg text-black"
                                 >{$GlobalLanguage}</span
                             >
                             <span
