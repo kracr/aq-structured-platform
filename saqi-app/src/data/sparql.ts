@@ -5,15 +5,25 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
 PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
 SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?source WHERE {
-    ?pm a saqi:ParticulateMatter;	
-    saqi:particulateMatter10Concentration ?pm10Instance ;
-    saqi:particulateMatter2_5Concentration ?pm25Instance .
-    ?pm saqi:hasObservation ?obs .
-    ?obs saqi:atTime ?time ;
-    saqi:atPlace ?place ;
-    saqi:dataSource ?source .
-    ?place saqi:hasName ?placeName .
+
+    ?obs_pm_25 a sosa:Observation .
+    ?obs_pm_25 sosa:resultTime ?time .
+    ?obs_pm_25 saqi:atPlace ?place .
+    ?obs_pm_25 saqi:madeBySensor ?source .
+    
+    ?obs_pm_10 a sosa:Observation .
+    ?obs_pm_10 sosa:resultTime ?time .
+    ?obs_pm_10 saqi:atPlace ?place .
+    ?obs_pm_10 saqi:madeBySensor ?source .
+  
+    ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+    ?obs_pm_25 sosa:hasResult ?pm25Instance .
+  
+    ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+    ?obs_pm_10 sosa:hasResult ?pm10Instance .
     
     FILTER (?time > "${convertToXSDdatetime(fromDate)}"^^xsd:dateTime && ?time < "${convertToXSDdatetime(toDate)}"^^xsd:dateTime)
 } 
@@ -24,23 +34,29 @@ LIMIT 10000
 
 export const aqi_sparql_day = async function (location, fromDate, toDate) {
     return `
-# The query returns average pollutants concentration in a time interval grouped by source
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
 
 SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?timesofday WHERE {
-    ?pm a saqi:ParticulateMatter;	
-    saqi:particulateMatter10Concentration ?pm10Instance ;
-    saqi:particulateMatter2_5Concentration ?pm25Instance .
+    ?obs_pm_25 a sosa:Observation .
+    ?obs_pm_25 sosa:resultTime ?time .
+    ?obs_pm_25 saqi:atPlace ?place .
+    ?obs_pm_25 saqi:madeBySensor ?source .
 
-    ?pm saqi:hasObservation ?obs .
-    ?obs saqi:atTime ?time ;
-    saqi:atPlace ?place ;
-    saqi:dataSource ?source .
-    ?place saqi:hasName ?placeName .
+    ?obs_pm_10 a sosa:Observation .
+    ?obs_pm_10 sosa:resultTime ?time .
+    ?obs_pm_10 saqi:atPlace ?place .
+    ?obs_pm_10 saqi:madeBySensor ?source .
 
+    ?obs_pm_25 sosa:observedProperty saqi:ParticulateMatter2_5Concentration .
+    ?obs_pm_25 sosa:hasResult ?pm25Instance .
+    
+    ?obs_pm_10 sosa:observedProperty saqi:ParticulateMatter10Concentration .
+    ?obs_pm_10 sosa:hasResult ?pm10Instance .
+    
     BIND (hours(?time) AS ?hour)
 
     OPTIONAL { FILTER (?hour <= 8)
@@ -55,14 +71,23 @@ SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?timesofday
     OPTIONAL { FILTER (?hour > 20)
         BIND("Night" AS ?timesofday)
     }
+            FILTER(
+        ?time > "2021-11-01T00:00:00+05:30"^^xsd:dateTime &&
+        ?time < "2022-01-01T00:00:00+05:30"^^xsd:dateTime
+    )
 } 
 GROUP BY ?timesofday
-LIMIT 10000
+LIMIT 1000
 `
 }
 
 export const get_perception_literacy = async function () {
     return `
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX sosa: <http://www.w3.org/ns/sosa/>
     ?person rdf:type owl:NamedIndividual ;
     ns0:SAQIOntologyhasIndividualPerception ?perception ;
     ns0:SAQIOntologyisPartOfSocialCohort ?cohort ;
