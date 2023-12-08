@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net" modified="2023-05-10T12:27:47.055Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="p4x2ISLfPIUUUnQYTTOE" version="21.2.9" type="device">
+  <diagram id="t25Kp6jmq_1cI3zwCiK2" name="Page-1">
+    <mxGraphModel dx="1442" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-1" value="Prefixes" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="50" y="10" width="790" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-2" value="&lt;b&gt;saqi:&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;b&gt;rdfs:&lt;br&gt;&lt;/b&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;sosa:&lt;/b&gt;&lt;b&gt;&lt;br&gt;geo:&lt;br&gt;schema&lt;br&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" parent="ei_zdeRZsHF_Bpt5WVGu-1" vertex="1">
+          <mxGeometry x="119.99645243734972" y="19" width="70" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-3" value="https://w3id.org/saqi&lt;br&gt;https://www.w3.org/TR/rdf-schema&lt;br&gt;http://www.w3.org/ns/sosa&lt;br&gt;http://www.w3.org/2003/01/geo/wgs84_pos&lt;br&gt;https://schema.org" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;rounded=1;glass=0;" parent="ei_zdeRZsHF_Bpt5WVGu-1" vertex="1">
+          <mxGeometry x="182" y="19" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-4" value="saqi:Pollutant" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="60" y="250" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-5" value="sosa:Observation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="280" y="145" width="140" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-6" value="" style="graphMlID=e0;rounded=0;endArrow=oval;strokeColor=#000080;strokeWidth=1.0;startArrow=classic;startFill=1;endFill=1;fontSize=11;fontColor=#000080;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="ei_zdeRZsHF_Bpt5WVGu-4" target="ei_zdeRZsHF_Bpt5WVGu-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="82" as="sourcePoint" />
+            <mxPoint x="436" y="278" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-7" value="&lt;span style=&quot;background-color: rgb(248, 249, 250);&quot;&gt;&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;sosa:hasFeatureOfInterest&lt;/font&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" parent="ei_zdeRZsHF_Bpt5WVGu-6" vertex="1" connectable="0">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint x="8" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-8" value="schema:Place" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="490" y="147" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-9" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontSize=11;fontColor=#000080;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ei_zdeRZsHF_Bpt5WVGu-5" target="ei_zdeRZsHF_Bpt5WVGu-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="132" as="sourcePoint" />
+            <mxPoint x="665" y="88" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-10" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 11px ; background-color: rgb(248 , 249 , 250)&quot;&gt;saqi:atPlace&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" parent="ei_zdeRZsHF_Bpt5WVGu-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint x="6" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-19" value="sosa:FeatureOfInterest" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="40" y="143" width="140" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-20" value="" style="endArrow=none;html=1;textDirection=ltr;fontSize=11;strokeWidth=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endFill=0;startArrow=classic;startFill=1;edgeStyle=orthogonalEdgeStyle;strokeColor=default;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ei_zdeRZsHF_Bpt5WVGu-19" target="ei_zdeRZsHF_Bpt5WVGu-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="420" as="sourcePoint" />
+            <mxPoint x="200" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-21" value="rdfs:subClassOf" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;rotation=0;" parent="ei_zdeRZsHF_Bpt5WVGu-20" vertex="1" connectable="0">
+          <mxGeometry x="-0.2211" relative="1" as="geometry">
+            <mxPoint y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-22" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;. . . .&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ei_zdeRZsHF_Bpt5WVGu-20" vertex="1" connectable="0">
+          <mxGeometry x="0.1815" relative="1" as="geometry">
+            <mxPoint y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-31" value="xsd:literal" style="graphMlID=n6;shape=parallelogram;fillColor=#ccffcc;strokeColor=#000000;strokeWidth=1.0;fontSize=11;fontColor=#000080;" parent="1" vertex="1">
+          <mxGeometry x="660" y="252" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-32" value="" style="graphMlID=e6;rounded=0;endArrow=block;strokeColor=#008000;dashed=1;dashPattern=1 1;strokeWidth=1.0;startArrow=oval;startFill=0;endFill=0;fontSize=11;fontColor=#000080;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="ei_zdeRZsHF_Bpt5WVGu-8" target="ei_zdeRZsHF_Bpt5WVGu-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710.0000000000002" y="230.0000000000001" as="sourcePoint" />
+            <mxPoint x="660" y="267" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-33" value="&lt;span style=&quot;color: rgb(0 , 128 , 0) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 11px ; background-color: rgb(248 , 249 , 250)&quot;&gt;saqio:hasName&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" parent="ei_zdeRZsHF_Bpt5WVGu-32" vertex="1" connectable="0">
+          <mxGeometry x="-0.087" y="3" relative="1" as="geometry">
+            <mxPoint x="96" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-34" value="xsd:decimal" style="graphMlID=n6;shape=parallelogram;fillColor=#ccffcc;strokeColor=#000000;strokeWidth=1.0;fontSize=11;fontColor=#000080;" parent="1" vertex="1">
+          <mxGeometry x="560" y="252" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-35" value="" style="graphMlID=e6;rounded=0;endArrow=block;strokeColor=#008000;dashed=1;dashPattern=1 1;strokeWidth=1.0;startArrow=oval;startFill=0;endFill=0;fontSize=11;fontColor=#000080;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="ei_zdeRZsHF_Bpt5WVGu-8" target="ei_zdeRZsHF_Bpt5WVGu-34" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="180" as="sourcePoint" />
+            <mxPoint x="1371.55" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-36" value="&lt;span style=&quot;color: rgb(0 , 128 , 0) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 11px ; background-color: rgb(248 , 249 , 250)&quot;&gt;geo:lat&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" parent="ei_zdeRZsHF_Bpt5WVGu-35" vertex="1" connectable="0">
+          <mxGeometry x="-0.087" y="3" relative="1" as="geometry">
+            <mxPoint x="41" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-37" value="xsd:decimal" style="graphMlID=n6;shape=parallelogram;fillColor=#ccffcc;strokeColor=#000000;strokeWidth=1.0;fontSize=11;fontColor=#000080;" parent="1" vertex="1">
+          <mxGeometry x="460" y="252" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-38" value="" style="graphMlID=e6;rounded=0;endArrow=block;strokeColor=#008000;dashed=1;dashPattern=1 1;strokeWidth=1.0;startArrow=oval;startFill=0;endFill=0;fontSize=11;fontColor=#000080;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="ei_zdeRZsHF_Bpt5WVGu-8" target="ei_zdeRZsHF_Bpt5WVGu-37" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="689.9999999999998" y="292.9999999999999" as="sourcePoint" />
+            <mxPoint x="1371.55" y="223" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-39" value="&lt;span style=&quot;color: rgb(0 , 128 , 0) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 11px ; background-color: rgb(248 , 249 , 250)&quot;&gt;geo:long&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" parent="ei_zdeRZsHF_Bpt5WVGu-38" vertex="1" connectable="0">
+          <mxGeometry x="-0.087" y="3" relative="1" as="geometry">
+            <mxPoint x="-20" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-44" value="sosa:Result" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="280" y="252" width="140" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-45" value="" style="graphMlID=e0;rounded=0;endArrow=oval;strokeColor=#000080;strokeWidth=1.0;startArrow=classic;startFill=1;endFill=1;fontSize=11;fontColor=#000080;entryX=0.5;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ei_zdeRZsHF_Bpt5WVGu-44" target="ei_zdeRZsHF_Bpt5WVGu-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="230" as="sourcePoint" />
+            <mxPoint x="320" y="186.48" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-46" value="&lt;span style=&quot;background-color: rgb(248, 249, 250);&quot;&gt;&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;sosa:hasResult&lt;/font&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" parent="ei_zdeRZsHF_Bpt5WVGu-45" vertex="1" connectable="0">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint x="2" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-47" value="geo:point" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="700" y="145" width="140" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-48" value="" style="endArrow=none;html=1;textDirection=ltr;fontSize=11;strokeWidth=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=0;startArrow=classic;startFill=1;edgeStyle=orthogonalEdgeStyle;strokeColor=default;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ei_zdeRZsHF_Bpt5WVGu-47" target="ei_zdeRZsHF_Bpt5WVGu-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="840" y="100" as="sourcePoint" />
+            <mxPoint x="840" y="183" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-49" value="rdfs:subClassOf" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;rotation=0;" parent="ei_zdeRZsHF_Bpt5WVGu-48" vertex="1" connectable="0">
+          <mxGeometry x="-0.2211" relative="1" as="geometry">
+            <mxPoint x="-13" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

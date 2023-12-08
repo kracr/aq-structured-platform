@@ -27,7 +27,6 @@ export const aqi_sparql_day = async function (location, fromDate, toDate) {
 # The query returns average pollutants concentration in a time interval grouped by source
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
 PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 

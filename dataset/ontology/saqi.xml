@@ -24,11 +24,11 @@
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
         <dc:title>SAQI : an ontology to model Social Air Quality</dc:title>
         <terms:contributor>Saad Ahmad, Sudhir Attri, Raghava Mutharaju; (https://kracr.iiitd.edu.in/)</terms:contributor>
+        <terms:creator>Saad Ahmad, Sudhir Attri, Raghava Mutharaju</terms:creator>
         <terms:license>https://www.apache.org/licenses/LICENSE-2.0</terms:license>
         <rdfs:label>Ontology to model Social Air Quality</rdfs:label>
         <rdfs:seeAlso>https://w3id.org/saqi</rdfs:seeAlso>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
-        <Authors>Saad Ahmad, Sudhir Attri, Raghava Mutharaju</Authors>
     </owl:Ontology>
     
 
@@ -83,6 +83,12 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#reengineeredFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#reengineeredFrom"/>
     
 
 
@@ -938,6 +944,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/saqi#Institution"/>
         <rdfs:comment>Any representatives of a particular Institution. e.g. director of a ngo.</rdfs:comment>
+        <rdfs:label>acts for</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -951,6 +958,8 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:domain rdf:resource="https://w3id.org/saqi#PollutionSensor"/>
         <rdfs:range rdf:resource="https://schema.org/Place"/>
+        <rdfs:comment>Relation connecting Pollutin sensors, Observations or Agent to Place entity</rdfs:comment>
+        <rdfs:label>at place</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -963,6 +972,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:range rdf:resource="https://w3id.org/saqi#Pollutant"/>
         <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
         <rdfs:comment>A carrier carrying a pollutant</rdfs:comment>
+        <rdfs:label>carried pollutant</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -975,6 +985,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:range rdf:resource="https://w3id.org/saqi#TrajectoryPoint"/>
         <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
         <rdfs:comment>Connects a segment to the point it ends at.</rdfs:comment>
+        <rdfs:label>ends at</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -992,6 +1003,7 @@ above the local reference ellipsoid).</rdfs:comment>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>An organization giving information to people, e.g. government running an awareness campaign on pollution.</rdfs:comment>
+        <rdfs:label>gives information to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1002,6 +1014,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="https://w3id.org/saqi#AirPollutionLiteracy"/>
         <rdfs:comment>This property links air pollution literacy of a person, that value could be qualitative assesment in the form of data property of AirPollutionLiteracy.</rdfs:comment>
+        <rdfs:label>has air pollution literacy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1009,7 +1022,10 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#hasContributor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/saqi#hasContributor">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#Pollution"/>
         <rdfs:range rdf:resource="https://w3id.org/saqi#Contributor"/>
+        <rdfs:comment>Predicate to link a pollution contributor to a type of pollution. Ex. Air Pollution hasContributor ParticulateMatter</rdfs:comment>
+        <rdfs:label>has contributor</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1019,14 +1035,8 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/saqi#hasDemographic">
         <rdfs:domain rdf:resource="https://schema.org/Place"/>
         <rdfs:range rdf:resource="https://w3id.org/saqi#Demographic"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/saqi#hasElection -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/saqi#hasElection">
-        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:comment>Predicate for linking demographics to a place.</rdfs:comment>
+        <rdfs:label>has demographic</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1036,6 +1046,8 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/saqi#hasGovernment">
         <rdfs:domain rdf:resource="https://schema.org/Place"/>
         <rdfs:range rdf:resource="https://w3id.org/saqi#Government"/>
+        <rdfs:comment>Government with autority at a place.</rdfs:comment>
+        <rdfs:label>has governent</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1045,31 +1057,8 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/saqi#hasInstitutionAgainstAirPollution">
         <rdfs:domain rdf:resource="https://schema.org/Place"/>
         <rdfs:range rdf:resource="https://w3id.org/saqi#InstitutionAgainstAirPollution"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/saqi#hasName -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/saqi#hasName">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/Place"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/saqi#hasObservation -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/saqi#hasObservation">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/saqi#Pollutant"/>
-                    <rdf:Description rdf:about="https://w3id.org/saqi#PrescribedStandardForPollutant"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <cpannotationschema:reengineeredFrom>Observation ODP - http://ontologydesignpatterns.org/wiki/Submissions:Observation</cpannotationschema:reengineeredFrom>
+        <rdfs:comment>An institution that is against air pollution directly acting on the linked place entity.</rdfs:comment>
+        <rdfs:label>has instituion against air pollution</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1079,6 +1068,8 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/saqi#hasPerception">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="https://w3id.org/saqi#Perception"/>
+        <rdfs:comment>Perception of a person.</rdfs:comment>
+        <rdfs:label>has perception</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1139,6 +1130,8 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/saqi#isPartOfDemographic">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="https://w3id.org/saqi#Demographic"/>
+        <rdfs:comment>Belongs to a particular demographic group. Ex. A person who teaches belongs to &apos;Teacher&apos; demographic.</rdfs:comment>
+        <rdfs:label>is part of demographic</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1148,6 +1141,8 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/saqi#livesIn">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:range rdf:resource="https://schema.org/Place"/>
+        <rdfs:comment>Place where an agent lives.</rdfs:comment>
+        <rdfs:label>lives in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1165,6 +1160,8 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/saqi#PollutantGenerator"/>
+        <rdfs:comment>Links pollutant generators which are nearby to a saqi:TrajectoryPoint.</rdfs:comment>
+        <rdfs:label>nearby</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1185,6 +1182,8 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/saqi#responsibleForPollution">
         <rdfs:domain rdf:resource="https://w3id.org/saqi#Perception"/>
         <rdfs:range rdf:resource="https://w3id.org/saqi#Government"/>
+        <rdfs:comment>A type of perception targeted towards government entities responsible for handling pollution.</rdfs:comment>
+        <rdfs:label>responsible for pollution</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1192,7 +1191,10 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#sourceResponsibleForLocalPollution -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/saqi#sourceResponsibleForLocalPollution">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#Perception"/>
         <rdfs:range rdf:resource="https://w3id.org/saqi#PollutantGenerator"/>
+        <rdfs:comment>Percption of a person of pollution sources in thier local area.</rdfs:comment>
+        <rdfs:label>source responsible for local pollution</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1222,7 +1224,10 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
 
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -1230,6 +1235,8 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
@@ -1244,7 +1251,12 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <!-- https://w3id.org/saqi#airPollutionIssuesRaised -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#airPollutionIssuesRaised"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#airPollutionIssuesRaised">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#Perception"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>whether air pollutions issues are being raised in elections.</rdfs:comment>
+        <rdfs:label>air pollution issues raised</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -1252,6 +1264,8 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#airQualityImproved">
         <rdfs:domain rdf:resource="https://w3id.org/saqi#Perception"/>
+        <rdfs:comment>Improvement in air quality over time</rdfs:comment>
+        <rdfs:label>air quality improved</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1261,6 +1275,7 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#ammoniaConcentration">
         <rdfs:domain rdf:resource="https://w3id.org/saqi#GaseousPollutant"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>ammonia concentration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1270,15 +1285,8 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#atHeight">
         <rdfs:domain rdf:resource="https://w3id.org/saqi#TrajectoryPoint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/saqi#atTime -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#atTime">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>height of trajectory point; useful for modelling wind trajectories.</rdfs:comment>
+        <rdfs:label>at height</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1286,7 +1294,10 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#bPressure -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#bPressure">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#AtmosphericPressure"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Atmospheric pressure measured in Bar.</rdfs:comment>
+        <rdfs:label>bPressure</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1294,7 +1305,10 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#benzeneConcentration -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#benzeneConcentration">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#BenzeneConcentration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>benzene concentration measured in microgram per m3.</rdfs:comment>
+        <rdfs:label>benzene concentration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1303,6 +1317,8 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#carbonMonoOxideConcentration">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>carbon monooxide concentration measured in microgram per m3.</rdfs:comment>
+        <rdfs:label>carbon monooxide concentration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1311,22 +1327,10 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#comparisionOfLocalPollution">
         <rdfs:domain rdf:resource="https://w3id.org/saqi#Perception"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/saqi#confidence -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#confidence">
-        <rdfs:domain rdf:resource="https://w3id.org/saqi#Combustion"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>Comparison of local pollution to other areas</rdfs:comment>
+        <rdfs:label>comparision of local pollution</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/saqi#followsGuidelines -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#followsGuidelines"/>
     
 
 
@@ -1334,13 +1338,8 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#frequencyToCheckAQI">
         <rdfs:domain rdf:resource="https://w3id.org/saqi#AirPollutionLiteracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/saqi#getsNoticeAndContinues -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#getsNoticeAndContinues"/>
     
 
 
@@ -1356,6 +1355,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#hasAQILiteracy">
         <rdfs:domain rdf:resource="https://w3id.org/saqi#AirPollutionLiteracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -1364,6 +1364,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#hasAirPollutionGraphicLiteracy">
         <rdfs:domain rdf:resource="https://w3id.org/saqi#AirPollutionLiteracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -1371,6 +1372,7 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#hasName -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#hasName">
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -1380,6 +1382,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#hasParticulateMatterLiteracy">
         <rdfs:domain rdf:resource="https://w3id.org/saqi#AirPollutionLiteracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -1387,29 +1390,8 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#hasPrescribedStandard -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#hasPrescribedStandard">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#Pollutant"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/saqi#isRegularized -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#isRegularized"/>
-    
-
-
-    <!-- https://w3id.org/saqi#latitude -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#latitude">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/saqi#longitude -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#longitude">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -1417,6 +1399,7 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#nitrogenDiOxideConcentration -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#nitrogenDiOxideConcentration">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#NitrogenDiOxideConcentration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -1425,7 +1408,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#nitrogenMonoOxideConcentration -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#nitrogenMonoOxideConcentration">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#NitrogenMonoOxideConcentration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>nitrogen monooxide concentration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1433,20 +1418,17 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#nitrogenOxideConcentration -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#nitrogenOxideConcentration">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#NitrogenOxideConcentration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>nitrogen oxide concentration</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/saqi#noNoticeOrIntervention -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#noNoticeOrIntervention"/>
     
 
 
     <!-- https://w3id.org/saqi#ozoneConcentration -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#ozoneConcentration">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#OzoneConcentration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -1455,7 +1437,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#particulateMatter10Concentration -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#particulateMatter10Concentration">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#ParticulateMatter10Concentration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:isDefinedBy>particulate matter 10 concentration</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
@@ -1463,7 +1447,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#particulateMatter2_5Concentration -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#particulateMatter2_5Concentration">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#ParticulateMatter2_5Concentration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>particulate matter 2.5 Concentration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1472,6 +1458,9 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#peopleVotedOnAirPollutionIssues">
         <rdfs:domain rdf:resource="https://w3id.org/saqi#Perception"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>Whether pollution issues are politicized or not.</rdfs:comment>
+        <rdfs:label>people voted on air pollution issues</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1479,7 +1468,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#plantCapacity -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#plantCapacity">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#PlantCapacity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>plant capacity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1487,6 +1478,7 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#precipitation -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#precipitation">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#Precipitation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -1496,6 +1488,8 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#ratingForLocalAirQuality">
         <rdfs:domain rdf:resource="https://w3id.org/saqi#Perception"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>rating for local air quality (perception)</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1503,7 +1497,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#relativeHumidity -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#relativeHumidity">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#RelativeHumidity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>relative humidity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1512,6 +1508,9 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#satisfiedWithPerformance">
         <rdfs:domain rdf:resource="https://w3id.org/saqi#Perception"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>Whether satisfied with government entities regulating air quality</rdfs:comment>
+        <rdfs:label>satisfied with performance</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1519,21 +1518,19 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#solarRadiation -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#solarRadiation">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#SolarRadiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>solar radiation</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/saqi#sourceName -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#sourceName"/>
     
 
 
     <!-- https://w3id.org/saqi#sulphurDioxideConcentration -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#sulphurDioxideConcentration">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#SulphurDioxideConcentration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>sulphur dioxide concentration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1541,7 +1538,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#tolueneConcentration -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#tolueneConcentration">
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#TolueneConcentration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>toluene concentration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1557,20 +1556,28 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <!-- https://w3id.org/saqi#usesAirPurifier -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#usesAirPurifier"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#usesAirPurifier">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>uses air purifier</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/saqi#wearsMask -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#wearsMask"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#wearsMask">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>wears mask</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/saqi#windDirection -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#windDirection">
-        <rdfs:domain rdf:resource="https://w3id.org/saqi#WindCharacterstic"/>
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#WindDirection"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -1579,7 +1586,7 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/saqi#windSpeed -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#windSpeed">
-        <rdfs:domain rdf:resource="https://w3id.org/saqi#WindCharacterstic"/>
+        <rdfs:domain rdf:resource="https://w3id.org/saqi#WindSpeed"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -1587,13 +1594,17 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <!-- https://w3id.org/saqi#worksFromHome -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#worksFromHome"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#worksFromHome">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/saqi#zipCode -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saqi#zipCode">
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -1725,6 +1736,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#AtmosphericPressure">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Atmospheric pressure observed at ground level</rdfs:comment>
         <rdfs:label>Atmospheric pressure</rdfs:label>
     </owl:Class>
     
@@ -1734,6 +1746,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#BenzeneConcentration">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Benzene concentration in the air</rdfs:comment>
         <rdfs:label>Benzene concentration</rdfs:label>
     </owl:Class>
     
@@ -1753,6 +1766,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#CarbonMonoOxideConcentration">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Carbon Monoxide concentration in the air</rdfs:comment>
         <rdfs:label>CarbonMonoOxideConcentration (CO)</rdfs:label>
     </owl:Class>
     
@@ -1866,6 +1880,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://w3id.org/saqi#DirectContributor">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saqi#Contributor"/>
         <rdfs:comment>Represents concepts which directly represent pollution. For example the concentration of pollutants at a particular spatio-temporal point.</rdfs:comment>
+        <rdfs:comment>Temprature of the surrounding air Observed at a time and place</rdfs:comment>
         <rdfs:label>Direct contributor</rdfs:label>
     </owl:Class>
     
@@ -2035,6 +2050,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#NitrogenDiOxideConcentration">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Nitrogen dioxide concentration in the air</rdfs:comment>
         <rdfs:label>NitrogenDiOxideConcentration (NO2)</rdfs:label>
     </owl:Class>
     
@@ -2044,6 +2060,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#NitrogenMonoOxideConcentration">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Nitrogen monooxide concentration in the air</rdfs:comment>
         <rdfs:label>NitrogenMonoOxideConcentration (NO)</rdfs:label>
     </owl:Class>
     
@@ -2053,6 +2070,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#NitrogenOxideConcentration">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>concentration Of all Nitrogen oxides in the air</rdfs:comment>
         <rdfs:label>NitrogenOxideConcentration (NOx)</rdfs:label>
     </owl:Class>
     
@@ -2112,6 +2130,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#OzoneConcentration">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>ozone concentration in the air</rdfs:comment>
         <rdfs:label>OzoneConcentration (O3)</rdfs:label>
     </owl:Class>
     
@@ -2131,6 +2150,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#ParticulateMatter10Concentration">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Concentration  of particles with less than 10 micrometers in the air</rdfs:comment>
         <rdfs:label>ParticulateMatter10Concentration (PM 10)</rdfs:label>
     </owl:Class>
     
@@ -2140,6 +2160,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#ParticulateMatter2_5Concentration">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Concentration  of particles with less than 2.5 micrometers in the air</rdfs:comment>
         <rdfs:label>ParticulateMatter2_5Concentration (PM 2.5)</rdfs:label>
     </owl:Class>
     
@@ -2168,6 +2189,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#PlantCapacity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Capacity of Power plants</rdfs:comment>
         <rdfs:label>Plant capacity</rdfs:label>
     </owl:Class>
     
@@ -2212,6 +2234,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#PollutionSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:comment>Sensors that measure direct or indirect contributors of pollution.</rdfs:comment>
         <rdfs:label>Pollution sensor</rdfs:label>
     </owl:Class>
     
@@ -2231,6 +2254,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#Precipitation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Precipitation quantity measured as volume of water, snow or ice falling to the surface.</rdfs:comment>
         <rdfs:label>Precipitation</rdfs:label>
     </owl:Class>
     
@@ -2270,6 +2294,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#RelativeHumidity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Ratio of moisture in the air to maximum moisture the atmosphere can hold at the same temprature and pressure.</rdfs:comment>
         <rdfs:label>Relative humidity</rdfs:label>
     </owl:Class>
     
@@ -2289,6 +2314,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#SolarRadiation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Quantity of solar energy radiated by sun measured as energy amount per area.</rdfs:comment>
         <rdfs:label>Solar radiation</rdfs:label>
     </owl:Class>
     
@@ -2327,6 +2353,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#SulphurDioxideConcentration">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Sulphur dioxide concentration in the air</rdfs:comment>
         <rdfs:label>SulphurDioxideConcentration (SO2)</rdfs:label>
     </owl:Class>
     
@@ -2346,6 +2373,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#TolueneConcentration">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>toluene concentration in the air</rdfs:comment>
         <rdfs:label>Toluene concentration</rdfs:label>
     </owl:Class>
     
@@ -2470,6 +2498,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#WindDirection">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Direction of wind measured in radians.</rdfs:comment>
         <rdfs:label>Wind direction</rdfs:label>
     </owl:Class>
     
@@ -2479,6 +2508,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saqi#WindSpeed">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment>Speed of the wind,</rdfs:comment>
         <rdfs:label>Wind speed</rdfs:label>
     </owl:Class>
     
@@ -2867,8 +2897,8 @@ basic geo vocab</rdfs:comment>
         <rdfs:label>AudiobookFormat</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/BackOrder">
-        <rdfs:comment>Indicates that the item is available on back order.</rdfs:comment>
         <rdfs:label>BackOrder</rdfs:label>
+        <rdfs:comment>Indicates that the item is available on back order.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/BroadcastRelease">
         <rdfs:comment>BroadcastRelease.</rdfs:comment>
@@ -2927,8 +2957,8 @@ basic geo vocab</rdfs:comment>
         <rdfs:comment>DigitalFormat.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/Discontinued">
-        <rdfs:comment>Indicates that the item has been discontinued.</rdfs:comment>
         <rdfs:label>Discontinued</rdfs:label>
+        <rdfs:comment>Indicates that the item has been discontinued.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/EBook">
         <rdfs:comment>Book format: Ebook.</rdfs:comment>
@@ -2955,8 +2985,8 @@ basic geo vocab</rdfs:comment>
         <rdfs:comment>The event has been rescheduled. The event&apos;s previousStartDate should be set to the old date and the startDate should be set to the event&apos;s new date. (If the event has been rescheduled multiple times, the previousStartDate property may be repeated.)</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/EventScheduled">
-        <rdfs:label>EventScheduled</rdfs:label>
         <rdfs:comment>The event is taking place or has taken place on the startDate as scheduled. Use of this value is optional, as it is assumed by default.</rdfs:comment>
+        <rdfs:label>EventScheduled</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/FailedActionStatus">
         <rdfs:comment>An action that failed to complete. The action&apos;s error property and the HTTP return code contain more information about the failure.</rdfs:comment>
@@ -3085,8 +3115,8 @@ basic geo vocab</rdfs:comment>
         <rdfs:label>MultiPlayer</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/NewCondition">
-        <rdfs:label>NewCondition</rdfs:label>
         <rdfs:comment>Indicates that the item is new.</rdfs:comment>
+        <rdfs:label>NewCondition</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/OfflinePermanently">
         <rdfs:label>OfflinePermanently</rdfs:label>
@@ -3300,8 +3330,8 @@ basic geo vocab</rdfs:comment>
         <rdfs:label>True</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/Tuesday">
-        <rdfs:comment>The day of the week between Monday and Wednesday.</rdfs:comment>
         <rdfs:label>Tuesday</rdfs:label>
+        <rdfs:comment>The day of the week between Monday and Wednesday.</rdfs:comment>
         <schema:sameAs rdf:resource="http://www.wikidata.org/entity/Q127"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/UsedCondition">
@@ -3360,8 +3390,8 @@ basic geo vocab</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/accessModeSufficient">
         <schema:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1100"/>
-        <rdfs:label>accessModeSufficient</rdfs:label>
         <rdfs:comment>A list of single or combined accessModes that are sufficient to understand all the intellectual content of a resource. Values should be drawn from the [approved vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessModeSufficient-vocabulary).</rdfs:comment>
+        <rdfs:label>accessModeSufficient</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/accessibilityAPI">
         <rdfs:comment>Indicates that the resource is compatible with the referenced accessibility API. Values should be drawn from the [approved vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibilityAPI-vocabulary).</rdfs:comment>
@@ -3714,8 +3744,8 @@ basic geo vocab</rdfs:comment>
         <rdfs:label>bed</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/beforeMedia">
-        <rdfs:comment>A media object representing the circumstances before performing this direction.</rdfs:comment>
         <rdfs:label>beforeMedia</rdfs:label>
+        <rdfs:comment>A media object representing the circumstances before performing this direction.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/benefits">
         <rdfs:label>benefits</rdfs:label>
@@ -3787,8 +3817,8 @@ basic geo vocab</rdfs:comment>
         <rdfs:comment>A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/branchCode">
-        <rdfs:comment>A short textual code (also called &quot;store code&quot;) that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.\n\nFor example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code &quot;3047&quot; is a branchCode for a particular branch.</rdfs:comment>
         <rdfs:label>branchCode</rdfs:label>
+        <rdfs:comment>A short textual code (also called &quot;store code&quot;) that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.\n\nFor example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code &quot;3047&quot; is a branchCode for a particular branch.</rdfs:comment>
         <schema:domainIncludes rdf:resource="https://schema.org/Place"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/branchOf">
@@ -3976,8 +4006,8 @@ basic geo vocab</rdfs:comment>
         <rdfs:comment>A colleague of the person.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/colleagues">
-        <rdfs:comment>A colleague of the person.</rdfs:comment>
         <rdfs:label>colleagues</rdfs:label>
+        <rdfs:comment>A colleague of the person.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/color">
         <rdfs:label>color</rdfs:label>
@@ -4000,8 +4030,8 @@ basic geo vocab</rdfs:comment>
         <rdfs:comment>The time at which the UserComment was made.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/composer">
-        <rdfs:comment>The person or organization who wrote a composition, or who is the composer of a work performed at some event.</rdfs:comment>
         <rdfs:label>composer</rdfs:label>
+        <rdfs:comment>The person or organization who wrote a composition, or who is the composer of a work performed at some event.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/contactOption">
         <rdfs:comment>An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).</rdfs:comment>
@@ -4033,8 +4063,8 @@ basic geo vocab</rdfs:comment>
         <rdfs:comment>The basic containment relation between a place and one that contains it.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/containsPlace">
-        <schema:inverseOf rdf:resource="https://schema.org/containedInPlace"/>
         <schema:rangeIncludes rdf:resource="https://schema.org/Place"/>
+        <schema:inverseOf rdf:resource="https://schema.org/containedInPlace"/>
         <rdfs:label>containsPlace</rdfs:label>
         <schema:domainIncludes rdf:resource="https://schema.org/Place"/>
         <rdfs:comment>The basic containment relation between a place and another that it contains.</rdfs:comment>
@@ -4080,12 +4110,12 @@ basic geo vocab</rdfs:comment>
         <rdfs:label>countriesSupported</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/countryOfOrigin">
+        <rdfs:label>countryOfOrigin</rdfs:label>
         <rdfs:comment>The country of origin of something, including products as well as creative  works such as movie and TV content.
 
 In the case of TV and movie, this would be the country of the principle offices of the production company or individual responsible for the movie. For other kinds of [[CreativeWork]] it is difficult to provide fully general guidance, and properties such as [[contentLocation]] and [[locationCreated]] may be more applicable.
 
 In the case of products, the country of origin of the product. The exact interpretation of this may vary by context and product type, and cannot be fully enumerated here.</rdfs:comment>
-        <rdfs:label>countryOfOrigin</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/courseCode">
         <rdfs:label>courseCode</rdfs:label>
@@ -4248,8 +4278,8 @@ Dateline summaries are oriented more towards human readers than towards automate
         <rdfs:label>departureStation</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/departureTerminal">
-        <rdfs:label>departureTerminal</rdfs:label>
         <rdfs:comment>Identifier of the flight&apos;s departure terminal.</rdfs:comment>
+        <rdfs:label>departureTerminal</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/departureTime">
         <rdfs:comment>The expected departure time.</rdfs:comment>
@@ -4321,8 +4351,8 @@ Dateline summaries are oriented more towards human readers than towards automate
         <rdfs:label>downvoteCount</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/driveWheelConfiguration">
-        <rdfs:comment>The drive wheel configuration, i.e. which roadwheels will receive torque from the vehicle&apos;s engine via the drivetrain.</rdfs:comment>
         <rdfs:label>driveWheelConfiguration</rdfs:label>
+        <rdfs:comment>The drive wheel configuration, i.e. which roadwheels will receive torque from the vehicle&apos;s engine via the drivetrain.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/dropoffLocation">
         <rdfs:label>dropoffLocation</rdfs:label>
@@ -4594,8 +4624,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
         <rdfs:comment>The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).\n\n* Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use [[unitText]] to indicate the unit of measurement, e.g. L/100 km.\n* Note 2: There are two ways of indicating the fuel consumption, [[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per gallon). They are reciprocal.\n* Note 3: Often, the absolute value is useful only when related to driving speed (&quot;at 80 km/h&quot;) or usage pattern (&quot;city traffic&quot;). You can use [[valueReference]] to link the value for the fuel consumption to another value.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/fuelEfficiency">
-        <rdfs:comment>The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).\n\n* Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use [[unitText]] to indicate the unit of measurement, e.g. mpg or km/L.\n* Note 2: There are two ways of indicating the fuel consumption, [[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per gallon). They are reciprocal.\n* Note 3: Often, the absolute value is useful only when related to driving speed (&quot;at 80 km/h&quot;) or usage pattern (&quot;city traffic&quot;). You can use [[valueReference]] to link the value for the fuel economy to another value.</rdfs:comment>
         <rdfs:label>fuelEfficiency</rdfs:label>
+        <rdfs:comment>The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).\n\n* Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use [[unitText]] to indicate the unit of measurement, e.g. mpg or km/L.\n* Note 2: There are two ways of indicating the fuel consumption, [[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per gallon). They are reciprocal.\n* Note 3: Often, the absolute value is useful only when related to driving speed (&quot;at 80 km/h&quot;) or usage pattern (&quot;city traffic&quot;). You can use [[valueReference]] to link the value for the fuel economy to another value.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/fuelType">
         <rdfs:label>fuelType</rdfs:label>
@@ -4662,8 +4692,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
         <rdfs:comment>Given name. In the U.S., the first name of a Person.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/grantee">
-        <rdfs:comment>The person, organization, contact point, or audience that has been granted this permission.</rdfs:comment>
         <rdfs:label>grantee</rdfs:label>
+        <rdfs:comment>The person, organization, contact point, or audience that has been granted this permission.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/greater">
         <rdfs:comment>This ordering relation for qualitative values indicates that the subject is greater than the object.</rdfs:comment>
@@ -4727,8 +4757,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
         <rdfs:comment>Headline of the article.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/height">
-        <schema:domainIncludes rdf:resource="https://schema.org/OfferShippingDetails"/>
         <rdfs:comment>The height of the item.</rdfs:comment>
+        <schema:domainIncludes rdf:resource="https://schema.org/OfferShippingDetails"/>
         <rdfs:label>height</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/highPrice">
@@ -4772,8 +4802,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
         <rdfs:comment>The illustrator of the book.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/inAlbum">
-        <rdfs:label>inAlbum</rdfs:label>
         <rdfs:comment>The album to which this recording belongs.</rdfs:comment>
+        <rdfs:label>inAlbum</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/inBroadcastLineup">
         <rdfs:comment>The CableOrSatelliteService offering the channel.</rdfs:comment>
@@ -4909,12 +4939,12 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
         <rdfs:label>isicV4</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/isrcCode">
-        <rdfs:comment>The International Standard Recording Code for the recording.</rdfs:comment>
         <rdfs:label>isrcCode</rdfs:label>
+        <rdfs:comment>The International Standard Recording Code for the recording.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/issuedBy">
-        <rdfs:comment>The organization issuing the ticket or permit.</rdfs:comment>
         <rdfs:label>issuedBy</rdfs:label>
+        <rdfs:comment>The organization issuing the ticket or permit.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/issuedThrough">
         <rdfs:label>issuedThrough</rdfs:label>
@@ -4992,8 +5022,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/learningResourceType">
         <schema:rangeIncludes rdf:resource="https://schema.org/DefinedTerm"/>
-        <rdfs:comment>The predominant type or kind characterizing the learning resource. For example, &apos;presentation&apos;, &apos;handout&apos;.</rdfs:comment>
         <rdfs:label>learningResourceType</rdfs:label>
+        <rdfs:comment>The predominant type or kind characterizing the learning resource. For example, &apos;presentation&apos;, &apos;handout&apos;.</rdfs:comment>
         <schema:domainIncludes rdf:resource="https://schema.org/LearningResource"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/legalName">
@@ -5500,8 +5530,8 @@ Note: for historical reasons, any textual label and formal code provided as a li
         <rdfs:comment>Event that this person is a performer or participant in.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/performers">
-        <rdfs:label>performers</rdfs:label>
         <rdfs:comment>The main performer or performers of the event&amp;#x2014;for example, a presenter, musician, or actor.</rdfs:comment>
+        <rdfs:label>performers</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/permissionType">
         <rdfs:comment>The type of permission granted the person, organization, or audience.</rdfs:comment>
@@ -5947,8 +5977,8 @@ While such policies are most typically expressed in natural language, sometimes 
         <rdfs:comment>The currency (coded using [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217)) used for the main salary information in this job posting or for this employee.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/sampleType">
-        <rdfs:label>sampleType</rdfs:label>
         <rdfs:comment>What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template.</rdfs:comment>
+        <rdfs:label>sampleType</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/saturatedFatContent">
         <rdfs:comment>The number of grams of saturated fat.</rdfs:comment>
@@ -5976,8 +6006,8 @@ While such policies are most typically expressed in natural language, sometimes 
         <rdfs:label>screenshot</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/seasons">
-        <rdfs:comment>A season in a media series.</rdfs:comment>
         <rdfs:label>seasons</rdfs:label>
+        <rdfs:comment>A season in a media series.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/seatNumber">
         <rdfs:label>seatNumber</rdfs:label>
@@ -6008,8 +6038,8 @@ While such policies are most typically expressed in natural language, sometimes 
         <rdfs:label>serverStatus</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/servesCuisine">
-        <rdfs:label>servesCuisine</rdfs:label>
         <rdfs:comment>The cuisine of the restaurant.</rdfs:comment>
+        <rdfs:label>servesCuisine</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/serviceArea">
         <rdfs:comment>The geographic area where the service is provided.</rdfs:comment>
@@ -6081,8 +6111,8 @@ While such policies are most typically expressed in natural language, sometimes 
         <rdfs:comment>A statement of knowledge, skill, ability, task or any other assertion expressing a competency that is desired or required to fulfill this role or to work in this occupation.</rdfs:comment>
         <rdfs:label>skills</rdfs:label>
         <schema:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1698"/>
-        <schema:rangeIncludes rdf:resource="https://schema.org/DefinedTerm"/>
         <schema:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/2322"/>
+        <schema:rangeIncludes rdf:resource="https://schema.org/DefinedTerm"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/slogan">
         <rdfs:label>slogan</rdfs:label>
@@ -6176,16 +6206,16 @@ we define a supporting type, [[SpeakableSpecification]]  which is defined to be 
         <rdfs:label>startTime</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/steeringPosition">
-        <rdfs:comment>The position of the steering wheel or similar device (mostly for cars).</rdfs:comment>
         <rdfs:label>steeringPosition</rdfs:label>
+        <rdfs:comment>The position of the steering wheel or similar device (mostly for cars).</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/stepValue">
-        <rdfs:label>stepValue</rdfs:label>
         <rdfs:comment>The stepValue attribute indicates the granularity that is expected (and required) of the value in a PropertyValueSpecification.</rdfs:comment>
+        <rdfs:label>stepValue</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/steps">
-        <rdfs:label>steps</rdfs:label>
         <rdfs:comment>A single step item (as HowToStep, text, document, video, etc.) or a HowToSection (originally misnamed &apos;steps&apos;; &apos;step&apos; is preferred).</rdfs:comment>
+        <rdfs:label>steps</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/storageRequirements">
         <rdfs:label>storageRequirements</rdfs:label>
@@ -6257,8 +6287,8 @@ we define a supporting type, [[SpeakableSpecification]]  which is defined to be 
         <rdfs:comment>Supporting data for a SoftwareApplication.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/target">
-        <rdfs:comment>Indicates a target EntryPoint, or url, for an Action.</rdfs:comment>
         <rdfs:label>target</rdfs:label>
+        <rdfs:comment>Indicates a target EntryPoint, or url, for an Action.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/targetDescription">
         <rdfs:comment>The description of a node in an established educational framework.</rdfs:comment>
@@ -6564,8 +6594,8 @@ Open-ended date ranges can be written with &quot;..&quot; in place of the end da
         <rdfs:comment>The time when a passenger can check into the flight online.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/weight">
-        <rdfs:comment>The weight of the product or person.</rdfs:comment>
         <schema:domainIncludes rdf:resource="https://schema.org/OfferShippingDetails"/>
+        <rdfs:comment>The weight of the product or person.</rdfs:comment>
         <rdfs:label>weight</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/width">
@@ -6607,6 +6637,10 @@ Open-ended date ranges can be written with &quot;..&quot; in place of the end da
     <rdf:Description rdf:about="https://schema.org/yearsInOperation">
         <rdfs:comment>The age of the business.</rdfs:comment>
         <rdfs:label>yearsInOperation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/saqi#hasPrescribedStandard">
+        <rdfs:label>has prescribed standard</rdfs:label>
+        <rdfs:comment>Prescribed standards for a pollutant.</rdfs:comment>
     </rdf:Description>
     
 

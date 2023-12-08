@@ -1,0 +1,19 @@
+<mxfile host="app.diagrams.net" modified="2023-05-07T02:59:18.364Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="d3JUUJMmLTFeiV8EcXzp" version="21.2.9" type="device">
+  <diagram id="t25Kp6jmq_1cI3zwCiK2" name="Page-1">
+    <mxGraphModel dx="1442" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-1" value="Prefixes" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="50" y="10" width="610" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-2" value="&lt;b&gt;saqio:&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;b&gt;rdfs:&lt;br&gt;&lt;/b&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;sosa:&lt;/b&gt;&lt;b&gt;&lt;br&gt;geo:&lt;br&gt;schema&lt;br&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" vertex="1" parent="ei_zdeRZsHF_Bpt5WVGu-1">
+          <mxGeometry x="119.99645243734972" y="19" width="70" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ei_zdeRZsHF_Bpt5WVGu-3" value="https://kracr.iiitd.edu.in/ontology/PollutionODP&lt;br&gt;https://www.w3.org/TR/rdf-schema&lt;br&gt;http://www.w3.org/ns/sosa&lt;br&gt;http://www.w3.org/2003/01/geo/wgs84_pos&lt;br&gt;https://schema.org" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;rounded=1;glass=0;" vertex="1" parent="ei_zdeRZsHF_Bpt5WVGu-1">
+          <mxGeometry x="182" y="19" width="370" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
