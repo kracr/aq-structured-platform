@@ -69,9 +69,11 @@ above the local reference ellipsoid).""" ;
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
 <http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:AnnotationProperty ;
                                               rdfs:range rdfs:Literal ,
-                                                         xsd:double ;
+                                                         xsd:double ,
+                                                         xsd:float ;
                                               rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ,
-                                                          <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+                                                          <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ,
+                                                          <https://schema.org/Place> .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#location
@@ -83,9 +85,11 @@ above the local reference ellipsoid).""" ;
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#long
 <http://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:AnnotationProperty ;
                                                rdfs:range rdfs:Literal ,
-                                                          xsd:double ;
+                                                          xsd:double ,
+                                                          xsd:float ;
                                                rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ,
-                                                           <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+                                                           <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ,
+                                                           <https://schema.org/Place> .
 
 
 ###  http://www.w3.org/2004/02/skos/core#example
@@ -845,16 +849,12 @@ above the local reference ellipsoid).""" ;
 #################################################################
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
-<http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:DatatypeProperty ;
-                                              rdfs:domain <https://schema.org/Place> ;
-                                              rdfs:range xsd:float .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#long
 <http://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:DatatypeProperty ;
-                                               rdfs:subPropertyOf owl:topDataProperty ;
-                                               rdfs:domain <https://schema.org/Place> ;
-                                               rdfs:range xsd:float .
+                                               rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  http://www.w3.org/ns/sosa/resultTime
@@ -925,24 +925,28 @@ above the local reference ellipsoid).""" ;
 ###  https://w3id.org/saqi#frequencyToCheckAQI
 :frequencyToCheckAQI rdf:type owl:DatatypeProperty ;
                      rdfs:domain :AirPollutionLiteracy ;
-                     rdfs:range rdfs:Literal .
+                     rdfs:range rdfs:Literal ;
+                     rdfs:label "frequency to check AQI" .
 
 
 ###  https://w3id.org/saqi#hasAQIColorLiteracy
 :hasAQIColorLiteracy rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf :hasAQILiteracy .
+                     rdfs:subPropertyOf :hasAQILiteracy ;
+                     rdfs:label "has AQI color literacy" .
 
 
 ###  https://w3id.org/saqi#hasAQILiteracy
 :hasAQILiteracy rdf:type owl:DatatypeProperty ;
                 rdfs:domain :AirPollutionLiteracy ;
-                rdfs:range rdfs:Literal .
+                rdfs:range rdfs:Literal ;
+                rdfs:label "has AQI literacy" .
 
 
 ###  https://w3id.org/saqi#hasAirPollutionGraphicLiteracy
 :hasAirPollutionGraphicLiteracy rdf:type owl:DatatypeProperty ;
                                 rdfs:domain :AirPollutionLiteracy ;
-                                rdfs:range rdfs:Literal .
+                                rdfs:range rdfs:Literal ;
+                                rdfs:label "has air pollution graphic literacy" .
 
 
 ###  https://w3id.org/saqi#hasName
@@ -959,7 +963,6 @@ above the local reference ellipsoid).""" ;
 
 ###  https://w3id.org/saqi#hasPrescribedStandard
 :hasPrescribedStandard rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Pollutant ;
                        rdfs:range rdfs:Literal .
 
 
@@ -986,7 +989,8 @@ above the local reference ellipsoid).""" ;
 ###  https://w3id.org/saqi#ozoneConcentration
 :ozoneConcentration rdf:type owl:DatatypeProperty ;
                     rdfs:domain :OzoneConcentration ;
-                    rdfs:range xsd:float .
+                    rdfs:range xsd:float ;
+                    rdfs:comment "ozone concentration" .
 
 
 ###  https://w3id.org/saqi#particulateMatter10Concentration
@@ -2051,8 +2055,8 @@ basic geo vocab""" ;
                                      rdfs:label "AudiobookFormat" .
 
 
-<https://schema.org/BackOrder> rdfs:label "BackOrder" ;
-                               rdfs:comment "Indicates that the item is available on back order." .
+<https://schema.org/BackOrder> rdfs:comment "Indicates that the item is available on back order." ;
+                               rdfs:label "BackOrder" .
 
 
 <https://schema.org/BroadcastRelease> rdfs:comment "BroadcastRelease." ;
@@ -2087,8 +2091,8 @@ basic geo vocab""" ;
                                 rdfs:label "DJMixAlbum" .
 
 
-<https://schema.org/DVDFormat> rdfs:comment "DVDFormat." ;
-                               rdfs:label "DVDFormat" .
+<https://schema.org/DVDFormat> rdfs:label "DVDFormat" ;
+                               rdfs:comment "DVDFormat." .
 
 
 <https://schema.org/DamagedCondition> rdfs:comment "Indicates that the item is damaged." ;
@@ -2111,8 +2115,8 @@ basic geo vocab""" ;
                                    rdfs:comment "DigitalFormat." .
 
 
-<https://schema.org/Discontinued> rdfs:label "Discontinued" ;
-                                  rdfs:comment "Indicates that the item has been discontinued." .
+<https://schema.org/Discontinued> rdfs:comment "Indicates that the item has been discontinued." ;
+                                  rdfs:label "Discontinued" .
 
 
 <https://schema.org/EBook> rdfs:comment "Book format: Ebook." ;
@@ -2139,8 +2143,8 @@ basic geo vocab""" ;
                                       rdfs:comment "The event has been rescheduled. The event's previousStartDate should be set to the old date and the startDate should be set to the event's new date. (If the event has been rescheduled multiple times, the previousStartDate property may be repeated.)" .
 
 
-<https://schema.org/EventScheduled> rdfs:comment "The event is taking place or has taken place on the startDate as scheduled. Use of this value is optional, as it is assumed by default." ;
-                                    rdfs:label "EventScheduled" .
+<https://schema.org/EventScheduled> rdfs:label "EventScheduled" ;
+                                    rdfs:comment "The event is taking place or has taken place on the startDate as scheduled. Use of this value is optional, as it is assumed by default." .
 
 
 <https://schema.org/FailedActionStatus> rdfs:comment "An action that failed to complete. The action's error property and the HTTP return code contain more information about the failure." ;
@@ -2269,8 +2273,8 @@ basic geo vocab""" ;
                                  rdfs:label "MultiPlayer" .
 
 
-<https://schema.org/NewCondition> rdfs:comment "Indicates that the item is new." ;
-                                  rdfs:label "NewCondition" .
+<https://schema.org/NewCondition> rdfs:label "NewCondition" ;
+                                  rdfs:comment "Indicates that the item is new." .
 
 
 <https://schema.org/OfflinePermanently> rdfs:label "OfflinePermanently" ;
@@ -2648,8 +2652,8 @@ basic geo vocab""" ;
 
 
 <https://schema.org/aggregateRating> <https://schema.org/domainIncludes> <https://schema.org/Place> ;
-                                     rdfs:comment "The overall rating, based on a collection of reviews or ratings, of the item." ;
-                                     rdfs:label "aggregateRating" .
+                                     rdfs:label "aggregateRating" ;
+                                     rdfs:comment "The overall rating, based on a collection of reviews or ratings, of the item." .
 
 
 <https://schema.org/aircraft> rdfs:comment "The kind of aircraft (e.g., \"Boeing 747\")." ;
@@ -2834,8 +2838,8 @@ basic geo vocab""" ;
                            rdfs:label "audio" .
 
 
-<https://schema.org/authenticator> <https://schema.org/source> <https://github.com/schemaorg/schemaorg/issues/1741> ;
-                                   rdfs:comment "The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before playing media." ;
+<https://schema.org/authenticator> rdfs:comment "The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before playing media." ;
+                                   <https://schema.org/source> <https://github.com/schemaorg/schemaorg/issues/1741> ;
                                    rdfs:label "authenticator" .
 
 
@@ -2848,8 +2852,8 @@ basic geo vocab""" ;
 
 
 <https://schema.org/availabilityEnds> <https://schema.org/source> <https://github.com/schemaorg/schemaorg/issues/1741> ;
-                                      rdfs:comment "The end of the availability of the product or service included in the offer." ;
-                                      rdfs:label "availabilityEnds" .
+                                      rdfs:label "availabilityEnds" ;
+                                      rdfs:comment "The end of the availability of the product or service included in the offer." .
 
 
 <https://schema.org/availabilityStarts> rdfs:comment "The beginning of the availability of the product or service included in the offer." ;
@@ -3111,8 +3115,8 @@ basic geo vocab""" ;
                                   rdfs:comment "The latest someone may check out of a lodging establishment." .
 
 
-<https://schema.org/childMaxAge> rdfs:label "childMaxAge" ;
-                                 rdfs:comment "Maximal age of the child." .
+<https://schema.org/childMaxAge> rdfs:comment "Maximal age of the child." ;
+                                 rdfs:label "childMaxAge" .
 
 
 <https://schema.org/childMinAge> rdfs:label "childMinAge" ;
@@ -3160,8 +3164,8 @@ basic geo vocab""" ;
                                rdfs:comment "A colleague of the person." .
 
 
-<https://schema.org/colleagues> rdfs:label "colleagues" ;
-                                rdfs:comment "A colleague of the person." .
+<https://schema.org/colleagues> rdfs:comment "A colleague of the person." ;
+                                rdfs:label "colleagues" .
 
 
 <https://schema.org/color> rdfs:label "color" ;
@@ -3184,8 +3188,8 @@ basic geo vocab""" ;
                                  rdfs:comment "The time at which the UserComment was made." .
 
 
-<https://schema.org/composer> rdfs:label "composer" ;
-                              rdfs:comment "The person or organization who wrote a composition, or who is the composer of a work performed at some event." .
+<https://schema.org/composer> rdfs:comment "The person or organization who wrote a composition, or who is the composer of a work performed at some event." ;
+                              rdfs:label "composer" .
 
 
 <https://schema.org/contactOption> rdfs:comment "An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers)." ;
@@ -3264,12 +3268,12 @@ basic geo vocab""" ;
                                         rdfs:label "countriesSupported" .
 
 
-<https://schema.org/countryOfOrigin> rdfs:label "countryOfOrigin" ;
-                                     rdfs:comment """The country of origin of something, including products as well as creative  works such as movie and TV content.
+<https://schema.org/countryOfOrigin> rdfs:comment """The country of origin of something, including products as well as creative  works such as movie and TV content.
 
 In the case of TV and movie, this would be the country of the principle offices of the production company or individual responsible for the movie. For other kinds of [[CreativeWork]] it is difficult to provide fully general guidance, and properties such as [[contentLocation]] and [[locationCreated]] may be more applicable.
 
-In the case of products, the country of origin of the product. The exact interpretation of this may vary by context and product type, and cannot be fully enumerated here.""" .
+In the case of products, the country of origin of the product. The exact interpretation of this may vary by context and product type, and cannot be fully enumerated here.""" ;
+                                     rdfs:label "countryOfOrigin" .
 
 
 <https://schema.org/courseCode> rdfs:label "courseCode" ;
@@ -3292,8 +3296,8 @@ In the case of products, the country of origin of the product. The exact interpr
                                        rdfs:label "coverageStartTime" .
 
 
-<https://schema.org/creator> rdfs:label "creator" ;
-                             rdfs:comment "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork." .
+<https://schema.org/creator> rdfs:comment "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork." ;
+                             rdfs:label "creator" .
 
 
 <https://schema.org/creditedTo> rdfs:comment "The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \"Stefani Germanotta Band\", but by Lady Gaga." ;
@@ -3420,8 +3424,8 @@ Dateline summaries are oriented more towards human readers than towards automate
                                       rdfs:comment "The stop or station from which the bus departs." .
 
 
-<https://schema.org/departureGate> rdfs:comment "Identifier of the flight's departure gate." ;
-                                   rdfs:label "departureGate" .
+<https://schema.org/departureGate> rdfs:label "departureGate" ;
+                                   rdfs:comment "Identifier of the flight's departure gate." .
 
 
 <https://schema.org/departurePlatform> rdfs:comment "The platform from which the train departs." ;
@@ -3432,8 +3436,8 @@ Dateline summaries are oriented more towards human readers than towards automate
                                       rdfs:label "departureStation" .
 
 
-<https://schema.org/departureTerminal> rdfs:comment "Identifier of the flight's departure terminal." ;
-                                       rdfs:label "departureTerminal" .
+<https://schema.org/departureTerminal> rdfs:label "departureTerminal" ;
+                                       rdfs:comment "Identifier of the flight's departure terminal." .
 
 
 <https://schema.org/departureTime> rdfs:comment "The expected departure time." ;
@@ -3505,8 +3509,8 @@ Dateline summaries are oriented more towards human readers than towards automate
                                    rdfs:label "downvoteCount" .
 
 
-<https://schema.org/driveWheelConfiguration> rdfs:label "driveWheelConfiguration" ;
-                                             rdfs:comment "The drive wheel configuration, i.e. which roadwheels will receive torque from the vehicle's engine via the drivetrain." .
+<https://schema.org/driveWheelConfiguration> rdfs:comment "The drive wheel configuration, i.e. which roadwheels will receive torque from the vehicle's engine via the drivetrain." ;
+                                             rdfs:label "driveWheelConfiguration" .
 
 
 <https://schema.org/dropoffLocation> rdfs:label "dropoffLocation" ;
@@ -3740,8 +3744,8 @@ Unregistered or niche encoding and file formats can be indicated instead via the
                                       rdfs:comment "The date and place the work was first performed." .
 
 
-<https://schema.org/flightDistance> rdfs:comment "The distance of the flight." ;
-                                    rdfs:label "flightDistance" .
+<https://schema.org/flightDistance> rdfs:label "flightDistance" ;
+                                    rdfs:comment "The distance of the flight." .
 
 
 <https://schema.org/floorSize> rdfs:comment """The size of the accommodation, e.g. in square meter or squarefoot.
@@ -3778,8 +3782,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
                                      rdfs:comment "The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).\\n\\n* Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use [[unitText]] to indicate the unit of measurement, e.g. L/100 km.\\n* Note 2: There are two ways of indicating the fuel consumption, [[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per gallon). They are reciprocal.\\n* Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use [[valueReference]] to link the value for the fuel consumption to another value." .
 
 
-<https://schema.org/fuelEfficiency> rdfs:label "fuelEfficiency" ;
-                                    rdfs:comment "The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).\\n\\n* Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use [[unitText]] to indicate the unit of measurement, e.g. mpg or km/L.\\n* Note 2: There are two ways of indicating the fuel consumption, [[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per gallon). They are reciprocal.\\n* Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use [[valueReference]] to link the value for the fuel economy to another value." .
+<https://schema.org/fuelEfficiency> rdfs:comment "The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).\\n\\n* Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use [[unitText]] to indicate the unit of measurement, e.g. mpg or km/L.\\n* Note 2: There are two ways of indicating the fuel consumption, [[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per gallon). They are reciprocal.\\n* Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use [[valueReference]] to link the value for the fuel economy to another value." ;
+                                    rdfs:label "fuelEfficiency" .
 
 
 <https://schema.org/fuelType> rdfs:label "fuelType" ;
@@ -3911,8 +3915,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
                               rdfs:comment "Headline of the article." .
 
 
-<https://schema.org/height> rdfs:comment "The height of the item." ;
-                            <https://schema.org/domainIncludes> <https://schema.org/OfferShippingDetails> ;
+<https://schema.org/height> <https://schema.org/domainIncludes> <https://schema.org/OfferShippingDetails> ;
+                            rdfs:comment "The height of the item." ;
                             rdfs:label "height" .
 
 
@@ -3956,8 +3960,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
                                  rdfs:comment "The illustrator of the book." .
 
 
-<https://schema.org/inAlbum> rdfs:comment "The album to which this recording belongs." ;
-                             rdfs:label "inAlbum" .
+<https://schema.org/inAlbum> rdfs:label "inAlbum" ;
+                             rdfs:comment "The album to which this recording belongs." .
 
 
 <https://schema.org/inBroadcastLineup> rdfs:comment "The CableOrSatelliteService offering the channel." ;
@@ -4043,8 +4047,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
                                     rdfs:label "inventoryLevel" .
 
 
-<https://schema.org/isAccessibleForFree> rdfs:label "isAccessibleForFree" ;
-                                         rdfs:comment "A flag to signal that the item, event, or place is accessible for free." ;
+<https://schema.org/isAccessibleForFree> rdfs:comment "A flag to signal that the item, event, or place is accessible for free." ;
+                                         rdfs:label "isAccessibleForFree" ;
                                          <https://schema.org/domainIncludes> <https://schema.org/Place> .
 
 
@@ -4097,8 +4101,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
                               rdfs:comment "The International Standard Recording Code for the recording." .
 
 
-<https://schema.org/issuedBy> rdfs:label "issuedBy" ;
-                              rdfs:comment "The organization issuing the ticket or permit." .
+<https://schema.org/issuedBy> rdfs:comment "The organization issuing the ticket or permit." ;
+                              rdfs:label "issuedBy" .
 
 
 <https://schema.org/issuedThrough> rdfs:label "issuedThrough" ;
@@ -4109,8 +4113,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
                               rdfs:comment "The International Standard Musical Work Code for the composition." .
 
 
-<https://schema.org/item> rdfs:comment "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')." ;
-                          rdfs:label "item" .
+<https://schema.org/item> rdfs:label "item" ;
+                          rdfs:comment "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')." .
 
 
 <https://schema.org/itemCondition> <https://schema.org/domainIncludes> <https://schema.org/MerchantReturnPolicy> ;
@@ -4154,8 +4158,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
 
 <https://schema.org/keywords> rdfs:label "keywords" ;
                               rdfs:comment "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property." ;
-                              <https://schema.org/rangeIncludes> <https://schema.org/DefinedTerm> ;
-                              <https://schema.org/domainIncludes> <https://schema.org/Place> .
+                              <https://schema.org/domainIncludes> <https://schema.org/Place> ;
+                              <https://schema.org/rangeIncludes> <https://schema.org/DefinedTerm> .
 
 
 <https://schema.org/knownVehicleDamages> rdfs:comment "A textual description of known damages, both repaired and unrepaired." ;
@@ -4176,8 +4180,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
 
 
 <https://schema.org/learningResourceType> <https://schema.org/rangeIncludes> <https://schema.org/DefinedTerm> ;
-                                          rdfs:label "learningResourceType" ;
                                           rdfs:comment "The predominant type or kind characterizing the learning resource. For example, 'presentation', 'handout'." ;
+                                          rdfs:label "learningResourceType" ;
                                           <https://schema.org/domainIncludes> <https://schema.org/LearningResource> .
 
 
@@ -4347,8 +4351,8 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
                            rdfs:label "model" .
 
 
-<https://schema.org/modifiedTime> rdfs:label "modifiedTime" ;
-                                  rdfs:comment "The date and time the reservation was modified." .
+<https://schema.org/modifiedTime> rdfs:comment "The date and time the reservation was modified." ;
+                                  rdfs:label "modifiedTime" .
 
 
 <https://schema.org/mpn> rdfs:label "mpn" ;
@@ -4463,13 +4467,13 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
                                             rdfs:comment "The number of owners of the vehicle, including the current one.\\n\\nTypical unit code(s): C62" .
 
 
-<https://schema.org/numberOfRooms> rdfs:comment """The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.
-Typical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.""" ;
-                                   rdfs:label "numberOfRooms" .
+<https://schema.org/numberOfRooms> rdfs:label "numberOfRooms" ;
+                                   rdfs:comment """The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.
+Typical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.""" .
 
 
-<https://schema.org/numberOfSeasons> rdfs:comment "The number of seasons in this series." ;
-                                     rdfs:label "numberOfSeasons" .
+<https://schema.org/numberOfSeasons> rdfs:label "numberOfSeasons" ;
+                                     rdfs:comment "The number of seasons in this series." .
 
 
 <https://schema.org/numberedPosition> rdfs:comment "A number associated with a role in an organization, for example, the number on an athlete's jersey." ;
@@ -4596,8 +4600,8 @@ Note: for historical reasons, any textual label and formal code provided as a li
 
 
 <https://schema.org/parentOrganization> <https://schema.org/inverseOf> <https://schema.org/subOrganization> ;
-                                        rdfs:label "parentOrganization" ;
-                                        rdfs:comment "The larger organization that this organization is a [[subOrganization]] of, if any." .
+                                        rdfs:comment "The larger organization that this organization is a [[subOrganization]] of, if any." ;
+                                        rdfs:label "parentOrganization" .
 
 
 <https://schema.org/parentService> rdfs:comment "A broadcast service to which the broadcast service may belong to such as regional variations of a national channel." ;
@@ -4684,8 +4688,8 @@ Note: for historical reasons, any textual label and formal code provided as a li
                                  rdfs:comment "Event that this person is a performer or participant in." .
 
 
-<https://schema.org/performers> rdfs:comment "The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor." ;
-                                rdfs:label "performers" .
+<https://schema.org/performers> rdfs:label "performers" ;
+                                rdfs:comment "The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor." .
 
 
 <https://schema.org/permissionType> rdfs:comment "The type of permission granted the person, organization, or audience." ;
@@ -5042,8 +5046,8 @@ While such policies are most typically expressed in natural language, sometimes 
                                     rdfs:label "requiredMaxAge" .
 
 
-<https://schema.org/requiredMinAge> rdfs:comment "Audiences defined by a person's minimum age." ;
-                                    rdfs:label "requiredMinAge" .
+<https://schema.org/requiredMinAge> rdfs:label "requiredMinAge" ;
+                                    rdfs:comment "Audiences defined by a person's minimum age." .
 
 
 <https://schema.org/requiredQuantity> rdfs:comment "The required quantity of the item(s)." ;
@@ -5131,8 +5135,8 @@ While such policies are most typically expressed in natural language, sometimes 
                                     rdfs:comment "The currency (coded using [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217)) used for the main salary information in this job posting or for this employee." .
 
 
-<https://schema.org/sampleType> rdfs:comment "What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template." ;
-                                rdfs:label "sampleType" .
+<https://schema.org/sampleType> rdfs:label "sampleType" ;
+                                rdfs:comment "What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template." .
 
 
 <https://schema.org/saturatedFatContent> rdfs:comment "The number of grams of saturated fat." ;
@@ -5160,8 +5164,8 @@ While such policies are most typically expressed in natural language, sometimes 
                                 rdfs:label "screenshot" .
 
 
-<https://schema.org/seasons> rdfs:label "seasons" ;
-                             rdfs:comment "A season in a media series." .
+<https://schema.org/seasons> rdfs:comment "A season in a media series." ;
+                             rdfs:label "seasons" .
 
 
 <https://schema.org/seatNumber> rdfs:label "seatNumber" ;
@@ -5264,9 +5268,9 @@ While such policies are most typically expressed in natural language, sometimes 
 
 <https://schema.org/skills> rdfs:comment "A statement of knowledge, skill, ability, task or any other assertion expressing a competency that is desired or required to fulfill this role or to work in this occupation." ;
                             rdfs:label "skills" ;
-                            <https://schema.org/source> <https://github.com/schemaorg/schemaorg/issues/1698> ,
-                                                        <https://github.com/schemaorg/schemaorg/issues/2322> ;
-                            <https://schema.org/rangeIncludes> <https://schema.org/DefinedTerm> .
+                            <https://schema.org/source> <https://github.com/schemaorg/schemaorg/issues/1698> ;
+                            <https://schema.org/rangeIncludes> <https://schema.org/DefinedTerm> ;
+                            <https://schema.org/source> <https://github.com/schemaorg/schemaorg/issues/2322> .
 
 
 <https://schema.org/slogan> rdfs:label "slogan" ;
@@ -5364,8 +5368,8 @@ we define a supporting type, [[SpeakableSpecification]]  which is defined to be 
                                       rdfs:comment "The position of the steering wheel or similar device (mostly for cars)." .
 
 
-<https://schema.org/stepValue> rdfs:comment "The stepValue attribute indicates the granularity that is expected (and required) of the value in a PropertyValueSpecification." ;
-                               rdfs:label "stepValue" .
+<https://schema.org/stepValue> rdfs:label "stepValue" ;
+                               rdfs:comment "The stepValue attribute indicates the granularity that is expected (and required) of the value in a PropertyValueSpecification." .
 
 
 <https://schema.org/steps> rdfs:comment "A single step item (as HowToStep, text, document, video, etc.) or a HowToSection (originally misnamed 'steps'; 'step' is preferred)." ;
