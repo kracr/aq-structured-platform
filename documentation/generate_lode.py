@@ -61,7 +61,7 @@ introduction_text="""
         <dt>License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-CC_by_4.0-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/"></a></dt>
         <dt>Visualization: <a href="#visualization"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl"></a></dt>
 
-        <dt>DOI : <a href="https://dx.doi.org/10.5281/zenodo.7448007">dx.doi.org/10.5281/zenodo.7448007</a></dt>
+        <dt>DOI : <a href="https://doi.org/10.5281/zenodo.10300235">dx.doi.org/10.5281/zenodo.7448007</a></dt>
         <dt>URL : <a href="https://github.com/kracr/aq-structured-platform">github.com/kracr/aq-structured-platform</a>
         <hr>
         </dt>
@@ -130,8 +130,8 @@ introduction_text="""
             <p>An SAQI KG that integrates the air pollution data from local and
               central sensors with the data from the ethnographic survey. YARRML is used to convert the sensor and
               survey data into a KG. These mappings, along with the SHACL constraints and SPARQL queries on
-              the KG, are available at <a href="https://dx.doi.org/10.5281/zenodo.7448007"
-                class="uri">https://dx.doi.org/10.5281/zenodo.7448007</a>. The SPARQL
+              the KG, are available at <a href="https://doi.org/10.5281/zenodo.10300235"
+                class="uri">https://doi.org/10.5281/zenodo.10300235</a>. The SPARQL
               endpoint over the KG is available at <a href="https://kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query"
                 class="uri">https://kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query</a>.</p>
           </li>
@@ -143,8 +143,8 @@ introduction_text="""
           <li>
             <p>The two datasets – ethnographic survey questionnaire and
               responses and the hyperlocal air quality data from six different
-              locations in Delhi. This is available at <a href="https://dx.doi.org/10.5281/zenodo.7448007"
-                class="uri">https://dx.doi.org/10.5281/zenodo.7448007</a>. These
+              locations in Delhi. This is available at <a href="https://doi.org/10.5281/zenodo.10300235"
+                class="uri">https://doi.org/10.5281/zenodo.10300235</a>. These
               datasets will be helpful to social scientists, environmental scientists,
               biophysicists and biochemists.</p>
           </li>
