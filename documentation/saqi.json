@@ -9037,9 +9037,6 @@
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "1.1"
-  } ],
-  "https://w3id.org/saqi#Authors" : [ {
-    "@value" : "Saad Ahmad, Sudhir Attri, Raghava Mutharaju"
   } ]
 }, {
   "@id" : "https://w3id.org/saqi#AirPollutionLiteracy",
@@ -10117,8 +10114,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/saqi#Pollutant"
-  }, {
-    "@id" : "https://w3id.org/saqi#PrescribedStandardForPollutant"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/saqi#PrescribedStandardForPollutant"
