@@ -57,7 +57,7 @@ introduction_text="""
         <dt>License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-CC_by_4.0-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/"></a></dt>
         <dt>Visualization: <a href="#visualization"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl"></a></dt>
 
-        <dt>DOI : <a href="https://doi.org/10.5281/zenodo.10300235">dx.doi.org/10.5281/zenodo.7448007</a></dt>
+        <dt>DOI : <a href="https://doi.org/10.5281/zenodo.10300235">dx.doi.org/10.5281/zenodo.XXXXXXX</a></dt>
         <dt>URL : <a href="https://github.com/XXXX/XX-XXXXXXXX-XXXXXXX">github.com/XXXX/XX-XXXXXXXX-XXXXXXX</a>
         <hr>
         </dt>

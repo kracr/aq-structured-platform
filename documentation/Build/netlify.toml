@@ -3,3 +3,9 @@
   to = "/saqi.html"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/"
+  to = "/saqi.html"
+  status = 200
+  force = true
