@@ -19,7 +19,7 @@
         window.addEventListener('message', event => {
             console.log("got event", event);
             // IMPORTANT: check the origin of the data!
-            if (event.origin === 'https://kracr.iiitd.edu.in') {
+            if (event.origin === 'https://saqi-er24.netlify.app/saqi') {
                 // The data was sent from your site.
                 // Data sent with postMessage is stored in event.data:
                 console.log("Got data", event.data);

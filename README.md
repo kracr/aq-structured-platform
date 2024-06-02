@@ -2,9 +2,9 @@
 
 ## Links to the deployed version of ontology, docs and app.
 
-1. SAQI app - [kracr.iiitd.edu.in/saqi-app/](https://kracr.iiitd.edu.in/saqi-app/)
-2. Sparql endpoint for ontology populated with data collected during the project - [kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query](https://kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query)
-3. PyLODE documentation for the ontology - [kracr.iiitd.edu.in/ontology/saqi](https://kracr.iiitd.edu.in/ontology/saqi)
+1. SAQI app - [https://saqi-er24.netlify.app/](https://saqi-er24.netlify.app/)
+2. Sparql endpoint for ontology populated with data collected during the project - [https://saqi-er24.netlify.app/sparql/#/dataset/aq-store/query](https://https://saqi-er24.netlify.app/saqi/sparql/#/dataset/aq-store/query)
+3. PyLODE documentation for the ontology - [https://saqi-er24.netlify.app/saqi](https://saqi-er24.netlify.app/saqi)
 4. SAQI Dataset - https://doi.org/10.5281/zenodo.10300235 
 
 > **Directory Structure of the repo**
@@ -38,7 +38,7 @@
 - `npm i`
 - `npm run dev`
 
-## Scripts for deployment on kracr website
+## Scripts for deployment on saqi-er-24 website
 
 > Pull latest changes and run the script to deploy.sh
 
@@ -46,15 +46,15 @@
 
 > If there is no npm installed, copy build files from local machine
 
-- `scp -r ./saqi-app/dist iiitd@192.168.1.166:`
+- `scp -r ./saqi-app/dist iii***@192.168.1.166:`
 - Inside VM -
-- `sudo cp -r ./dist/ /var/www/kracr.iiitd.edu.in/saqi-app`
-- `sudo cp /var/www/kracr.iiitd.edu.in/saqi-app/vite.svg /var/www/kracr.iiitd.edu.in/saqi-app/assets/vite.svg`
-- `sudo cp /var/www/kracr.iiitd.edu.in/saqi-app/saqi.png /var/www/kracr.iiitd.edu.in/saqi-app/assets/saqi.png`
+- `sudo cp -r ./dist/ /var/www/XXXXX.XXXXX.XXX.XX/saqi-app`
+- `sudo cp /var/www/XXXXX.XXXXX.XXX.XX/saqi-app/vite.svg /var/www/XXXXX.XXXXX.XXX.XX/saqi-app/assets/vite.svg`
+- `sudo cp /var/www/XXXXX.XXXXX.XXX.XX/saqi-app/saqi.png /var/www/XXXXX.XXXXX.XXX.XX/saqi-app/assets/saqi.png`
 
 
 ## Routing changes to nginx
-At `/etc/nginx/sites-available/kracr.iiitd.edu.in`
+At `/etc/nginx/sites-available/XXXXX.XXXXX.XXX.XX`
 
 ```
     location /sparql/ {
@@ -84,7 +84,7 @@ At `/etc/nginx/sites-available/kracr.iiitd.edu.in`
         try_files $uri $uri/ /saqi-app/index.html;
     }
     location /ontology/webvowl/ {
-        alias /var/www/kracr.iiitd.edu.in/webvowl/;
+        alias /var/www/XXXXX.XXXXX.XXX.XX/webvowl/;
     }
 ```
 At `/etc/nginx/nginx.conf`

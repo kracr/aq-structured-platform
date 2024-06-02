@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://kracr.iiitd.edu.in/ontology/saqi#"
+     xml:base="https://saqi-er24.netlify.app/saqi#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://kracr.iiitd.edu.in/ontology/saqi#">
-    <Prefix name="" IRI="https://kracr.iiitd.edu.in/ontology/saqi#"/>
+     ontologyIRI="https://saqi-er24.netlify.app/saqi#">
+    <Prefix name="" IRI="https://saqi-er24.netlify.app/saqi#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -18,7 +18,7 @@
     <Import>http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:contributor"/>
-        <Literal>Saad Ahmad, Sudhir Attri, Raghava Mutharaju; (https://kracr.iiitd.edu.in/)</Literal>
+        <Literal>XXXX XXXXX, XXXXXX XXXXX, XXXXXXX XXXXXXXXX; (https://XXXXX.XXXXX.XXX.XX/)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:license"/>
@@ -30,7 +30,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <Literal>https://kracr.iiitd.edu.in/ontology/AirQualityOntology</Literal>
+        <Literal>https://XXXXX.XXXXX.XXX.XX/ontology/AirQualityOntology</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
@@ -38,7 +38,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="#Authors"/>
-        <Literal>Saad Ahmad, Sudhir Attri, Raghava Mutharaju</Literal>
+        <Literal>XXXX XXXXX, XXXXXX XXXXX, XXXXXXX XXXXXXXXX</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>

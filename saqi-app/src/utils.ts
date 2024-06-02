@@ -55,7 +55,7 @@ type AQIData = {
 export async function runSPARQL(query: string) {
     // console.log(query)
 
-    let response = await fetch("https://kracr.iiitd.edu.in/sparql/aq-store/query",
+    let response = await fetch("https://w3id.org/saqi/sparql/aq-store/query",
         {
             method: "POST",
             headers:

@@ -1,4 +1,4 @@
-@prefix : <https://kracr.iiitd.edu.in/ontology/saqi> .
+@prefix : <https://saqi-er24.netlify.app/saqi> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -7,7 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix saqi: <https://kracr.iiitd.edu.in/ontology/saqi#> .
+@prefix saqi: <https://saqi-er24.netlify.app/saqi#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sosa: <http://www.w3.org/ns/sosa> .
 @prefix vann: <http://purl.org/vocab/vann/> .
@@ -15,7 +15,7 @@
 @prefix schema: <https://schema.org/> .
 @prefix schema1: <http://schema.org/> .
 @prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
-@base <https://kracr.iiitd.edu.in/ontology/saqi#> .
+@base <https://saqi-er24.netlify.app/saqi#> .
 
 
 saqi:sensorNangliDairy rdf:type owl:NamedIndividual , saqi:LocalSensor .

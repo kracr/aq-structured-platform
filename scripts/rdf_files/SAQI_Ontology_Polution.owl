@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://kracr.iiitd.edu.in/ontology/PollutionODP"
-     xml:base="https://kracr.iiitd.edu.in/ontology/PollutionODP"
+<rdf:RDF xmlns="https://XXXXX.XXXXXX.XXX.XX/ontology/PollutionODP"
+     xml:base="https://XXXXX.XXXXXX.XXX.XX/ontology/PollutionODP"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,19 +9,19 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
-     xmlns:PollutionODP="https://kracr.iiitd.edu.in/ontology/PollutionODP#"
-     xmlns:SAQIOntology="https://kracr.iiitd.edu.in/ontology/SAQIOntology#"
-     xmlns:AirQualityOntology="https://kracr.iiitd.edu.in/ontology/AirQualityOntology#"
+     xmlns:PollutionODP="https://XXXXX.XXXXX.XXX.XX/ontology/PollutionODP#"
+     xmlns:SAQIOntology="https://saqi-er24.netlify.app/saqiOntology#"
+     xmlns:AirQualityOntology="https://XXXXX.XXXXX.XXX.XX/ontology/AirQualityOntology#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
-     xmlns:SAQIOntologyPollutionModule="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#">
-    <owl:Ontology rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule">
+     xmlns:SAQIOntologyPollutionModule="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#">
+    <owl:Ontology rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule">
         <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
-        <terms:contributor>Saad Ahmad, Sudhir Attri, Raghava Mutharaju; (https://kracr.iiitd.edu.in/)</terms:contributor>
+        <terms:contributor>XXXX XXXXX, XXXXXX XXXXX, XXXXXXX XXXXXXXXX; (https://XXXXX.XXXXX.XXX.XX/)</terms:contributor>
         <terms:license>https://www.apache.org/licenses/LICENSE-2.0</terms:license>
         <rdfs:label>Ontology to model Social Air Quality</rdfs:label>
-        <rdfs:seeAlso>https://kracr.iiitd.edu.in/ontology/AirQualityOntology</rdfs:seeAlso>
+        <rdfs:seeAlso>https://XXXXX.XXXXX.XXX.XX/ontology/AirQualityOntology</rdfs:seeAlso>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <SAQIOntologyPollutionModule:Authors>Saad Ahmad, Sudhir Attri, Raghava Mutharaju</SAQIOntologyPollutionModule:Authors>
+        <SAQIOntologyPollutionModule:Authors>XXXX XXXXX, XXXXXX XXXXX, XXXXXXX XXXXXXXXX</SAQIOntologyPollutionModule:Authors>
     </owl:Ontology>
     
 
@@ -73,9 +73,9 @@
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Authors -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Authors -->
 
-    <owl:AnnotationProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Authors"/>
+    <owl:AnnotationProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Authors"/>
     
 
 
@@ -1400,9 +1400,9 @@
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#atPlace -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#atPlace -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#atPlace">
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#atPlace">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
         <rdfs:range rdf:resource="https://schema.org/Place"/>
@@ -1410,67 +1410,67 @@
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#carriesPollutant -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#carriesPollutant -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#carriesPollutant">
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#carriesPollutant">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Carrier"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Pollutant"/>
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Carrier"/>
+        <rdfs:range rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Pollutant"/>
         <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#endsAt -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#endsAt -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#endsAt">
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#endsAt">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment"/>
+        <rdfs:range rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
         <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
         <rdfs:comment>Connects a segment to the point it ends at.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasContributor -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasContributor -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasContributor">
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasContributor">
         <rdfs:domain rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Contributor"/>
+        <rdfs:range rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Contributor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasObservation -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasObservation -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasObservation">
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasObservation">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Pollutant"/>
-                    <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PrescribedStandardForPollutant"/>
+                    <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Pollutant"/>
+                    <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PrescribedStandardForPollutant"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Observation"/>
+        <rdfs:range rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Observation"/>
         <cpannotationschema:reengineeredFrom>Observation ODP - http://ontologydesignpatterns.org/wiki/Submissions:Observation</cpannotationschema:reengineeredFrom>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasPoint -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasPoint -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasPoint">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Trajectory"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasPoint">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Trajectory"/>
+        <rdfs:range rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasSegment"/>
-            <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#endsAt"/>
+            <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasSegment"/>
+            <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#endsAt"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasSegment"/>
-            <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#startsFrom"/>
+            <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasSegment"/>
+            <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#startsFrom"/>
         </owl:propertyChainAxiom>
         <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
         <rdfs:comment>Relating the trajectory to each of its points.</rdfs:comment>
@@ -1478,80 +1478,80 @@
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasPrescribedStandard -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasPrescribedStandard -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasPrescribedStandard">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Pollutant"/>
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PrescribedStandardForPollutant"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PrescribedStandardForPollutant"/>
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasPrescribedStandard">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Pollutant"/>
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PrescribedStandardForPollutant"/>
+        <rdfs:range rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PrescribedStandardForPollutant"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasSegment -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasSegment -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasSegment">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Trajectory"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment"/>
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasSegment">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Trajectory"/>
+        <rdfs:range rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment"/>
         <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
         <rdfs:comment>Relating the trajectory to each of its segments.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasTrajectory -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasTrajectory -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasTrajectory">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Carrier"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Trajectory"/>
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasTrajectory">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Carrier"/>
+        <rdfs:range rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Trajectory"/>
         <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
         <rdfs:comment>Anything that has a trajectory can use this property to connect it to the trajectory instance</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#nearby -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#nearby -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#nearby">
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#nearby">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
-                    <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment"/>
+                    <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
+                    <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PollutantGenerator"/>
+        <rdfs:range rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PollutantGenerator"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#nextPoint -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#nextPoint -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#nextPoint">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#nextPoint">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
+        <rdfs:range rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
         <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
         <rdfs:comment>Relates one point to the immediately following point in the sequence.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#sourceResponsibleForLocalPollution -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#sourceResponsibleForLocalPollution -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#sourceResponsibleForLocalPollution">
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PollutantGenerator"/>
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#sourceResponsibleForLocalPollution">
+        <rdfs:range rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PollutantGenerator"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#startsFrom -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#startsFrom -->
 
-    <owl:ObjectProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#startsFrom">
+    <owl:ObjectProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#startsFrom">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment"/>
-        <rdfs:range rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment"/>
+        <rdfs:range rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
         <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
         <rdfs:comment>Connects a segment to the point it starts from.</rdfs:comment>
     </owl:ObjectProperty>
@@ -1569,363 +1569,363 @@
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#airPollutionIssuesRaised -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#airPollutionIssuesRaised -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#airPollutionIssuesRaised"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#airPollutionIssuesRaised"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#airQualityImproved -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#airQualityImproved -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#airQualityImproved"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#airQualityImproved"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ambientTemperature -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ambientTemperature -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ambientTemperature">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#MeteorologicalCharacterstic"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ambientTemperature">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#MeteorologicalCharacterstic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ammoniaConcentration -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ammoniaConcentration -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ammoniaConcentration">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#GaseousPollutant"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ammoniaConcentration">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#GaseousPollutant"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#atHeight -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#atHeight -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#atHeight">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#atHeight">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#atTime -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#atTime -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#atTime">
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#atTime">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#bPressure -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#bPressure -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#bPressure">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#MeteorologicalCharacterstic"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#bPressure">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#MeteorologicalCharacterstic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#benzeneConcentration -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#benzeneConcentration -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#benzeneConcentration">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Hydrocarbon"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#benzeneConcentration">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Hydrocarbon"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#carbonMonoOxideConcentration -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#carbonMonoOxideConcentration -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#carbonMonoOxideConcentration">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#OxideOfCarbon"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#carbonMonoOxideConcentration">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#OxideOfCarbon"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#comparisionOfLocalPollution -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#comparisionOfLocalPollution -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#comparisionOfLocalPollution"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#comparisionOfLocalPollution"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#confidence -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#confidence -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#confidence">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Combustion"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#confidence">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Combustion"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#followsGuidelines -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#followsGuidelines -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#followsGuidelines"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#followsGuidelines"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#frequencyToCheckAQI -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#frequencyToCheckAQI -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#frequencyToCheckAQI"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#frequencyToCheckAQI"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#getsNoticeAndContinues -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#getsNoticeAndContinues -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#getsNoticeAndContinues"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#getsNoticeAndContinues"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasAQIColorLiteracy -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasAQIColorLiteracy -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasAQIColorLiteracy">
-        <rdfs:subPropertyOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasAQILiteracy"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasAQIColorLiteracy">
+        <rdfs:subPropertyOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasAQILiteracy"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasAQILiteracy -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasAQILiteracy -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasAQILiteracy"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasAQILiteracy"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasAirPollutionGraphicLiteracy -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasAirPollutionGraphicLiteracy -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasAirPollutionGraphicLiteracy"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasAirPollutionGraphicLiteracy"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasName -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasName -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasName">
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasName">
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasParticulateMatterLiteracy -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasParticulateMatterLiteracy -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasParticulateMatterLiteracy"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasParticulateMatterLiteracy"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasPrescribedStandard -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasPrescribedStandard -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasPrescribedStandard">
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasPrescribedStandard">
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#isRegularized -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#isRegularized -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#isRegularized"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#isRegularized"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#latitude -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#latitude -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#latitude">
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#latitude">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#longitude -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#longitude -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#longitude">
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#longitude">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#nitrogenDiOxideConcentration -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#nitrogenDiOxideConcentration -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#nitrogenDiOxideConcentration">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#OxideOfNitrogen"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#nitrogenDiOxideConcentration">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#OxideOfNitrogen"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#nitrogenMonoOxideConcentration -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#nitrogenMonoOxideConcentration -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#nitrogenMonoOxideConcentration">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#OxideOfNitrogen"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#nitrogenMonoOxideConcentration">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#OxideOfNitrogen"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#nitrogenOxideConcentration -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#nitrogenOxideConcentration -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#nitrogenOxideConcentration">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#OxideOfNitrogen"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#nitrogenOxideConcentration">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#OxideOfNitrogen"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#noNoticeOrIntervention -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#noNoticeOrIntervention -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#noNoticeOrIntervention"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#noNoticeOrIntervention"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ozoneConcentration -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ozoneConcentration -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ozoneConcentration">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#SecondaryPollutant"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ozoneConcentration">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#SecondaryPollutant"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#particulateMatter10Concentration -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#particulateMatter10Concentration -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#particulateMatter10Concentration">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ParticulateMatter"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#particulateMatter10Concentration">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ParticulateMatter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#particulateMatter2_5Concentration -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#particulateMatter2_5Concentration -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#particulateMatter2_5Concentration">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ParticulateMatter"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#particulateMatter2_5Concentration">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ParticulateMatter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#peopleVotedOnAirPollutionIssues -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#peopleVotedOnAirPollutionIssues -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#peopleVotedOnAirPollutionIssues"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#peopleVotedOnAirPollutionIssues"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#plantCapacity -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#plantCapacity -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#plantCapacity">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PowerPlant"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#plantCapacity">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PowerPlant"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#precipitation -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#precipitation -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#precipitation">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#MeteorologicalCharacterstic"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#precipitation">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#MeteorologicalCharacterstic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ratingForLocalAirQuality -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ratingForLocalAirQuality -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ratingForLocalAirQuality"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ratingForLocalAirQuality"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#relativeHumidity -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#relativeHumidity -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#relativeHumidity">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#MeteorologicalCharacterstic"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#relativeHumidity">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#MeteorologicalCharacterstic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#satisfiedWithPerformance -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#satisfiedWithPerformance -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#satisfiedWithPerformance"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#satisfiedWithPerformance"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#solarRadiation -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#solarRadiation -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#solarRadiation">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#MeteorologicalCharacterstic"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#solarRadiation">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#MeteorologicalCharacterstic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#sourceName -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#sourceName -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#sourceName"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#sourceName"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#sulphurDioxideConcentration -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#sulphurDioxideConcentration -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#sulphurDioxideConcentration">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#OxideOfSulphur"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#sulphurDioxideConcentration">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#OxideOfSulphur"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#tolueneConcentration -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#tolueneConcentration -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#tolueneConcentration">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Hydrocarbon"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#tolueneConcentration">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Hydrocarbon"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#totalPopulation -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#totalPopulation -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#totalPopulation">
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#totalPopulation">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#usesAirPurifier -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#usesAirPurifier -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#usesAirPurifier"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#usesAirPurifier"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#wearsMask -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#wearsMask -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#wearsMask"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#wearsMask"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#windDirection -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#windDirection -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#windDirection">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#WindCharacterstic"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#windDirection">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#WindCharacterstic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#windSpeed -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#windSpeed -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#windSpeed">
-        <rdfs:domain rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#WindCharacterstic"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#windSpeed">
+        <rdfs:domain rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#WindCharacterstic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#worksFromHome -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#worksFromHome -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#worksFromHome"/>
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#worksFromHome"/>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#zipCode -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#zipCode -->
 
-    <owl:DatatypeProperty rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#zipCode">
+    <owl:DatatypeProperty rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#zipCode">
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -1948,20 +1948,20 @@
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Carrier -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Carrier -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Carrier">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Carrier">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasTrajectory"/>
-                <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Trajectory"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasTrajectory"/>
+                <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Trajectory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#carriesPollutant"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Pollutant"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#carriesPollutant"/>
+                <owl:allValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Pollutant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Represents streams which carry pollutants to a particular place.</rdfs:comment>
@@ -1969,196 +1969,196 @@
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#CoalBasedPowerPlant -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#CoalBasedPowerPlant -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#CoalBasedPowerPlant">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ThermalPowerPlant"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#CoalBasedPowerPlant">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ThermalPowerPlant"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Combustion -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Combustion -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Combustion">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PollutantGenerator"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Combustion">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PollutantGenerator"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasObservation"/>
-                <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Observation"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasObservation"/>
+                <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Observation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Contributor -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Contributor -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Contributor">
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Contributor">
         <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#DirectContributor"/>
-            <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor"/>
+            <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#DirectContributor"/>
+            <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor"/>
         </owl:disjointUnionOf>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#CropBurning -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#CropBurning -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#CropBurning">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Combustion"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#CropBurning">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Combustion"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#DieselBasedPowerPlant -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#DieselBasedPowerPlant -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#DieselBasedPowerPlant">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ThermalPowerPlant"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#DieselBasedPowerPlant">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ThermalPowerPlant"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#DirectContributor -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#DirectContributor -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#DirectContributor">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Contributor"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#DirectContributor">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Contributor"/>
         <rdfs:comment>Represents concepts which directly represent pollution. For example the concentration of pollutants at a particular spatio-temporal point.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Dust -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Dust -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Dust">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PollutantGenerator"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Dust">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PollutantGenerator"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#EndingPoint -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#EndingPoint -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#EndingPoint">
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#EndingPoint">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+                    <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
                                 <owl:onProperty>
                                     <rdf:Description>
-                                        <owl:inverseOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#startsFrom"/>
+                                        <owl:inverseOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#startsFrom"/>
                                     </rdf:Description>
                                 </owl:onProperty>
-                                <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment"/>
+                                <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
-        <owl:disjointWith rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#StartingPoint"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
+        <owl:disjointWith rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#StartingPoint"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#GasBasedPowerPlant -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#GasBasedPowerPlant -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#GasBasedPowerPlant">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ThermalPowerPlant"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#GasBasedPowerPlant">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ThermalPowerPlant"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#GaseousPollutant -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#GaseousPollutant -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#GaseousPollutant">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PrimaryPollutant"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#GaseousPollutant">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PrimaryPollutant"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Hydrocarbon -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Hydrocarbon -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Hydrocarbon">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#SecondaryPollutant"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Hydrocarbon">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#SecondaryPollutant"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Contributor"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Contributor"/>
         <rdfs:comment>Represents concepts which indirectly contribute to pollution of a place. These do not directly represent pollution but have properties which can affect the pollution, for example by changing the concentration of pollutants at a spatio-temporal point.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#MeteorologicalCharacterstic -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#MeteorologicalCharacterstic -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#MeteorologicalCharacterstic">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#MeteorologicalCharacterstic">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Observation -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Observation -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Observation">
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Observation">
         <cpannotationschema:reengineeredFrom>Observation ODP - http://ontologydesignpatterns.org/wiki/Submissions:Observation</cpannotationschema:reengineeredFrom>
         <rdfs:comment>Observation represents a spatio-temporal observation of pollutants under time and place parameters.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#OxideOfCarbon -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#OxideOfCarbon -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#OxideOfCarbon">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#GaseousPollutant"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#OxideOfCarbon">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#GaseousPollutant"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#OxideOfNitrogen -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#OxideOfNitrogen -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#OxideOfNitrogen">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#GaseousPollutant"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#OxideOfNitrogen">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#GaseousPollutant"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#OxideOfSulphur -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#OxideOfSulphur -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#OxideOfSulphur">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#GaseousPollutant"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#OxideOfSulphur">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#GaseousPollutant"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ParticulateMatter -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ParticulateMatter -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ParticulateMatter">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PrimaryPollutant"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ParticulateMatter">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PrimaryPollutant"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Pollutant -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Pollutant -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Pollutant">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#DirectContributor"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Pollutant">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#DirectContributor"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasObservation"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Observation"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasObservation"/>
+                <owl:allValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Observation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasPrescribedStandard"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PrescribedStandardForPollutant"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasPrescribedStandard"/>
+                <owl:allValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PrescribedStandardForPollutant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Represents various pollutants which contaminate the environment and directly represnt/contribute to pollution. Additionally a carrier&apos;s trajecectory point may pick up pollutants from a spatio-temporal point, in which case, it is represented by the sub-property carriesPollutant.</rdfs:comment>
@@ -2166,39 +2166,39 @@
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PollutantGenerator -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PollutantGenerator -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PollutantGenerator">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#DirectContributor"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PollutantGenerator">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#DirectContributor"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PowerPlant -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PowerPlant -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PowerPlant">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PollutantGenerator"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PowerPlant">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PollutantGenerator"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PrescribedStandardForPollutant -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PrescribedStandardForPollutant -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PrescribedStandardForPollutant">
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PrescribedStandardForPollutant">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasObservation"/>
-                <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Observation"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasObservation"/>
+                <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Observation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasPrescribedStandard"/>
+                        <owl:inverseOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasPrescribedStandard"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Pollutant"/>
+                <owl:allValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Pollutant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <cpannotationschema:reengineeredFrom>Stub Metapattern - http://ontologydesignpatterns.org/wiki/Submissions:Stub_Metapattern</cpannotationschema:reengineeredFrom>
@@ -2206,76 +2206,76 @@
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PrimaryPollutant -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PrimaryPollutant -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PrimaryPollutant">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Pollutant"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PrimaryPollutant">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Pollutant"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#SecondaryPollutant -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#SecondaryPollutant -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#SecondaryPollutant">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Pollutant"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#SecondaryPollutant">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Pollutant"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#StartingPoint -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#StartingPoint -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#StartingPoint">
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#StartingPoint">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+                    <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
                                 <owl:onProperty>
                                     <rdf:Description>
-                                        <owl:inverseOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#endsAt"/>
+                                        <owl:inverseOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#endsAt"/>
                                     </rdf:Description>
                                 </owl:onProperty>
-                                <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment"/>
+                                <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ThermalPowerPlant -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ThermalPowerPlant -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#ThermalPowerPlant">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#PowerPlant"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#ThermalPowerPlant">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#PowerPlant"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Trajectory -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Trajectory -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Trajectory">
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Trajectory">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasSegment"/>
-                <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasSegment"/>
+                <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasPoint"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasPoint"/>
+                <owl:allValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasSegment"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasSegment"/>
+                <owl:allValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
@@ -2284,23 +2284,23 @@
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint">
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasPoint"/>
+                        <owl:inverseOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasPoint"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Trajectory"/>
+                <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Trajectory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#nextPoint"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#nextPoint"/>
+                <owl:allValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
@@ -2309,41 +2309,41 @@
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment">
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#endsAt"/>
-                <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#endsAt"/>
+                <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#startsFrom"/>
-                <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#startsFrom"/>
+                <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasSegment"/>
+                        <owl:inverseOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasSegment"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Trajectory"/>
+                <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Trajectory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#endsAt"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#endsAt"/>
+                <owl:allValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#startsFrom"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#startsFrom"/>
+                <owl:allValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <cpannotationschema:reengineeredFrom>Trajectory ODP - http://ontologydesignpatterns.org/wiki/Submissions:Trajectory</cpannotationschema:reengineeredFrom>
@@ -2352,18 +2352,18 @@
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#WasteBurning -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#WasteBurning -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#WasteBurning">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Combustion"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#WasteBurning">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Combustion"/>
     </owl:Class>
     
 
 
-    <!-- https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#WindCharacterstic -->
+    <!-- https://saqi-er24.netlify.app/saqiOntologyPollutionModule#WindCharacterstic -->
 
-    <owl:Class rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#WindCharacterstic">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#MeteorologicalCharacterstic"/>
+    <owl:Class rdf:about="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#WindCharacterstic">
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#MeteorologicalCharacterstic"/>
     </owl:Class>
     
 
@@ -2383,14 +2383,14 @@
         <rdfs:subClassOf rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasContributor"/>
-                <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Contributor"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasContributor"/>
+                <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Contributor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasContributor"/>
-                <owl:allValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Contributor"/>
+                <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasContributor"/>
+                <owl:allValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Contributor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2407,7 +2407,7 @@
     <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure -->
 
     <owl:Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor"/>
     </owl:Class>
     
 
@@ -2415,7 +2415,7 @@
     <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover -->
 
     <owl:Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor"/>
     </owl:Class>
     
 
@@ -2423,7 +2423,7 @@
     <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature -->
 
     <owl:Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor"/>
     </owl:Class>
     
 
@@ -2439,7 +2439,7 @@
     <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity -->
 
     <owl:Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor"/>
     </owl:Class>
     
 
@@ -2455,7 +2455,7 @@
     <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation -->
 
     <owl:Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor"/>
     </owl:Class>
     
 
@@ -2463,7 +2463,7 @@
     <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance -->
 
     <owl:Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor"/>
     </owl:Class>
     
 
@@ -2471,7 +2471,7 @@
     <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature -->
 
     <owl:Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor"/>
     </owl:Class>
     
 
@@ -2512,7 +2512,7 @@
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor"/>
         <rdfs:comment xml:lang="en">One-word description of the observed weather condition</rdfs:comment>
     </owl:Class>
     
@@ -2527,7 +2527,7 @@
     <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind -->
 
     <owl:Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind">
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#IndirectContributor"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#IndirectContributor"/>
     </owl:Class>
     
 
@@ -6587,7 +6587,7 @@ Open-ended date ranges can be written with &quot;..&quot; in place of the end da
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/valueName">
         <rdfs:label>valueName</rdfs:label>
-        <rdfs:comment>Indicates the name of the PropertyValueSpecification to be used in URL templates and form encoding in a manner analogous to HTML&apos;s input@name.</rdfs:comment>
+        <rdfs:comment>Indicates the name of the PropertyValueSpecification to be used in URL templates and form encoding in a manner analogous to HTML&apos;s inp***@name.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/valuePattern">
         <rdfs:label>valuePattern</rdfs:label>
@@ -6739,29 +6739,29 @@ Open-ended date ranges can be written with &quot;..&quot; in place of the end da
      -->
 
     <owl:Restriction>
-        <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#endsAt"/>
-        <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment"/>
+        <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#endsAt"/>
+        <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasPoint"/>
-        <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Trajectory"/>
+        <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasPoint"/>
+        <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Trajectory"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#hasSegment"/>
-        <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment"/>
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#Trajectory"/>
+        <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#hasSegment"/>
+        <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#Trajectory"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#nextPoint"/>
-        <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
+        <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#nextPoint"/>
+        <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#startsFrom"/>
-        <owl:someValuesFrom rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectoryPoint"/>
-        <rdfs:subClassOf rdf:resource="https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule#TrajectorySegment"/>
+        <owl:onProperty rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#startsFrom"/>
+        <owl:someValuesFrom rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectoryPoint"/>
+        <rdfs:subClassOf rdf:resource="https://saqi-er24.netlify.app/saqiOntologyPollutionModule#TrajectorySegment"/>
     </owl:Restriction>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>

@@ -2,8 +2,8 @@ export const aqi_sparql_avg = async function (location, fromDate, toDate) {
     return `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+
+PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
 
@@ -36,7 +36,7 @@ export const aqi_sparql_day = async function (location, fromDate, toDate) {
     return `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
 
@@ -85,7 +85,7 @@ export const get_perception_literacy = async function () {
     return `
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+    PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     PREFIX sosa: <http://www.w3.org/ns/sosa/>
     ?person rdf:type owl:NamedIndividual ;
@@ -102,10 +102,10 @@ export const get_grouped_perception = async function () {
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  
+    PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-    PREFIX ns0: <https://kracr.iiitd.edu.in/ontology/>
+    
     SELECT  ?cohort ?rating (COUNT( ?rating) as ?count_rating) WHERE {
       ?person rdf:type owl:NamedIndividual ;
       ns0:SAQIOntologyhasIndividualPerception ?perception ;

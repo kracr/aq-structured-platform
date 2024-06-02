@@ -41,16 +41,12 @@ introduction_text="""
     <h1>SAQI</h1>
     <h2>Ontology to model Social Air Quality</h2>
     <div>
-        <dt>Latest version: <a href="https://kracr.iiitd.edu.in/ontology/saqi">kracr.iiitd.edu.in/ontology/saqi</a></dt>
+        <dt>Latest version: <a href="https://saqi-er24.netlify.app/saqi">https://saqi-er24.netlify.app/saqi</a></dt>
         <dt>Revision: 0.2</dt>
-        <dt>Author: Saad Ahmad and Sudhir Attri <a href="https://kracr.iiitd.edu.in/">(kracr Lab, IIITD, Delhi)</a>
+        <dt>Author: XXXX XXXX and XXXX XXXXX <a href="https://XXXX.XXXXX.XXX.XX/">(XXXXX XXXX, XXXXX, XXXXX)</a>
         </dt>
         <dt>Contributors:
-        <dd>Ruchi Dwivedi <a href="https://aud.ac.in/">(Dr. B. R. Ambedkar University, Delhi)</a></dd>
-        <dd>Muzamil Yaqoob <a href="https://home.iitd.ac.in/">(IIT Delhi, Delhi)</a></dd>
-        <dd>AasimKhan, Praveen Priyadarshi, and Raghava Mutharaju <a href="https://www.iiitd.ac.in/">(IIIT-Delhi,
-            Delhi, India)</a></dd>
-        </dt>
+        <dd>XXXXX XXXXXXX <a href="https://XXX.XX.XX/">(XXXXX)</a></dd>
         <dt>Resource type:Ontology, Knowledge Graph, SAQI Application</dt>
         
         <dt>Download serialization:
@@ -62,7 +58,7 @@ introduction_text="""
         <dt>Visualization: <a href="#visualization"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl"></a></dt>
 
         <dt>DOI : <a href="https://doi.org/10.5281/zenodo.10300235">dx.doi.org/10.5281/zenodo.7448007</a></dt>
-        <dt>URL : <a href="https://github.com/kracr/aq-structured-platform">github.com/kracr/aq-structured-platform</a>
+        <dt>URL : <a href="https://github.com/XXXX/XX-XXXXXXXX-XXXXXXX">github.com/XXXX/XX-XXXXXXXX-XXXXXXX</a>
         <hr>
         </dt>
     </div>
@@ -121,10 +117,10 @@ introduction_text="""
               sensors and the ethnographic survey data. SAQI is built using our
               Pollution ontology design pattern<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref">.
                 SAQI
-                is available at <a href="https://github.com/kracr/aq-structured-platform"
-                  class="uri">https://github.com/kracr/aq-structured-platform</a> and the
-                documentation is at <a href="https://kracr.iiitd.edu.in/ontology/saqi"
-                  class="uri">https://kracr.iiitd.edu.in/ontology/saqi</a>.</p>
+                is available at <a href="https://github.com/XXXX/XX-XXXXXXXX-XXXXXXX"
+                  class="uri">https://github.com/XXXX/XX-XXXXXXXX-XXXXXXX</a> and the
+                documentation is at <a href="https://saqi-er24.netlify.app/saqi"
+                  class="uri">https://saqi-er24.netlify.app/saqi</a>.</p>
           </li>
           <li>
             <p>An SAQI KG that integrates the air pollution data from local and
@@ -132,13 +128,13 @@ introduction_text="""
               survey data into a KG. These mappings, along with the SHACL constraints and SPARQL queries on
               the KG, are available at <a href="https://doi.org/10.5281/zenodo.10300235"
                 class="uri">https://doi.org/10.5281/zenodo.10300235</a>. The SPARQL
-              endpoint over the KG is available at <a href="https://kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query"
-                class="uri">https://kracr.iiitd.edu.in/sparql/#/dataset/aq-store/query</a>.</p>
+              endpoint over the KG is available at <a href="https://saqi-er24.netlify.app/sparql"#/dataset/aq-store/query"
+                class="uri">https://https://saqi-er24.netlify.app/saqi/sparql/#/dataset/aq-store/query</a>.</p>
           </li>
           <li>
             <p>An SAQI App that is built using the KG to encourage community
-              engagement and response. This is available at <a href="https://kracr.iiitd.edu.in/saqi-app/"
-                class="uri">https://kracr.iiitd.edu.in/saqi-app/</a>.</p>
+              engagement and response. This is available at <a href="https://saqi-er24.netlify.app/"
+                class="uri">https://saqi-er24.netlify.app/</a>.</p>
           </li>
           <li>
             <p>The two datasets – ethnographic survey questionnaire and

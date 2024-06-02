@@ -5,7 +5,7 @@ export const SpatialLocation = writable('JarodhaKalan')
 export const SocialCohort = writable('Academy')
 export const IsMuted = writable(true)
 export const IsSparql = writable(true)
-export const SPARQL_ENDPOINT = "https://kracr.iiitd.edu.in/sparql"
+export const SPARQL_ENDPOINT = "https://xxxxx.xxxxx.xxx.xx/sparql"
 
 const eng = {
     NextPage: "Go to next page",

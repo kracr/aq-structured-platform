@@ -1,7 +1,7 @@
   PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
   PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-  PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-  PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+
+  PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
   PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   SELECT ?pm10conc ?time ?placeName WHERE {
     ?pm a saqi:ParticulateMatter;
@@ -14,8 +14,8 @@
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+
+PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT (AVG(?pm10conc) AS ?pm_10) ?placeName WHERE {
   ?pm a saqi:ParticulateMatter;
@@ -39,8 +39,8 @@ DELETE WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+
+PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 SELECT ?obs ?obj ?time ?place WHERE {
@@ -53,8 +53,8 @@ SELECT ?obs ?obj ?time ?place WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+
+PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT (AVG(?pm10Instance) AS ?pm_10) (AVG(?pm25Instance) AS ?pm_25) ?source WHERE {
   ?pm a saqi:ParticulateMatter;	
@@ -75,10 +75,10 @@ LIMIT 10000
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+
+PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX ns0: <https://kracr.iiitd.edu.in/ontology/>
+
 SELECT  ?cohort ?rating (COUNT( ?rating) as ?count_rating) WHERE {
   ?person rdf:type saqi:Person ;
 

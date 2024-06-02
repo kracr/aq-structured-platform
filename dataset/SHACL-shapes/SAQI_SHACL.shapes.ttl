@@ -1,8 +1,8 @@
-# baseURI: https://kracr.iiitd.edu.in/ontology/SAQIOntologyPollutionModule
+# baseURI: https://saqi-er24.netlify.app/saqiOntologyPollutionModule
 # imports: http://datashapes.org/dash
 # prefix: saqi
 
-@prefix saqi: <https://w3id.org/saqi#> .
+@prefix saqi: <https://saqi-er24.netlify.app/saqi#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix sosa: <http://www.w3.org/ns/sosa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -11,7 +11,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/saqi#>
+<https://saqi-er24.netlify.app/saqi#>
   rdf:type owl:Ontology ;
   owl:imports <http://datashapes.org/dash> ;
   owl:versionInfo "Created with TopBraid Composer" ;

@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/saqi#> .
+@prefix : <https://saqi-er24.netlify.app/saqi#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -11,8 +11,8 @@
                          owl:imports <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl> ,
                                      <http://www.w3.org/ns/sosa/> ;
                          <http://purl.org/dc/elements/1.1/title> "SAQI : an ontology to model Social Air Quality" ;
-                         <http://purl.org/dc/terms/contributor> "Saad Ahmad, Sudhir Attri, Raghava Mutharaju; (https://kracr.iiitd.edu.in/)" ;
-                         <http://purl.org/dc/terms/creator> "Saad Ahmad, Sudhir Attri, Raghava Mutharaju" ;
+                         <http://purl.org/dc/terms/contributor> "XXXX XXXXX, XXXXXX XXXXX, XXXXXXX XXXXXXXXX; (https://XXXXX.XXXXX.XXX.XX/)" ;
+                         <http://purl.org/dc/terms/creator> "XXXX XXXXX, XXXXXX XXXXX, XXXXXXX XXXXXXXXX" ;
                          <http://purl.org/dc/terms/license> "https://www.apache.org/licenses/LICENSE-2.0" ;
                          rdfs:label "Ontology to model Social Air Quality" ;
                          rdfs:seeAlso "https://w3id.org/saqi" ;
@@ -614,7 +614,7 @@ above the local reference ellipsoid).""" ;
                                   rdfs:subPropertyOf <https://schema.org/location> .
 
 
-###  https://w3id.org/saqi#Authors
+###  https://saqi-er24.netlify.app/saqi#Authors
 :Authors rdf:type owl:AnnotationProperty .
 
 
@@ -641,7 +641,7 @@ above the local reference ellipsoid).""" ;
                                          rdfs:range <http://www.w3.org/ns/sosa/Sensor> .
 
 
-###  https://w3id.org/saqi#actsFor
+###  https://saqi-er24.netlify.app/saqi#actsFor
 :actsFor rdf:type owl:ObjectProperty ;
          rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
          rdfs:range :Institution ;
@@ -649,7 +649,7 @@ above the local reference ellipsoid).""" ;
          rdfs:label "acts for" .
 
 
-###  https://w3id.org/saqi#atPlace
+###  https://saqi-er24.netlify.app/saqi#atPlace
 :atPlace rdf:type owl:ObjectProperty ;
          owl:equivalentProperty :livesIn ;
          rdf:type owl:FunctionalProperty ;
@@ -661,7 +661,7 @@ above the local reference ellipsoid).""" ;
          rdfs:label "at place" .
 
 
-###  https://w3id.org/saqi#carriesPollutant
+###  https://saqi-er24.netlify.app/saqi#carriesPollutant
 :carriesPollutant rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
                   rdfs:domain :Carrier ;
@@ -671,7 +671,7 @@ above the local reference ellipsoid).""" ;
                   rdfs:label "carried pollutant" .
 
 
-###  https://w3id.org/saqi#endsAt
+###  https://saqi-er24.netlify.app/saqi#endsAt
 :endsAt rdf:type owl:ObjectProperty ,
                  owl:FunctionalProperty ;
         rdfs:domain :TrajectorySegment ;
@@ -681,7 +681,7 @@ above the local reference ellipsoid).""" ;
         rdfs:label "ends at" .
 
 
-###  https://w3id.org/saqi#givesInformationTo
+###  https://saqi-er24.netlify.app/saqi#givesInformationTo
 :givesInformationTo rdf:type owl:ObjectProperty ;
                     rdfs:domain [ rdf:type owl:Class ;
                                   owl:unionOf ( :Government
@@ -693,7 +693,7 @@ above the local reference ellipsoid).""" ;
                     rdfs:label "gives information to" .
 
 
-###  https://w3id.org/saqi#hasAirPollutionLiteracy
+###  https://saqi-er24.netlify.app/saqi#hasAirPollutionLiteracy
 :hasAirPollutionLiteracy rdf:type owl:ObjectProperty ;
                          rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
                          rdfs:range :AirPollutionLiteracy ;
@@ -701,7 +701,7 @@ above the local reference ellipsoid).""" ;
                          rdfs:label "has air pollution literacy" .
 
 
-###  https://w3id.org/saqi#hasContributor
+###  https://saqi-er24.netlify.app/saqi#hasContributor
 :hasContributor rdf:type owl:ObjectProperty ;
                 rdfs:domain :Pollution ;
                 rdfs:range :Contributor ;
@@ -709,7 +709,7 @@ above the local reference ellipsoid).""" ;
                 rdfs:label "has contributor" .
 
 
-###  https://w3id.org/saqi#hasDemographic
+###  https://saqi-er24.netlify.app/saqi#hasDemographic
 :hasDemographic rdf:type owl:ObjectProperty ;
                 rdfs:domain <https://schema.org/Place> ;
                 rdfs:range :Demographic ;
@@ -717,7 +717,7 @@ above the local reference ellipsoid).""" ;
                 rdfs:label "has demographic" .
 
 
-###  https://w3id.org/saqi#hasGovernment
+###  https://saqi-er24.netlify.app/saqi#hasGovernment
 :hasGovernment rdf:type owl:ObjectProperty ;
                rdfs:domain <https://schema.org/Place> ;
                rdfs:range :Government ;
@@ -725,7 +725,7 @@ above the local reference ellipsoid).""" ;
                rdfs:label "has governent" .
 
 
-###  https://w3id.org/saqi#hasInstitutionAgainstAirPollution
+###  https://saqi-er24.netlify.app/saqi#hasInstitutionAgainstAirPollution
 :hasInstitutionAgainstAirPollution rdf:type owl:ObjectProperty ;
                                    rdfs:domain <https://schema.org/Place> ;
                                    rdfs:range :InstitutionAgainstAirPollution ;
@@ -733,7 +733,7 @@ above the local reference ellipsoid).""" ;
                                    rdfs:label "has instituion against air pollution" .
 
 
-###  https://w3id.org/saqi#hasPerception
+###  https://saqi-er24.netlify.app/saqi#hasPerception
 :hasPerception rdf:type owl:ObjectProperty ;
                rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
                rdfs:range :Perception ;
@@ -741,7 +741,7 @@ above the local reference ellipsoid).""" ;
                rdfs:label "has perception" .
 
 
-###  https://w3id.org/saqi#hasPoint
+###  https://saqi-er24.netlify.app/saqi#hasPoint
 :hasPoint rdf:type owl:ObjectProperty ;
           rdfs:domain :Trajectory ;
           rdfs:range :TrajectoryPoint ;
@@ -755,14 +755,14 @@ above the local reference ellipsoid).""" ;
           rdfs:comment "Relating the trajectory to each of its points." .
 
 
-###  https://w3id.org/saqi#hasPrescribedStandard
+###  https://saqi-er24.netlify.app/saqi#hasPrescribedStandard
 :hasPrescribedStandard rdf:type owl:ObjectProperty ;
                        rdfs:domain :Pollutant ,
                                    :PrescribedStandardForPollutant ;
                        rdfs:range :PrescribedStandardForPollutant .
 
 
-###  https://w3id.org/saqi#hasSegment
+###  https://saqi-er24.netlify.app/saqi#hasSegment
 :hasSegment rdf:type owl:ObjectProperty ;
             rdfs:domain :Trajectory ;
             rdfs:range :TrajectorySegment ;
@@ -770,7 +770,7 @@ above the local reference ellipsoid).""" ;
             rdfs:comment "Relating the trajectory to each of its segments." .
 
 
-###  https://w3id.org/saqi#hasTrajectory
+###  https://saqi-er24.netlify.app/saqi#hasTrajectory
 :hasTrajectory rdf:type owl:ObjectProperty ;
                rdfs:domain :Carrier ;
                rdfs:range :Trajectory ;
@@ -778,7 +778,7 @@ above the local reference ellipsoid).""" ;
                rdfs:comment "Anything that has a trajectory can use this property to connect it to the trajectory instance" .
 
 
-###  https://w3id.org/saqi#isPartOfDemographic
+###  https://saqi-er24.netlify.app/saqi#isPartOfDemographic
 :isPartOfDemographic rdf:type owl:ObjectProperty ;
                      rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
                      rdfs:range :Demographic ;
@@ -786,7 +786,7 @@ above the local reference ellipsoid).""" ;
                      rdfs:label "is part of demographic" .
 
 
-###  https://w3id.org/saqi#livesIn
+###  https://saqi-er24.netlify.app/saqi#livesIn
 :livesIn rdf:type owl:ObjectProperty ;
          rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
          rdfs:range <https://schema.org/Place> ;
@@ -794,7 +794,7 @@ above the local reference ellipsoid).""" ;
          rdfs:label "lives in" .
 
 
-###  https://w3id.org/saqi#nearby
+###  https://saqi-er24.netlify.app/saqi#nearby
 :nearby rdf:type owl:ObjectProperty ,
                  owl:SymmetricProperty ;
         rdfs:domain [ rdf:type owl:Class ;
@@ -807,7 +807,7 @@ above the local reference ellipsoid).""" ;
         rdfs:label "nearby" .
 
 
-###  https://w3id.org/saqi#nextPoint
+###  https://saqi-er24.netlify.app/saqi#nextPoint
 :nextPoint rdf:type owl:ObjectProperty ;
            rdfs:domain :TrajectoryPoint ;
            rdfs:range :TrajectoryPoint ;
@@ -815,7 +815,7 @@ above the local reference ellipsoid).""" ;
            rdfs:comment "Relates one point to the immediately following point in the sequence." .
 
 
-###  https://w3id.org/saqi#responsibleForPollution
+###  https://saqi-er24.netlify.app/saqi#responsibleForPollution
 :responsibleForPollution rdf:type owl:ObjectProperty ;
                          rdfs:domain :Perception ;
                          rdfs:range :Government ;
@@ -823,7 +823,7 @@ above the local reference ellipsoid).""" ;
                          rdfs:label "responsible for pollution" .
 
 
-###  https://w3id.org/saqi#sourceResponsibleForLocalPollution
+###  https://saqi-er24.netlify.app/saqi#sourceResponsibleForLocalPollution
 :sourceResponsibleForLocalPollution rdf:type owl:ObjectProperty ;
                                     rdfs:domain :Perception ;
                                     rdfs:range :PollutantGenerator ;
@@ -831,7 +831,7 @@ above the local reference ellipsoid).""" ;
                                     rdfs:label "source responsible for local pollution" .
 
 
-###  https://w3id.org/saqi#startsFrom
+###  https://saqi-er24.netlify.app/saqi#startsFrom
 :startsFrom rdf:type owl:ObjectProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :TrajectorySegment ;
@@ -861,7 +861,7 @@ above the local reference ellipsoid).""" ;
 <http://www.w3.org/ns/sosa/resultTime> rdfs:domain <http://www.w3.org/ns/sosa/Observation> .
 
 
-###  https://w3id.org/saqi#airPollutionIssuesRaised
+###  https://saqi-er24.netlify.app/saqi#airPollutionIssuesRaised
 :airPollutionIssuesRaised rdf:type owl:DatatypeProperty ;
                           rdfs:domain :Perception ;
                           rdfs:range rdfs:Literal ;
@@ -869,21 +869,21 @@ above the local reference ellipsoid).""" ;
                           rdfs:label "air pollution issues raised" .
 
 
-###  https://w3id.org/saqi#airQualityImproved
+###  https://saqi-er24.netlify.app/saqi#airQualityImproved
 :airQualityImproved rdf:type owl:DatatypeProperty ;
                     rdfs:domain :Perception ;
                     rdfs:comment "Improvement in air quality over time" ;
                     rdfs:label "air quality improved" .
 
 
-###  https://w3id.org/saqi#ammoniaConcentration
+###  https://saqi-er24.netlify.app/saqi#ammoniaConcentration
 :ammoniaConcentration rdf:type owl:DatatypeProperty ;
                       rdfs:domain :GaseousPollutant ;
                       rdfs:range xsd:float ;
                       rdfs:label "ammonia concentration" .
 
 
-###  https://w3id.org/saqi#atHeight
+###  https://saqi-er24.netlify.app/saqi#atHeight
 :atHeight rdf:type owl:DatatypeProperty ;
           rdfs:domain :TrajectoryPoint ;
           rdfs:range xsd:float ;
@@ -891,7 +891,7 @@ above the local reference ellipsoid).""" ;
           rdfs:label "at height" .
 
 
-###  https://w3id.org/saqi#bPressure
+###  https://saqi-er24.netlify.app/saqi#bPressure
 :bPressure rdf:type owl:DatatypeProperty ;
            rdfs:domain :AtmosphericPressure ;
            rdfs:range xsd:float ;
@@ -899,7 +899,7 @@ above the local reference ellipsoid).""" ;
            rdfs:label "bPressure" .
 
 
-###  https://w3id.org/saqi#benzeneConcentration
+###  https://saqi-er24.netlify.app/saqi#benzeneConcentration
 :benzeneConcentration rdf:type owl:DatatypeProperty ;
                       rdfs:domain :BenzeneConcentration ;
                       rdfs:range xsd:float ;
@@ -907,14 +907,14 @@ above the local reference ellipsoid).""" ;
                       rdfs:label "benzene concentration" .
 
 
-###  https://w3id.org/saqi#carbonMonoOxideConcentration
+###  https://saqi-er24.netlify.app/saqi#carbonMonoOxideConcentration
 :carbonMonoOxideConcentration rdf:type owl:DatatypeProperty ;
                               rdfs:range xsd:float ;
                               rdfs:comment "carbon monooxide concentration measured in microgram per m3." ;
                               rdfs:label "carbon monooxide concentration" .
 
 
-###  https://w3id.org/saqi#comparisionOfLocalPollution
+###  https://saqi-er24.netlify.app/saqi#comparisionOfLocalPollution
 :comparisionOfLocalPollution rdf:type owl:DatatypeProperty ;
                              rdfs:domain :Perception ;
                              rdfs:range rdfs:Literal ;
@@ -922,88 +922,88 @@ above the local reference ellipsoid).""" ;
                              rdfs:label "comparision of local pollution" .
 
 
-###  https://w3id.org/saqi#frequencyToCheckAQI
+###  https://saqi-er24.netlify.app/saqi#frequencyToCheckAQI
 :frequencyToCheckAQI rdf:type owl:DatatypeProperty ;
                      rdfs:domain :AirPollutionLiteracy ;
                      rdfs:range rdfs:Literal .
 
 
-###  https://w3id.org/saqi#hasAQIColorLiteracy
+###  https://saqi-er24.netlify.app/saqi#hasAQIColorLiteracy
 :hasAQIColorLiteracy rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf :hasAQILiteracy .
 
 
-###  https://w3id.org/saqi#hasAQILiteracy
+###  https://saqi-er24.netlify.app/saqi#hasAQILiteracy
 :hasAQILiteracy rdf:type owl:DatatypeProperty ;
                 rdfs:domain :AirPollutionLiteracy ;
                 rdfs:range rdfs:Literal .
 
 
-###  https://w3id.org/saqi#hasAirPollutionGraphicLiteracy
+###  https://saqi-er24.netlify.app/saqi#hasAirPollutionGraphicLiteracy
 :hasAirPollutionGraphicLiteracy rdf:type owl:DatatypeProperty ;
                                 rdfs:domain :AirPollutionLiteracy ;
                                 rdfs:range rdfs:Literal .
 
 
-###  https://w3id.org/saqi#hasName
+###  https://saqi-er24.netlify.app/saqi#hasName
 :hasName rdf:type owl:DatatypeProperty ;
          rdfs:domain <https://schema.org/Place> ;
          rdfs:range rdfs:Literal .
 
 
-###  https://w3id.org/saqi#hasParticulateMatterLiteracy
+###  https://saqi-er24.netlify.app/saqi#hasParticulateMatterLiteracy
 :hasParticulateMatterLiteracy rdf:type owl:DatatypeProperty ;
                               rdfs:domain :AirPollutionLiteracy ;
                               rdfs:range rdfs:Literal .
 
 
-###  https://w3id.org/saqi#hasPrescribedStandard
+###  https://saqi-er24.netlify.app/saqi#hasPrescribedStandard
 :hasPrescribedStandard rdf:type owl:DatatypeProperty ;
                        rdfs:domain :Pollutant ;
                        rdfs:range rdfs:Literal .
 
 
-###  https://w3id.org/saqi#nitrogenDiOxideConcentration
+###  https://saqi-er24.netlify.app/saqi#nitrogenDiOxideConcentration
 :nitrogenDiOxideConcentration rdf:type owl:DatatypeProperty ;
                               rdfs:domain :NitrogenDiOxideConcentration ;
                               rdfs:range xsd:float .
 
 
-###  https://w3id.org/saqi#nitrogenMonoOxideConcentration
+###  https://saqi-er24.netlify.app/saqi#nitrogenMonoOxideConcentration
 :nitrogenMonoOxideConcentration rdf:type owl:DatatypeProperty ;
                                 rdfs:domain :NitrogenMonoOxideConcentration ;
                                 rdfs:range xsd:float ;
                                 rdfs:label "nitrogen monooxide concentration" .
 
 
-###  https://w3id.org/saqi#nitrogenOxideConcentration
+###  https://saqi-er24.netlify.app/saqi#nitrogenOxideConcentration
 :nitrogenOxideConcentration rdf:type owl:DatatypeProperty ;
                             rdfs:domain :NitrogenOxideConcentration ;
                             rdfs:range xsd:float ;
                             rdfs:label "nitrogen oxide concentration" .
 
 
-###  https://w3id.org/saqi#ozoneConcentration
+###  https://saqi-er24.netlify.app/saqi#ozoneConcentration
 :ozoneConcentration rdf:type owl:DatatypeProperty ;
                     rdfs:domain :OzoneConcentration ;
                     rdfs:range xsd:float .
 
 
-###  https://w3id.org/saqi#particulateMatter10Concentration
+###  https://saqi-er24.netlify.app/saqi#particulateMatter10Concentration
 :particulateMatter10Concentration rdf:type owl:DatatypeProperty ;
                                   rdfs:domain :ParticulateMatter10Concentration ;
                                   rdfs:range xsd:float ;
                                   rdfs:isDefinedBy "particulate matter 10 concentration" .
 
 
-###  https://w3id.org/saqi#particulateMatter2_5Concentration
+###  https://saqi-er24.netlify.app/saqi#particulateMatter2_5Concentration
 :particulateMatter2_5Concentration rdf:type owl:DatatypeProperty ;
                                    rdfs:domain :ParticulateMatter2_5Concentration ;
                                    rdfs:range xsd:float ;
                                    rdfs:label "particulate matter 2.5 Concentration" .
 
 
-###  https://w3id.org/saqi#peopleVotedOnAirPollutionIssues
+###  https://saqi-er24.netlify.app/saqi#peopleVotedOnAirPollutionIssues
 :peopleVotedOnAirPollutionIssues rdf:type owl:DatatypeProperty ;
                                  rdfs:domain :Perception ;
                                  rdfs:range rdfs:Literal ;
@@ -1011,34 +1011,34 @@ above the local reference ellipsoid).""" ;
                                  rdfs:label "people voted on air pollution issues" .
 
 
-###  https://w3id.org/saqi#plantCapacity
+###  https://saqi-er24.netlify.app/saqi#plantCapacity
 :plantCapacity rdf:type owl:DatatypeProperty ;
                rdfs:domain :PlantCapacity ;
                rdfs:range rdfs:Literal ;
                rdfs:label "plant capacity" .
 
 
-###  https://w3id.org/saqi#precipitation
+###  https://saqi-er24.netlify.app/saqi#precipitation
 :precipitation rdf:type owl:DatatypeProperty ;
                rdfs:domain :Precipitation ;
                rdfs:range xsd:float .
 
 
-###  https://w3id.org/saqi#ratingForLocalAirQuality
+###  https://saqi-er24.netlify.app/saqi#ratingForLocalAirQuality
 :ratingForLocalAirQuality rdf:type owl:DatatypeProperty ;
                           rdfs:domain :Perception ;
                           rdfs:range xsd:decimal ;
                           rdfs:label "rating for local air quality (perception)" .
 
 
-###  https://w3id.org/saqi#relativeHumidity
+###  https://saqi-er24.netlify.app/saqi#relativeHumidity
 :relativeHumidity rdf:type owl:DatatypeProperty ;
                   rdfs:domain :RelativeHumidity ;
                   rdfs:range xsd:float ;
                   rdfs:label "relative humidity" .
 
 
-###  https://w3id.org/saqi#satisfiedWithPerformance
+###  https://saqi-er24.netlify.app/saqi#satisfiedWithPerformance
 :satisfiedWithPerformance rdf:type owl:DatatypeProperty ;
                           rdfs:domain :Perception ;
                           rdfs:range rdfs:Literal ;
@@ -1046,66 +1046,66 @@ above the local reference ellipsoid).""" ;
                           rdfs:label "satisfied with performance" .
 
 
-###  https://w3id.org/saqi#solarRadiation
+###  https://saqi-er24.netlify.app/saqi#solarRadiation
 :solarRadiation rdf:type owl:DatatypeProperty ;
                 rdfs:domain :SolarRadiation ;
                 rdfs:range xsd:float ;
                 rdfs:label "solar radiation" .
 
 
-###  https://w3id.org/saqi#sulphurDioxideConcentration
+###  https://saqi-er24.netlify.app/saqi#sulphurDioxideConcentration
 :sulphurDioxideConcentration rdf:type owl:DatatypeProperty ;
                              rdfs:domain :SulphurDioxideConcentration ;
                              rdfs:range xsd:float ;
                              rdfs:label "sulphur dioxide concentration" .
 
 
-###  https://w3id.org/saqi#tolueneConcentration
+###  https://saqi-er24.netlify.app/saqi#tolueneConcentration
 :tolueneConcentration rdf:type owl:DatatypeProperty ;
                       rdfs:domain :TolueneConcentration ;
                       rdfs:range xsd:float ;
                       rdfs:label "toluene concentration" .
 
 
-###  https://w3id.org/saqi#totalPopulation
+###  https://saqi-er24.netlify.app/saqi#totalPopulation
 :totalPopulation rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Demographic ;
                  rdfs:range xsd:nonNegativeInteger .
 
 
-###  https://w3id.org/saqi#usesAirPurifier
+###  https://saqi-er24.netlify.app/saqi#usesAirPurifier
 :usesAirPurifier rdf:type owl:DatatypeProperty ;
                  rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
                  rdfs:range rdfs:Literal ;
                  rdfs:label "uses air purifier" .
 
 
-###  https://w3id.org/saqi#wearsMask
+###  https://saqi-er24.netlify.app/saqi#wearsMask
 :wearsMask rdf:type owl:DatatypeProperty ;
            rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
            rdfs:range rdfs:Literal ;
            rdfs:label "wears mask" .
 
 
-###  https://w3id.org/saqi#windDirection
+###  https://saqi-er24.netlify.app/saqi#windDirection
 :windDirection rdf:type owl:DatatypeProperty ;
                rdfs:domain :WindDirection ;
                rdfs:range rdfs:Literal .
 
 
-###  https://w3id.org/saqi#windSpeed
+###  https://saqi-er24.netlify.app/saqi#windSpeed
 :windSpeed rdf:type owl:DatatypeProperty ;
            rdfs:domain :WindSpeed ;
            rdfs:range rdfs:Literal .
 
 
-###  https://w3id.org/saqi#worksFromHome
+###  https://saqi-er24.netlify.app/saqi#worksFromHome
 :worksFromHome rdf:type owl:DatatypeProperty ;
                rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
                rdfs:range rdfs:Literal .
 
 
-###  https://w3id.org/saqi#zipCode
+###  https://saqi-er24.netlify.app/saqi#zipCode
 :zipCode rdf:type owl:DatatypeProperty ;
          rdfs:domain <https://schema.org/Place> ;
          rdfs:range rdfs:Literal .
@@ -1179,7 +1179,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                            rdfs:label "Place" .
 
 
-###  https://w3id.org/saqi#AirPollutionLiteracy
+###  https://saqi-er24.netlify.app/saqi#AirPollutionLiteracy
 :AirPollutionLiteracy rdf:type owl:Class ;
                       rdfs:subClassOf [ rdf:type owl:Restriction ;
                                         owl:onProperty [ owl:inverseOf :hasAirPollutionLiteracy
@@ -1189,41 +1189,41 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                       rdfs:comment "This concept describes the air pollution literacy ofthe people in a locality. We assess this by asking questions18to the people related to their awareness of AQI and air pollution in general. The AirPollutionLiteracy concept has the data properties has AQILiteracy, hasAirPollutionGraphic-Literacy, hasParticulateMatterLiteracy and hasAQIColorLiteracy." .
 
 
-###  https://w3id.org/saqi#AmbientTemperature
+###  https://saqi-er24.netlify.app/saqi#AmbientTemperature
 :AmbientTemperature rdf:type owl:Class ;
                     rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                     rdfs:label "Ambient temprature" .
 
 
-###  https://w3id.org/saqi#AtmosphericPressure
+###  https://saqi-er24.netlify.app/saqi#AtmosphericPressure
 :AtmosphericPressure rdf:type owl:Class ;
                      rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                      rdfs:comment "Atmospheric pressure observed at ground level" ;
                      rdfs:label "Atmospheric pressure" .
 
 
-###  https://w3id.org/saqi#BenzeneConcentration
+###  https://saqi-er24.netlify.app/saqi#BenzeneConcentration
 :BenzeneConcentration rdf:type owl:Class ;
                       rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                       rdfs:comment "Benzene concentration in the air" ;
                       rdfs:label "Benzene concentration" .
 
 
-###  https://w3id.org/saqi#CPCBSensor
+###  https://saqi-er24.netlify.app/saqi#CPCBSensor
 :CPCBSensor rdf:type owl:Class ;
             rdfs:subClassOf :PollutionSensor ;
             rdfs:comment "Sensors maintained by Central Pollution Control Board (CPCB), India" ;
             rdfs:label "CPCB sensor" .
 
 
-###  https://w3id.org/saqi#CarbonMonoOxideConcentration
+###  https://saqi-er24.netlify.app/saqi#CarbonMonoOxideConcentration
 :CarbonMonoOxideConcentration rdf:type owl:Class ;
                               rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                               rdfs:comment "Carbon Monoxide concentration in the air" ;
                               rdfs:label "CarbonMonoOxideConcentration (CO)" .
 
 
-###  https://w3id.org/saqi#Carrier
+###  https://saqi-er24.netlify.app/saqi#Carrier
 :Carrier rdf:type owl:Class ;
          rdfs:subClassOf :IndirectContributor ,
                          [ rdf:type owl:Restriction ;
@@ -1238,28 +1238,28 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                       "This concept is a subclass of the Indirect Contributor concept and represents the air, water, and other kinds of streams flowing into or out of aparticular place. It is linked to theTrajectory concept through the hasTrajectoryproperty. Carriers are generally observed to affect the concentration of pollutants at a particular place and are important in modeling pollutants. To represent the pollutants that might be carried through a trajectory, the Carrier concept is linked to thePollutant concept by the carries Pollutant property." .
 
 
-###  https://w3id.org/saqi#CentralGovernment
+###  https://saqi-er24.netlify.app/saqi#CentralGovernment
 :CentralGovernment rdf:type owl:Class ;
                    rdfs:subClassOf :Government ;
                    rdfs:comment "Government having authority over entire country." ;
                    rdfs:label "Central Government" .
 
 
-###  https://w3id.org/saqi#CoalBasedPowerPlant
+###  https://saqi-er24.netlify.app/saqi#CoalBasedPowerPlant
 :CoalBasedPowerPlant rdf:type owl:Class ;
                      rdfs:subClassOf :ThermalPowerPlant ;
                      rdfs:comment "Thermal power plants using coal as source." ;
                      rdfs:label "Coal based power plant" .
 
 
-###  https://w3id.org/saqi#Combustion
+###  https://saqi-er24.netlify.app/saqi#Combustion
 :Combustion rdf:type owl:Class ;
             rdfs:subClassOf :PollutantGenerator ;
             rdfs:comment "Any combustion event which may lead to pollution; incomplete combustion is responsible for particulate pollutation which is usually carried out to for burning crops and waste." ;
             rdfs:label "Combustion" .
 
 
-###  https://w3id.org/saqi#Contributor
+###  https://saqi-er24.netlify.app/saqi#Contributor
 :Contributor rdf:type owl:Class ;
              rdfs:subClassOf <http://www.w3.org/ns/sosa/FeatureOfInterest> ;
              owl:disjointUnionOf ( :DirectContributor
@@ -1269,14 +1269,14 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
              rdfs:label "Contributor" .
 
 
-###  https://w3id.org/saqi#CropBurning
+###  https://saqi-er24.netlify.app/saqi#CropBurning
 :CropBurning rdf:type owl:Class ;
              rdfs:subClassOf :Combustion ;
              rdfs:comment "Crob burning is usually done to clear the fields after harvest and to dispose lefteover stubble. This process releases particle pollution in the air." ;
              rdfs:label "Crop burning" .
 
 
-###  https://w3id.org/saqi#Demographic
+###  https://saqi-er24.netlify.app/saqi#Demographic
 :Demographic rdf:type owl:Class ;
              owl:disjointUnionOf ( <http://xmlns.com/foaf/0.1/Agent>
                                    <https://schema.org/Organization>
@@ -1289,14 +1289,14 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                           "Will capture things like education level, majority types of jobs" .
 
 
-###  https://w3id.org/saqi#DieselBasedPowerPlant
+###  https://saqi-er24.netlify.app/saqi#DieselBasedPowerPlant
 :DieselBasedPowerPlant rdf:type owl:Class ;
                        rdfs:subClassOf :ThermalPowerPlant ;
                        rdfs:comment "Thermal power plants using diesel as source." ;
                        rdfs:label "Diesel based power plant" .
 
 
-###  https://w3id.org/saqi#DirectContributor
+###  https://saqi-er24.netlify.app/saqi#DirectContributor
 :DirectContributor rdf:type owl:Class ;
                    rdfs:subClassOf :Contributor ;
                    rdfs:comment "Represents concepts which directly represent pollution. For example the concentration of pollutants at a particular spatio-temporal point." ,
@@ -1304,14 +1304,14 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                    rdfs:label "Direct contributor" .
 
 
-###  https://w3id.org/saqi#Dust
+###  https://saqi-er24.netlify.app/saqi#Dust
 :Dust rdf:type owl:Class ;
       rdfs:subClassOf :PollutantGenerator ;
       rdfs:comment "Dust particles from construction, waste burning, traffic and industries" ;
       rdfs:label "Dust" .
 
 
-###  https://w3id.org/saqi#EndingPoint
+###  https://saqi-er24.netlify.app/saqi#EndingPoint
 :EndingPoint rdf:type owl:Class ;
              owl:equivalentClass [ owl:intersectionOf ( :TrajectoryPoint
                                                         [ rdf:type owl:Class ;
@@ -1330,175 +1330,175 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
              rdfs:label "Ending point" .
 
 
-###  https://w3id.org/saqi#GasBasedPowerPlant
+###  https://saqi-er24.netlify.app/saqi#GasBasedPowerPlant
 :GasBasedPowerPlant rdf:type owl:Class ;
                     rdfs:subClassOf :ThermalPowerPlant ;
                     rdfs:comment "Thermal power plants using natural gas as source." ;
                     rdfs:label "Gas based power plant" .
 
 
-###  https://w3id.org/saqi#GaseousPollutant
+###  https://saqi-er24.netlify.app/saqi#GaseousPollutant
 :GaseousPollutant rdf:type owl:Class ;
                   rdfs:subClassOf :PrimaryPollutant ;
                   rdfs:comment "Primary pollutants that exists in gaseous form" ;
                   rdfs:label "Gaseous pollutant" .
 
 
-###  https://w3id.org/saqi#Government
+###  https://saqi-er24.netlify.app/saqi#Government
 :Government rdf:type owl:Class ;
             rdfs:subClassOf <https://schema.org/Organization> ;
             rdfs:comment "A group people that conduct policy, action and affairs of a state or country." ;
             rdfs:label "Government" .
 
 
-###  https://w3id.org/saqi#Hydrocarbon
+###  https://saqi-er24.netlify.app/saqi#Hydrocarbon
 :Hydrocarbon rdf:type owl:Class ;
              rdfs:subClassOf :GaseousPollutant ;
              rdfs:comment "Hydrocarbons are responsible for generating ozone as a secondary pollutants." ;
              rdfs:label "Hydrocarbon" .
 
 
-###  https://w3id.org/saqi#IndirectContributor
+###  https://saqi-er24.netlify.app/saqi#IndirectContributor
 :IndirectContributor rdf:type owl:Class ;
                      rdfs:subClassOf :Contributor ;
                      rdfs:comment "Represents concepts which indirectly contribute to pollution of a place. These do not directly represent pollution but have properties which can affect the pollution, for example by changing the concentration of pollutants at a spatio-temporal point." ;
                      rdfs:label "Indirect contributor" .
 
 
-###  https://w3id.org/saqi#Institution
+###  https://saqi-er24.netlify.app/saqi#Institution
 :Institution rdf:type owl:Class ;
              rdfs:subClassOf <https://schema.org/Organization> ;
              rdfs:comment "Organizations that are not government such as Schools, NGOs." ;
              rdfs:label "Institutions" .
 
 
-###  https://w3id.org/saqi#InstitutionAgainstAirPollution
+###  https://saqi-er24.netlify.app/saqi#InstitutionAgainstAirPollution
 :InstitutionAgainstAirPollution rdf:type owl:Class ;
                                 rdfs:subClassOf :Institution ;
                                 rdfs:comment "Institutions which are against air pollution" ;
                                 rdfs:label "Institutions against Air Pollution" .
 
 
-###  https://w3id.org/saqi#LocalGovernment
+###  https://saqi-er24.netlify.app/saqi#LocalGovernment
 :LocalGovernment rdf:type owl:Class ;
                  rdfs:subClassOf :Government ;
                  rdfs:comment "A smaller level government having authority over towns/villages/regions." ;
                  rdfs:label "Local Government" .
 
 
-###  https://w3id.org/saqi#LocalSensor
+###  https://saqi-er24.netlify.app/saqi#LocalSensor
 :LocalSensor rdf:type owl:Class ;
              rdfs:subClassOf :PollutionSensor ;
-             rdfs:comment "Local sensors maintained by Social Air quality Index (SAQI) team at IIITD" ;
+             rdfs:comment "Local sensors maintained by Social Air quality Index (SAQI) team at XXXXX" ;
              rdfs:label "Local Sensor" .
 
 
-###  https://w3id.org/saqi#MeteorologicalCharacterstic
+###  https://saqi-er24.netlify.app/saqi#MeteorologicalCharacterstic
 :MeteorologicalCharacterstic rdf:type owl:Class ;
                              rdfs:subClassOf :IndirectContributor ;
                              rdfs:comment "Meterological characterstics" ;
                              rdfs:label "Meterological characteristic" .
 
 
-###  https://w3id.org/saqi#MunicipalGovernment
+###  https://saqi-er24.netlify.app/saqi#MunicipalGovernment
 :MunicipalGovernment rdf:type owl:Class ;
                      rdfs:subClassOf :Government ;
                      rdfs:comment "Local level Governments having authority over towns, cities or villages." ;
                      rdfs:label "Municipal Government" .
 
 
-###  https://w3id.org/saqi#NaturalResourcePollution
+###  https://saqi-er24.netlify.app/saqi#NaturalResourcePollution
 :NaturalResourcePollution rdf:type owl:Class ;
                           rdfs:subClassOf :Pollution ;
                           rdfs:comment "Represents pollution on natural resources. Which means the pollution that affects natural resources like air, water, land, etc." ;
                           rdfs:label "Natural resource pollution" .
 
 
-###  https://w3id.org/saqi#NitrogenDiOxideConcentration
+###  https://saqi-er24.netlify.app/saqi#NitrogenDiOxideConcentration
 :NitrogenDiOxideConcentration rdf:type owl:Class ;
                               rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                               rdfs:comment "Nitrogen dioxide concentration in the air" ;
                               rdfs:label "NitrogenDiOxideConcentration (NO2)" .
 
 
-###  https://w3id.org/saqi#NitrogenMonoOxideConcentration
+###  https://saqi-er24.netlify.app/saqi#NitrogenMonoOxideConcentration
 :NitrogenMonoOxideConcentration rdf:type owl:Class ;
                                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                                 rdfs:comment "Nitrogen monooxide concentration in the air" ;
                                 rdfs:label "NitrogenMonoOxideConcentration (NO)" .
 
 
-###  https://w3id.org/saqi#NitrogenOxideConcentration
+###  https://saqi-er24.netlify.app/saqi#NitrogenOxideConcentration
 :NitrogenOxideConcentration rdf:type owl:Class ;
                             rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                             rdfs:comment "concentration Of all Nitrogen oxides in the air" ;
                             rdfs:label "NitrogenOxideConcentration (NOx)" .
 
 
-###  https://w3id.org/saqi#NonNaturalResourcePollution
+###  https://saqi-er24.netlify.app/saqi#NonNaturalResourcePollution
 :NonNaturalResourcePollution rdf:type owl:Class ;
                              rdfs:subClassOf :Pollution ;
                              rdfs:comment "Represents pollution which does not represent natural resource. Examples include, sound, light, space debris, radioactive pollution, thermal pollution." ;
                              rdfs:label "Non natural resource pollution" .
 
 
-###  https://w3id.org/saqi#OxideOfCarbon
+###  https://saqi-er24.netlify.app/saqi#OxideOfCarbon
 :OxideOfCarbon rdf:type owl:Class ;
                rdfs:subClassOf :GaseousPollutant ;
                rdfs:comment "Oxides of carbon has an observable property CarbonMonoOxideConcentraition (CO)" ;
                rdfs:label "Oxides of carbon" .
 
 
-###  https://w3id.org/saqi#OxideOfNitrogen
+###  https://saqi-er24.netlify.app/saqi#OxideOfNitrogen
 :OxideOfNitrogen rdf:type owl:Class ;
                  rdfs:subClassOf :GaseousPollutant ;
                  rdfs:comment "Oxides of Nitrogen has observable properties NitrogenDiOxideConcentration (NO2) , NitrogenMonoOxideConcentration (NO) , NitrogenOxideConcentration (NOx)" ;
                  rdfs:label "Oxides of nitrogen" .
 
 
-###  https://w3id.org/saqi#OxideOfSulphur
+###  https://saqi-er24.netlify.app/saqi#OxideOfSulphur
 :OxideOfSulphur rdf:type owl:Class ;
                 rdfs:subClassOf :GaseousPollutant ;
                 rdfs:comment "Oxides of Suplhur has observable property SulphurDioxideConcentration (SO2)" ;
                 rdfs:label "Oxides of sulphur" .
 
 
-###  https://w3id.org/saqi#Ozone
+###  https://saqi-er24.netlify.app/saqi#Ozone
 :Ozone rdf:type owl:Class ;
        rdfs:subClassOf :SecondaryPollutant ;
        rdfs:comment "Ozone forms in sunlight and interaction of various primary pollutants such as hydrocarbons and oxides of nitrogen." ;
        rdfs:label "Ozone" .
 
 
-###  https://w3id.org/saqi#OzoneConcentration
+###  https://saqi-er24.netlify.app/saqi#OzoneConcentration
 :OzoneConcentration rdf:type owl:Class ;
                     rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                     rdfs:comment "ozone concentration in the air" ;
                     rdfs:label "OzoneConcentration (O3)" .
 
 
-###  https://w3id.org/saqi#ParticulateMatter
+###  https://saqi-er24.netlify.app/saqi#ParticulateMatter
 :ParticulateMatter rdf:type owl:Class ;
                    rdfs:subClassOf :PrimaryPollutant ;
                    rdfs:comment "A mixture of solid and liquid particles in the air. If the size of these particles is smaller than 10 micrometer, they can get deep into our lungs causing health effects." ;
                    rdfs:label "Particulate matter" .
 
 
-###  https://w3id.org/saqi#ParticulateMatter10Concentration
+###  https://saqi-er24.netlify.app/saqi#ParticulateMatter10Concentration
 :ParticulateMatter10Concentration rdf:type owl:Class ;
                                   rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                                   rdfs:comment "Concentration  of particles with less than 10 micrometers in the air" ;
                                   rdfs:label "ParticulateMatter10Concentration (PM 10)" .
 
 
-###  https://w3id.org/saqi#ParticulateMatter2_5Concentration
+###  https://saqi-er24.netlify.app/saqi#ParticulateMatter2_5Concentration
 :ParticulateMatter2_5Concentration rdf:type owl:Class ;
                                    rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                                    rdfs:comment "Concentration  of particles with less than 2.5 micrometers in the air" ;
                                    rdfs:label "ParticulateMatter2_5Concentration (PM 2.5)" .
 
 
-###  https://w3id.org/saqi#Perception
+###  https://saqi-er24.netlify.app/saqi#Perception
 :Perception rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
                               owl:onProperty [ owl:inverseOf :hasPerception
@@ -1509,14 +1509,14 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             rdfs:label "Perception" .
 
 
-###  https://w3id.org/saqi#PlantCapacity
+###  https://saqi-er24.netlify.app/saqi#PlantCapacity
 :PlantCapacity rdf:type owl:Class ;
                rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                rdfs:comment "Capacity of Power plants" ;
                rdfs:label "Plant capacity" .
 
 
-###  https://w3id.org/saqi#Pollutant
+###  https://saqi-er24.netlify.app/saqi#Pollutant
 :Pollutant rdf:type owl:Class ;
            rdfs:subClassOf :DirectContributor ,
                            [ rdf:type owl:Restriction ;
@@ -1527,41 +1527,41 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
            rdfs:label "Pollutant" .
 
 
-###  https://w3id.org/saqi#PollutantGenerator
+###  https://saqi-er24.netlify.app/saqi#PollutantGenerator
 :PollutantGenerator rdf:type owl:Class ;
                     rdfs:subClassOf :DirectContributor ;
                     rdfs:comment "Pollutant generators are events that generate pollution, such as crop burning, power plants, waste burning and dusty weather. It is related to the saqi:Perception class in the Ethnography module, indicating the perception of people on the severity of pollution concentration in a specific area." ;
                     rdfs:label "Pollutant generator" .
 
 
-###  https://w3id.org/saqi#Pollution
+###  https://saqi-er24.netlify.app/saqi#Pollution
 :Pollution rdf:type owl:Class ;
            rdfs:comment "Represnents the notion of Pollution which includes observation of pollutants at spatio-temporal points or the contributors to the pollution which may be spatio-temporal in nature." ;
            rdfs:label "Pollution" .
 
 
-###  https://w3id.org/saqi#PollutionSensor
+###  https://saqi-er24.netlify.app/saqi#PollutionSensor
 :PollutionSensor rdf:type owl:Class ;
                  rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
                  rdfs:comment "Sensors that measure direct or indirect contributors of pollution." ;
                  rdfs:label "Pollution sensor" .
 
 
-###  https://w3id.org/saqi#PowerPlant
+###  https://saqi-er24.netlify.app/saqi#PowerPlant
 :PowerPlant rdf:type owl:Class ;
             rdfs:subClassOf :PollutantGenerator ;
             rdfs:comment "Power plants generate usually generate green house gases in huge amounts, but are also responsible for Air pollution generators such as NO2, SO2 and CO." ;
             rdfs:label "Power plant" .
 
 
-###  https://w3id.org/saqi#Precipitation
+###  https://saqi-er24.netlify.app/saqi#Precipitation
 :Precipitation rdf:type owl:Class ;
                rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                rdfs:comment "Precipitation quantity measured as volume of water, snow or ice falling to the surface." ;
                rdfs:label "Precipitation" .
 
 
-###  https://w3id.org/saqi#PrescribedStandardForPollutant
+###  https://saqi-er24.netlify.app/saqi#PrescribedStandardForPollutant
 :PrescribedStandardForPollutant rdf:type owl:Class ;
                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                   owl:onProperty [ owl:inverseOf :hasPrescribedStandard
@@ -1573,35 +1573,35 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                                 rdfs:label "Prescribed standard for pollutant" .
 
 
-###  https://w3id.org/saqi#PrimaryPollutant
+###  https://saqi-er24.netlify.app/saqi#PrimaryPollutant
 :PrimaryPollutant rdf:type owl:Class ;
                   rdfs:subClassOf :Pollutant ;
                   rdfs:comment "Primary pollutants are emitted directly from a source. Such as Particulate Matter, SO2, CO, etc." ;
                   rdfs:label "Primary pollutant" .
 
 
-###  https://w3id.org/saqi#RelativeHumidity
+###  https://saqi-er24.netlify.app/saqi#RelativeHumidity
 :RelativeHumidity rdf:type owl:Class ;
                   rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                   rdfs:comment "Ratio of moisture in the air to maximum moisture the atmosphere can hold at the same temprature and pressure." ;
                   rdfs:label "Relative humidity" .
 
 
-###  https://w3id.org/saqi#SecondaryPollutant
+###  https://saqi-er24.netlify.app/saqi#SecondaryPollutant
 :SecondaryPollutant rdf:type owl:Class ;
                     rdfs:subClassOf :Pollutant ;
                     rdfs:comment "Secondary pollutants are not emitted directly from a source, but are produced from interaction of primary pollutants in the atmosphere" ;
                     rdfs:label "Secondary pollutant" .
 
 
-###  https://w3id.org/saqi#SolarRadiation
+###  https://saqi-er24.netlify.app/saqi#SolarRadiation
 :SolarRadiation rdf:type owl:Class ;
                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                 rdfs:comment "Quantity of solar energy radiated by sun measured as energy amount per area." ;
                 rdfs:label "Solar radiation" .
 
 
-###  https://w3id.org/saqi#StartingPoint
+###  https://saqi-er24.netlify.app/saqi#StartingPoint
 :StartingPoint rdf:type owl:Class ;
                owl:equivalentClass [ owl:intersectionOf ( :TrajectoryPoint
                                                           [ rdf:type owl:Class ;
@@ -1619,28 +1619,28 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                rdfs:label "Starting point" .
 
 
-###  https://w3id.org/saqi#SulphurDioxideConcentration
+###  https://saqi-er24.netlify.app/saqi#SulphurDioxideConcentration
 :SulphurDioxideConcentration rdf:type owl:Class ;
                              rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                              rdfs:comment "Sulphur dioxide concentration in the air" ;
                              rdfs:label "SulphurDioxideConcentration (SO2)" .
 
 
-###  https://w3id.org/saqi#ThermalPowerPlant
+###  https://saqi-er24.netlify.app/saqi#ThermalPowerPlant
 :ThermalPowerPlant rdf:type owl:Class ;
                    rdfs:subClassOf :PowerPlant ;
                    rdfs:comment "Power plants converts heat energy into electricity using steam turbines." ;
                    rdfs:label "Thermal Power Plant" .
 
 
-###  https://w3id.org/saqi#TolueneConcentration
+###  https://saqi-er24.netlify.app/saqi#TolueneConcentration
 :TolueneConcentration rdf:type owl:Class ;
                       rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                       rdfs:comment "toluene concentration in the air" ;
                       rdfs:label "Toluene concentration" .
 
 
-###  https://w3id.org/saqi#Trajectory
+###  https://saqi-er24.netlify.app/saqi#Trajectory
 :Trajectory rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
                               owl:onProperty :hasSegment ;
@@ -1658,7 +1658,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             rdfs:comment "Represents a trajectory of points. Examples include drainage/sewage trajectory or air stream trajectory." .
 
 
-###  https://w3id.org/saqi#TrajectoryPoint
+###  https://saqi-er24.netlify.app/saqi#TrajectoryPoint
 :TrajectoryPoint rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
                                    owl:onProperty [ owl:inverseOf :hasPoint
@@ -1673,7 +1673,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                  rdfs:comment "A collection of spatio-temporal points represents a trajectory" .
 
 
-###  https://w3id.org/saqi#TrajectorySegment
+###  https://saqi-er24.netlify.app/saqi#TrajectorySegment
 :TrajectorySegment rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
                                      owl:onProperty :endsAt ;
@@ -1700,28 +1700,28 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                    rdfs:comment "A subset of spatio-temporal trajectory points represent a TrajectorySegment" .
 
 
-###  https://w3id.org/saqi#WasteBurning
+###  https://saqi-er24.netlify.app/saqi#WasteBurning
 :WasteBurning rdf:type owl:Class ;
               rdfs:subClassOf :Combustion ;
               rdfs:comment "Waste burning is done for the purpose of disposing waste in dense populated areas. This process releases particle pollutants in the air." ;
               rdfs:label "Waste burning" .
 
 
-###  https://w3id.org/saqi#WindCharacterstic
+###  https://saqi-er24.netlify.app/saqi#WindCharacterstic
 :WindCharacterstic rdf:type owl:Class ;
                    rdfs:subClassOf :MeteorologicalCharacterstic ;
                    rdfs:comment "Wind characterstics" ;
                    rdfs:label "Wind characteristic" .
 
 
-###  https://w3id.org/saqi#WindDirection
+###  https://saqi-er24.netlify.app/saqi#WindDirection
 :WindDirection rdf:type owl:Class ;
                rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
                rdfs:comment "Direction of wind measured in radians." ;
                rdfs:label "Wind direction" .
 
 
-###  https://w3id.org/saqi#WindSpeed
+###  https://saqi-er24.netlify.app/saqi#WindSpeed
 :WindSpeed rdf:type owl:Class ;
            rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
            rdfs:comment "Speed of the wind," ;
@@ -1788,42 +1788,42 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 #    Individuals
 #################################################################
 
-###  https://w3id.org/saqi#DTCBusTerminal
+###  https://saqi-er24.netlify.app/saqi#DTCBusTerminal
 :DTCBusTerminal rdf:type owl:NamedIndividual ,
                          <https://schema.org/Place> .
 
 
-###  https://w3id.org/saqi#JharodhaKalan
+###  https://saqi-er24.netlify.app/saqi#JharodhaKalan
 :JharodhaKalan rdf:type owl:NamedIndividual ,
                         <https://schema.org/Place> .
 
 
-###  https://w3id.org/saqi#NangliDairy
+###  https://saqi-er24.netlify.app/saqi#NangliDairy
 :NangliDairy rdf:type owl:NamedIndividual ,
                       <https://schema.org/Place> .
 
 
-###  https://w3id.org/saqi#SanjayColony
+###  https://saqi-er24.netlify.app/saqi#SanjayColony
 :SanjayColony rdf:type owl:NamedIndividual ,
                        <https://schema.org/Place> .
 
 
-###  https://w3id.org/saqi#ShaheenBagh
+###  https://saqi-er24.netlify.app/saqi#ShaheenBagh
 :ShaheenBagh rdf:type owl:NamedIndividual ,
                       <https://schema.org/Place> .
 
 
-###  https://w3id.org/saqi#Tekhand
+###  https://saqi-er24.netlify.app/saqi#Tekhand
 :Tekhand rdf:type owl:NamedIndividual ,
                   <https://schema.org/Place> .
 
 
-###  https://w3id.org/saqi#najafgarh
+###  https://saqi-er24.netlify.app/saqi#najafgarh
 :najafgarh rdf:type owl:NamedIndividual ,
                     <https://schema.org/Place> .
 
 
-###  https://w3id.org/saqi#okhla
+###  https://saqi-er24.netlify.app/saqi#okhla
 :okhla rdf:type owl:NamedIndividual ,
                 <https://schema.org/Place> .
 
@@ -5661,7 +5661,7 @@ Open-ended date ranges can be written with \"..\" in place of the end date. For 
 
 
 <https://schema.org/valueName> rdfs:label "valueName" ;
-                               rdfs:comment "Indicates the name of the PropertyValueSpecification to be used in URL templates and form encoding in a manner analogous to HTML's input@name." .
+                               rdfs:comment "Indicates the name of the PropertyValueSpecification to be used in URL templates and form encoding in a manner analogous to HTML's inp***@name." .
 
 
 <https://schema.org/valuePattern> rdfs:label "valuePattern" ;
