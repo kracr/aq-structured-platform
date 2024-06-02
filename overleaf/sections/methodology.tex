@@ -1,0 +1,45 @@
+\section{Methodology}
+\label{sec:methodology}
+
+The methodology of building the SAQI ontology revolved around continual iterative development. We developed the ontology in two phases -- building a barebones ontology consisting of classes and properties that were minimally essential and, later on, iteratively extending it based on the feedback and the requirements of the SAQI application. 
+
+% The former led to  the development of the Pollution ontology design pattern~\cite{Saad-PollutionODP-WOP2021}. 
+
+The barebones ontology is extended from Pollution ontology design pattern~\cite{Saad-PollutionODP-WOP2021}
+In the latter phase, feedback on the ontology is obtained from the social scientists and the field workers in our team. An example of the importance of their feedback is the presence of the \texttt{Person} class. Since most of the survey responses are connected to the people living in a locality, the feedback was that it would be an important concept in the SAQI ontology. To build the SAQI ontology, we reused some of the concepts from foaf~\cite{brickley-d-2004--b}, WeatherOntology\footnote{\url{https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl}}, schema.org \footnote{\url{https://schema.org/}}, SOSA~\cite{SOSA-JWS2019} and WGS84\footnote{\url{https://www.w3.org/2003/01/geo/wgs84_pos}} ontologies (see Table~\ref{tab:ont-reused}).
+
+%During our ethnographic survey and discussions with the social scientists team, we discussed the addition of Person class as the core of the S-AQI ontology whereby each question asked revolved around the responses given by people living in each regions and belonging to different social cohorts.
+
+\begin{table}[ht]
+\small
+\centering
+\caption{The ontologies and the concepts in those ontologies that were reused in the SAQI ontology.}
+\label{tab:ont-reused}
+\begin{tabular}{cc} 
+ \hline
+ \textbf{Ontology} & \textbf{Concepts} \\ %[0.5ex] 
+ \textbf{reused} & \textbf{reused} \\
+ \hline
+ WeatherOntology & AirPollution, Irridance, \\
+  & Precipitation \\ 
+ %\hline
+ foaf & Person \\ %[1ex] 
+% \hline
+%  \hline
+ schema.org & Organization, Place, \\
+  & Event \\ %[1ex] 
+ SOSA & FeatureOfInterest, Observation, Sensor, Result \\ 
+ WGS84 & SpatialThing, Point \\
+ \hline
+\end{tabular}
+\end{table}
+
+\subsection{FAIR principles}
+SAQI ontology is designed by considering the Findability, Accessibility, Interoperability, and Reuse (FAIR) principles\footnote{\url{https://www.go-fair.org/fair-principles/}}.
+\begin{enumerate}
+    \item \textbf{Findable}. Metadata is well defined, and data is retrievable using global identifiers.
+    \item \textbf{Accessible}. Data is accessible using HTTP protocol which is free and open. When data is inaccessible, the metadata (ontology) will still be available.
+    \item \textbf{Interoperable}. Other ontologies/vocabularies are reused and linked to their IRIs. Representation is formal and acceptable, and related vocabularies follow FAIR principles.
+    \item \textbf{Reusable}. Along with the license, the ontologies and their serialization are also available.
+    
+\end{enumerate}

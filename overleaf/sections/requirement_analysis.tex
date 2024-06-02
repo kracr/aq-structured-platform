@@ -1,0 +1,50 @@
+\section{Requirements Analysis}
+\label{sec:req-analysis}
+
+We conducted a workshop on AQI and its social implications. The participants of this workshop include officials from the Central Pollution Control Board (CPCB)\footnote{\url{https://cpcb.nic.in/}}, social scientists, field workers and technologists. During the discussion, several issues were raised, such as the coverage of the centrally deployed sensors, the impact of air pollution on different social groups (students, daily wage workers, athletes, shopkeepers, etc.), the awareness about air pollution and AQI among the different social groups and the citizen participation to tackle the problem of air pollution. In order to get answers to these questions and to know the ground reality, two field workers were hired and asked to run a survey in two different regions of Delhi. These two regions were selected because they had variations in terms of demography and consisted of educational institutes, industries, dairy farms, sports academies and grocery stores. In each region, three different locations were selected to get a representation of the region's demography and social groups. 
+
+After identifying the six locations, a field survey was conducted in these locations inquiring people about their awareness of the air quality indexes, their perception of pollution, and their views on government response towards pollution. The survey targeted six social groups - teachers, students, mothers of young kids, local shopkeepers, sports academies, and social workers. At these six locations, air quality sensors were also deployed to study the hyperlocal AQI in the context of the social groups. Exposure to hyperlocal data increases local participation, which can make local institutions respond effectively to their local pollution problems. We term this as socializing and localizing the AQI in the neighbourhood. The policies related to handling air pollution can be tuned by the local government bodies for each social group to address their specific needs. For example, the local school timings can be changed so that school children can avoid the time when the pollution is high.
+
+The survey responses show that the AQI numbers and the data behind them are not interpretable to most people, even in Delhi, which has been one of the most polluted cities for consecutive years. Several survey respondents correctly identified the contributors to the air quality, which are crop burning, construction, and industries. However, except for the teachers and students social groups, others either did not have access to the AQI or could not draw any inferences from the AQI numbers. The local government bodies were also untrained to tackle the pollution locally and remained uninvolved. Details on the study methodology used, the workshops conducted, the interaction and the survey response from the people in the six locations are available at~\cite{samaj-saqi}. 
+
+Given this context, we proposed building a mobile and Web friendly application that is available in the local language. This application can increase the awareness of AQI by explaining the relevant facts and recommending steps that can be taken locally to mitigate the problem of air pollution within a particular locality. To build such an application, the data from heterogeneous sources must be integrated and structured. So, an ontology that can satisfy all the requirements discussed here will be appropriate for this application.   
+
+%In an attempt to bridge the gap between institutions and the AQI regime, SAQI purposed various solutions including mid level institutions or volunteers called 'saqis' and to increase general literacy levels to raise public awareness. The Air pollution ontology is developed to integrate social data and AQI data from local and government sensors and to also contribute towards building SAQI platform, which is an alternative to AQI monitoring app which caters to different social groups by using multilingual support and penalization for each social group.
+
+%\subsection{Investigation of data monitoring system by SAQI}
+%The government of India uses nationwide monitoring through institutions such as the CPCB and DPCC in India, which promotes an aggregated number, the AQI index, formulated and standardized by them. The AQI standard is complemented with color-coded mapping of AQI to categories such as "good," "satisfactory," "bad," etc. This standardization is adapted to the geographies of the country. For example, the Indian AQI standard is higher than the US. 
+
+%Through some initial discussion at an ethnography workshop held by the SAQI team, the team decided to identify social groups and survey them to gather the reaction from the community to the AQI data released by the government.
+
+%Variation of data in a targeted local environment like a Bus stop, market, the village is referred to as hyperlocal variation in air quality. This local data provides a different point of view from government sensors located in isolated locations, not representing the apparent AQI faced by people in their daily routine. 
+
+%The SAQI team conducted field surveys in six locations in Delhi among different social groups, inquiring people about their awareness of these Air quality indexes, their perception of pollution, and their views on government response towards pollution. 
+
+%The surveys targeted six different social groups - teachers, students, mothers of young kids, local shopkeepers, sports academies, and social workers. Exposure to hyperlocal data increases local participation, which can make local institutions respond effectively to their local pollution problems, which the SAQI terms as socializing and localizing the AQI in the neighborhood.
+
+%On an individual level, the hyperlocal AQI can also affect behavior if the AQI is socialized. For example, the school children can avoid high pollution hours, adoption of masks, evening walks, etc. consequently, the policies can be tuned by the local government bodies to address different social groups.
+
+
+\subsection{Competency Questions}
+
+From the workshop and the survey results, we collected the following minimal set of questions, also referred to as \emph{competency questions}, that should be answered by the ontology.
+
+%An ontology is required to model this data into a structured knowledge graph on which the powerful queries can be performed as summarized by the Competency questions below -
+
+\begin{enumerate}
+    \item What is the air pollution literacy of a particular social group?
+    \item What is the major perception of people towards air quality in a region?
+    \item What is the average AQI value at a place over a period of time?
+    \item How do people expect the government to mitigate the effect of air pollution in a region?
+%    \item What do people expect from the government with regard to air quality in an area?
+    \item What is the perception of people living in different regions towards air quality?
+\end{enumerate}
+
+As can be observed from the competency questions, multiple data sources are required to answer them. They may have different structures and formats. These datasets include the AQI data, social data and meteorological data. %Thus, we chose to model them using ontologies and perform SPARQL queries on it so that the questions lying at the interface of the data sources could be answered. 
+
+%\subsection{Technical challenges solved by ontological approach}
+%Data from different sources has structured dissimilarity, such as file formats or difference in data structures. A graphical approach with fixed data types, e.x. rdfs:Literal, xsd:float, xsd:DateTime etc. ensures uniformity across all entities linked by relationships that can be queried through SPARQL query language.
+
+%\subsection{Hyperlocal Dashboard application}
+%A hyperlocal dashboard is developed as part of the SAQI project that attempts to address the barriers in civic engagement through a personalized experience which also benefits from the ontology as a means of easier data access from multiple sources through a common interface. The application also benefits from multilingual support by taking help of devleoped ontology model.
+

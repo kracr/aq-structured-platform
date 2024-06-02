@@ -1,0 +1,87 @@
+\section{SHACL Shapes}
+\label{sec:shacl}
+
+SHACL\footnote{\url{https://www.w3.org/TR/shacl/}} can be used to enforce constraints on the KG. The constraints are defined in shape graphs. KG must satisfy the condition specified in the shape graphs to be validated. Shapes for the classes were created, and the triples generated from the data using YARRRML mappings were validated using the SHACL constraints. A snippet of the SHACL shape for the \texttt{Person} class is given in Listing~\ref{shacl-person}. It describes the constraint that a person can wear exactly one mask. The rest of the SHACL constraints are available at \url{https://github.com/kracr/aq-structured-platform/tree/main/dataset/SHACL-shapes}. %The first few constraints indicate that the subject (\texttt{Person} in this case) should have one and exactly one value associated with a property (for example, \texttt{saqi:livesIn}).
+
+\begin{lstlisting}[label=shacl-person,caption=SHACL constraints snippet for the Person class,float,frame=tb,captionpos=b]
+    sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path saqi:wearsMask ;
+      sh:datatype xsd:boolean ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "wears mask" ;
+    ] ;
+
+    sh:targetClass saqi:Person ;
+    sh:targetSubjectsOf saqi:hasAirPollutionLiteracy ;
+    sh:targetSubjectsOf saqi:hasIndividualPerception ;
+    sh:targetSubjectsOf saqi:livesIn ;
+\end{lstlisting}
+
+%\begin{verbatim}
+%    saqi:PersonShape
+%  rdf:type sh:NodeShape ;
+%  sh:property [
+%      rdf:type sh:PropertyShape ;
+%      sh:path saqi:hasAirPollutionLiteracy ;
+%      sh:class saqi:Person ;
+%      sh:maxCount 1 ;
+%      sh:minCount 1 ;
+%      sh:name "has air pollution literacy" ;
+%      sh:nodeKind sh:IRI ;
+%    ] ;
+%  sh:property [
+%      rdf:type sh:PropertyShape ;
+%      sh:path saqi:hasPerception ;
+%      sh:class saqi:Person ;
+%      sh:maxCount 1 ;
+%      sh:minCount 1 ;
+%      sh:name "has individual perception" ;
+%      sh:nodeKind sh:IRI ;
+%    ] ;
+%  sh:property [
+%      rdf:type sh:PropertyShape ;
+%      sh:path saqi:livesIn ;
+%      sh:class saqi:Person ;
+%      sh:description "Person lives in a particual region" ;
+%      sh:maxCount 1 ;
+%      sh:minCount 1 ;
+%      sh:name "lives in" ;
+%      sh:node saqi:PersonShape ;
+%      sh:nodeKind sh:IRI ;
+%    ] ;
+%  sh:property [
+%      rdf:type sh:PropertyShape ;
+%      sh:path saqi:usesAirPurifier ;
+%      sh:datatype xsd:boolean ;
+%      sh:maxCount 1 ;
+%      sh:minCount 1 ;
+%      sh:name "uses air purifier" ;
+%    ] ;
+%  sh:property [
+%      rdf:type sh:PropertyShape ;
+%      sh:path saqi:wearsMask ;
+%      sh:datatype xsd:boolean ;
+%      sh:maxCount 1 ;
+%      sh:minCount 1 ;
+%      sh:name "wears mask" ;
+%    ] ;
+%  sh:targetClass saqi:Person ;
+%  sh:targetSubjectsOf saqi:hasAirPollutionLiteracy ;
+%  sh:targetSubjectsOf saqi:hasIndividualPerception ;
+%  sh:targetSubjectsOf saqi:livesIn ;
+%.
+%saqi:actsThrough
+%  rdf:type sh:PropertyShape ;
+%.
+%saqi:hasAirPollutionLiteracy
+%  rdf:type rdf:Property ;
+%.
+%saqi:hasPerception
+%  rdf:type rdf:Property ;
+%.
+%saqi:livesIn
+%  rdf:type rdf:Property ;
+%.
+%\end{verbatim}
