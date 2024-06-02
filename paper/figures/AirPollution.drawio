@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-10T12:27:01.345Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="-BabHllDQw8R29hzUVjQ" version="21.2.9" type="device">
+<mxfile host="app.diagrams.net" modified="2024-06-02T05:38:28.095Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0" etag="_SYfQ0aPAAE-Cj8UP133" version="24.4.13" type="device">
   <diagram id="t25Kp6jmq_1cI3zwCiK2" name="Page-1">
-    <mxGraphModel dx="1442" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="1562" dy="856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,8 +13,8 @@
         <mxCell id="T0KytU28zX8Ys8UfOtSf-34" value="&lt;b&gt;saqi:&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;b&gt;rdfs:&lt;br&gt;&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" parent="T0KytU28zX8Ys8UfOtSf-33" vertex="1">
           <mxGeometry x="129.99645243734972" y="19" width="60" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="T0KytU28zX8Ys8UfOtSf-35" value="https://w3id.org/saqi&lt;br&gt;https://www.w3.org/TR/rdf-schema&lt;br&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;rounded=1;glass=0;" parent="T0KytU28zX8Ys8UfOtSf-33" vertex="1">
-          <mxGeometry x="180" y="20" width="250" height="40" as="geometry" />
+        <mxCell id="T0KytU28zX8Ys8UfOtSf-35" value="https://saqi-er24.netlify.app/saqi&lt;br&gt;https://www.w3.org/TR/rdf-schema" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;rounded=1;glass=0;" parent="T0KytU28zX8Ys8UfOtSf-33" vertex="1">
+          <mxGeometry x="180" y="20" width="270" height="40" as="geometry" />
         </mxCell>
         <mxCell id="T0KytU28zX8Ys8UfOtSf-142" value="saqi:AirPollution" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="340" y="150" width="130" height="24" as="geometry" />

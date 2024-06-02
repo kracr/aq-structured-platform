@@ -7,7 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/saqi"
      versionIRI="https://w3id.org/saqi">
-    <Prefix name="" IRI="https://w3id.org/saqi#"/>
+    <Prefix name="" IRI="https://saqi-er24.netlify.app/saqi#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -21,11 +21,11 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal>Saad Ahmad, Sudhir Attri, Raghava Mutharaju; (https://kracr.iiitd.edu.in/)</Literal>
+        <Literal>XXXX XXXXX, XXXXXX XXXXX, XXXXXXX XXXXXXXXX; (https://XXXXX.XXXX.XXX.XX/)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Literal>Saad Ahmad, Sudhir Attri, Raghava Mutharaju</Literal>
+        <Literal>XXXX XXXXX, XXXXXX XXXXX, XXXXXXX XXXXXXXXX</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
@@ -12318,7 +12318,7 @@ Open-ended date ranges can be written with &quot;..&quot; in place of the end da
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://schema.org/valueName</IRI>
-        <Literal>Indicates the name of the PropertyValueSpecification to be used in URL templates and form encoding in a manner analogous to HTML&apos;s input@name.</Literal>
+        <Literal>Indicates the name of the PropertyValueSpecification to be used in URL templates and form encoding in a manner analogous to HTML&apos;s inp***@name.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12933,7 +12933,7 @@ Open-ended date ranges can be written with &quot;..&quot; in place of the end da
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#LocalSensor</IRI>
-        <Literal>Local sensors maintained by Social Air quality Index (SAQI) team at IIITD</Literal>
+        <Literal>Local sensors maintained by Social Air quality Index (SAQI) team at XXXXX</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

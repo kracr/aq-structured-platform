@@ -1,5 +1,5 @@
 prefixes:
-  saqi: https://kracr.iiitd.edu.in/ontology/saqi#
+  saqi: https://saqi-er24.netlify.app/saqi#
   grel: http://users.ugent.be/~bjdmeest/function/grel.ttl#
   xsd: http://www.w3.org/2001/XMLSchema#
 mappings:

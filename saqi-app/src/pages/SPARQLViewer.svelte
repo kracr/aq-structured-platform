@@ -52,7 +52,7 @@
                             console.log("Sending Data", selectedQuery);
                             frame.contentWindow.postMessage(
                                 selectedQuery,
-                                "https://kracr.iiitd.edu.in"
+                                "https://XXXXX.XXXXX.XXX.XX"
                             );
                             // CodeMirrorRoot.CodeMirror.setValue("VALUE");
                             // console.log(frame);
@@ -167,7 +167,7 @@
         </div>
         <iframe
             bind:this={frame}
-            src={"https://kracr.iiitd.edu.in/ontology/saqi/sparql/#/dataset/aq-store/query"}
+            src={"https://saqi-er24.netlify.app/saqi/sparql/#/dataset/aq-store/query"}
             frameborder="0"
             allowtransparency
             style="width:100%;height: calc(100vh + 15px);"

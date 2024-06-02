@@ -10,7 +10,7 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix : <http://mapping.example.com/>.
-@prefix saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>.
+@prefix saqi: <https://saqi-er24.netlify.app/saqi#>.
 @prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix idlab-fn: <http://example.com/idlab/function/>.
@@ -25,7 +25,7 @@
     rdfs:label "place".
 :s_000 a rr:SubjectMap.
 :map_place_000 rr:subjectMap :s_000.
-:s_000 rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#_locname".
+:s_000 rr:constant "https://saqi-er24.netlify.app/saqi#_locname".
 :pom_000 a rr:PredicateObjectMap.
 :map_place_000 rr:predicateObjectMap :pom_000.
 :pm_000 a rr:PredicateMap.
@@ -33,7 +33,7 @@
 :pm_000 rr:constant rdf:type.
 :pom_000 rr:objectMap :om_000.
 :om_000 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#Place";
+    rr:constant "https://saqi-er24.netlify.app/saqi#Place";
     rr:termType rr:IRI.
 :pom_001 a rr:PredicateObjectMap.
 :map_place_000 rr:predicateObjectMap :pom_001.
@@ -54,7 +54,7 @@
     rdfs:label "sensor".
 :s_001 a rr:SubjectMap.
 :map_sensor_000 rr:subjectMap :s_001.
-:s_001 rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#sensor_locname".
+:s_001 rr:constant "https://saqi-er24.netlify.app/saqi#sensor_locname".
 :pom_002 a rr:PredicateObjectMap.
 :map_sensor_000 rr:predicateObjectMap :pom_002.
 :pm_002 a rr:PredicateMap.
@@ -62,7 +62,7 @@
 :pm_002 rr:constant rdf:type.
 :pom_002 rr:objectMap :om_002.
 :om_002 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#LocalSensor";
+    rr:constant "https://saqi-er24.netlify.app/saqi#LocalSensor";
     rr:termType rr:IRI.
 :pom_003 a rr:PredicateObjectMap.
 :map_sensor_000 rr:predicateObjectMap :pom_003.
@@ -81,7 +81,7 @@
 :pm_004 rr:constant saqi:atPlace.
 :pom_004 rr:objectMap :om_004.
 :om_004 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#_locname";
+    rr:constant "https://saqi-er24.netlify.app/saqi#_locname";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_obspm25_000.
 :map_obspm25_000 rml:logicalSource :source_002.
@@ -92,7 +92,7 @@
     rdfs:label "obspm25".
 :s_002 a rr:SubjectMap.
 :map_obspm25_000 rr:subjectMap :s_002.
-:s_002 rr:template "https://kracr.iiitd.edu.in/ontology/saqi#pm25_obs__locname{createdAt}".
+:s_002 rr:template "https://saqi-er24.netlify.app/saqi#pm25_obs__locname{createdAt}".
 :pom_005 a rr:PredicateObjectMap.
 :map_obspm25_000 rr:predicateObjectMap :pom_005.
 :pm_005 a rr:PredicateMap.
@@ -119,7 +119,7 @@
 :pm_007 rr:constant saqi:atPlace.
 :pom_007 rr:objectMap :om_007.
 :om_007 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#_locname";
+    rr:constant "https://saqi-er24.netlify.app/saqi#_locname";
     rr:termType rr:IRI.
 :pom_008 a rr:PredicateObjectMap.
 :map_obspm25_000 rr:predicateObjectMap :pom_008.
@@ -128,7 +128,7 @@
 :pm_008 rr:constant saqi:madeBySensor.
 :pom_008 rr:objectMap :om_008.
 :om_008 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#sensor_locname";
+    rr:constant "https://saqi-er24.netlify.app/saqi#sensor_locname";
     rr:termType rr:IRI.
 :pom_009 a rr:PredicateObjectMap.
 :map_obspm25_000 rr:predicateObjectMap :pom_009.
@@ -137,7 +137,7 @@
 :pm_009 rr:constant <http://www.w3.org/ns/sosa/observedProperty>.
 :pom_009 rr:objectMap :om_009.
 :om_009 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#ParticulateMatter2_5Concentration";
+    rr:constant "https://saqi-er24.netlify.app/saqi#ParticulateMatter2_5Concentration";
     rr:termType rr:IRI.
 :pom_010 a rr:PredicateObjectMap.
 :map_obspm25_000 rr:predicateObjectMap :pom_010.
@@ -207,7 +207,7 @@
     rdfs:label "obspm10".
 :s_003 a rr:SubjectMap.
 :map_obspm10_000 rr:subjectMap :s_003.
-:s_003 rr:template "https://kracr.iiitd.edu.in/ontology/saqi#pm10_obs__locname{createdAt}".
+:s_003 rr:template "https://saqi-er24.netlify.app/saqi#pm10_obs__locname{createdAt}".
 :pom_015 a rr:PredicateObjectMap.
 :map_obspm10_000 rr:predicateObjectMap :pom_015.
 :pm_015 a rr:PredicateMap.
@@ -234,7 +234,7 @@
 :pm_017 rr:constant saqi:atPlace.
 :pom_017 rr:objectMap :om_017.
 :om_017 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#_locname";
+    rr:constant "https://saqi-er24.netlify.app/saqi#_locname";
     rr:termType rr:IRI.
 :pom_018 a rr:PredicateObjectMap.
 :map_obspm10_000 rr:predicateObjectMap :pom_018.
@@ -243,7 +243,7 @@
 :pm_018 rr:constant saqi:madeBySensor.
 :pom_018 rr:objectMap :om_018.
 :om_018 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#sensor_locname";
+    rr:constant "https://saqi-er24.netlify.app/saqi#sensor_locname";
     rr:termType rr:IRI.
 :pom_019 a rr:PredicateObjectMap.
 :map_obspm10_000 rr:predicateObjectMap :pom_019.
@@ -252,7 +252,7 @@
 :pm_019 rr:constant <http://www.w3.org/ns/sosa/observedProperty>.
 :pom_019 rr:objectMap :om_019.
 :om_019 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#ParticulateMatter10Concentration";
+    rr:constant "https://saqi-er24.netlify.app/saqi#ParticulateMatter10Concentration";
     rr:termType rr:IRI.
 :pom_020 a rr:PredicateObjectMap.
 :map_obspm10_000 rr:predicateObjectMap :pom_020.
@@ -322,7 +322,7 @@
     rdfs:label "obstemp".
 :s_004 a rr:SubjectMap.
 :map_obstemp_000 rr:subjectMap :s_004.
-:s_004 rr:template "https://kracr.iiitd.edu.in/ontology/saqi#temp_obs__locname{createdAt}".
+:s_004 rr:template "https://saqi-er24.netlify.app/saqi#temp_obs__locname{createdAt}".
 :pom_025 a rr:PredicateObjectMap.
 :map_obstemp_000 rr:predicateObjectMap :pom_025.
 :pm_025 a rr:PredicateMap.
@@ -349,7 +349,7 @@
 :pm_027 rr:constant saqi:atPlace.
 :pom_027 rr:objectMap :om_027.
 :om_027 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#_locname";
+    rr:constant "https://saqi-er24.netlify.app/saqi#_locname";
     rr:termType rr:IRI.
 :pom_028 a rr:PredicateObjectMap.
 :map_obstemp_000 rr:predicateObjectMap :pom_028.
@@ -358,7 +358,7 @@
 :pm_028 rr:constant saqi:madeBySensor.
 :pom_028 rr:objectMap :om_028.
 :om_028 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#sensor_locname";
+    rr:constant "https://saqi-er24.netlify.app/saqi#sensor_locname";
     rr:termType rr:IRI.
 :pom_029 a rr:PredicateObjectMap.
 :map_obstemp_000 rr:predicateObjectMap :pom_029.
@@ -367,7 +367,7 @@
 :pm_029 rr:constant <http://www.w3.org/ns/sosa/observedProperty>.
 :pom_029 rr:objectMap :om_029.
 :om_029 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#AmbientTemperature";
+    rr:constant "https://saqi-er24.netlify.app/saqi#AmbientTemperature";
     rr:termType rr:IRI.
 :pom_030 a rr:PredicateObjectMap.
 :map_obstemp_000 rr:predicateObjectMap :pom_030.
@@ -437,7 +437,7 @@
     rdfs:label "obsrh".
 :s_005 a rr:SubjectMap.
 :map_obsrh_000 rr:subjectMap :s_005.
-:s_005 rr:template "https://kracr.iiitd.edu.in/ontology/saqi#rh_obs__locname{createdAt}".
+:s_005 rr:template "https://saqi-er24.netlify.app/saqi#rh_obs__locname{createdAt}".
 :pom_035 a rr:PredicateObjectMap.
 :map_obsrh_000 rr:predicateObjectMap :pom_035.
 :pm_035 a rr:PredicateMap.
@@ -464,7 +464,7 @@
 :pm_037 rr:constant saqi:atPlace.
 :pom_037 rr:objectMap :om_037.
 :om_037 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#_locname";
+    rr:constant "https://saqi-er24.netlify.app/saqi#_locname";
     rr:termType rr:IRI.
 :pom_038 a rr:PredicateObjectMap.
 :map_obsrh_000 rr:predicateObjectMap :pom_038.
@@ -473,7 +473,7 @@
 :pm_038 rr:constant saqi:madeBySensor.
 :pom_038 rr:objectMap :om_038.
 :om_038 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#sensor_locname";
+    rr:constant "https://saqi-er24.netlify.app/saqi#sensor_locname";
     rr:termType rr:IRI.
 :pom_039 a rr:PredicateObjectMap.
 :map_obsrh_000 rr:predicateObjectMap :pom_039.
@@ -482,7 +482,7 @@
 :pm_039 rr:constant <http://www.w3.org/ns/sosa/observedProperty>.
 :pom_039 rr:objectMap :om_039.
 :om_039 a rr:ObjectMap;
-    rr:constant "https://kracr.iiitd.edu.in/ontology/saqi#RelativeHumidity";
+    rr:constant "https://saqi-er24.netlify.app/saqi#RelativeHumidity";
     rr:termType rr:IRI.
 :pom_040 a rr:PredicateObjectMap.
 :map_obsrh_000 rr:predicateObjectMap :pom_040.

@@ -8635,7 +8635,7 @@ webvowl.app =
 									"_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
 									"header": {
 										"languages": ["en", "undefined"],
-										"baseIris": ["http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2002/07/owl", "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/ns/sosa", "http://xmlns.com/foaf/0.1", "http://www.w3.org/2006/time", "https://kracr.iiitd.edu.in/ontology/saqi"],
+										"baseIris": ["http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2002/07/owl", "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/ns/sosa", "http://xmlns.com/foaf/0.1", "http://www.w3.org/2006/time", "https://saqi-er24.netlify.app/saqi"],
 										"prefixList": {
 											"schema1": "http://schema.org/",
 											"owl": "http://www.w3.org/2002/07/owl#",
@@ -8648,7 +8648,7 @@ webvowl.app =
 											"voaf": "http://purl.org/vocommons/voaf#",
 											"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 											"ns": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
-											"saqi": "https://kracr.iiitd.edu.in/ontology/saqi#",
+											"saqi": "https://saqi-er24.netlify.app/saqi#",
 											"skos": "http://www.w3.org/2004/02/skos/core#",
 											"sosa": "http://www.w3.org/ns/sosa/",
 											"time": "http://www.w3.org/2006/time#",
@@ -8663,7 +8663,7 @@ webvowl.app =
 										"title": {
 											"undefined": "SAQI : an ontology to model Social Air Quality"
 										},
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#",
+										"iri": "https://saqi-er24.netlify.app/saqi#",
 										"version": "1.1",
 										"labels": {
 											"undefined": "Ontology to model Social Air Quality"
@@ -8678,13 +8678,13 @@ webvowl.app =
 											"contributor": [{
 												"identifier": "contributor",
 												"language": "undefined",
-												"value": "Saad Ahmad, Sudhir Attri, Raghava Mutharaju; (https://kracr.iiitd.edu.in/)",
+												"value": "XXXX XXXXX, XXXXXX XXXXX, XXXXXXX XXXXXXXXX; (https://XXXXX.XXXXX.XXX.XX/)",
 												"type": "label"
 											}],
 											"Authors": [{
 												"identifier": "Authors",
 												"language": "undefined",
-												"value": "Saad Ahmad, Sudhir Attri, Raghava Mutharaju",
+												"value": "XXXX XXXXX, XXXXXX XXXXX, XXXXXXX XXXXXXXXX",
 												"type": "label"
 											}],
 											"versionInfo": [{
@@ -8702,7 +8702,7 @@ webvowl.app =
 											"seeAlso": [{
 												"identifier": "seeAlso",
 												"language": "undefined",
-												"value": "https://kracr.iiitd.edu.in/ontology/saqi",
+												"value": "https://saqi-er24.netlify.app/saqi",
 												"type": "label"
 											}]
 										}
@@ -9169,8 +9169,8 @@ webvowl.app =
 										"type": "rdfs:Literal"
 									}],
 									"classAttribute": [{
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Ozone",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Ozone",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "Ozone",
@@ -9182,8 +9182,8 @@ webvowl.app =
 										"id": "16",
 										"superClasses": ["17"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#EndingPoint",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#EndingPoint",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "EndingPoint",
@@ -9197,8 +9197,8 @@ webvowl.app =
 										"id": "24",
 										"superClasses": ["25"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Hydrocarbon",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Hydrocarbon",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "Hydrocarbon",
@@ -9210,8 +9210,8 @@ webvowl.app =
 										"id": "33",
 										"superClasses": ["34"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#WasteBurning",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#WasteBurning",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "WasteBurning",
@@ -9253,21 +9253,21 @@ webvowl.app =
 										"attributes": ["external"],
 										"id": "37"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#LocalSensor",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#LocalSensor",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "LocalSensor",
 											"undefined": "Local Sensor"
 										},
 										"comment": {
-											"undefined": "Local sensors maintained by Social Air quality Index (SAQI) team at IIITD"
+											"undefined": "Local sensors maintained by Social Air quality Index (SAQI) team at XXXXX"
 										},
 										"id": "38",
 										"superClasses": ["39"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#CoalBasedPowerPlant",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#CoalBasedPowerPlant",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "CoalBasedPowerPlant",
@@ -9276,8 +9276,8 @@ webvowl.app =
 										"id": "49",
 										"superClasses": ["50"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#WindSpeed",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#WindSpeed",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "WindSpeed",
@@ -9286,8 +9286,8 @@ webvowl.app =
 										"id": "60",
 										"superClasses": ["61"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#PrescribedStandardForPollutant",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#PrescribedStandardForPollutant",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"annotations": {
 											"reengineeredFrom": [{
@@ -9306,8 +9306,8 @@ webvowl.app =
 										},
 										"id": "63"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#AmbientTemperature",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#AmbientTemperature",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "AmbientTemperature",
@@ -9316,8 +9316,8 @@ webvowl.app =
 										"id": "76",
 										"superClasses": ["61"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#GasBasedPowerPlant",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#GasBasedPowerPlant",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "GasBasedPowerPlant",
@@ -9326,8 +9326,8 @@ webvowl.app =
 										"id": "77",
 										"superClasses": ["50"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#OxideOfCarbon",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#OxideOfCarbon",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "OxideOfCarbon",
@@ -9353,8 +9353,8 @@ webvowl.app =
 										"attributes": ["external"],
 										"id": "86"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#NitrogenDiOxideConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#NitrogenDiOxideConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "NitrogenDiOxideConcentration",
@@ -9396,8 +9396,8 @@ webvowl.app =
 										"attributes": ["external"],
 										"id": "93"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Precipitation",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Precipitation",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "Precipitation",
@@ -9406,8 +9406,8 @@ webvowl.app =
 										"id": "94",
 										"superClasses": ["61"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#DieselBasedPowerPlant",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#DieselBasedPowerPlant",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "DieselBasedPowerPlant",
@@ -9416,8 +9416,8 @@ webvowl.app =
 										"id": "95",
 										"superClasses": ["50"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#PollutionSensor",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#PollutionSensor",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "PollutionSensor",
@@ -9427,8 +9427,8 @@ webvowl.app =
 										"id": "39",
 										"superClasses": ["98"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#SecondaryPollutant",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#SecondaryPollutant",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "SecondaryPollutant",
@@ -9455,8 +9455,8 @@ webvowl.app =
 										"attributes": ["external"],
 										"id": "105"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#OzoneConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#OzoneConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "OzoneConcentration",
@@ -9465,8 +9465,8 @@ webvowl.app =
 										"id": "107",
 										"superClasses": ["61"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#OxideOfNitrogen",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#OxideOfNitrogen",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "OxideOfNitrogen",
@@ -9478,8 +9478,8 @@ webvowl.app =
 										"id": "57",
 										"superClasses": ["34"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#PowerPlant",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#PowerPlant",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "PowerPlant",
@@ -9492,8 +9492,8 @@ webvowl.app =
 										"id": "73",
 										"superClasses": ["52"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#ParticulateMatter",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#ParticulateMatter",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "ParticulateMatter",
@@ -9505,8 +9505,8 @@ webvowl.app =
 										"id": "118",
 										"superClasses": ["119"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#LocalGovernment",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#LocalGovernment",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "LocalGovernment",
@@ -9560,8 +9560,8 @@ webvowl.app =
 										"id": "23",
 										"superClasses": ["5"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#AirPollutionLiteracy",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#AirPollutionLiteracy",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "AirPollutionLiteracy"
@@ -9571,8 +9571,8 @@ webvowl.app =
 										},
 										"id": "54"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Carrier",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Carrier",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "Carrier"
@@ -9583,8 +9583,8 @@ webvowl.app =
 										"id": "21",
 										"superClasses": ["5"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#CarbonMonoOxideConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#CarbonMonoOxideConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "CarbonMonoOxideConcentration",
@@ -9593,8 +9593,8 @@ webvowl.app =
 										"id": "149",
 										"superClasses": ["61"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Government",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Government",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "Government",
@@ -9640,8 +9640,8 @@ webvowl.app =
 										"attributes": ["external"],
 										"id": "157"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#PlantCapacity",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#PlantCapacity",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "PlantCapacity",
@@ -9650,8 +9650,8 @@ webvowl.app =
 										"id": "158",
 										"superClasses": ["61"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#CropBurning",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#CropBurning",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "CropBurning",
@@ -9660,8 +9660,8 @@ webvowl.app =
 										"id": "67",
 										"superClasses": ["36"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#OxideOfSulphur",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#OxideOfSulphur",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "OxideOfSulphur",
@@ -9673,8 +9673,8 @@ webvowl.app =
 										"id": "59",
 										"superClasses": ["34"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#AtmosphericPressure",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#AtmosphericPressure",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "AtmosphericPressure",
@@ -9683,8 +9683,8 @@ webvowl.app =
 										"id": "166",
 										"superClasses": ["61"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#WindCharacterstic",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#WindCharacterstic",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "WindCharacterstic",
@@ -9727,8 +9727,8 @@ webvowl.app =
 										"attributes": ["external"],
 										"id": "98"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#ThermalPowerPlant",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#ThermalPowerPlant",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "ThermalPowerPlant",
@@ -9738,8 +9738,8 @@ webvowl.app =
 										"id": "50",
 										"superClasses": ["73"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Contributor",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Contributor",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"disjointUnion": ["48", "5"],
 										"label": {
@@ -9912,8 +9912,8 @@ webvowl.app =
 										"attributes": ["external"],
 										"id": "90"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#GaseousPollutant",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#GaseousPollutant",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "GaseousPollutant",
@@ -9934,8 +9934,8 @@ webvowl.app =
 											"undefined": "Literal"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Combustion",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Combustion",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "Combustion",
@@ -9955,8 +9955,8 @@ webvowl.app =
 											"IRI-based": "float"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Institution",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Institution",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "Institution",
@@ -9991,8 +9991,8 @@ webvowl.app =
 											"IRI-based": "float"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#InstitutionAgainstAirPollution",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#InstitutionAgainstAirPollution",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "InstitutionAgainstAirPollution",
@@ -10030,8 +10030,8 @@ webvowl.app =
 											"IRI-based": "float"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#PollutantGenerator",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#PollutantGenerator",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "PollutantGenerator",
@@ -10052,8 +10052,8 @@ webvowl.app =
 											"undefined": "Literal"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#WindDirection",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#WindDirection",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "WindDirection",
@@ -10145,8 +10145,8 @@ webvowl.app =
 										"attributes": ["external"],
 										"id": "236"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#StartingPoint",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#StartingPoint",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "StartingPoint",
@@ -10212,8 +10212,8 @@ webvowl.app =
 										"id": "89",
 										"superClasses": ["90"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#CentralGovernment",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#CentralGovernment",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "CentralGovernment",
@@ -10258,8 +10258,8 @@ webvowl.app =
 										"attributes": ["external"],
 										"id": "247"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#ParticulateMatter2_5Concentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#ParticulateMatter2_5Concentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "ParticulateMatter2_5Concentration",
@@ -10307,8 +10307,8 @@ webvowl.app =
 										"attributes": ["external"],
 										"id": "253"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#NitrogenMonoOxideConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#NitrogenMonoOxideConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "NitrogenMonoOxideConcentration",
@@ -10317,8 +10317,8 @@ webvowl.app =
 										"id": "183",
 										"superClasses": ["61"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Dust",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Dust",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "Dust",
@@ -10327,8 +10327,8 @@ webvowl.app =
 										"id": "75",
 										"superClasses": ["52"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#TolueneConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#TolueneConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "TolueneConcentration",
@@ -10337,8 +10337,8 @@ webvowl.app =
 										"id": "170",
 										"superClasses": ["61"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#CPCBSensor",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#CPCBSensor",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "CPCBSensor",
@@ -10365,8 +10365,8 @@ webvowl.app =
 											"IRI-based": "float"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#RelativeHumidity",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#RelativeHumidity",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "RelativeHumidity",
@@ -10454,8 +10454,8 @@ webvowl.app =
 											"IRI-based": "float"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#DirectContributor",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#DirectContributor",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "DirectContributor",
@@ -10483,8 +10483,8 @@ webvowl.app =
 											"IRI-based": "decimal"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Perception",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Perception",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "Perception",
@@ -10495,8 +10495,8 @@ webvowl.app =
 										},
 										"id": "44"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#IndirectContributor",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#IndirectContributor",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "IndirectContributor",
@@ -10509,8 +10509,8 @@ webvowl.app =
 										"id": "5",
 										"superClasses": ["85"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Demographic",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Demographic",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"disjointUnion": ["9", "154", "44", "90", "10", "54"],
 										"label": {
@@ -10522,8 +10522,8 @@ webvowl.app =
 										"attributes": ["disjointUnion"],
 										"id": "10"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#TrajectorySegment",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#TrajectorySegment",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"annotations": {
 											"reengineeredFrom": [{
@@ -10548,8 +10548,8 @@ webvowl.app =
 											"IRI-based": "float"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#PrimaryPollutant",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#PrimaryPollutant",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "PrimaryPollutant",
@@ -10570,8 +10570,8 @@ webvowl.app =
 											"undefined": "Literal"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#SolarRadiation",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#SolarRadiation",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "SolarRadiation",
@@ -10651,8 +10651,8 @@ webvowl.app =
 											"undefined": "Literal"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Trajectory",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Trajectory",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"annotations": {
 											"reengineeredFrom": [{
@@ -10698,8 +10698,8 @@ webvowl.app =
 										"id": "7",
 										"superClasses": ["5"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#MeteorologicalCharacterstic",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#MeteorologicalCharacterstic",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "MeteorologicalCharacterstic",
@@ -10716,8 +10716,8 @@ webvowl.app =
 											"undefined": "Literal"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#SulphurDioxideConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#SulphurDioxideConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "SulphurDioxideConcentration",
@@ -10789,8 +10789,8 @@ webvowl.app =
 											"undefined": "Literal"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#TrajectoryPoint",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#TrajectoryPoint",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"annotations": {
 											"reengineeredFrom": [{
@@ -10809,8 +10809,8 @@ webvowl.app =
 										},
 										"id": "25"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Pollutant",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#Pollutant",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "Pollutant",
@@ -10823,8 +10823,8 @@ webvowl.app =
 										"id": "47",
 										"superClasses": ["48"]
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#BenzeneConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#BenzeneConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "BenzeneConcentration",
@@ -10861,8 +10861,8 @@ webvowl.app =
 											"undefined": "Thing"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#MunicipalGovernment",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#MunicipalGovernment",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "MunicipalGovernment",
@@ -10936,8 +10936,8 @@ webvowl.app =
 										"attributes": ["external"],
 										"id": "61"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#ParticulateMatter10Concentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#ParticulateMatter10Concentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "ParticulateMatter10Concentration",
@@ -11114,50 +11114,50 @@ webvowl.app =
 											"undefined": "Place"
 										},
 										"individuals": [{
-											"iri": "https://kracr.iiitd.edu.in/ontology/saqi#DTCBusTerminal",
-											"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+											"iri": "https://saqi-er24.netlify.app/saqi#DTCBusTerminal",
+											"baseIri": "https://saqi-er24.netlify.app/saqi",
 											"labels": {
 												"IRI-based": "DTCBusTerminal"
 											}
 										}, {
-											"iri": "https://kracr.iiitd.edu.in/ontology/saqi#Tekhand",
-											"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+											"iri": "https://saqi-er24.netlify.app/saqi#Tekhand",
+											"baseIri": "https://saqi-er24.netlify.app/saqi",
 											"labels": {
 												"IRI-based": "Tekhand"
 											}
 										}, {
-											"iri": "https://kracr.iiitd.edu.in/ontology/saqi#JharodhaKalan",
-											"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+											"iri": "https://saqi-er24.netlify.app/saqi#JharodhaKalan",
+											"baseIri": "https://saqi-er24.netlify.app/saqi",
 											"labels": {
 												"IRI-based": "JharodhaKalan"
 											}
 										}, {
-											"iri": "https://kracr.iiitd.edu.in/ontology/saqi#najafgarh",
-											"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+											"iri": "https://saqi-er24.netlify.app/saqi#najafgarh",
+											"baseIri": "https://saqi-er24.netlify.app/saqi",
 											"labels": {
 												"IRI-based": "najafgarh"
 											}
 										}, {
-											"iri": "https://kracr.iiitd.edu.in/ontology/saqi#okhla",
-											"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+											"iri": "https://saqi-er24.netlify.app/saqi#okhla",
+											"baseIri": "https://saqi-er24.netlify.app/saqi",
 											"labels": {
 												"IRI-based": "okhla"
 											}
 										}, {
-											"iri": "https://kracr.iiitd.edu.in/ontology/saqi#ShaheenBagh",
-											"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+											"iri": "https://saqi-er24.netlify.app/saqi#ShaheenBagh",
+											"baseIri": "https://saqi-er24.netlify.app/saqi",
 											"labels": {
 												"IRI-based": "ShaheenBagh"
 											}
 										}, {
-											"iri": "https://kracr.iiitd.edu.in/ontology/saqi#SanjayColony",
-											"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+											"iri": "https://saqi-er24.netlify.app/saqi#SanjayColony",
+											"baseIri": "https://saqi-er24.netlify.app/saqi",
 											"labels": {
 												"IRI-based": "SanjayColony"
 											}
 										}, {
-											"iri": "https://kracr.iiitd.edu.in/ontology/saqi#NangliDairy",
-											"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+											"iri": "https://saqi-er24.netlify.app/saqi#NangliDairy",
+											"baseIri": "https://saqi-er24.netlify.app/saqi",
 											"labels": {
 												"IRI-based": "NangliDairy"
 											}
@@ -11176,8 +11176,8 @@ webvowl.app =
 											"undefined": "Thing"
 										}
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#NitrogenOxideConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#NitrogenOxideConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"instances": 0,
 										"label": {
 											"IRI-based": "NitrogenOxideConcentration",
@@ -11777,8 +11777,8 @@ webvowl.app =
 										"type": "owl:objectProperty"
 									}],
 									"propertyAttribute": [{
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#nitrogenDiOxideConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#nitrogenDiOxideConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "2",
 										"label": {
 											"IRI-based": "nitrogenDiOxideConcentration"
@@ -11797,8 +11797,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "6"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasDemographic",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasDemographic",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "10",
 										"label": {
 											"IRI-based": "hasDemographic"
@@ -11877,8 +11877,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "26"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasObservation",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasObservation",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "30",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -11895,8 +11895,8 @@ webvowl.app =
 										"attributes": ["object"],
 										"id": "28"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#precipitation",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#precipitation",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "32",
 										"label": {
 											"IRI-based": "precipitation"
@@ -11916,8 +11916,8 @@ webvowl.app =
 										"attributes": ["external", "object"],
 										"id": "40"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#airQualityImproved",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#airQualityImproved",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "45",
 										"label": {
 											"IRI-based": "airQualityImproved"
@@ -11936,8 +11936,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "51"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#frequencyToCheckAQI",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#frequencyToCheckAQI",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "55",
 										"label": {
 											"IRI-based": "frequencyToCheckAQI"
@@ -12046,8 +12046,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "74"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#atHeight",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#atHeight",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "79",
 										"label": {
 											"IRI-based": "atHeight"
@@ -12111,8 +12111,8 @@ webvowl.app =
 										"attributes": ["external", "object"],
 										"id": "81"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#benzeneConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#benzeneConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "83",
 										"label": {
 											"IRI-based": "benzeneConcentration"
@@ -12141,8 +12141,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "91"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#comparisionOfLocalPollution",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#comparisionOfLocalPollution",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "97",
 										"label": {
 											"IRI-based": "comparisionOfLocalPollution"
@@ -12151,8 +12151,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "96"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#windSpeed",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#windSpeed",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "102",
 										"label": {
 											"IRI-based": "windSpeed"
@@ -12161,8 +12161,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "100"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#actsFor",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#actsFor",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "70",
 										"label": {
 											"IRI-based": "actsFor"
@@ -12266,8 +12266,8 @@ webvowl.app =
 										"attributes": ["external", "object"],
 										"id": "108"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#atTime",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#atTime",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "110",
 										"label": {
 											"IRI-based": "atTime"
@@ -12276,8 +12276,8 @@ webvowl.app =
 										"attributes": ["functional", "datatype"],
 										"id": "109"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#wearsMask",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#wearsMask",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "112",
 										"label": {
 											"IRI-based": "wearsMask"
@@ -12296,8 +12296,8 @@ webvowl.app =
 										"attributes": ["external", "datatype"],
 										"id": "113"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#givesInformationTo",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#givesInformationTo",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "90",
 										"label": {
 											"IRI-based": "givesInformationTo"
@@ -12306,8 +12306,8 @@ webvowl.app =
 										"attributes": ["object"],
 										"id": "116"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasAQIColorLiteracy",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasAQIColorLiteracy",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "123",
 										"label": {
 											"IRI-based": "hasAQIColorLiteracy"
@@ -12316,8 +12316,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "122"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#satisfiedWithPerformance",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#satisfiedWithPerformance",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "126",
 										"label": {
 											"IRI-based": "satisfiedWithPerformance"
@@ -12326,8 +12326,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "125"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#startsFrom",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#startsFrom",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -12352,8 +12352,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "129"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasElection",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasElection",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "132",
 										"label": {
 											"IRI-based": "hasElection"
@@ -12480,8 +12480,8 @@ webvowl.app =
 										"attributes": ["external", "object"],
 										"id": "134"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#worksFromHome",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#worksFromHome",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "136",
 										"label": {
 											"IRI-based": "worksFromHome"
@@ -12495,8 +12495,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "137"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#isRegularized",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#isRegularized",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "140",
 										"label": {
 											"IRI-based": "isRegularized"
@@ -12539,8 +12539,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "148"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#particulateMatter2_5Concentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#particulateMatter2_5Concentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "151",
 										"label": {
 											"IRI-based": "particulateMatter2_5Concentration"
@@ -12549,8 +12549,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "150"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#carbonMonoOxideConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#carbonMonoOxideConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "153",
 										"label": {
 											"IRI-based": "carbonMonoOxideConcentration"
@@ -12559,8 +12559,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "152"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasInstitutionAgainstAirPollution",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasInstitutionAgainstAirPollution",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "69",
 										"label": {
 											"IRI-based": "hasInstitutionAgainstAirPollution"
@@ -12574,8 +12574,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "160"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#relativeHumidity",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#relativeHumidity",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "162",
 										"label": {
 											"IRI-based": "relativeHumidity"
@@ -12584,8 +12584,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "161"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#sourceName",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#sourceName",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "164",
 										"label": {
 											"IRI-based": "sourceName"
@@ -12599,9 +12599,9 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "165"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#livesIn",
+										"iri": "https://saqi-er24.netlify.app/saqi#livesIn",
 										"equivalent": ["168"],
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "9",
 										"label": {
 											"IRI-based": "livesIn"
@@ -12625,8 +12625,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "172"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#isPartOfDemographic",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#isPartOfDemographic",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "10",
 										"label": {
 											"IRI-based": "isPartOfDemographic"
@@ -12645,8 +12645,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "175"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#actsThrough",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#actsThrough",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "90",
 										"label": {
 											"IRI-based": "actsThrough"
@@ -12675,8 +12675,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "184"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#getsNoticeAndContinues",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#getsNoticeAndContinues",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "186",
 										"label": {
 											"IRI-based": "getsNoticeAndContinues"
@@ -12685,8 +12685,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "185"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasParticulateMatterLiteracy",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasParticulateMatterLiteracy",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "188",
 										"label": {
 											"IRI-based": "hasParticulateMatterLiteracy"
@@ -12695,8 +12695,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "187"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasPerception",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasPerception",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "44",
 										"label": {
 											"IRI-based": "hasPerception"
@@ -12770,8 +12770,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "193"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#carriesPollutant",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#carriesPollutant",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "47",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -12829,8 +12829,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "203"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#sourceResponsibleForLocalPollution",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#sourceResponsibleForLocalPollution",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "52",
 										"label": {
 											"IRI-based": "sourceResponsibleForLocalPollution"
@@ -12839,8 +12839,8 @@ webvowl.app =
 										"attributes": ["object"],
 										"id": "204"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#nitrogenMonoOxideConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#nitrogenMonoOxideConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "207",
 										"label": {
 											"IRI-based": "nitrogenMonoOxideConcentration"
@@ -12849,8 +12849,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "206"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#nitrogenOxideConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#nitrogenOxideConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "209",
 										"label": {
 											"IRI-based": "nitrogenOxideConcentration"
@@ -12859,8 +12859,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "208"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasAQILiteracy",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasAQILiteracy",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "211",
 										"label": {
 											"IRI-based": "hasAQILiteracy"
@@ -12980,8 +12980,8 @@ webvowl.app =
 										"attributes": ["external", "object"],
 										"id": "218"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#noNoticeOrIntervention",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#noNoticeOrIntervention",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "222",
 										"label": {
 											"IRI-based": "noNoticeOrIntervention"
@@ -12990,8 +12990,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "221"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasContributor",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasContributor",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "85",
 										"label": {
 											"IRI-based": "hasContributor"
@@ -13129,8 +13129,8 @@ webvowl.app =
 										"attributes": ["external", "object"],
 										"id": "232"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#nearby",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#nearby",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "52",
 										"label": {
 											"IRI-based": "nearby"
@@ -13180,8 +13180,8 @@ webvowl.app =
 										"attributes": ["external", "object"],
 										"id": "234"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#confidence",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#confidence",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "220",
 										"label": {
 											"IRI-based": "confidence"
@@ -13190,8 +13190,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "237"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#plantCapacity",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#plantCapacity",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "225",
 										"label": {
 											"IRI-based": "plantCapacity"
@@ -13200,8 +13200,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "238"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasTrajectory",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasTrajectory",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "240",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13221,8 +13221,8 @@ webvowl.app =
 										"attributes": ["someValues", "object"],
 										"id": "239"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#nextPoint",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#nextPoint",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13242,8 +13242,8 @@ webvowl.app =
 										"attributes": ["object", "allValues"],
 										"id": "241"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasPoint",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasPoint",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "240",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13263,8 +13263,8 @@ webvowl.app =
 										"attributes": ["someValues", "object"],
 										"id": "242"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#carriesPollutant",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#carriesPollutant",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "47",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13282,8 +13282,8 @@ webvowl.app =
 										"attributes": ["object", "allValues"],
 										"id": "243"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasPrescribedStandard",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasPrescribedStandard",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "47",
 										"label": {
 											"IRI-based": "hasPrescribedStandard"
@@ -13292,9 +13292,9 @@ webvowl.app =
 										"attributes": ["object", "datatype", "allValues"],
 										"id": "244"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#livesIn",
+										"iri": "https://saqi-er24.netlify.app/saqi#livesIn",
 										"equivalent": ["168"],
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "9",
 										"label": {
 											"IRI-based": "livesIn"
@@ -13359,8 +13359,8 @@ webvowl.app =
 										"attributes": ["external", "object"],
 										"id": "246"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasPrescribedStandard",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasPrescribedStandard",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "63",
 										"label": {
 											"IRI-based": "hasPrescribedStandard"
@@ -13369,8 +13369,8 @@ webvowl.app =
 										"attributes": ["object", "datatype", "allValues"],
 										"id": "248"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasAirPollutionLiteracy",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasAirPollutionLiteracy",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "89",
 										"label": {
 											"IRI-based": "hasAirPollutionLiteracy"
@@ -13379,8 +13379,8 @@ webvowl.app =
 										"attributes": ["someValues", "object"],
 										"id": "249"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#startsFrom",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#startsFrom",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13400,8 +13400,8 @@ webvowl.app =
 										"attributes": ["functional", "someValues", "object"],
 										"id": "250"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#nextPoint",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#nextPoint",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13421,8 +13421,8 @@ webvowl.app =
 										"attributes": ["someValues", "object"],
 										"id": "251"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#endsAt",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#endsAt",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13496,8 +13496,8 @@ webvowl.app =
 										"attributes": ["external", "datatype"],
 										"id": "254"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#ozoneConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#ozoneConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "257",
 										"label": {
 											"IRI-based": "ozoneConcentration"
@@ -13506,8 +13506,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "256"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#endsAt",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#endsAt",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13527,8 +13527,8 @@ webvowl.app =
 										"attributes": ["functional", "object"],
 										"id": "258"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasSegment",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasSegment",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "128",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13548,8 +13548,8 @@ webvowl.app =
 										"attributes": ["someValues", "object"],
 										"id": "261"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#totalPopulation",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#totalPopulation",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "266",
 										"label": {
 											"IRI-based": "totalPopulation"
@@ -13558,8 +13558,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "265"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#bPressure",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#bPressure",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "263",
 										"label": {
 											"IRI-based": "bPressure"
@@ -13622,8 +13622,8 @@ webvowl.app =
 										"attributes": ["external", "object"],
 										"id": "235"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#usesAirPurifier",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#usesAirPurifier",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "274",
 										"label": {
 											"IRI-based": "usesAirPurifier"
@@ -13632,8 +13632,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "273"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasName",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasName",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "269",
 										"label": {
 											"IRI-based": "hasName"
@@ -13643,8 +13643,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "41"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#responsibleForPollution",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#responsibleForPollution",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "121",
 										"label": {
 											"IRI-based": "responsibleForPollution"
@@ -13653,8 +13653,8 @@ webvowl.app =
 										"attributes": ["object"],
 										"id": "275"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#ratingForLocalAirQuality",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#ratingForLocalAirQuality",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "279",
 										"label": {
 											"IRI-based": "ratingForLocalAirQuality"
@@ -13663,8 +13663,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "278"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasSegment",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasSegment",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "128",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13684,8 +13684,8 @@ webvowl.app =
 										"attributes": ["object"],
 										"id": "283"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#followsGuidelines",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#followsGuidelines",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "285",
 										"label": {
 											"IRI-based": "followsGuidelines"
@@ -13694,8 +13694,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "284"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#sulphurDioxideConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#sulphurDioxideConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "280",
 										"label": {
 											"IRI-based": "sulphurDioxideConcentration"
@@ -13704,8 +13704,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "286"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#peopleVotedOnAirPollutionIssues",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#peopleVotedOnAirPollutionIssues",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "288",
 										"label": {
 											"IRI-based": "peopleVotedOnAirPollutionIssues"
@@ -13755,8 +13755,8 @@ webvowl.app =
 										"attributes": ["external", "object"],
 										"id": "289"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#zipCode",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#zipCode",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "259",
 										"label": {
 											"IRI-based": "zipCode"
@@ -13765,8 +13765,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "291"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#longitude",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#longitude",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "262",
 										"label": {
 											"IRI-based": "longitude"
@@ -13775,8 +13775,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "292"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasGovernment",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasGovernment",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "121",
 										"label": {
 											"IRI-based": "hasGovernment"
@@ -13785,8 +13785,8 @@ webvowl.app =
 										"attributes": ["object"],
 										"id": "293"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasPoint",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasPoint",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13806,8 +13806,8 @@ webvowl.app =
 										"attributes": ["object"],
 										"id": "294"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#airPollutionIssuesRaised",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#airPollutionIssuesRaised",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "282",
 										"label": {
 											"IRI-based": "airPollutionIssuesRaised"
@@ -13816,8 +13816,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "295"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#windDirection",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#windDirection",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "276",
 										"label": {
 											"IRI-based": "windDirection"
@@ -13826,8 +13826,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "296"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#tolueneConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#tolueneConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "281",
 										"label": {
 											"IRI-based": "tolueneConcentration"
@@ -13836,8 +13836,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "297"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#latitude",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#latitude",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "270",
 										"label": {
 											"IRI-based": "latitude"
@@ -13886,8 +13886,8 @@ webvowl.app =
 										"attributes": ["external", "object"],
 										"id": "290"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasPoint",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasPoint",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13942,8 +13942,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "306"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasSegment",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasSegment",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "128",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13963,8 +13963,8 @@ webvowl.app =
 										"attributes": ["someValues", "object"],
 										"id": "307"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#nextPoint",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#nextPoint",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -13984,8 +13984,8 @@ webvowl.app =
 										"attributes": ["object"],
 										"id": "308"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasPoint",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasPoint",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -14005,8 +14005,8 @@ webvowl.app =
 										"attributes": ["object", "allValues"],
 										"id": "309"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#startsFrom",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#startsFrom",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -14026,8 +14026,8 @@ webvowl.app =
 										"attributes": ["functional", "someValues", "object"],
 										"id": "310"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#startsFrom",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#startsFrom",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -14047,8 +14047,8 @@ webvowl.app =
 										"attributes": ["functional", "object", "allValues"],
 										"id": "311"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasSegment",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasSegment",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "240",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -14068,8 +14068,8 @@ webvowl.app =
 										"attributes": ["someValues", "object"],
 										"id": "312"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#endsAt",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#endsAt",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -14089,8 +14089,8 @@ webvowl.app =
 										"attributes": ["functional", "object", "allValues"],
 										"id": "313"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#endsAt",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#endsAt",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "25",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -14115,8 +14115,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "316"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasPerception",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasPerception",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "89",
 										"label": {
 											"IRI-based": "hasPerception"
@@ -14125,8 +14125,8 @@ webvowl.app =
 										"attributes": ["someValues", "object"],
 										"id": "318"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasSegment",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasSegment",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "128",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -14200,8 +14200,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "322"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#solarRadiation",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#solarRadiation",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "260",
 										"label": {
 											"IRI-based": "solarRadiation"
@@ -14220,9 +14220,9 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "325"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#atPlace",
+										"iri": "https://saqi-er24.netlify.app/saqi#atPlace",
 										"equivalent": ["167"],
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "9",
 										"label": {
 											"IRI-based": "atPlace"
@@ -14236,8 +14236,8 @@ webvowl.app =
 										"attributes": ["object", "anonymous"],
 										"id": "328"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasPrescribedStandard",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasPrescribedStandard",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "231",
 										"label": {
 											"IRI-based": "hasPrescribedStandard"
@@ -14246,8 +14246,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "331"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#particulateMatter10Concentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#particulateMatter10Concentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "228",
 										"label": {
 											"IRI-based": "particulateMatter10Concentration"
@@ -14256,8 +14256,8 @@ webvowl.app =
 										"attributes": ["datatype"],
 										"id": "332"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#ammoniaConcentration",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#ammoniaConcentration",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "264",
 										"label": {
 											"IRI-based": "ammoniaConcentration"
@@ -14347,8 +14347,8 @@ webvowl.app =
 										"attributes": ["external", "object"],
 										"id": "335"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasTrajectory",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasTrajectory",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "240",
 										"annotations": {
 											"reengineeredFrom": [{
@@ -14368,8 +14368,8 @@ webvowl.app =
 										"attributes": ["object"],
 										"id": "336"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasAirPollutionGraphicLiteracy",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasAirPollutionGraphicLiteracy",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "330",
 										"label": {
 											"IRI-based": "hasAirPollutionGraphicLiteracy"
@@ -14428,8 +14428,8 @@ webvowl.app =
 										"attributes": ["external", "datatype"],
 										"id": "338"
 									}, {
-										"iri": "https://kracr.iiitd.edu.in/ontology/saqi#hasAirPollutionLiteracy",
-										"baseIri": "https://kracr.iiitd.edu.in/ontology/saqi",
+										"iri": "https://saqi-er24.netlify.app/saqi#hasAirPollutionLiteracy",
+										"baseIri": "https://saqi-er24.netlify.app/saqi",
 										"range": "54",
 										"label": {
 											"IRI-based": "hasAirPollutionLiteracy"

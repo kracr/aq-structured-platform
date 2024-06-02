@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:ns0="https://kracr.iiitd.edu.in/ontology/">
+         xmlns:ns0="https://saqi-er24.netlify.app/saqi/">
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_1">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_1">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -12,7 +12,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>Yes</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_10">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_10">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has improved</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Less Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -22,7 +22,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>Yes</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_11">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_11">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -32,7 +32,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_12">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_12">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -42,7 +42,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_13">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_13">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -52,7 +52,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_14">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_14">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are no adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -62,7 +62,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_15">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_15">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -72,7 +72,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_16">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_16">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -82,7 +82,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_17">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_17">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are no adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -92,7 +92,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_18">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_18">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are no adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -102,7 +102,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_19">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_19">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -112,7 +112,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>Yes</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_2">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_2">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -122,7 +122,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>Yes</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_20">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_20">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -132,7 +132,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_21">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_21">
     <ns0:SAQIOntologyairQualityChangeIn3Years>No change</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -142,7 +142,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_22">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_22">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has improved</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -152,7 +152,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_23">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_23">
     <ns0:SAQIOntologyairQualityChangeIn3Years>No change</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are no adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -162,7 +162,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_24">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_24">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has improved</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -172,7 +172,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_25">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_25">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has improved</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -182,7 +182,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_26">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_26">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -192,7 +192,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>Yes</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_27">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_27">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -202,7 +202,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>Yes</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_28">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_28">
     <ns0:SAQIOntologyairQualityChangeIn3Years>No change</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -212,7 +212,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_29">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_29">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has improved</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -222,7 +222,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_3">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_3">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are no adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Less Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -232,7 +232,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_30">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_30">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -242,7 +242,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>Yes</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_31">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_31">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -252,7 +252,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_32">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_32">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are no adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -262,7 +262,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_33">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_33">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -272,7 +272,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_34">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_34">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has improved</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Less Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -282,7 +282,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_35">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_35">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has improved</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Less Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -292,7 +292,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_36">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_36">
     <ns0:SAQIOntologyairQualityChangeIn3Years>No change</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Moderately Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -302,7 +302,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_37">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_37">
     <ns0:SAQIOntologyairQualityChangeIn3Years>No change</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Moderately Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -312,7 +312,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_38">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_38">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Moderately Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -322,7 +322,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_39">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_39">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -332,7 +332,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_4">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_4">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -342,7 +342,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>Yes</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_40">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_40">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -352,7 +352,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_41">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_41">
     <ns0:SAQIOntologyairQualityChangeIn3Years>No change</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -362,7 +362,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_42">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_42">
     <ns0:SAQIOntologyairQualityChangeIn3Years>No change</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -372,7 +372,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_43">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_43">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -382,7 +382,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_44">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_44">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -392,7 +392,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_45">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_45">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -402,7 +402,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_46">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_46">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -412,7 +412,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_47">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_47">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are no adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -422,7 +422,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_48">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_48">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are no adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -432,7 +432,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_49">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_49">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -442,7 +442,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_5">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_5">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are no adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -452,7 +452,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>Maybe</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_50">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_50">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are no adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>More Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -462,7 +462,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_6">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_6">
     <ns0:SAQIOntologyairQualityChangeIn3Years>No change</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are no adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -472,7 +472,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>Yes</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_7">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_7">
     <ns0:SAQIOntologyairQualityChangeIn3Years>No change</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -482,7 +482,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>No</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_8">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_8">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>There are adequate measures taken</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Equally Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -492,7 +492,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>Maybe</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_9">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_9">
     <ns0:SAQIOntologyairQualityChangeIn3Years>Air quality has worsened</ns0:SAQIOntologyairQualityChangeIn3Years>
     <ns0:SAQIOntologydelhiGovtWorkPerception>Interested, but more can be done</ns0:SAQIOntologydelhiGovtWorkPerception>
     <ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>Less Polluted</ns0:SAQIOntologyhowIsYourLocalityComparedToOtherAreas>
@@ -502,7 +502,7 @@
     <ns0:SAQIOntologyworkplaceUpdatesAboutPollution>Yes</ns0:SAQIOntologyworkplaceUpdatesAboutPollution>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_1">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_1">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Often</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -510,7 +510,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_10">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_10">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Daily</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -518,7 +518,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_11">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_11">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -526,7 +526,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_12">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_12">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -534,7 +534,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_13">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_13">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -542,7 +542,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_14">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_14">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -550,7 +550,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_15">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_15">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -558,7 +558,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_16">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_16">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -566,7 +566,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_17">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_17">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -574,7 +574,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_18">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_18">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Often</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -582,7 +582,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_19">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_19">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Often</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -590,7 +590,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_2">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_2">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Weekly</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Poor</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -598,7 +598,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_20">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_20">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Often</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -606,7 +606,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_21">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_21">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Often</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -614,7 +614,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_22">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_22">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Often</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -622,7 +622,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_23">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_23">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -630,7 +630,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_24">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_24">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Daily</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -638,7 +638,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_25">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_25">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -646,7 +646,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_26">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_26">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -654,7 +654,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_27">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_27">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -662,7 +662,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_28">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_28">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -670,7 +670,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_29">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_29">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -678,7 +678,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_3">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_3">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -686,7 +686,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_30">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_30">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Often</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -694,7 +694,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_31">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_31">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -702,7 +702,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_32">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_32">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -710,7 +710,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_33">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_33">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -718,7 +718,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_34">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_34">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -726,7 +726,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_35">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_35">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -734,7 +734,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_36">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_36">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -742,7 +742,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_37">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_37">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -750,7 +750,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_38">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_38">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -758,7 +758,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_39">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_39">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -766,7 +766,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_4">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_4">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -774,7 +774,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_40">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_40">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -782,7 +782,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_41">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_41">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -790,7 +790,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_42">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_42">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -798,7 +798,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_43">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_43">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Poor</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -806,7 +806,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_44">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_44">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -814,7 +814,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_45">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_45">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -822,7 +822,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_46">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_46">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -830,7 +830,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_47">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_47">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -838,7 +838,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_48">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_48">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -846,7 +846,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_49">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_49">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Often</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Poor</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -854,7 +854,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_5">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_5">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Poor</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -862,7 +862,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_50">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_50">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Often</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -870,7 +870,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_6">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_6">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>No</ns0:SAQIOntologyhasAQILiteracy>
@@ -878,7 +878,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_7">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_7">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Don’t check</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Severe</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -886,7 +886,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>No</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_8">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_8">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Rarely</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Don't Know</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -894,7 +894,7 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <rdf:Description rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_9">
+  <rdf:Description rdf:about="https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_9">
     <ns0:SAQIOntologyfrequencyToCheckAQI>Daily</ns0:SAQIOntologyfrequencyToCheckAQI>
     <ns0:SAQIOntologyhasAQIColorLiteracy>Poor</ns0:SAQIOntologyhasAQIColorLiteracy>
     <ns0:SAQIOntologyhasAQILiteracy>Yes</ns0:SAQIOntologyhasAQILiteracy>
@@ -902,10 +902,10 @@
     <ns0:SAQIOntologyhasParticulateMatterLiteracy>Yes</ns0:SAQIOntologyhasParticulateMatterLiteracy>
   </rdf:Description>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_1">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_1">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_1</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_1</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_1</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_1</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Student</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>Yes</ns0:SAQIOntologyusesAirPurifier>
@@ -914,10 +914,10 @@
     <ns0:SAQIOntologyworksFromHome>Yes</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_10">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_10">
     <ns0:SAQIOntologyaccessibilityOfAQData>Slightly accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_10</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_10</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_10</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_10</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Student</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -926,10 +926,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_11">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_11">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_11</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_11</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_11</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_11</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Teacher </ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -938,10 +938,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_12">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_12">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_12</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_12</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_12</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_12</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Teacher </ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -950,10 +950,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_13">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_13">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_13</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_13</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_13</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_13</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Teacher </ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -962,10 +962,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_14">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_14">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_14</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_14</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_14</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_14</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Teacher </ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -974,10 +974,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_15">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_15">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_15</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_15</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_15</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_15</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Teacher </ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -986,10 +986,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_16">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_16">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_16</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_16</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_16</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_16</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Teacher </ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -998,10 +998,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_17">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_17">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_17</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_17</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_17</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_17</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Teacher </ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1010,10 +1010,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_18">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_18">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_18</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_18</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_18</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_18</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Teacher </ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1022,10 +1022,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_19">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_19">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_19</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_19</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_19</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_19</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Teacher </ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1034,10 +1034,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_2">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_2">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_2</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_2</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_2</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_2</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Student</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1046,10 +1046,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_20">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_20">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_20</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_20</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_20</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_20</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Teacher </ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1058,10 +1058,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_21">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_21">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_21</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_21</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_21</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_21</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Social worker</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1070,10 +1070,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_22">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_22">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_22</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_22</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_22</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_22</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Social worker</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1082,10 +1082,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_23">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_23">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_23</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_23</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_23</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_23</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Social worker</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1094,10 +1094,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_24">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_24">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_24</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_24</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_24</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_24</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Social worker</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1106,10 +1106,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_25">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_25">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_25</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_25</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_25</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_25</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Social worker</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1118,10 +1118,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_26">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_26">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_26</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_26</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_26</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_26</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Social worker</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1130,10 +1130,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_27">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_27">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_27</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_27</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_27</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_27</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Social worker</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1142,10 +1142,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_28">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_28">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_28</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_28</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_28</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_28</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Social worker</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1154,10 +1154,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_29">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_29">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_29</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_29</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_29</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_29</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Social worker</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1166,10 +1166,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_3">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_3">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_3</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_3</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_3</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_3</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Student</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>No</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1178,10 +1178,10 @@
     <ns0:SAQIOntologyworksFromHome>Yes</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_30">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_30">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_30</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_30</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_30</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_30</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Social worker</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1190,10 +1190,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_31">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_31">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_31</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_31</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_31</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_31</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Mother of Young Kids</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1202,10 +1202,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_32">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_32">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_32</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_32</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_32</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_32</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Mother of Young Kids</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1214,10 +1214,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_33">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_33">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_33</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_33</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_33</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_33</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Mother of Young Kids</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1226,10 +1226,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_34">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_34">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_34</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_34</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_34</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_34</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Mother of Young Kids</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>No</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1238,10 +1238,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_35">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_35">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_35</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_35</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_35</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_35</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Mother of Young Kids</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>No</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1250,10 +1250,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_36">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_36">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_36</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_36</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_36</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_36</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Mother of Young Kids</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1262,10 +1262,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_37">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_37">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_37</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_37</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_37</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_37</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Mother of Young Kids</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1274,10 +1274,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_38">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_38">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_38</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_38</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_38</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_38</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Mother of Young Kids</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1286,10 +1286,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_39">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_39">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_39</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_39</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_39</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_39</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Mother of Young Kids</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1298,10 +1298,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_4">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_4">
     <ns0:SAQIOntologyaccessibilityOfAQData>Slightly accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_4</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_4</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_4</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_4</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Student</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>Yes</ns0:SAQIOntologyusesAirPurifier>
@@ -1310,10 +1310,10 @@
     <ns0:SAQIOntologyworksFromHome>Yes</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_40">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_40">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_40</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_40</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_40</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_40</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Mother of Young Kids</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1322,10 +1322,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_41">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_41">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_41</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_41</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_41</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_41</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>local Shopkeepers and vendors</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1334,10 +1334,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_42">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_42">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_42</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_42</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_42</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_42</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>local Shopkeepers and vendors</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1346,10 +1346,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_43">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_43">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_43</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_43</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_43</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_43</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>local Shopkeepers and vendors</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1358,10 +1358,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_44">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_44">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_44</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_44</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_44</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_44</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>local Shopkeepers and vendors</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>No</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1370,10 +1370,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_45">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_45">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_45</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_45</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_45</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_45</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>local Shopkeepers and vendors</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>No</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1382,10 +1382,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_46">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_46">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_46</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_46</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_46</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_46</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>local Shopkeepers and vendors</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>No</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1394,10 +1394,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_47">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_47">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_47</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_47</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_47</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_47</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>local Shopkeepers and vendors</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1406,10 +1406,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_48">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_48">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_48</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_48</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_48</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_48</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>local Shopkeepers and vendors</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1418,10 +1418,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_49">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_49">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_49</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_49</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_49</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_49</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>local Shopkeepers and vendors</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1430,10 +1430,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_5">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_5">
     <ns0:SAQIOntologyaccessibilityOfAQData>Slightly accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_5</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_5</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_5</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_5</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Student</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Maybe</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1442,10 +1442,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_50">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_50">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_50</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_50</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_50</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_50</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>local Shopkeepers and vendors</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1454,10 +1454,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_6">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_6">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_6</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_6</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_6</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_6</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Student</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>Yes</ns0:SAQIOntologyusesAirPurifier>
@@ -1466,10 +1466,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_7">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_7">
     <ns0:SAQIOntologyaccessibilityOfAQData>Not accessible at all</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_7</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_7</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_7</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_7</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Student</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1478,10 +1478,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_8">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_8">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_8</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_8</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_8</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_8</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Student</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>
@@ -1490,10 +1490,10 @@
     <ns0:SAQIOntologyworksFromHome>No</ns0:SAQIOntologyworksFromHome>
   </ns0:SAQIOntologyPerson>
 
-  <ns0:SAQIOntologyPerson rdf:about="https://kracr.iiitd.edu.in/ontology/SAQIOntologyperson_OkhlaOkhla_Person_9">
+  <ns0:SAQIOntologyPerson rdf:about="https://saqi-er24.netlify.app/saqiOntologyperson_OkhlaOkhla_Person_9">
     <ns0:SAQIOntologyaccessibilityOfAQData>Very accessible</ns0:SAQIOntologyaccessibilityOfAQData>
-    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaqi_literacy_OkhlaOkhla_Person_9</ns0:SAQIOntologyhasAirPollutionLiteracy>
-    <ns0:SAQIOntologyhasIndividualPerception>https://kracr.iiitd.edu.in/ontology/SAQIOntologyaq_Perception_OkhlaOkhla_Person_9</ns0:SAQIOntologyhasIndividualPerception>
+    <ns0:SAQIOntologyhasAirPollutionLiteracy>https://saqi-er24.netlify.app/saqiOntologyaqi_literacy_OkhlaOkhla_Person_9</ns0:SAQIOntologyhasAirPollutionLiteracy>
+    <ns0:SAQIOntologyhasIndividualPerception>https://saqi-er24.netlify.app/saqiOntologyaq_Perception_OkhlaOkhla_Person_9</ns0:SAQIOntologyhasIndividualPerception>
     <ns0:SAQIOntologyisPartOfSocialCohort>Student</ns0:SAQIOntologyisPartOfSocialCohort>
     <ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>Yes</ns0:SAQIOntologytalkAboutAirQualityWithOtherPeople>
     <ns0:SAQIOntologyusesAirPurifier>No</ns0:SAQIOntologyusesAirPurifier>

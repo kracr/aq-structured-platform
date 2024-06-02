@@ -10,10 +10,10 @@ export const queries: sparql[] = [
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+
+PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX ns0: <https://kracr.iiitd.edu.in/ontology/>
+
 SELECT ?PMLiteracy ?cohort (xsd:integer(COUNT( ?PMLiteracy) *100 / ?count2) as ?PMLiteracyPercentage)
     WHERE {
       ?person rdf:type saqi:Person ;
@@ -48,10 +48,10 @@ ORDER BY ?PMLiteracy ?PMLiteracyPercentage
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  
+    PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-    PREFIX ns0: <https://kracr.iiitd.edu.in/ontology/>
+    
     SELECT ?percption_govt ?placeName (xsd:integer(COUNT( ?percption_govt) *100 / ?count2) as ?perceptionPercentage)
         WHERE {
           ?person rdf:type saqi:Person ;
@@ -85,10 +85,10 @@ ORDER BY ?PMLiteracy ?PMLiteracyPercentage
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  
+    PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-    PREFIX ns0: <https://kracr.iiitd.edu.in/ontology/>
+    
     SELECT ?perceptaion_compared_to_other_areas ?placeName (xsd:integer(COUNT( ?perceptaion_compared_to_other_areas) *100 / ?count2) as ?perceptionPercentage)
         WHERE {
           ?person rdf:type saqi:Person ;
@@ -120,8 +120,8 @@ ORDER BY ?PMLiteracy ?PMLiteracyPercentage
     query: `# The query returns all sensor values obtained from local pollution sensors
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  
+    PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     PREFIX sosa: <http://www.w3.org/ns/sosa/>
   
@@ -176,8 +176,8 @@ ORDER BY ?PMLiteracy ?PMLiteracyPercentage
     query: `# The query returns all parameters obtained from CPCB sensors
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  
+    PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     PREFIX sosa: <http://www.w3.org/ns/sosa/>
   
@@ -251,8 +251,8 @@ ORDER BY ?PMLiteracy ?PMLiteracyPercentage
     # Can use filters for location and time range
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  
+    PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     PREFIX sosa: <http://www.w3.org/ns/sosa/>
     
@@ -292,10 +292,10 @@ ORDER BY ?PMLiteracy ?PMLiteracyPercentage
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+
+PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX ns0: <https://kracr.iiitd.edu.in/ontology/>
+
 SELECT ?rating ?placeName (xsd:integer(COUNT( ?rating) *100 / ?count2) as ?ratingPercentage)
     WHERE {
       ?person rdf:type saqi:Person ;
@@ -328,10 +328,10 @@ ORDER BY ?rating ?ratingPercentage`
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+
+PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX ns0: <https://kracr.iiitd.edu.in/ontology/>
+
 SELECT ?PMLiteracy ?placeName (xsd:integer(COUNT( ?PMLiteracy) *100 / ?count2) as ?PMLiteracyPercentage)
     WHERE {
       ?person rdf:type saqi:Person ;
@@ -362,7 +362,7 @@ ORDER BY ?PMLiteracy ?PMLiteracyPercentage`
     title: "Compare AQI literacy to pollution levels in an area [Survey Data, Local Sensors]",
     query: `# The query returns average pollutants concentration in a time interval grouped by source
     PREFIX sosa: <http://www.w3.org/ns/sosa/>
-    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+    PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -427,8 +427,8 @@ ORDER BY ?PMLiteracy ?PMLiteracyPercentage`
     query: `# The query returns average pollutants concentration in a time interval grouped by source
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-    PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+  
+    PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     PREFIX sosa: <http://www.w3.org/ns/sosa/>
   
@@ -491,8 +491,8 @@ ORDER BY ?PMLiteracy ?PMLiteracyPercentage`
     # The query returns average pollutants in specific time bands
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      PREFIX aq: <http://www.semanticweb.org/saadf/ontologies/2021/2/AirQualityOntology#>
-      PREFIX saqi: <https://kracr.iiitd.edu.in/ontology/saqi#>
+    
+      PREFIX saqi: <https://saqi-er24.netlify.app/saqi#>
       PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       PREFIX sosa: <http://www.w3.org/ns/sosa/>
       
