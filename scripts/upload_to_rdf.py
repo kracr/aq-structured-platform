@@ -14,8 +14,8 @@ import urllib.parse
 # Single csv for questionnaire in ./questionnaire_data dir
 # CPCB csv data under ./cpcb_data, file name should be IRI 
 
-# RDF_STORE_URL = "http://localhost:3030/"
-RDF_STORE_URL = "https://kracr.iiitd.edu.in/sparql/"
+RDF_STORE_URL = "http://localhost:3030/"
+# RDF_STORE_URL = "https://kracr.iiitd.edu.in/sparql/"
 if len(sys.argv) > 1:
     RDF_STORE_URL = sys.argv[1]
 

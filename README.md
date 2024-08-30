@@ -52,7 +52,7 @@
 - `sudo cp /var/www/kracr.iiitd.edu.in/saqi-app/vite.svg /var/www/kracr.iiitd.edu.in/saqi-app/assets/vite.svg`
 - `sudo cp /var/www/kracr.iiitd.edu.in/saqi-app/saqi.png /var/www/kracr.iiitd.edu.in/saqi-app/assets/saqi.png`
 
-
+**Note** - Apache jena fuseki <= 4.6.1 is supported, newer version will break some scripts
 ## Routing changes to nginx
 At `/etc/nginx/sites-available/kracr.iiitd.edu.in`
 
